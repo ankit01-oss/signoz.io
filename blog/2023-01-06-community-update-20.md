@@ -4,7 +4,7 @@ slug: community-update-20
 date: 2023-01-06
 tags: [Product Updates]
 authors: ankit_anand
-description: It's time for the last monthly product update 2022 of SigNoz - a full-stack open-source APM tool. Find out what we've been upto at SigNoz during December, 2022.
+description: It's time for the monthly product update of SigNoz - a full-stack open-source observability platform. Find out what we've been upto at SigNoz during December, 2022.
 image: /img/blog/2023/01/signal_20_cover-min.jpg
 hide_table_of_contents: false
 keywords:
