@@ -1,11 +1,11 @@
 ---
 title: Winston Logger - Full tutorial with a sample Nodejs application
 slug: winston-logger
-date: 2022-11-17
+date: 2023-02-07
 tags: [Tech Tutorial]
 authors: [sai_deepesh]
 description: In this beginner-friendly tutorial, we will create a simple Nodejs application and use Winston logger for adding logs to the application. We will also use an open source tool to collect the logs...
-image: /img/blog/2022/11/winston_logger_cover.webp
+image: /img/blog/2023/02/winston_logger_cover-min.jpg
 keywords:
   - winston logger
   - nodejs
@@ -19,7 +19,7 @@ Winston Logger is one of the most popular logging libraries for Node.js. It is d
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/11/winston_logger_cover.webp)
+![Cover Image](/img/blog/2023/02/winston_logger_cover.webp)
 
 Each logger can have multiple modes of transport configured at different levels. For example, one may want error logs stored in a database, but all logs output to the console or a local file.
 
@@ -96,7 +96,7 @@ Here's how we initialize different transports:
 
 ## Formats in Winston logger
 
-Formats in `winston` can be accessed from `winston.format`. They are implemented in `[logform](https://github.com/winstonjs/logform)`, a separate module from `winston`. This allows flexibility when writing your transports in case you wish to include a default format with your transport.
+Formats in `winston` can be accessed from `winston.format`. They are implemented in [logform](https://github.com/winstonjs/logform), a separate module from `winston`. This allows flexibility when writing your transports in case you wish to include a default format with your transport.
 
 In modern versions of `node` template strings are very performant and are the recommended way for doing most end-user formatting.
 
