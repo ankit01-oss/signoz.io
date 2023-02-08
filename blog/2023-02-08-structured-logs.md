@@ -30,7 +30,7 @@ Logging is an essential aspect of system administration and monitoring. Logging 
 
 Logs include system events, user actions, and error messages. They can be stored in various forms, such as text files and databases. This allows them to analyze and visualize using log management platforms such as [SigNoz](https://signoz.io/docs/userguide/logs/). The structure of these logs falls on a large spectrum. A log can be structured, semi-structured or unstructured. In this blog, we will learn about structured logging and its benefits.
 
-## **What are Structured Logs?**
+## What are Structured Logs?
 
 A structured log is a log record with a well-defined structure and format. The structured logging practice creates easily human-readable textual log data. The same data can be easily integrated with other systems to automate log analyzing, querying, and aggregation.
 
@@ -76,7 +76,7 @@ With key-value pairs, you can add more meaningful information to your logs. Here
 }
 ```
 
-## **Why is Structured Logging Needed?**
+## Why is Structured Logging Needed?
 
 There are numerous benefits to using structured logs. Below are some points for why structured logging is needed:
 
@@ -89,7 +89,7 @@ There are numerous benefits to using structured logs. Below are some points for 
 - Structured logs reduce costs on tools you can choose to integrate and analyze data. The data is consistent. This makes storing in long-term retention easier with reduced storage cost.
 - It is easier to visualize structured logs data with which you can drive insights faster. Log analytics tool like SigNoz can help you create charts from structured logs data easily.
 
-## **Best Practices for Structured Logging**
+## Best Practices for Structured Logging
 
 Structured logging has many benefits. Based on this guide, you have understood the importance in detail. However, when using structured logs, it's good to follow the best practices to ensure you get the optimal benefits structured logs offer. Some of the best practices are:
 
@@ -101,7 +101,7 @@ Structured logging has many benefits. Based on this guide, you have understood t
 - Before rolling your application to production, always test and validate your logs. This will help you ensure your application generates logs correctly and in the expected format.
 - You can also integrate your logs with traces. Having [correlated telemetry signals](https://signoz.io/blog/microservices-logging/#integrating-observability-in-logs) can help you drive contextual insights faster.
 
-## **Getting Started with Structured Logging**
+## Getting Started with Structured Logging
 
 The first step to structured logging starts at the application level. There are numerous logging libraries that help with structured logging. For example, [winston logger](https://signoz.io/blog/winston-logger/) is one of the most popular logging libraries for nodejs. It provides consistent formats and logging levels to be used in application logs.
 
@@ -124,7 +124,7 @@ You can visit our documentation for instructions on how to install SigNoz using 
 
 [![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/docker/?utm_source=blog&utm_medium=structured_logs)
 
-## **Conclusion**
+## Conclusion
 
 Logging is an integral part of all software systems. You can understand what's happening and where problems might be. Generally, if something goes wrong in production, you have a reference to trace your logs. Structured logs make it easier to search, query, and analyze logs data at scale.
 
