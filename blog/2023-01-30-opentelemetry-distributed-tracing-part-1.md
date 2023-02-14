@@ -1,5 +1,5 @@
 ---
-title: Complete Guide to Distributed Tracing with OpenTelemetry - Part I
+title: Distributed Tracing with OpenTelemetry - Part I
 slug: opentelemetry-distributed-tracing-part-1
 date: 2023-01-30
 tags: [OpenTelemetry, Distributed Tracing]
