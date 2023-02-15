@@ -186,7 +186,7 @@ It also provides an intelligent correlation between these telemetry signals.
 
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/common/signoz_dashboard_homepage.webp" alt="At points of high application latency"/>
+    <img src="/img/blog/2023/02/metrics_to_traces.webp" alt="You can switch from metrics to traces easily"/>
     <figcaption><i>At points of high application latency, as shown by application metrics, you can hump into traces to investigate further</i></figcaption>
 </figure>
 
