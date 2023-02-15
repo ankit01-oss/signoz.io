@@ -2,7 +2,7 @@
 title: Observability vs Monitoring - The difference explained with an example
 slug: observability-vs-monitoring
 date: 2023-02-15
-tags: [Tools Comparison]
+tags: [observability]
 authors: tiago
 description: While observability is more about correlated telemetry signals to drive contextual insights, monitoring is about capturing metrics and keeping a check on thresholds...
 image: /img/blog/2023/02/observability_vs_monitoring_cover.jpeg
