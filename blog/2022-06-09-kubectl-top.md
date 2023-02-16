@@ -30,6 +30,8 @@ keywords:
 
 In this article, we will see how to use `kubectl Top` command to get and read metrics about pods and nodes. We will also breakdown the output to understand what it means.
 
+[![Monitor k8s cluster with SigNoz](/img/blog/common/monitor_k8s_cta.png)](https://signoz.io/docs/tutorial/kubernetes-infra-metrics/?utm_source=blog&utm_medium=kubectl_top)
+
 But before we get down to learn about Kubectl Top command, let’s have a brief overview of a few concepts in Kubernetes.
 
 ## What is kubectl?
