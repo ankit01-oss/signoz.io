@@ -1,7 +1,7 @@
 ---
 title: Implementing Distributed Tracing in a Java application
 slug: distributed-tracing-java
-date: 2022-03-09
+date: 2023-02-28
 tags: [OpenTelemetry Instrumentation, Java, Distributed Tracing]
 authors: [selva]
 description: Distributed tracing provides insights into how a particular service is performing as part of the whole in a distributed system. In this article, we will implement distributed tracing for a Java application based on microservices architecture.
@@ -112,7 +112,7 @@ When you are done installing SigNoz, you can access the UI at [http://localhost
 
 Download MySQL community version from [here](https://dev.mysql.com/downloads/mysql/) based on your operating system.
 
-Once installation is complete, run the below commands to create a database for our sample nodejs app.
+Once installation is complete, run the below commands to create a database for our sample java app.
 
 ```jsx
 ➜  ~ mysql -u root
@@ -225,13 +225,14 @@ Below are the steps to run the sample Java application with OpenTelemetry:
 
 5. **Run the microservices**<br></br>
    Now you need to run your microservices. Run `users-service`:
-    ```java
-    cd user-service
-    mvn clean install -Dmaven.test.skip # Build user-service jar
-    cd scripts
-    sh ./start.sh # Run user-service with OTEL java agent
-    ```
-
+   
+   ```
+   cd user-service
+   mvn clean install -Dmaven.test.skip # Build user-service jar
+   cd scripts
+   sh ./start.sh # Run user-service with OTEL java agent
+   ```
+   
    Open a new tab of your terminal, and run `payment-service`:
    
    ```java
