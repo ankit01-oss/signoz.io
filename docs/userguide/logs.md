@@ -5,7 +5,14 @@ id: logs
 
 # Overview
 
-Of all telemetry signals, logs have probably the biggest legacy. Most programming languages have built-in logging capabilities or well-known, widely used logging libraries.
+<figure data-zoomable align='center'>
+    <img src="/img/blog/common/signoz_logs.webp" alt="Log Management in SigNoz"/>
+    <figcaption><i>Logs management in SigNoz</i></figcaption>
+</figure>
+
+<br></br>
+
+Of all telemetry signals, logs have probably the biggest legacy. Most programming languages have built-in logging capabilities or well-known, widely used logging libraries. SigNoz natively supports OpenTelemetry for collecting logs. OpenTelemetry is a open source standard for generating and collecting telemetry data.
 
 OpenTelemetry logs support is added with the philosophy that it should support legacy logs and logging libraries as well as provide improvements and better integration with the rest of the observability world where possible.
 
