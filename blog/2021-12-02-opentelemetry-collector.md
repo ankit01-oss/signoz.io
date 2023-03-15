@@ -19,6 +19,8 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/opentelemetry-collector-complete-guide/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 OpenTelemetry Collector is a stand-alone service provided by OpenTelemetry. It can be used as a telemetry-processing system with a lot of flexible configurations to collect and manage telemetry data. Let's do a deep dive on OpenTelemetry Collectors to understand how it works.
 
 <!--truncate-->
@@ -28,6 +30,8 @@ OpenTelemetry Collector is a stand-alone service provided by OpenTelemetry. It c
 The first step in setting up observability with OpenTelemetry is instrumentation. The application code is instrumented with OpenTelemetry client libraries that help generate telemetry data like logs, metrics, and traces.
 
 Once the telemetry data is generated, it can be exported directly to an observability backend or an OpenTelemetry Collector. The collector provides a vendor-neutral way to collect, process, and export your telemetry data(logs, metrics, and traces), and that’s why it is preferable to use a collector. The biggest advantage of using OpenTelemetry collectors is the flexibility to create different data pipelines.
+
+<SignUps />
 
 OpenTelemetry collectors can be deployed in different ways. It can be deployed on each host machine as an agent. When the collector is deployed on host machines, you can directly collect host metrics like CPU usage, RAM, disk I/O metrics, etc.
 

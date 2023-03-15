@@ -21,6 +21,8 @@ keywords:
   <link rel="canonical" href="https://signoz.io/opentelemetry/nodejs/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 OpenTelemetry can auto-instrument many common modules for a Javascript application. The telemetry data captured can then be sent to SigNoz for analysis and visualization.
 
 <!--truncate-->
@@ -42,6 +44,8 @@ Steps to get started with OpenTelemetry for a Nodejs application:
 - Installing SigNoz
 - Installing sample Nodejs app
 - Set up OpenTelemetry and send data to SigNoz
+
+<SignUps />
 
 ## Installing SigNoz
 

@@ -17,6 +17,8 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/openmetrics-vs-opentelemetry/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 OpenMetrics and OpenTelemetry are popular standards for instrumenting cloud-native applications. Both projects are part of the <a href = "https://cncf.io/" rel="noopener noreferrer nofollow" target="_blank">Cloud Native Computing Foundation (CNCF)</a> and aim to simplify how we generate, collect and monitor services in a modern cloud-native distributed application environment.
 
 
@@ -55,6 +57,8 @@ OpenMetrics is still in its early stages. Let's look at the current state of the
 The collected data from OpenTelemetry API is vendor-agnostic, so it can be exported in different formats. OpenTelemetry does not provide a storage and visualization layer for the collected telemetry data. 
 
 But as data can be exported in multiple formats, OpenTelemetry users have the freedom to choose a backend analysis tool. This way, users never get locked in with a specific observability vendor.
+
+<SignUps />
 
 OpenTelemetry provides its own set of <a href = "https://opentelemetry.io/docs/instrumentation/" rel="noopener noreferrer nofollow" target="_blank">client libraries</a> which makes it easier for you to integrate it into your application code. OpenTelemetry follows a specification-driven development. The client libraries follow the specification for their implementation.
 

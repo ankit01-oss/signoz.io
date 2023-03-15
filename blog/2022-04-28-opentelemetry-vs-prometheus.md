@@ -22,6 +22,8 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/opentelemetry-vs-prometheus/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 OpenTelemetry and Prometheus are both open-source projects under Cloud Native Computing Foundation. In this article, let us understand the key differences between the two projects and explore their advantages and shortcomings.
 
 <!--truncate-->
@@ -32,8 +34,7 @@ OpenTelemetry is a vendor-agnostic instrumentation library. It provides a set of
 
 Prometheus is a time-series metrics monitoring tool. Prometheus enables you to capture time-series data as metrics. These metrics can be aggregated to give insights into the behavior of your systems.
 
-> **An OpenTelemetry Native APM**<br></br>
-> [SigNoz](https://signoz.io/docs/?utm_source=blog&utm_medium=opentelemetry_vs_prometheus) is a full-stack open source APM built to support OpenTelemetry natively. It provides metrics monitoring, log management, and distributed tracing under a single pane of glass. You can check out SigNoz, if you're looking for a single monitoring tool for all your needs.
+<SignUps />
 
 
 ## What is OpenTelemetry?

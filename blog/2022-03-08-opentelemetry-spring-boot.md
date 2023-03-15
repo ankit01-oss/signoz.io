@@ -18,10 +18,13 @@ keywords:
 ---
 import { LiteYoutubeEmbed } from "react-lite-yt-embed";
 
+import SignUps from '../docs/shared/sign-ups.md'
 
 <head>
   <link rel="canonical" href="https://signoz.io/blog/opentelemetry-spring-boot/"/>
 </head>
+
+
 
 OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and frameworks that your application might be using. It can be used to collect logs, metrics, and traces from your Spring Boot application. Let's learn how it works.
 
@@ -34,6 +37,8 @@ OpenTelemetry is a vendor-agnostic instrumentation library that is used to gener
 In this article, let's explore how you can auto-instrument your Java Spring Boot application with OpenTelemetry and get the data reported through SigNoz. We will also learn how to collect JVM metrics and logs.
 
 But before that, let's have a brief overview of OpenTelemetry.
+
+<SignUps />
 
 ## What is OpenTelemetry?
 <a href = "https://opentelemetry.io/" rel="noopener noreferrer nofollow" target="_blank" >OpenTelemetry</a> is a set of API, SDKs, libraries, and integrations aiming to standardize the generation, collection, and management of telemetry data(logs, metrics, and traces). OpenTelemetry is a Cloud Native Computing Foundation project created after the merger of OpenCensus(from Google) and OpenTracing(From Uber).

@@ -18,6 +18,8 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/dynatrace-alternative/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 If you're looking for an open-source alternative to Dynatrace, then you're at the right place. SigNoz is a perfect open-source alternative to Dynatrace. SigNoz provides a unified UI for metrics, traces and logs with advanced tagging and filtering capabilities.
 
 <!--truncate-->
@@ -46,6 +48,8 @@ Some of the key features of good observability tools are:
 - Filtering of traces based on different tags and filters
 - Ability to set dynamic thresholds for alerts
 - Transparency in pricing
+
+<SignUps />
 
 
 ## Why choose an open-Source alternative to Dynatrace?

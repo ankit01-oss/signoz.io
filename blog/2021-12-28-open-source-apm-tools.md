@@ -17,6 +17,8 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/open-source-apm-tools/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 Choosing the right APM tool is critical. How do you know which is the right one for you? Here are the top 13 open source application performance monitoring(APM) tools which can solve your monitoring needs.
 
 <!--truncate-->
@@ -31,6 +33,8 @@ Businesses are embracing digital transformation now more than ever. In most case
 The digital shift has made the app production environment a critical piece of an organization's success. The performance of your application in production needs to be monitored to ensure high availability at all times. Not only that, but organizations also need to monitor any latency issues in serving user's requests. As they say, "**Slow is the new down**" in today's competitive digital landscape.
 
 This has led to the birth of a number of application performance monitoring tools. Open source APM tools have added benefits over their SaaS counterparts as the source code is available to your org's developers.
+
+<SignUps />
 
 **Benefits of Open Source APM tool over SaaS APM tools:**
 

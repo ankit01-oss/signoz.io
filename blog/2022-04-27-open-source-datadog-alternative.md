@@ -18,6 +18,8 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/open-source-datadog-alternative/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 More and more companies are now shifting to a cloud-native & microservices-based architecture. Having an application monitoring tool is critical in this world because you can’t just log into a machine and figure out what’s going wrong.
 
 <!--truncate-->
@@ -34,6 +36,7 @@ In our opinion, good observability tools should have
 - Filtering of traces based on different tags and filters
 - Ability to set dynamic thresholds for alerts
 - Transparency in pricing
+
 
 ## User experience not great in current open-source tools
 
@@ -70,6 +73,8 @@ Some of our key features which makes SigNoz vastly superior to current open-sour
 - Infrastructure dashboards
 - Exceptions monitoring
 - Transparent usage Data
+
+<SignUps />
 
 ### Out of the box application metrics
 
