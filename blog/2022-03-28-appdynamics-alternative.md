@@ -5,7 +5,7 @@ date: 2022-08-15
 tags: [SigNoz, Open Source]
 authors: ankit_anand
 description: If you're looking for an open-source alternative to AppDynamics, then you're at the right place. SigNoz is a perfect open-source alternative to AppDynamics. SigNoz provides a unified UI for metrics, traces and logs with advanced tagging and filtering capabilities...
-image: /img/blog/2021/09/appdynamics_alternative_cover-min.webp
+image: /img/blog/2023/03/open_source_appdynamics_alternative_cover-min.jpg
 keywords:
   - appdynamics
   - appdynamics alternative
@@ -24,7 +24,7 @@ If you're looking for an open-source alternative to AppDynamics, then you're at 
 
 <!--truncate-->
 
-![cover image](/img/blog/2021/09/appdynamics_alternative_cover-min.webp)
+![cover image](/img/blog/2023/03/open_source_appdynamics_alternative_cover.webp)
 
 In today's digital economy, more and more companies are shifting to cloud-native and microservice architecture to support global scale and distributed teams. But distributed systems also make it impossible for engineering teams to track how user requests perform across services. Application performance monitoring tools provide the visibility needed to resolve performance issues quickly.
 
@@ -81,7 +81,7 @@ But most open-source projects don't provide a great user experience as SaaS prod
 
 And that's where SigNoz shines. It is very simple to get started, supports multiple tech-stack, and comes with a SaaS-like web user experience.
 
-## Key Features of SigNoz - an AppDynamics alternative
+## Key Features of SigNoz
 
 Some of our key features which makes SigNoz vastly superior to current open-source products and a great alternative to AppDynamics are:
 
@@ -96,7 +96,7 @@ Some of our key features which makes SigNoz vastly superior to current open-sour
 - Exceptions monitoring
 - Transparent usage Data
 
-### Out of box application metrics
+### Application metrics
 
 Get p90, p99 latencies, RPS, Error rates, and top endpoints for a service out of the box.
 
@@ -126,7 +126,7 @@ Using tags, you can find latency experienced by customers who have customer_type
     <figcaption><i>Use advanced filters to analyze your trace data</i></figcaption>
 </figure>
 
-### Custom aggregates on filtered traces
+### Custom aggregates
 
 Create custom metrics from filtered traces to find metrics of any type of request. Want to find p99 latency of customer_type: premium who are seeing status_code:400. Just set the filters, and you have the graph.
 
@@ -135,7 +135,7 @@ Create custom metrics from filtered traces to find metrics of any type of reques
     <figcaption><i>Find custom aggregates on filtered traces</i></figcaption>
 </figure>
 
-### Detailed Flamegraphs & Gantt charts
+### Flamegraphs & Gantt charts
 
 Detailed flamegraph & Gantt charts to find the exact cause of the issue and which underlying requests are causing the problem. Is it a SQL query gone rogue or a Redis operation is causing an issue?
 
@@ -145,7 +145,7 @@ Detailed flamegraph & Gantt charts to find the exact cause of the issue and whic
 </figure>
 
 
-### Logs Management with advanced log query builder and live tailing
+### Logs Management
 
 SigNoz provides Logs management with advanced log query builder. You can also monitor your logs in real-time using live tailing. 
 
@@ -165,7 +165,7 @@ You can drill down details of how many events is each application sending or at 
     <figcaption><i>SigNoz provides usage explorer so that you are always informed about your usage</i></figcaption>
 </figure>
 
-### Natively built to support OpenTelemetry
+### Native OpenTelemetry support
 
 SigNoz is built to support OpenTelemetry natively. OpenTelemetry is becoming the world standard when it comes to generating and managing telemetry data(logs, metrics, and traces). 
 

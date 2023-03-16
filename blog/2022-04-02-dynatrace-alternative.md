@@ -5,7 +5,7 @@ date: 2023-01-08
 tags: [SigNoz, Open Source]
 authors: ankit_anand
 description: If you're looking for an open-source alternative to Dynatrace, then you're at the right place. SigNoz is a perfect open-source alternative to Dynatrace. SigNoz provides a unified UI for metrics, traces and logs with advanced tagging and filtering capabilities...
-image: /img/blog/2021/09/dynatrace_alternative_cover-min.webp
+image: /img/blog/2023/03/open_source_dynatrace_alternative_cover-min.jpg
 keywords:
   - dynatrace
   - dynatrace alternative
@@ -24,7 +24,7 @@ If you're looking for an open-source alternative to Dynatrace, then you're at th
 
 <!--truncate-->
 
-![cover image](/img/blog/2021/09/dynatrace_alternative_cover-min.webp)
+![cover image](/img/blog/2023/03/open_source_dynatrace_alternative_cover.webp)
 
 In today's digital economy, more and more companies are shifting to cloud-native and microservice architecture to support global scale and distributed teams. But distributed systems also make it impossible for engineering teams to track how user requests perform across services. Application performance monitoring tools provide the visibility needed to resolve performance issues quickly.
 

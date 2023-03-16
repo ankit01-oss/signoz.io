@@ -5,7 +5,7 @@ date: 2023-01-18
 tags: [SigNoz, Open Source]
 authors: pranay
 description: DataDog is a popular APM tool. But it is very expensive and opaque about its billing practices. What if you could get a SaaS like experience from an open-source APM tool....
-image: /img/blog/2021/08/signoz_datadog_alternatives_cover-min.webp
+image: /img/blog/2023/03/open_source_dd_alternative-min.jpg
 keywords:
   - datadog
   - open source
@@ -24,7 +24,7 @@ More and more companies are now shifting to a cloud-native & microservices-based
 
 <!--truncate-->
 
-![cover image](/img/blog/2021/08/signoz_datadog_alternatives_cover-min.webp)
+![cover image](/img/blog/2023/03/open_source_dd_alternative.webp)
 
 We have spent years learning about application monitoring & observability. What are the key features an observability tool should have to enable fast resolution of issues.
 
@@ -76,9 +76,9 @@ Some of our key features which makes SigNoz vastly superior to current open-sour
 
 <SignUps />
 
-### Out of the box application metrics
+### Application metrics
 
-Get p90, p99 latencies, RPS, Error rates and top endpoints for a service out of the box.
+Get out of the box p90, p99 latencies, RPS, Error rates and top endpoints for a service out of the box.
 
 <figure data-zoomable>
     <img src="/img/blog/common/signoz_charts_application_metrics.webp" alt="SigNoz dashboard showing popular RED metrics"/>
@@ -105,7 +105,7 @@ Using tags, you can find latency experienced by customers who have customer_type
     <figcaption><i>Use advanced filters to analyze your trace data</i></figcaption>
 </figure>
 
-### Custom aggregates on filtered traces
+### Custom aggregates 
 
 Create custom metrics from filtered traces to find metrics of any type of request. Want to find p99 latency of `customer_type: premium` who are seeing `status_code:400`. Just set the filters, and you have the graph. Boom!
 
@@ -116,7 +116,7 @@ Create custom metrics from filtered traces to find metrics of any type of reques
 
 
 
-### Detailed Flamegraphs & Gantt charts
+### Flamegraphs & Gantt charts
 
 Detailed flamegraph & Gantt charts to find the exact cause of the issue and which underlying requests are causing the problem. Is it a SQL query gone rogue or a Redis operation is causing an issue? Get more context on your spans with tags and events.
 
@@ -125,7 +125,7 @@ Detailed flamegraph & Gantt charts to find the exact cause of the issue and whic
     <figcaption><i>Spans of a trace visualized with the help of flamegraphs and gantt charts in SigNoz dashboard</i></figcaption>
 </figure>
 
-### Logs Management with advanced log query builder and live tailing
+### Logs Management
 
 SigNoz provides Logs management with advanced log query builder. You can also monitor your logs in real-time using live tailing. SigNoz uses a columnar database ClickHouse to store logs, which is very efficient at ingesting and storing logs data. Columnar databases like ClickHouse are very effective in storing log data and making it available for analysis.
 
