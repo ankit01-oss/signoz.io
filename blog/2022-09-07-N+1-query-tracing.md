@@ -18,6 +18,8 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/N+1-query-distributed-tracing/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 N+1 query problem is a problem in database retrieval where the related entities of an object are queried individually from a database, leading to O(n) queries where n is the number of related entities of the object.
 
 Mouthful of words, I agree 🙂 
@@ -83,6 +85,8 @@ SELECT * FROM members WHERE teamID IN (1, 2, 3, 4, 5, ...)
 As you can see, this only takes 2 queries to retrieve the required details, no matter how many teams you want to find members for.
 
 You've removed the "N" part from the page's query plan and are no longer paying the overhead of issuing hundreds of extra queries.
+
+<SignUps />
 
 ## How to prevent such performance anti-patterns creeping in your code
 

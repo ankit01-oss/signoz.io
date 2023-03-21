@@ -18,6 +18,10 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/docker-logging/"/>
 </head>
 
+
+import SignUps from '../docs/shared/sign-ups.md'
+import LogsPerf from '../docs/shared/logs-perf-cta.md'
+
 Log analysis is a very powerful feature for an application when it comes to debugging and finding out which flow is working properly in the application and which is not. Log management helps the DevOps team debug and troubleshoot issues faster, making it easier to identify patterns, spot bugs, and ensure they don’t come back to bite you!
 
 <!--truncate-->
@@ -25,6 +29,8 @@ Log analysis is a very powerful feature for an application when it comes to debu
 ![Cover Image](/img/blog/2022/08/docker_logging_cover.webp)
 
 In this article, we will discuss log analysis in Docker and how logging in Docker containers is different than in other applications. These logs are specific to Docker and are stored on the Docker host. We’ll thoroughly discuss the `docker logs` command and how we can configure a logging driver for containers.
+
+<SignUps />
 
 ## Why is Docker logging different?
 
@@ -52,6 +58,9 @@ With other systems, recording application log messages can be done explicitly by
     ```
     
     It is dangerous to store logs in a Docker host because Docker doesn’t impose any size limit on log files, and they can build up over time and eat into your disk space. It is advised to store logs in a centralized location and enable [log rotation](https://signoz.io/blog/docker-log-rotation/) for all the Docker containers. 
+
+
+<LogsPerf />
     
 
 ## `docker logs` command

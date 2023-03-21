@@ -5,7 +5,7 @@ date: 2022-12-01
 tags: [Tech Tutorial]
 authors: [daniel]
 description: Kubectl logs command can be used to get information about the containers and pods on your Kubernetes cluster. Debugging your Kubernetes resources heavily depends on...
-image: /img/blog/2022/12/kubectl_logs_cover.webp
+image: /img/blog/2023/03/kubectl_logs_cover-min.jpg
 keywords:
   - kubectl
   - kubernetes
@@ -21,15 +21,20 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/kubectl-logs/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+import LogsPerf from '../docs/shared/logs-perf-cta.md'
+
 Information about the containers and pods on your cluster may be obtained using the `kubectl logs` command. These logs allow you to know the performance of your applications, whether they are failing or healthy, and are particularly useful for debugging and troubleshooting purposes.
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/12/kubectl_logs_cover.webp)
+![Cover Image](/img/blog/2023/03/kubectl_logs_cover.webp)
 
 In this article, we will see how to use the kubectl logs command to get information from existing resources in a Kubernetes cluster.
 
 Before we dive in, let's first take a quick look at what Kubectl is and how exactly it works.
+
+<SignUps />
 
 ## What is kubectl?
 
@@ -57,6 +62,8 @@ An integrated tool for reading logs is kubectl log. It might not be the greatest
 The kubectl log command is the command that displays information about the background activities or events completed or ongoing in your resources. It is used to view container logs for debugging. Because container applications are packaged in pods, if an application is failing or misbehaving, the next line of action would be to check the logs of the container(s) in that pod to know why.
 
 Debugging your Kubernetes resources depends on your logs. With the knowledge provided by this command, you can restart your pod by making the necessary adjustments or repairs.
+
+<LogsPerf />
 
 ## Using kubectl logs
 

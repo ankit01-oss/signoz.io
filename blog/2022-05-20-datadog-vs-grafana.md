@@ -1,11 +1,11 @@
 ---
 title: DataDog vs Grafana - Key features & differences
 slug: datadog-vs-grafana
-date: 2022-05-20
+date: 2023-03-10
 tags: [Tools Comparison]
 authors: ankit_anand
 description: In this article, we will compare DataDog with Grafana. Both are monitoring tools but differ significantly in their offerings. DataDog is a paid SaaS monitoring tool, while Grafana is an open-source metrics...
-image: /img/blog/2021/10/datadog_vs_grafana_cover-min.webp
+image: /img/blog/2023/03/datadog_vs_grafana_cover-min.jpg
 keywords:
   - datadog
   - grafana
@@ -17,11 +17,13 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/datadog-vs-grafana/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 DataDog is a paid SaaS tool that provides a range of products for monitoring applications and tech infrastructure. While Grafana is an open-source web visualization tool that can be used with a variety of data sources to create dashboards.
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2021/10/datadog_vs_grafana_cover-min.webp)
+![Cover Image](/img/blog/2023/03/datadog_vs_grafana_cover.webp)
 
 import Screenshot from "@theme/Screenshot"
 
@@ -36,8 +38,7 @@ In this article, we will compare DataDog with Grafana based on the following cat
 
 We will also explore the key features of DataDog and Grafana.
 
-> While DataDog and Grafana are great monitoring tools, they have their limitations. DataDog is an enterprise SaaS tool with complex pricing tiers. Grafana is an open-source monitoring tool that needs support and maintenance to set up and scale.<br></br>
-> And that's where [SigNoz](https://signoz.io/?utm_source=blog&utm_medium=article) comes into the picture. It is an open-source APM tool that comes with great user experience in terms of getting started and web user experience. It's an open-source alternative to DataDog.
+<SignUps />
 
 ## Comparing DataDog and Grafana
 

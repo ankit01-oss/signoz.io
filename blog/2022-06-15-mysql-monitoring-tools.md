@@ -20,6 +20,8 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/mysql-monitoring-tools/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 Database monitoring is a critical component in your application performance monitoring. Apart from application code issues, database issues are one of the most common reasons for a bad user experience. MySQL is one of the most popular open-source DBMS that businesses have widely adopted.
 
 <!--truncate-->
@@ -28,6 +30,8 @@ Database monitoring is a critical component in your application performance moni
 
 
 MySQL monitoring tools can help you identify potential issues with your database, keep a continuous check on your database instances, improve performance and detect and alert you about real-time issues. 
+
+<SignUps />
 
 But choosing the right MySQL monitoring tool can be daunting. How do you know which one is right for your application stack? Here is a list of the top 11 MySQL monitoring tools that can help you keep your MySQL database instances in fine health:
 

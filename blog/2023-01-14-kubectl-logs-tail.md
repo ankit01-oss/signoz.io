@@ -22,6 +22,9 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/kubectl-logs-tail/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+import LogsPerf from '../docs/shared/logs-perf-cta.md'
+
 The `kubectl logs tail` command is a tool that allows users to stream the logs of a pod in real-time while using Kubernetes. This command is particularly useful for debugging and monitoring applications, as it enables users to view log output as it is generated and quickly identify any issues or problems with their application.
 
 <!--truncate-->
@@ -31,6 +34,8 @@ The `kubectl logs tail` command is a tool that allows users to stream the logs o
 In this article, we will see how to use the `kubectl logs tail` command to stream logs, the benefits of using the command, and an advanced tool for streaming logs.
 
 Before we get started, let's quickly review some essential Kubernetes concepts.
+
+<SignUps />
 
 ## What is `kubectl`?
 
@@ -56,6 +61,8 @@ Some common options for `kubectl logs` include:
 - `--timestamps`: Add timestamps to the log output.
 
 A full list of all flag options by the command can be found on the official Kubernetes <a href = "https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#logs" rel="noopener noreferrer nofollow" target="_blank" >documentation page</a>.
+
+<LogsPerf />
 
 ## The `tail` flag
 

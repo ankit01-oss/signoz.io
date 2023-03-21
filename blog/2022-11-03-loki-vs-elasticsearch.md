@@ -23,6 +23,9 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/loki-vs-elasticsearch/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+import LogsPerf from '../docs/shared/logs-perf-cta.md'
+
 Elasticsearch, or the ELK stack, is a popular log analytics solution. The Loki project was started at Grafana Labs in 2018. Grafana leads the development of Loki, while Elastic is the company behind Elasticsearch. In this article, we will do a detailed comparison between these two tools for log analytics.
 
 <!--truncate-->
@@ -32,6 +35,8 @@ Elasticsearch, or the ELK stack, is a popular log analytics solution. The Loki p
 Log data helps application owners debug their applications while also playing a critical role in cyber security. Most modern applications are now based on distributed components based on container technologies. Collecting log data from these systems and deriving timely insights from them can be complex. That’s where Log analytics tools like Loki and Elasticsearch come into the picture.
 
 Before we look at the differences between these two tools, let us have a brief overview of both tools.
+
+<SignUps />
 
 ## What is Loki?
 
@@ -62,6 +67,8 @@ Elasticsearch is a search engine built on Apache Lucene. For log analytics, Elas
 There are other log-collecting tools too that can be used for collecting logs. FluentD and Filebeat are two popular log collectors used in the pipeline. Once the log data is collected, it is stored as unstructured JSON objects. Both the key of the JSON object and the contents of the key are indexed. Elasticsearch indexes all data in every field. Kibana lets you visualize the logs data to generate insights.
 
 Now that we have an overview of both tools let’s discuss the key differences between them.
+
+<LogsPerf />
 
 ## Key differences between Loki and Elasticsearch
 

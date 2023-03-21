@@ -17,6 +17,9 @@ keywords:
    <title>Docker Log Rotation Configuration Guide | SigNoz</title>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+import LogsPerf from '../docs/shared/logs-perf-cta.md'
+
 It is essential to configure log rotation for Docker containers. Log rotation is not performed by default, and if it’s not configured, logs on the Docker host can build up and eat up disk space. This guide will teach us how to set up Docker log rotation.
 
 <!--truncate-->
@@ -27,6 +30,8 @@ Logs are an essential piece of telemetry data. Logs can be used to debug perform
 
 With containerization, it is easier to scale applications. But the operation complexity has increased manifolds. Containers are ephemeral. Frequently changing container-based environments are challenging to monitor. Docker logs can help debug performance issues.
 Applications in Docker containers emit logs through `stdout` and `stderr` output streams. The logging driver that you choose can access these streams. Based on your logging driver, you can configure the format and storage of Docker logs. You can also send the emitted logs to a central log management system.
+
+<SignUps />
 
 Before deep-diving into configuring Docker log rotation, let's briefly overview Docker logs.
 
@@ -46,6 +51,7 @@ Docker does not impose a size restriction on logging files. Hence they will inev
 
 Limiting the size and quantity of locally stored log files is the main goal of log rotation. Docker logs must be cycled at predetermined intervals because manually deleting logs is a laborious task. But the first question is, where are Docker logs stored?
 
+<LogsPerf />
 
 ## Where are Docker logs stored?
 
