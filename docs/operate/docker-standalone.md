@@ -13,13 +13,13 @@ Once you have successfully installed SigNoz on Docker Standalone, the following 
 
 ## Stop/Start SigNoz Cluster
 
-To stop the running SigNoz cluster:
+To stop SigNoz cluster:
 
 ```bash
 docker-compose -f docker/clickhouse-setup/docker-compose.yaml stop
 ```
 
-To start/resume the running SigNoz cluster:
+To start/resume SigNoz cluster:
 
 ```bash
 docker-compose -f docker/clickhouse-setup/docker-compose.yaml up -d

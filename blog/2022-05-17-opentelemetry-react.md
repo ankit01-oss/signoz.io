@@ -132,12 +132,13 @@ http:
 
 Once you make the changes, you need to restart the Docker containers.
 
-**To stop the running SigNoz cluster:**
+**To stop SigNoz cluster:**
 ```
 sudo docker-compose -f docker/clickhouse-setup/docker-compose.yaml stop
 ```
 
-**To start/resume the running SigNoz cluster:**
+**To start/resumen SigNoz cluster:**
+
 ```
 sudo docker-compose -f docker/clickhouse-setup/docker-compose.yaml up
 ```

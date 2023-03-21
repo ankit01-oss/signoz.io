@@ -12,13 +12,13 @@ provide an overview of the activities that are required to successfully operate 
 
 ## Stop/Start SigNoz Cluster
 
-To stop the running SigNoz cluster:
+To stop SigNoz cluster:
 
 ```bash
 helm -n platform uninstall "my-release"
 ```
 
-To start/resume the running SigNoz cluster:
+To start/resume SigNoz cluster:
 
 ```bash
 helm -n platform install "my-release"

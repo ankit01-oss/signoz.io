@@ -8,13 +8,13 @@ Once you have successfully installed SigNoz on Docker Swarm, the following secti
 
 ## Stop/Start SigNoz Cluster
 
-To stop the running SigNoz cluster:
+To stop SigNoz cluster:
 
 ```bash
 docker stack rm signoz
 ```
 
-To start/resume the running SigNoz cluster:
+To start/resume SigNoz cluster:
 
 ```bash
 docker stack deploy -c docker-swarm/clickhouse-setup/docker-compose.yaml signoz
