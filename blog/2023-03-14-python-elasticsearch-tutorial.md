@@ -63,9 +63,9 @@ pip install elasticsearch
 The Elasticsearch connection in your Python code needs to be configured next. You must give the host and port of the Elasticsearch instance you wish to connect to in order to do this. An illustration of how to make an Elasticsearch client object is shown below:
 
 ```python
-from elasticsearch import
+from elasticsearch import Elasticsearch
 
-Elasticsearches = Elasticsearch([{'host': 'localhost', 'port': 9200}])
+es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 ```
 
 In this example, we’re using the default port of `9200` to connect to an Elasticsearch instance that is operating locally.
