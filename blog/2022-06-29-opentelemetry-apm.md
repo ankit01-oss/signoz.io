@@ -5,7 +5,7 @@ date: 2023-01-09
 tags: [OpenTelemetry, SigNoz]
 authors: [ankit_anand]
 description: SigNoz is an open source APM built to support OpenTelemetry natively. In this article, we will talk about things to be kept in mind while selecting an OpenTelemetry APM. We will also see how SigNoz can help you in setting up full-stack observability....
-image: /img/blog/2022/06/opentelemetry_apm_cover.webp
+image: /img/blog/2023/03/opentelemetry_apm_cover-min.jpg
 keywords:
   - opentelemetry
   - opentelemetry apm
@@ -25,17 +25,21 @@ keywords:
   <title>An open source OpenTelemetry APM | SigNoz</title>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 OpenTelemetry is a Cloud Native Computing Foundation(<a href = "https://www.cncf.io/" rel="noopener noreferrer nofollow" target="_blank">CNCF</a>) project aimed at standardizing the way we instrument applications for generating telemetry data(logs, metrics, and traces). However, OpenTelemetry does not provide storage and visualization for the collected telemetry data. An APM that can ingest telemetry data collected by OpenTelemetry can help you set up a robust observability stack.
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/06/opentelemetry_apm_cover.webp)
+![Cover Image](/img/blog/2023/03/opentelemetry_apm_cover.webp)
 
 APM stands for Application Performance Monitoring or Application Performance Management. APM tools help engineering teams effectively monitor their applications by monitoring key metrics for application performance. With time, the way applications are built and deployed has changed. With containerization technologies, software systems have become distributed and are more dynamic than ever in production environments.
 
 APM tools have also evolved to newer ways of reporting metrics for container-based applications. For newer age architectures like microservices and serverless, it’s difficult for engineering teams to have a central overview of how their applications are performing. But monitoring technology also evolved and gave birth to distributed tracing. With distributed tracing, you can trace user requests across services and protocols. 
 
 But setting up a robust monitoring and observability stack is challenging in distributed applications. The first step for setting up observability is to instrument your applications for generating telemetry data. OpenTelemetry provides a consistent instrumentation layer for your entire application stack, including open source frameworks and libraries. Let’s learn more about OpenTelemetry.
+
+<SignUps />
 
 ## What is OpenTelemetry?
 

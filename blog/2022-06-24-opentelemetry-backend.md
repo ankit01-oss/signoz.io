@@ -5,7 +5,7 @@ date: 2022-12-04
 tags: [OpenTelemetry]
 authors: [ankit_anand]
 description: Confused about choosing a backend analysis tool for OpenTelemetry? Here’s a guide on what factors you should consider while choosing a backend to store and visualize the telemetry data collected by OpenTelemetry...
-image: /img/blog/2022/06/opentelemetry_backend_cover.png
+image: /img/blog/2023/03/opentelemetry_backend_cover-min.jpg
 keywords:
   - opentelemetry
   - opentelemetry backend
@@ -23,15 +23,19 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/opentelemetry-backend/"/>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 OpenTelemetry is a Cloud Native Computing Foundation(<a href = "https://www.cncf.io/" rel="noopener noreferrer nofollow" target="_blank">CNCF</a>) incubating project aimed at standardizing the way we instrument applications for generating telemetry data(logs, metrics, and traces). However, OpenTelemetry does not provide storage and visualization for the collected telemetry data. And that’s where an OpenTelemetry backend is needed.
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/06/opentelemetry_backend_cover.png)
+![Cover Image](/img/blog/2023/03/opentelemetry_backend_cover.webp)
 
 Cloud computing and containerization made deploying and scaling applications easier. Modern applications make use of modular code and architectures like microservices and serverless. Engineering teams can ship features faster, and any surge in user demand can be met by just spinning up more containers.
 
 But every coin has two sides. While having benefits like smaller engineering teams and on-demand scaling of applications, cloud computing and containerization have also increased operational complexity manifolds. Troubleshooting an application based on a distributed system for performance issues is like finding a needle in a haystack.
+
+<SignUps />
 
 Collecting data from applications that can act as signals for troubleshooting performance issues is a practice as old as writing software. The data that helps to analyze performance issues is known as telemetry data. For cloud-native applications, it became a challenge to have a consistent framework for generating telemetry data.
 

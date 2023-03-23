@@ -5,7 +5,7 @@ date: 2022-06-27
 tags: [OpenTelemetry, SigNoz]
 authors: [ankit_anand]
 description: OpenTelemetry provides language-specific client libraries to instrument application code for generating telemetry data. You can then use a backend analysis tool to visualize the collected OpenTelemetry data. In this article, we will see what types of OpenTelemetry visualizations are possible and how to use a backend analysis tool for OpenTelemetry visualization...
-image: /img/blog/2022/06/opentelemetry_visualization_cover.webp
+image: /img/blog/2023/03/opentelemetry_visualization_cover-min.jpg
 keywords:
   - opentelemetry
   - opentelemetry visualization
@@ -24,11 +24,13 @@ keywords:
   <title>Getting started with OpenTelemetry visualization</title>
 </head>
 
+import SignUps from '../docs/shared/sign-ups.md'
+
 OpenTelemetry is a Cloud Native Computing Foundation(<a href = "https://www.cncf.io/" rel="noopener noreferrer nofollow" target="_blank">CNCF</a>) project aimed at standardizing the way we instrument applications for generating telemetry data(logs, metrics, and traces). However, OpenTelemetry does not provide storage and visualization for the collected telemetry data. For OpenTelemetry visualization, you need to use a backend that can ingest the collected data and provide a web UI to visualize it.
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/06/opentelemetry_visualization_cover.webp)
+![Cover Image](/img/blog/2023/03/opentelemetry_visualization_cover.webp)
 
 OpenTelemetry is quietly becoming the web standard for instrumenting cloud-native applications. For applications based on distributed systems, OpenTelemetry becomes a natural choice for instrumentation. Few reasons why OpenTelemetry is the preferred choice for generating telemetry data:
 
@@ -40,6 +42,8 @@ OpenTelemetry provides instrumentation in almost all the major programming langu
 
 - Community<br></br>
 OpenTelemetry is backed by a huge community and is incubating under CNCF. It is also backed by major cloud vendors. The huge community support makes it a safe choice for future-proofing your instrumentation layer.
+
+<SignUps />
 
 But once the telemetry data is collected with OpenTelemetry, it needs to be stored and visualized for end-user consumption. A good visualization of telemetry data collected by OpenTelemetry can lead to quicker insights to debug performance issues.
 
