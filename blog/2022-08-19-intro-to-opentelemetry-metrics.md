@@ -17,7 +17,7 @@ keywords:
 ---
 
 <head>
-  <link rel="canonical" href="https://signoz.io/blog/intro-to-opentelemetry-metrics/"/>
+  <link rel="canonical" href="https://signoz.io/blog/introduction-to-opentelemetry-metrics/"/>
 </head>
 
 

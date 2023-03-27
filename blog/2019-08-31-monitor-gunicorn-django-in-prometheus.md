@@ -107,7 +107,8 @@ Instead of Prometheus scraping our Python web application directly, we will let 
 
 **Multi Process Mode of python client**[Link](https://github.com/prometheus/client_python#multiprocess-mode-gunicorn)
 The prometheus python client has a multi-processing mode which essentially creates a shared prometheus registry and shares it among all the processes and hence the [aggregation](https://github.com/prometheus/client_python/blob/master/prometheus_client/multiprocess.py) happens at the application level. When, prometheus scrapes the application instance, no matter which worker responds to the scraping request, the metrics reported back describes the application’s behaviour, rather than the worker responding.
-This [blog](blog) from MetricFire  explains how to set up native python client for _nginx + uwsgi + Flask_ apps
+
+<!-- This [blog](blog) from MetricFire  explains how to set up native python client for _nginx + uwsgi + Flask_ apps -->
 
 **Django Prometheus** library [Link](https://github.com/korfuri/django-prometheus)
 The Django prometheus client adopts an approach where you basically have each [worker listening](https://github.com/korfuri/django-prometheus/blob/master/documentation/exports.md) on a unique port for prometheus’s scraping requests. Thus, for prometheus, each of these workers are different targets as if they were running on different instances of the application.

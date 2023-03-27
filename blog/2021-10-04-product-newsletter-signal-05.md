@@ -62,7 +62,7 @@ import Screenshot from "@theme/Screenshot"
 ### [Release v0.4.1](https://github.com/SigNoz/signoz/releases/tag/v0.4.1)
 SigNoz can now scale up in Docker swarm. The community requested this, and we are glad to support it. Currently, we have tested out SigNoz for up to 500k events per second, and we are working to continue improving SigNoz for handling scale.
 
-**[Deploy SigNoz with Docker Swarm documentation](https://signoz.io/docs/install/docker_swarm/)**
+**[Deploy SigNoz with Docker Swarm documentation](https://signoz.io/docs/install/docker-swarm/)**
 
 We also shipped lots of improvements in our web UI with a focus on the metrics dashboard. We are working towards a great user experience when it comes to our web UI. Users can do things like saving widget layouts. We will work on more customization in the coming sprints.
 
