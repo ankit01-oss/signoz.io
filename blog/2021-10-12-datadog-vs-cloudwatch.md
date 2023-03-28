@@ -1,11 +1,11 @@
 ---
 title: DataDog vs Cloudwatch - Which tool to choose?
 slug: datadog-vs-cloudwatch
-date: 2021-10-12
+date: 2023-03-01
 tags: [Tools Comparison]
 authors: ankit_anand
 description: DataDog is a paid SaaS tool that provides a range of products for monitoring applications and tech infrastructure. While CloudWatch is an Amazon Web Services product that monitors applications running on AWS infrastructure and using AWS services....
-image: /img/blog/2021/10/datadog_vs_cloudwatch_cover-min.webp
+image: /img/blog/2023/03/datadog_vs_cloudwatch_cover.webp
 keywords:
   - datadog
   - cloudwatch
@@ -21,7 +21,7 @@ DataDog is a paid SaaS tool that provides a range of products for monitoring app
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2021/10/datadog_vs_cloudwatch_cover-min.webp)
+![Cover Image](/img/blog/2023/03/datadog_vs_cloudwatch_cover-min.jpg)
 
 import Screenshot from "@theme/Screenshot"
 

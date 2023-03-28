@@ -1,11 +1,11 @@
 ---
 title: DataDog vs Prometheus - Key features & differences
 slug: datadog-vs-prometheus
-date: 2022-03-05
+date: 2023-03-05
 tags: [Tools Comparison, Prometheus]
 authors: ankit_anand
 description: In this article, we will compare DataDog with Prometheus. Both are monitoring tools but differ significantly in their offerings. DataDog is a paid SaaS monitoring tool, while Prometheus is an open-source metrics...
-image: /img/blog/2021/10/datadog_vs_prometheus_cover-min.webp
+image: /img/blog/2023/03/datadog_vs_prometheus_cover.webp
 keywords:
   - datadog
   - prometheus
@@ -21,7 +21,7 @@ Both DataDog and Prometheus are application monitoring tools aimed to improve ap
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2021/10/datadog_vs_prometheus_cover-min.webp)
+![Cover Image](/img/blog/2023/03/datadog_vs_prometheus_cover-min.jpg)
 
 In this article, we will explore the differences between DataDog and Prometheus based on these categories:
 
