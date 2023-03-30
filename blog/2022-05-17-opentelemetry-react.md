@@ -1,11 +1,11 @@
 ---
 title: Implementing OpenTelemetry in React applications
 slug: opentelemetry-react
-date: 2022-05-17
+date: 2023-03-30
 tags: [OpenTelemetry Instrumentation, JavaScript]
 authors: [palash, ankit_anand]
 description: It is essential to monitor your React frontend apps for performance issues. OpenTelemetry can help instrument React apps and provide you with frontend monitoring. In this guide, we will demonstrate how to implement the OpenTelemetry Web library.....
-image: /img/blog/2022/05/opentelemetry_react_cover.webp
+image: /img/blog/2023/03/opentelemetry_react_cover-min.jpg
 keywords:
   - opentelemetry
   - react
@@ -31,7 +31,7 @@ OpenTelemetry can be used to trace React applications for performance issues and
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/05/opentelemetry_react_cover.webp)
+![Cover Image](/img/blog/2023/03/opentelemetry_react_cover.webp)
 
 React (also known as React.js or ReactJS) is a free and open-source frontend JavaScript library for building user interfaces based on UI components. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies. React can be used as a base for developing single-page, mobile, or server-rendered applications with frameworks like Next.js.
 
@@ -125,7 +125,7 @@ http:
 ```
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2022/05/opentelemetry_react_update_frontend_port.webp" alt="Setting frontend UI port number"/>
+    <img src="/img/blog/2023/03/enable_cors.webp" alt="Setting frontend UI port number"/>
 </figure>
 
 <br></br>
@@ -133,11 +133,16 @@ http:
 Once you make the changes, you need to restart the Docker containers.
 
 **To stop SigNoz cluster:**
+
+Run it under `/signoz/deploy` folder at your terminal:
+
 ```
 sudo docker-compose -f docker/clickhouse-setup/docker-compose.yaml stop
 ```
 
-**To start/resumen SigNoz cluster:**
+**To start/resume SigNoz cluster:**
+
+Run it under `/signoz/deploy` folder at your terminal:
 
 ```
 sudo docker-compose -f docker/clickhouse-setup/docker-compose.yaml up
@@ -159,6 +164,7 @@ yarn add -D @opentelemetry/api@1.0.3 @opentelemetry/context-zone@1.0.0 @opentele
 ```
 
 **Step 5: Update Service Name and CollectorTrace Exporter**
+
 The file is located at `src/helpers/tracing/index.ts`, in the sample react app codebase.  
 
 ```jsx
