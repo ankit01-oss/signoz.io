@@ -1,7 +1,7 @@
 ---
 title: SigNoz - Open-source alternative to DataDog
 slug: open-source-datadog-alternative
-date: 2023-02-18
+date: 2023-04-06
 tags: [SigNoz, Open Source]
 authors: pranay
 description: DataDog is a popular APM tool. But it is very expensive and opaque about its billing practices. What if you could get a SaaS like experience from an open-source APM tool....
