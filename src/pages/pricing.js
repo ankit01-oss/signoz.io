@@ -75,7 +75,7 @@ function pricingTest() {
                     </div>
                     <div>
                       <span>Metrics</span>
-                      <span>$0.1 per mn ingested</span>
+                      <span>$0.1 per mn samples</span>
                     </div>
                   </div>
                   <hr />
@@ -257,7 +257,7 @@ function pricingTest() {
                       </span>
                     </div>
                     <div>
-                      <span>Developer Downtime Pairing with SLAs</span>
+                      <span>SLA w/ downtime developer pairing</span>
                       <span>
                         <RightSVG />
                       </span>
