@@ -8,6 +8,7 @@ description: Send events from your Nestjs application to SigNoz
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import InstrumentationFAQ from '../shared/instrumentation-faq.md'
+import NestjsPinnedVersions from '../shared/nestjs-version-pin.md'
 
 
 This document contains instructions on how to set up OpenTelemetry instrumentation in your Nestjs applications. OpenTelemetry, also known as OTel for short, is an open source observability framework that can help you generate and collect telemetry data - traces, metrics, and logs from your Nestjs application.
@@ -66,6 +67,8 @@ Internally, it calls the specific auto-instrumentation library for components us
     npm install --save @opentelemetry/auto-instrumentations-node
     npm install --save @opentelemetry/exporter-trace-otlp-http
     ```
+
+    <NestjsPinnedVersions />
 
 2. Create a `tracer.ts` file
     

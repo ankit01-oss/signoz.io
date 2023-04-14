@@ -140,6 +140,8 @@ Steps to get the app set up and running:
     
     `@opentelemetry/exporter-trace-otlp-http` - This module provides the exporter to be used with OTLP (`http/json`) compatible receivers.<br></br>
 
+    <VersionPin />
+
 
 2. **Create `tracing.js` file**<br></br>
    Instantiate tracing by creating a `tracing.js` file and using the below code.
