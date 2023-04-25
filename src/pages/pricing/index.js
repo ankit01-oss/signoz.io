@@ -186,12 +186,12 @@ function pricingTest() {
                   </div>
                   <div className={styles.priceCta}>
                     <div className={styles.priceCtaDesc}>
-                      <span>suitable for scale </span>
-                      <span
+                    <span>Flexible Pricing for scale</span>
+                    {/* <span
                         className={`${styles.price} highlight`}
                       >
                         Custom Pricing
-                      </span>
+                      </span> */}
                     </div>
                     <div>
                       <a
@@ -211,9 +211,15 @@ function pricingTest() {
                   <div
                     className={`${styles.pricingDetails} ${styles.packageDetailBlock}`}
                   >
-                    <h4 className={styles.packageDetailTitle}>Retention</h4>
+                    <h4 className={styles.packageDetailTitle}>Pricing</h4>
                     <div>
                       
+                    </div>
+                    <div>
+                      <span>Custom Pricing</span>
+                      <span>
+                        <RightSVG />
+                      </span>
                     </div>
                     <div>
                       <span>Custom Retention</span>
