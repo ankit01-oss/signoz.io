@@ -44,7 +44,7 @@ function pricingTest() {
                   className={`card__header ${styles.card__header}`}
                 >
                   <div>
-                    <h3>Team</h3>
+                    <h3>Teams</h3>
                     <p>For teams that need high-performing applications.</p>
                   </div>
                   <div className={styles.priceCta}>
