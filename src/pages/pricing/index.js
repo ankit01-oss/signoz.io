@@ -45,7 +45,7 @@ function pricingTest() {
                 >
                   <div>
                     <h3>Team</h3>
-                    <p>For teams that need high-performing applications</p>
+                    <p>For teams that need high-performing applications.</p>
                   </div>
                   <div className={styles.priceCta}>
                     <div className={styles.priceCtaDesc}>
@@ -107,15 +107,10 @@ function pricingTest() {
                     <div>
                       <span>Managed by SigNoz in your cloud</span>
                       <span>
-                        <WrongSVG />
+                        <RightSVG />
                       </span>
                     </div>
-                    <div>
-                      <span>Single Tenant</span>
-                      <span>
-                        <WrongSVG />
-                      </span>
-                    </div>
+                    
                   </div>
                   <hr />
                   <div
@@ -184,17 +179,16 @@ function pricingTest() {
                   <div>
                     <h3>Enterprise</h3>
                     <p>
-                      With deployment options, security and compliance features
-                      and awesome support
+                      For at-scale orgs with advanced security, compliance and support needs.
                     </p>
                   </div>
                   <div className={styles.priceCta}>
                     <div className={styles.priceCtaDesc}>
-                      <span>starts at just</span>
+                      <span>suitable for scale </span>
                       <span
                         className={`${styles.price} highlight`}
                       >
-                        $999/month
+                        Custom Pricing
                       </span>
                     </div>
                     <div>
@@ -204,7 +198,7 @@ function pricingTest() {
                         href="https://forms.gle/zxCEoSbnnPv6mSX57"
                         onClick={() => handleClick("SelfHostedEnterprise")}
                       >
-                        Contact Us
+                        Get Demo
                       </a>
                     </div>
                   </div>
@@ -214,12 +208,9 @@ function pricingTest() {
                   <div
                     className={`${styles.pricingDetails} ${styles.packageDetailBlock}`}
                   >
-                    <h4 className={styles.packageDetailTitle}>Pricing</h4>
+                    <h4 className={styles.packageDetailTitle}>Retention</h4>
                     <div>
-                      <span>Custom Pricing</span>
-                      <span>
-                        <RightSVG />
-                      </span>
+                      
                     </div>
                     <div>
                       <span>Custom Retention</span>
@@ -243,12 +234,6 @@ function pricingTest() {
                     </div>
                     <div>
                       <span>Managed by SigNoz in your cloud</span>
-                      <span>
-                        <RightSVG />
-                      </span>
-                    </div>
-                    <div>
-                      <span>Single Tenant</span>
                       <span>
                         <RightSVG />
                       </span>
@@ -336,7 +321,7 @@ function pricingTest() {
                     href="https://forms.gle/zxCEoSbnnPv6mSX57"
                     onClick={() => handleClick("SelfHostedEnterprise")}
                   >
-                    Contact Us
+                    Get Demo
                   </a>
                 </div>
               </div>
