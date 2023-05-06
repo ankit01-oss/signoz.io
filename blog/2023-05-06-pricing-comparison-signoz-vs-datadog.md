@@ -40,7 +40,7 @@ Here are some key takeaways from our cost analysis:
 - User-based SaaS pricing limits the ability of engineering teams to collaborate seamlessly. SigNoz does not charge for user seats. Vendors like **New Relic can charge up to 66%** of its total bill amount just **for adding users**.
 - Custom metrics are important for having a deeper understanding of your application. Vendors like Datadog can charge exorbitant rates for custom metrics. SigNoz does not charge separately for custom metrics, and with $0.1 per million samples, it is the most cost-efficient tool for metrics monitoring.
 
-Below is the snapshot of our full stack observability cost comparison. You can have a look at our complete [cost comparison analysis](https://docs.google.com/spreadsheets/d/1EEw48D7SmC-DHKanT5hoiShT-AZcIfZDc9HQiVYdZBY/edit#gid=0).
+Below is the snapshot of our full stack observability cost comparison. You can have a look at our complete <a href = "https://docs.google.com/spreadsheets/d/1EEw48D7SmC-DHKanT5hoiShT-AZcIfZDc9HQiVYdZBY/edit#gid=0" rel="noopener noreferrer nofollow" target="_blank" ><b>cost comparison analysis</b></a>.
 
 
 <figure data-zoomable align='center'>
@@ -64,7 +64,7 @@ Observability should be set up from day one. For small engineering teams, gettin
 
 We have assumed 20 APM hosts, 50 infra hosts, and 2500 GB ingested logs.
 
-You can find the assumptions we have taken in this [sheet](https://docs.google.com/spreadsheets/d/1EEw48D7SmC-DHKanT5hoiShT-AZcIfZDc9HQiVYdZBY).
+You can find the assumptions we have taken in this <a href = "https://docs.google.com/spreadsheets/d/1EEw48D7SmC-DHKanT5hoiShT-AZcIfZDc9HQiVYdZBY" rel="noopener noreferrer nofollow" target="_blank" ><b>sheet</b></a>.
 
 |  | SigNoz | Grafana | New Relic | Datadog |
 | --- | --- | --- | --- | --- |
@@ -142,7 +142,7 @@ SigNoz does not treat custom metrics any differently. The charges remain $0.1 pe
 
 User-based pricing is outdated. An observability tool is used for debugging performance issues, and you never know which engineer might need it. At SigNoz, we don’t charge based on user seats. 
 
-New Relic’s [user pricing](https://newrelic.com/pricing) can go up to $549/user. At scale, the cost of adding users can go up to 66% of the total bill.
+New Relic’s <a href = "https://newrelic.com/pricing" rel="noopener noreferrer nofollow" target="_blank" ><b>user pricing</b></a> can go up to $549/user. At scale, the cost of adding users can go up to 66% of the total bill.
 
 <figure data-zoomable align='center'>
     <img src="/img/blog/2023/05/new_relic_user_seat_pricing.webp" alt="User seats billing in New Relic"/>
