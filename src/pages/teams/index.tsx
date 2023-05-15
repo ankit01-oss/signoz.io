@@ -7,9 +7,9 @@ import { HubspotProvider } from "@aaronhayes/react-use-hubspot-form";
 
 const TEAMS_DATA = {
   TITLE: "For Teams that need high-performing applications",
-  DESC: "Get started with observability. Our experts will connect to  give a brief demo and answer any questions.",
+  DESC: "Get started with observability. No need to manage multiple tools - Metrics, logs, and traces under a single pane of glass.",
   PORTAL_ID: "22308423",
-  FORM_ID: "30d999cc-d423-445a-a28a-6058ee6eae95",
+  FORM_ID: "1c57ed6b-4ad8-48e4-88ba-1b2fd8fe0e83",
   FEATURE_POINTS: [
     {
       title: "Three Signals in a Single Pane of Glass",
