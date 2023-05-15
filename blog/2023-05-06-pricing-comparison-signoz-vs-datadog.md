@@ -36,9 +36,11 @@ We did a cost analysis of SigNoz and compared it with other vendors like DataDog
 
 Here are some key takeaways from our cost analysis:
 
-- SigNoz can provide up to **7x more value for money** than vendors like Datadog. The cost savings can enable engineering teams to send more data while spending lesser than with other observability vendors.
+- SigNoz can provide up to **7x more value for money** than vendors like Datadog. The cost savings can enable engineering teams to send more data while spending lesser.
+
 - User-based SaaS pricing limits the ability of engineering teams to collaborate seamlessly. SigNoz does not charge for user seats. Vendors like **New Relic can charge up to 66%** of its total bill amount just **for adding users**.
-- Custom metrics are important for having a deeper understanding of your application. Vendors like Datadog can charge exorbitant rates for custom metrics. SigNoz does not charge separately for custom metrics, and with $0.1 per million samples, it is the most cost-efficient tool for metrics monitoring.
+
+- Custom metrics are important for having a deeper understanding of your application. If you use Datadog, your custom metrics bill can be **up to 52% of your total billing**. SigNoz does not charge separately for custom metrics, and with $0.1 per million samples, it is the most cost-efficient tool for metrics monitoring.
 
 Below is the snapshot of our full stack observability cost comparison. You can have a look at our complete <a href = "https://docs.google.com/spreadsheets/d/1EEw48D7SmC-DHKanT5hoiShT-AZcIfZDc9HQiVYdZBY/edit#gid=0" rel="noopener noreferrer nofollow" target="_blank" ><b>cost comparison analysis</b></a>.
 
