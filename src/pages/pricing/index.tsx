@@ -18,10 +18,11 @@ function Pricing() {
         <div className={`container ${styles.pricingContainer}`}>
           <h2 className={styles.title}>Transparent & Predictable Pricing</h2>
           <p className={styles.subtitle}>
-            OpenTelemetry-Native <span className="highlight">Metrics</span>,{" "}
+            {/* OpenTelemetry-Native <span className="highlight">Metrics</span>,{" "}
             <span className="highlight">Logs</span>, and{" "}
             <span className="highlight">Traces</span> in{" "}
-            <span className="highlight">single</span> pane of glass
+            <span className="highlight">single</span> pane of glass */}
+            Get the best value for your money. Save up to <a href="https://signoz.io/blog/pricing-comparison-signoz-vs-datadog-vs-newrelic-vs-grafana/?utm_source=pricing_page&utm_medium=website"><u>86% on your Datadog bill.</u></a>
           </p>
           <div className={`row ${styles.pricingRow}`}>
             <div className={"col col--6 margin-vert--md"}>
