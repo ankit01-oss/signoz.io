@@ -8,7 +8,7 @@ export const CostComparison = () => {
         <div className="row">
           <div className="col col--7">
             <img
-              src="/img/logs/cost-comparison-graph.png"
+              src="/img/website/cost-comparison-graph-2.png"
               alt="cost comparison logo"
               className={styles.costGraph}
             />
