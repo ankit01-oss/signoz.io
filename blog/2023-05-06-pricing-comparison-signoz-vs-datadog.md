@@ -4,7 +4,7 @@ slug: pricing-comparison-signoz-vs-datadog-vs-newrelic-vs-grafana
 date: 2023-05-06
 tags: [SigNoz, Product]
 authors: [ankit_anand]
-description: SigNoz can provide up to 7x more value for money versus Datadog. Find out how your engineering team can do more while saving money simultaneously....
+description: SigNoz can provide up to 7x more value for money versus Datadog. Datadog pricing is complex, and often unpredictable. With SigNoz, your engineering team can do more while saving money simultaneously...
 image: /img/blog/2023/05/signoz_pricing_comparison_cover-min.jpg
 hide_table_of_contents: false
 keywords:
@@ -52,6 +52,28 @@ Below is the snapshot of our full stack observability cost comparison. You can h
 </figure>
 
 <br></br>
+
+You can check out paid plans of SigNoz [here](https://signoz.io/pricing/?utm_source=pricing_blog&utm_medium=website).
+
+## Issues with Datadog pricing
+
+Datadog has a very complex SKU-based pricing structure. The complex billing structure makes it hard to predict how much you will be charged at the end of the month.
+
+Recently, it was revealed that they charged a cryptocurrency company a bill of $65 million USD. A **[Hacker News thread](https://news.ycombinator.com/item?id=35837330)** discussing the report went viral, and there was an outpour of user stories around Datadog’s unpredictable billing practices.
+
+A lot of users also pointed out how the sales team of Datadog relentlessly pursue engineers for signing up for their services.
+
+<figure data-zoomable align='center'>
+    <img src="/img/blog/2023/05/dd_65_mill_bill.webp" alt="Datadog's $65 mil bill"/>
+    <figcaption><i>Hackernews thread discussing issues with Datadog pricing</i></figcaption>
+</figure>
+
+<br></br>
+
+Datadog’s pricing for custom metrics is also insane. We deep dive into it later in the blog.
+
+
+## Cost comparison of SigNoz with Datadog, New Relic, and Grafana
 
 Depending on the size of the engineering team, we have done cost benchmarking of three hypothetical scenarios.
 
