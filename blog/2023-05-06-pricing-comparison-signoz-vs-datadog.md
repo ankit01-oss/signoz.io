@@ -1,5 +1,5 @@
 ---
-title: SigNoz provides up to 7x more value for money than Datadog
+title: 7x more value for money than Datadog - SigNoz
 slug: pricing-comparison-signoz-vs-datadog-vs-newrelic-vs-grafana
 date: 2023-05-06
 tags: [SigNoz, Product]
@@ -19,6 +19,7 @@ keywords:
 ---
 
 <head>
+  <title>7x more value for money than Datadog - SigNoz</title>
   <link rel="canonical" href="https://signoz.io/blog/pricing-comparison-signoz-vs-datadog-vs-newrelic-vs-grafana/"/>
 </head>
 
