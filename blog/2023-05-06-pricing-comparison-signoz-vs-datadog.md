@@ -100,7 +100,7 @@ You can find the assumptions we have taken in this <a href = "https://docs.googl
 | **Metrics** <br></br>13 million samples per infra host (1) | $65 | $124 |  |  |
 | **Traces** <br></br>43.8 GB per APM host | $350 | $388 |  |  |
 | **Data Ingest** |  |  | $1,178 |  |
-| **Users** | 0 | $200 | $2,333 | 0 |
+| **Users** |  | $200 | $2,333 |  |
 | Total | **$1,415** | **$1,912** | **$3,511** | **$10,421** |
 | Up to **7x more value for money** with SigNoz |  |  |  |  |
 
