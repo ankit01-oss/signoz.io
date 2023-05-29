@@ -46,7 +46,7 @@ function Pricing() {
                         className={`button button--primary ${styles.pricingCtaBtn}`}
                         href={"/teams/"}
                       >
-                        Get Started
+                        Get started - free
                       </Link>
                     </div>
                   </div>
@@ -139,7 +139,7 @@ function Pricing() {
                     className={`button button--primary ${styles.pricingCtaBtn}`}
                     href={"/teams/"}
                   >
-                    Get Started
+                    Get started - free
                   </Link>
                 </div>
               </div>

@@ -947,9 +947,9 @@ function Home() {
                     <Link
                       className="button button--primary margin--md "
                       //  onClick={setShowTrySignozModal.bind(this,true)}>
-                      href={"/pricing/"}
+                      href={"/teams/?utm_source=website&utm_medium=home_page_bottom&utm_campaign=try_cloud"}
                     >
-                      Try SigNoz Cloud
+                      Get started - free
 
                     </Link>
                     <Link

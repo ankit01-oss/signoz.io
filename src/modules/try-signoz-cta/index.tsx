@@ -22,7 +22,7 @@ export const TrySigNozCTA = () => {
             href="https://signoz.io/teams/"
             onClick={() => handleClick("SigNozCloud")}
           >
-            Get Started
+            Get started - free
           </a>
         </div>
       </div>
