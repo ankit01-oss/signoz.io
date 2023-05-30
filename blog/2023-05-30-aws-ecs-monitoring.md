@@ -4,18 +4,13 @@ slug: aws-ecs-monitoring
 date: 2023-05-30
 tags: [SigNoz, Product]
 authors: [ankit_anand]
-description: SigNoz can provide up to 7x more value for money versus Datadog. Datadog pricing is complex, and often unpredictable. With SigNoz, your engineering team can do more while saving money simultaneously...
-image: /img/blog/2023/05/signoz_pricing_comparison_cover-min.jpg
+description: In this article I’d like to take you through the architecture and the process through which we leverage the container orchestration capabilities of AWS ECS without depending on AWS for logging, distributed tracing, metrics, alerts, and visualizations...
+image: /img/blog/2023/05/aws_ecs_monitoring_cover-min.jpg
 hide_table_of_contents: false
 keywords:
   - signoz
-  - datadog
-  - new relic
-  - grafana
-  - signoz pricing
-  - datadog pricing
-  - new relic pricing
-  - grafana pricing
+  - aws ecs
+  - aws ecs monitoring
 ---
 
 <head>
@@ -27,7 +22,7 @@ In the not-too-distant past, the debate was between on-prem and cloud-native. Yo
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2023/05/signoz_pricing_comparison_cover.webp)
+![Cover Image](/img/blog/2023/05/aws_ecs_monitoring_cover.webp)
 
 <a href = "https://aws.amazon.com/ecs/" rel="noopener noreferrer nofollow" target="_blank" ><b>AWS ECS</b></a> is a managed service container orchestration service from AWS. It’s easy to set up, manage, and does the job. You don’t need to configure a bunch of pods, services, deployments, daemon sets, yada yada yada to run an app that responds with “hello world”. Sometimes a few clicks are all you need, and that's just what ECS does. Coming back to vendor lock-ins, through this article I’d like to take you through the architecture and the process through which we leverage the container orchestration capabilities of ECS without depending on AWS for logging, distributed tracing, metrics, alerts, and visualizations. You’re damn right, Christmas came early for you!
 
