@@ -102,7 +102,7 @@ Once your application is instrumented with OTel libraries, you can configure the
 
 <figure data-zoomable align='center'>
     <img src="/img/blog/2023/01/api_sdk_thrid_party_library.webp" alt="API, SDK and Third-party Library design"/>
-    <figcaption>API, SDK and Third-party Library design (<a href="https://opentelemetry.io/docs/reference/specification/library-guidelines/" rel="noopener noreferrer nofollow" target="_blank">Pic Ref</a>)</figcaption>
+    <figcaption>API, SDK and Third-party Library design (<a href="https://opentelemetry.io/docs/specs/otel/library-guidelines/" rel="noopener noreferrer nofollow" target="_blank">Pic Ref</a>)</figcaption>
 </figure>
 
 <br></br>

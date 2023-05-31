@@ -37,7 +37,7 @@ Let's start by looking at how the cloud ecosystem is shaping up.
 
 2. 92% of enterprises have multi-cloud strategy; 82 percent have hybrid cloud strategy. (<a href = "https://www.flexera.com/blog/cloud/cloud-computing-trends-2021-state-of-the-cloud-report" rel="noopener noreferrer nofollow" target="_blank" >Flexera</a>)
 
-3. 96% of software leaders have adopted a cloud-native approach to software development. (<a href = "https://newrelic.com/more-perfect-software/more-perfect-software/" rel="noopener noreferrer nofollow" target="_blank" >New Relic</a>)
+3. 96% of software leaders have adopted a cloud-native approach to software development. (<a href = "https://newrelic.com/blog/best-practices/more-perfect-software-development-research-report" rel="noopener noreferrer nofollow" target="_blank" >New Relic</a>)
 
 4. 30% of organizations are using 3 or more clouds today. (<a href = "https://www.ibm.com/downloads/cas/VKW3RNDP" rel="noopener noreferrer nofollow" target="_blank" >IBM</a>)
 

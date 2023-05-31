@@ -46,7 +46,7 @@ While all the underlying specifications are the same as Prometheus, including th
 OpenMetrics is still in its early stages. Let's look at the current state of the standard:
 
 - Prometheus python client is the reference implementation and uses the OpenMetrics data model internally.
-- OpenTelemetry supports OpenMetrics as a first-class wire format (although in <a href = "https://opentelemetry.io/docs/reference/specification/compatibility/openmetrics/" rel="noopener noreferrer nofollow" target="_blank">experimental stages</a>)
+- OpenTelemetry supports OpenMetrics as a first-class wire format (although in <a href = "https://opentelemetry.io/docs/specs/otel/compatibility/openmetrics/" rel="noopener noreferrer nofollow" target="_blank">experimental stages</a>)
 - OpenMetrics is a part of the Prometheus Conformance Program, which means that any client which needs the “Prometheus Compatible” mark, needs to be compatible with OpenMetrics as well. You can read more about Prometheus-OpenMetrics compliance on their GitHub page, <a href = "https://github.com/prometheus/compliance/tree/main/openmetrics" rel="noopener noreferrer nofollow" target="_blank">Prometheus - OpenMetrics Compliance tester</a>.
 
 

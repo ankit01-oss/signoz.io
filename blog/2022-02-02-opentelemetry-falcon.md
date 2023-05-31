@@ -113,8 +113,6 @@ import Screenshot from "@theme/Screenshot"
    source mypython/bin/activate
    ```
 
-   You can read more about [creating virtual environments](https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/) in Python.
-
 3. **Installing necessary OpenTelemetry and Python packages**<br></br>
    The `base.txt` file contains all the necessary OpenTelemetry and Python packages needed for instrumentation. In order to install those packages, run the following command:
 
