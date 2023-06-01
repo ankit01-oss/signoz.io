@@ -3,7 +3,7 @@ title: AWS ECS Monitoring | Breaking out of the observability vendor lock-in wit
 slug: aws-ecs-monitoring
 date: 2023-05-30
 tags: [SigNoz, Product]
-authors: [ankit_anand]
+authors: [kshitij]
 description: In this article I’d like to take you through the architecture and the process through which we leverage the container orchestration capabilities of AWS ECS without depending on AWS for logging, distributed tracing, metrics, alerts, and visualizations...
 image: /img/blog/2023/05/aws_ecs_monitoring_cover-min.jpg
 hide_table_of_contents: false
@@ -155,7 +155,7 @@ Here are some sample images of how the SigNoz setup looks for my workload
 <br></br>
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2023/05/full_stack_observability_cost_comparison.webp"/>
+    <img src="/img/blog/2023/05/Screenshot_2023-03-28_at_3.55.32_PM.webp"/>
     <figcaption><i>Custom chart showing the CPU load of our application</i></figcaption>
 </figure>
 
