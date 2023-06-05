@@ -1,7 +1,7 @@
 ---
 title: A Lightweight Open Source ELK alternative
 slug: elk-alternative-open-source
-date: 2022-10-20
+date: 2023-06-05
 tags: [SigNoz]
 authors: ankit_anand
 description: Are you looking for a lightweight ELK alternative? ELK stack is hard to manage at scale and is not resource efficient. Here's an alternative that is easy to deploy and manage...

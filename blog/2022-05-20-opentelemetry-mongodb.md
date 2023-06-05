@@ -1,7 +1,7 @@
 ---
 title: OpenTelemetry MongoDB | Monitor and visualize your MongoDB database calls
 slug: opentelemetry-mongodb
-date: 2022-05-20
+date: 2023-06-03
 tags: [OpenTelemetry Instrumentation, Database Monitoring, JavaScript]
 authors: [pranshu, ankit_anand]
 description: In this tutorial, we will learn how to use OpenTelemetry to trace MongoDB calls. OpenTelemetry provides client libraries for instrumentation of application code in major programming languages & technologies, including databases like MongoDB...

@@ -1,7 +1,7 @@
 ---
 title: Monitoring your Nextjs application using OpenTelemetry 
 slug: opentelemetry-nextjs
-date: 2022-10-25
+date: 2023-06-05
 tags: [OpenTelemetry Instrumentation, JavaScript]
 authors: [sai_deepesh]
 description: OpenTelemetry can help instrument Nextjs applications and provide you with end-to-end tracing. In this guide, we will demonstrate how to instrument your Nextjs app with OpenTelemetry...
