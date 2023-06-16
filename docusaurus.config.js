@@ -173,12 +173,16 @@ const config = {
           title: "More",
           items: [
             {
-              label: "Careers",
-              href: "https://www.ycombinator.com/companies/signoz/jobs/",
+              label: "SigNoz vs Datadog",
+              to: "comparisons/signoz-vs-datadog/",
             },
             {
-              label: "Technical Writer Program",
-              to: "technical-writer-program/",
+              label: "SigNoz vs New Relic",
+              to: "comparisons/signoz-vs-newrelic/",
+            },
+            {
+              label: "Careers",
+              href: "https://www.ycombinator.com/companies/signoz/jobs/",
             },
             {
               label: "About",

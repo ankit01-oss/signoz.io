@@ -77,8 +77,7 @@ const COMPARISON_DATA = {
           ​OpenTelemetry is the second most active project in the CNCF, with
           only Kubernetes being more active. Using an open source standard like
           OpenTelemetry frees you from vendor lock-in. SigNoz is built to
-          support OpenTelemetry from Day 1. Datadog does not support OTel as
-          their primary data format. However, Datadog does not support OTel as
+          support OpenTelemetry from Day 1. However, Datadog does not support OTel as
           its primary data format, and it even tried to{" "}
           <Link
             href="https://news.ycombinator.com/item?id=34540419"
