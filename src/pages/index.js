@@ -950,7 +950,7 @@ function Home() {
                       href={"/teams/"}
                       id="btn-get-started-homepage-bottom"
                     >
-                      Get started - free
+                      Try SigNoz Cloud
 
                     </Link>
                     <Link

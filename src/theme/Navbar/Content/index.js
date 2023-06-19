@@ -71,7 +71,7 @@ export default function NavbarContent() {
             }
             id="btn-get-started-website-navbar"
           >
-            Get started - free
+            Try SigNoz Cloud
           </Link>
           <NavbarItems items={rightItems} />
           <NavbarColorModeToggle className={styles.colorModeToggle} />

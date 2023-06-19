@@ -40,7 +40,7 @@ export const Header = () => {
               //   onClick={getStartedClicked}
               id="btn-get-started-homepage-hero"
             >
-              Get started - free
+              Try SigNoz Cloud
             </Link>
             <Link
               style={{
