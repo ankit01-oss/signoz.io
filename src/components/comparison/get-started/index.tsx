@@ -52,7 +52,7 @@ const GetStartedSection = (props) => {
           className={`button button--secondary ${styles.trySigNozCtaBtn}`}
           href="/teams/"
         >
-          Get started - free
+          Get started
         </Link>
       </div>
     </div>

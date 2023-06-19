@@ -6,8 +6,8 @@ import { DiscussYourProject } from "../../modules/discuss-your-project";
 import { HubspotProvider } from "@aaronhayes/react-use-hubspot-form";
 
 const TEAMS_DATA = {
-  TITLE: "For Teams that need high-performing applications",
-  DESC: "Get started with observability. No need to manage multiple tools - Metrics, logs, and traces under a single pane of glass.",
+  TITLE: "SigNoz Cloud is the easiest way of running SigNoz",
+  DESC: "Experience SigNoz effortlessly. No installation, maintenance, or scaling needed. Get in touch with us for a free account and enjoy 30 days uncapped usage.",
   PORTAL_ID: "22308423",
   FORM_ID: "30d999cc-d423-445a-a28a-6058ee6eae95",
   FEATURE_POINTS: [

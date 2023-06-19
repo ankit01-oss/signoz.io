@@ -19,7 +19,7 @@ const Hero = (props) => {
           className={`button button--outline button--secondary ${styles.ctaButton}`}
           href="/teams/"
         >
-          Get started - free
+          Try SigNoz Cloud
         </a>
       </div>
       <div className={styles.headerHeroImageContainer}>
