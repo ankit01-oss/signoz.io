@@ -504,7 +504,7 @@ function Home() {
                             <div class="avatar__intro">
                               <h4 class="avatar__name" style={{ marginBottom: "0" }}>Aditya Tripathi</h4>
                               <small class="avatar__subtitle">
-                                Backend Engineer
+                              Founder & CEO at Climactic
                               </small>
                             </div>
 

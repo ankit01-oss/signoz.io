@@ -217,7 +217,7 @@ const COMPARISON_DATA = {
         sideHeader: "Transparent usage-based billing",
         isAvailableInSignoz: true,
         isAvailableInOther: false,
-        otherExtraDetail: "Transparent usage-based billing",
+        otherExtraDetail: "Very complex SKU-based billing",
       },
       {
         sideHeader: "Host Yourself",

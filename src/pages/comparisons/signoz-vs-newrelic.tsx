@@ -218,6 +218,8 @@ const COMPARISON_DATA = {
         sideHeader: "Host Yourself",
         isAvailableInSignoz: true,
         isAvailableInOther: false,
+        signozExtraDetail:
+          "Managed self-hosting also available",
       },
     ],
   },
