@@ -34,7 +34,7 @@ const OSS_TO_CLOUD_DATA = {
       title: <>Trusted by industry leaders</>,
       desc: (
         <>
-          Teams at Zoom, NetApp, ClearTax and other industry leaders have
+          Teams at NetApp, ClearTax and other industry leaders have
           trusted SigNoz to run their observability stack.
         </>
       ),

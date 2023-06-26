@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 
 const COMPANIES = [
-  { image: "/img/users/zoom.png", imageDesc: "zoom logo" },
   { image: "/img/users/netapp.png", imageDesc: "netapp logo" },
   { image: "/img/users/zoho.png", imageDesc: "zoho logo" },
   { image: "/img/users/comcast.png", imageDesc: "comcast logo" },
