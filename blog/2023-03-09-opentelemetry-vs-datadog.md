@@ -91,11 +91,14 @@ An OpenTelemetry native APM support OTLP data format natively and treats OTel da
 
 Some of the key reasons to choose SigNoz are:
 
-- SigNoz is open source and supports OTLP as its primary data format.
-- Metrics, Traces, and Logs in a single pane
-- Correlation across different signals
-- Powerful aggregation and aggregation capabilities on high cardinality data
-- It can be run within your own cloud
+- Out-of-the-box charts for application metrics like p90, p99, latency, error rates, request rates, etc.
+- Distributed tracing to get end-to-end visibility of your services
+- Monitor any metrics important to you, build dashboards for specific use-cases
+- Logs Management equipped with a powerful search and filter query builder
+- Exceptions monitoring to track exceptions in your application
+- Easy to set alerts with DIY query builder
+- Native support for OpenTelemetry native
+- It can be self-hosted
 
 ## Getting started with SigNoz
 
@@ -121,4 +124,6 @@ If you liked what you read, then check out our GitHub repo 👇
 
 **Related Posts**
 
-[SigNoz - an open source alternative to Datadog](https://signoz.io/blog/open-source-datadog-alternative)
+**[SigNoz vs Datadog](https://signoz.io/comparisons/signoz-vs-datadog/)**<br></br>
+
+**[SigNoz - an open source alternative to Datadog](https://signoz.io/blog/open-source-datadog-alternative)**<br></br>

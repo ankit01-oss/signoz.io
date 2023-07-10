@@ -192,12 +192,13 @@ You can also build custom metrics dashboard for your infrastructure.
 
 Some of the things SigNoz can help you track:
 
-- Application overview metrics like RPS, 50th/90th/99th Percentile latencies, and Error Rate
-- Slowest endpoints in your application
-- See exact request trace to figure out issues in downstream services, slow DB queries, call to 3rd party services like payment gateways, etc
-- Filter traces by service name, operation, latency, error, tags/annotations.
-- Run aggregates on trace data
-- Unified UI for both metrics and traces
+- Out-of-the-box charts for application metrics like p90, p99, latency, error rates, request rates, etc.
+- Distributed tracing to get end-to-end visibility of your services
+- Monitor any metrics important to you, build dashboards for specific use-cases
+- Logs Management equipped with a powerful search and filter query builder
+- Exceptions monitoring to track exceptions in your application
+- Easy to set alerts with DIY query builder
+- Native support for OpenTelemetry native
 
 ## Getting started with SigNoz
 
@@ -226,7 +227,7 @@ ___
 
 #### **Related Content**
 
-**[Jaeger vs Zipkin](https://signoz.io/blog/jaeger-vs-zipkin/)**<br></br>
+**[SigNoz vs Datadog](https://signoz.io/comparisons/signoz-vs-datadog/)**<br></br>
 **[Jaeger vs SigNoz](https://signoz.io/blog/jaeger-vs-signoz/)**<br></br>
 **[DataDog vs Grafana](https://signoz.io/blog/datadog-vs-grafana/)**<br></br>
 

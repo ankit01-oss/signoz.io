@@ -1,7 +1,7 @@
 ---
 title: DataDog vs Jaeger - key features, differences and alternatives
 slug: datadog-vs-jaeger
-date: 2021-09-15
+date: 2023-03-15
 tags: [Tools Comparison, Jaeger]
 authors: ankit_anand
 description: DataDog is an enterprise-level monitoring and security tool. On the other hand, Jaeger is an open-source tool focused on end-to-end distributed tracing for microservice architecture. DataDog is a full-stack paid APM tool, whereas Jaeger is free and open-source..
@@ -147,7 +147,7 @@ The lack of great user experience in open-source tools has always been there. Al
 That's where [SigNoz](https://signoz.io/) comes into the picture.
 
 ## Alternative to DataDog and Jaeger - SigNoz
-SigNoz is a full-stack open-source application performance monitoring and observability tool which can be used in place of DataDog and Jaeger. It provides advanced distributed tracing capabilities along with metrics under a single dashboard.
+SigNoz is a full-stack open-source application performance monitoring and observability tool which can be used in place of DataDog and Jaeger. It provides advanced distributed tracing capabilities along with metrics under a single dashboard. It provides metrics, traces, and logs under a single pane of glass.
 
  SigNoz is built to support OpenTelemetry natively. <a href = "https://opentelemetry.io/" rel="noopener noreferrer nofollow" target="_blank" ><b>OpenTelemetry</b></a> is becoming the world standard for generating and managing telemetry data (Logs, metrics, and traces). It also provides a fast OLAP datastore, ClickHouse as the storage backend.
 
@@ -183,12 +183,13 @@ You can also use flamegraphs to visualize spans from your trace data. All of thi
 
 Some of the things SigNoz can help you track:
 
-- Application overview metrics like RPS, 50th/90th/99th Percentile latencies, and Error Rate
-- Slowest endpoints in your application
-- See exact request trace to figure out issues in downstream services, slow DB queries, call to 3rd party services like payment gateways, etc
-- Filter traces by service name, operation, latency, error, tags/annotations.
-- Run aggregates on trace data
-- Unified UI for both metrics and traces
+- Out-of-the-box charts for application metrics like p90, p99, latency, error rates, request rates, etc.
+- Distributed tracing to get end-to-end visibility of your services
+- Monitor any metrics important to you, build dashboards for specific use-cases
+- Logs Management equipped with a powerful search and filter query builder
+- Exceptions monitoring to track exceptions in your application
+- Easy to set alerts with DIY query builder
+- Native support for OpenTelemetry native
 
 You can check out SigNoz's GitHub repo here 👇
 
@@ -198,8 +199,7 @@ ___
 
 #### **Related Content**
 
+**[SigNoz vs Datadog](https://signoz.io/comparisons/signoz-vs-datadog/)**<br></br>
 **[Jaeger vs Zipkin](https://signoz.io/blog/jaeger-vs-zipkin/)**<br></br>
 **[Jaeger vs SigNoz](https://signoz.io/blog/jaeger-vs-signoz/)**<br></br>
-**[Jaeger vs Prometheus](https://signoz.io/blog/jaeger-vs-prometheus/)**<br></br>
-**[Jaeger vs New Relic](https://signoz.io/blog/jaeger-vs-newrelic/)**<br></br>
 

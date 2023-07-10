@@ -1,7 +1,7 @@
 ---
 title: Top 6 DataDog alternatives in 2023
 slug: datadog-alternatives
-date: 2022-12-05
+date: 2023-06-28
 tags: [Tech Resources]
 authors: ankit_anand
 description: Are you looking for a DataDog alternative? Then you've come to the right place. In this article, we will explore the top 5 alternatives to DataDog. 1.SigNoz 2.New Relic 3.Dynatrace...
@@ -67,7 +67,7 @@ It comes with out-of-box charts for application metrics like p99 latency, error 
 If you found something suspicious in the metric, you can seamlessly move to traces around that time to investigate further.
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2022/08/metrics_to_traces.webp" alt="Seamless transition between metrics and traces"/>
+    <img src="/img/blog/common/application_metrics_to_traces.webp" alt="Seamless transition between metrics and traces"/>
     <figcaption><i>Move from metrics to traces at any point of time which needs more analysis</i></figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ If you found something suspicious in the metric, you can seamlessly move to trac
 You can do aggregates on traces to get deeper insights from your application and infrastructure.
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2022/08/aggregates_on_traces.webp" alt="Custom aggregates on traces"/>
+    <img src="/img/blog/common/traces_custom_aggregates.webp" alt="Custom aggregates on traces"/>
     <figcaption><i>Run custom aggregates on traces to get deeper application performance insights</i></figcaption>
 </figure>
 
@@ -216,6 +216,6 @@ If you want to check out SigNoz GitHub repo👇<br></br>
 
 Read more about SigNoz:<br></br>
 
-[Monitor your Spring Boot application with OpenTelemetry and SigNoz](https://signoz.io/blog/opentelemetry-spring-boot/)
+**[SigNoz vs Datadog](https://signoz.io/comparisons/signoz-vs-datadog/)**<br></br>
 
-[How to set up Golang application performance monitoring with SigNoz](https://signoz.io/blog/monitoring-your-go-application-with-signoz/)
+**[Monitor your Spring Boot application with OpenTelemetry and SigNoz](https://signoz.io/blog/opentelemetry-spring-boot/)**<br></br>
