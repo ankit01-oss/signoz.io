@@ -164,7 +164,7 @@ const COMPARISON_DATA = {
           Using OpenTelemetry libraries gives you the flexibility to send data
           to any backend.
           <br />
-          If you use case requires, you can also run the OpenTelemetry collector
+          If your use case requires, you can also run the OpenTelemetry collector
           as an agent to collect data.
         </>
       ),
