@@ -18,8 +18,6 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/open-source-newrelic-alternative/"/>
 </head>
 
-import SignUps from '../docs/shared/sign-ups.md'
-
 If you're looking for an open-source alternative to New Relic, then you're at the right place. SigNoz is a perfect open-source alternative to New Relic. SigNoz provides a unified UI for metrics, traces and logs with advanced tagging and filtering capabilities.
 
 <!--truncate-->
@@ -61,8 +59,6 @@ Some of the key features of good observability tools are:
 - Ability to set dynamic thresholds for alerts
 - Transparency in pricing
 
-<SignUps />
-
 ## Why choose an open-source alternative to New Relic?
 APM and observability tools are critical tools in a developer's kit. These tools improve developer efficiency, save bandwidth by resolving issues quickly, and increase developer productivity.
 
@@ -91,16 +87,13 @@ And that's where SigNoz shines. It is very simple to get started, supports multi
 
 Some of our key features which makes SigNoz vastly superior to current open-source products and a great alternative to New Relic are:
 
-- Metrics, traces, and logs under a single pane of glass
-- Correlation of telemetry signals
-- Out of the box application metrics
-- Seamless flow between metrics & traces
-- Filtering based on tags
-- Custom aggregates on filtered traces
-- Detailed Flamegraphs & Gantt charts
-- Infrastructure dashboards
-- Exceptions monitoring
-- Transparent usage Data
+- Out-of-the-box charts for application metrics like p90, p99, latency, error rates, request rates, etc.
+- Distributed tracing to get end-to-end visibility of your services
+- Monitor any metrics important to you, build dashboards for specific use-cases
+- Logs Management equipped with a powerful search and filter query builder
+- Exceptions monitoring to track exceptions in your application
+- Easy to set alerts with DIY query builder
+- Native support for OpenTelemetry native
 
 
 ### Application metrics
@@ -112,7 +105,7 @@ Get p90, p99 latencies, RPS, Error rates, and top endpoints for a service out of
     <figcaption><i>SigNoz UI showing application overview metrics like RPS, 50th/90th/99th Percentile latencies, and Error Rate</i></figcaption>
 </figure>
 
-### Seamless flow between metrics & traces
+### Seamless flow between application metrics & traces
 
 Found something suspicious in a metric, just click that point in the graph & get details of traces that may be causing the issues. Seamless, Intuitive.
 
@@ -125,7 +118,7 @@ Found something suspicious in a metric, just click that point in the graph & get
 /> -->
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2022/04/metrics_to_traces.webp" alt="Seamless flow between metrics and traces"/>
+    <img src="/img/blog/common/application_metrics_to_traces.webp" alt="Seamless flow between metrics and traces"/>
     <figcaption><i>Move from metrics to traces at any point of time which needs more analysis</i></figcaption>
 </figure>
 
@@ -148,7 +141,7 @@ Under our traces tab, you can analyze the traces data using filters based on tag
 Using tags, you can find latency experienced by customers who have customer_type set as `premium`.
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2022/04/powerful_filters_on_traces_data.webp" alt="Filters on trace data"/>
+    <img src="/img/blog/common/filters_trace_data.webp" alt="Filters on trace data"/>
     <figcaption><i>Use advanced filters to analyze your trace data</i></figcaption>
 </figure>
 
@@ -157,7 +150,7 @@ Using tags, you can find latency experienced by customers who have customer_type
 Create custom metrics from filtered traces to find metrics of any type of request. Want to find p99 latency of customer_type: premium who are seeing status_code:400. Just set the filters, and you have the graph.
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2022/04/custom_aggregates_filtered_data.webp" alt="Custom aggregates on filtered traces"/>
+    <img src="/img/blog/common/traces_custom_aggregates.webp" alt="Custom aggregates on filtered traces"/>
     <figcaption><i>Find custom aggregates on filtered traces</i></figcaption>
 </figure>
 
@@ -184,7 +177,7 @@ SigNoz provides Logs management with advanced log query builder. You can also mo
 You can drill down details of how many events is each application sending or at what granularity so that you can adjust your sampling rate as needed and not get a shock at the end of the month (case with SaaS vendors many times)
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2022/04/transparent_usage_data.webp" alt="Transparent usage data"/>
+    <img src="/img/blog/common/signoz_usage_explorer.webp" alt="Transparent usage data"/>
     <figcaption><i>SigNoz provides usage explorer so that you are always informed about your usage</i></figcaption>
 </figure>
 
@@ -228,7 +221,7 @@ Our slack community is a great place to get your queries solved instantly and ge
 
 #### **Related Content**
 
-**[DataDog Alternative](https://signoz.io/blog/open-source-datadog-alternative/)**<br></br>
+**[SigNoz vs New Relic](https://signoz.io/comparisons/signoz-vs-newrelic/)**<br></br>
 **[Dynatrace Alternative](https://signoz.io/blog/dynatrace-alternative/)**<br></br>
 **[AppDynamics Alternative](https://signoz.io/blog/appdynamics-alternative/)**<br></br>
 

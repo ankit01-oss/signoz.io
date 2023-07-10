@@ -347,8 +347,7 @@ ___
 #### **Related Content**
 
 **[SigNoz vs Datadog](https://signoz.io/comparisons/signoz-vs-datadog/)**<br></br>
-**[DataDog vs Grafana](https://signoz.io/blog/datadog-vs-grafana/)**<br></br>
-**[Monitor Spring Boot App with SigNoz and OpenTelemetry](https://signoz.io/blog/opentelemetry-spring-boot/)**<br></br>
+**[SigNoz vs New Relic](https://signoz.io/comparisons/signoz-vs-newrelic/)**<br></br>
 
 
 

@@ -188,7 +188,6 @@ ___
 
 #### **Related Content**
 
-**[Jaeger vs Prometheus](https://signoz.io/blog/jaeger-vs-prometheus)**<br></br>
-**[Jaeger vs SigNoz](https://signoz.io/blog/jaeger-vs-signoz/)**<br></br>
+**[SigNoz vs New Relic](https://signoz.io/comparisons/signoz-vs-newrelic/)**<br></br>
 **[Jaeger vs Zipkin](https://signoz.io/blog/jaeger-vs-zipkin/)**<br></br>
 **[Jaeger vs DataDog](https://signoz.io/blog/datadog-vs-jaeger/)**<br></br>
