@@ -1,7 +1,7 @@
 ---
 title: DataDog vs Grafana - Key features & differences
 slug: datadog-vs-grafana
-date: 2023-03-10
+date: 2023-06-15
 tags: [Tools Comparison]
 authors: ankit_anand
 description: In this article, we will compare DataDog with Grafana. Both are monitoring tools but differ significantly in their offerings. DataDog is a paid SaaS monitoring tool, while Grafana is an open-source metrics...
@@ -16,8 +16,6 @@ keywords:
   <title>DataDog vs Grafana | key differences</title>
   <link rel="canonical" href="https://signoz.io/blog/datadog-vs-grafana/"/>
 </head>
-
-import SignUps from '../docs/shared/sign-ups.md'
 
 DataDog is a paid SaaS tool that provides a range of products for monitoring applications and tech infrastructure. While Grafana is an open-source web visualization tool that can be used with a variety of data sources to create dashboards.
 
@@ -37,8 +35,6 @@ In this article, we will compare DataDog with Grafana based on the following cat
 - Pricing
 
 We will also explore the key features of DataDog and Grafana.
-
-<SignUps />
 
 ## Comparing DataDog and Grafana
 
@@ -144,67 +140,24 @@ Some of the key features of Grafana are:
 - **Alerting system**<br></br>
   Grafana provides a central UI to set and manage alerts with a central UI.
 
+
+
 ## A better alternative to DataDog and Grafana - SigNoz
 
-[SigNoz](https://signoz.io/) is a full-stack open-source application performance monitoring and observability tool which can be used in place of DataDog and Grafana. SigNoz is built to give SaaS like user experience combined with the perks of open-source software. Developer tools should be developer first, and SigNoz was built by developers to address the gap between SaaS vendors and open-source software.
+[SigNoz](https://signoz.io/) is a full-stack open-source observability tool that can better replace [DataDog](https://signoz.io/comparisons/signoz-vs-datadog/) or [Grafana](https://signoz.io/comparisons/signoz-vs-grafana/). It provides logs, metrics, and traces under a single pane of glass. 
 
-Key architecture features:
+Some of the key features of SigNoz are:
 
-- **Native OpenTelemetry support**<br></br>
-  SigNoz is built to support <a href = "https://opentelemetry.io/" rel="noopener noreferrer nofollow" target="_blank" ><b>OpenTelemetry</b></a> natively, which is quietly becoming the world standard to generate and manage telemetry data.
+- Out-of-the-box charts for application metrics like p90, p99, latency, error rates, request rates, etc.
+- Distributed tracing to get end-to-end visibility of your services
+- Monitor any metrics important to you, build dashboards for specific use-cases
+- Logs Management equipped with a powerful search and filter query builder
+- Exceptions monitoring to track exceptions in your application
+- Easy to set alerts with DIY query builder
 
-- **Flexible and scalable Database storage**<br></br>
-  SigNoz provides users flexibility in terms of storage. You can choose between ClickHouse or Kafka + Druid as your backend storage while installing SigNoz.
+You can compare SigNoz with [DataDog](https://signoz.io/comparisons/signoz-vs-datadog/) and [Grafana](https://signoz.io/comparisons/signoz-vs-grafana/). SigNoz Cloud is the easiest way to run SigNoz. You can get started for [free](https://signoz.io/teams/).
 
-
-<Screenshot
-    alt="Architecture of SigNoz with OpenTelemetry and ClickHouse"
-    height={500}
-    src="/img/blog/2021/09/SigNoz_architecture_clickhouse.webp"
-    title="Architecture of SigNoz with ClickHouse as storage backend and OpenTelemetry for code instrumentatiion"
-    width={700}
-/>
-
-SigNoz comes with out of box visualization of things like RED metrics.
-
-<Screenshot
-    alt="SigNoz UI showing the popular RED metrics"
-    height={500}
-    src="/img/blog/common/signoz_charts_application_metrics.webp"
-    title="SigNoz UI showing application overview metrics like RPS, 50th/90th/99th Percentile latencies, and Error Rate"
-    width={700}
-/>
-
-You can also use flamegraphs to visualize spans from your trace data. All of this comes out of the box with SigNoz.
-
-<Screenshot
-    alt="Flamegraphs used to visualize spans of distributed tracing in SigNoz UI"
-    height={500}
-    src="/img/blog/common/signoz_flamegraphs.webp"
-    title="Flamegraphs showing exact duration taken by each spans - a concept of distributed tracing"
-    width={700}
-/>
-
-You can also build custom metrics dashboard for your infrastructure.
-
-<Screenshot
-    alt="SigNoz custom metrics dashboard"
-    height={500}
-    src="/img/blog/2021/10/signoz_custom_dashboard-min.webp"
-    title="You can also build a custom metrics dashboard for your infrastructure"
-    width={700}
-/>
-
-
-Some of the things SigNoz can help you track:
-
-- Application overview metrics like RPS, 50th/90th/99th Percentile latencies, and Error Rate
-- Slowest endpoints in your application
-- See exact request trace to figure out issues in downstream services, slow DB queries, call to 3rd party services like payment gateways, etc
-- Filter traces by service name, operation, latency, error, tags/annotations.
-- Run aggregates on trace data
-- Unified UI for both metrics and traces
-
+You can also self-host SigNoz as it is open source.
 
 ## Getting started with SigNoz
 
@@ -225,13 +178,15 @@ You can check out SigNoz's GitHub repo here 👇
 
 [![SigNoz GitHub repo](/img/blog/common/signoz_github.webp)](https://github.com/SigNoz/signoz)
 
+We also provide managed services for running SigNoz in your cloud. Check out the paid plans [here](https://signoz.io/pricing/).
+
 ___
 
 #### **Related Content**
 
-**[Jaeger vs Zipkin](https://signoz.io/blog/jaeger-vs-zipkin/)**<br></br>
-**[Jaeger vs SigNoz](https://signoz.io/blog/jaeger-vs-signoz/)**<br></br>
-**[Monitor Spring Boot App with SigNoz and OpenTelemetry](https://signoz.io/blog/opentelemetry-spring-boot/)**<br></br>
+**[SigNoz vs Grafana](https://signoz.io/comparisons/signoz-vs-grafana/)**<br></br>
+**[SigNoz vs Datadog](https://signoz.io/comparisons/signoz-vs-datadog/)**<br></br>
+
 
 
 

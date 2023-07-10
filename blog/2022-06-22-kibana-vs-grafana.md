@@ -1,7 +1,7 @@
 ---
 title: Kibana vs Grafana - Which tool to choose?
 slug: kibana-vs-grafana
-date: 2023-01-06
+date: 2023-07-01
 tags: [Tools Comparison]
 authors: [daniel, ankit_anand]
 description: The difference between Kibana and Grafana lies in their genesis. While Kibana was built on top of the Elasticsearch stack, famous for log analysis and management, Grafana was created mainly for metrics monitoring, supporting visualization for time-series databases...
@@ -275,6 +275,6 @@ Yes, Grafana started out as a fork of Kibana to expand its visualization capabil
 
 ## Further Reading
 
-[SigNoz - an open-source alternative to DataDog](https://signoz.io/blog/open-source-datadog-alternative/)
+[SigNoz vs Grafana](https://signoz.io/comparisons/signoz-vs-grafana/)
 
 [Prometheus vs Elasticsearch](https://signoz.io/blog/prometheus-vs-elasticsearch/)

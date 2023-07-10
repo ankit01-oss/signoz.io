@@ -201,6 +201,6 @@ If you liked what you read, then check out our GitHub repo 👇
 
 **Related Posts**
 
-[SigNoz - an open source ELK alternative](https://signoz.io/blog/elk-alternative-open-source/)
+[SigNoz vs Grafana](https://signoz.io/comparisons/signoz-vs-grafana/)
 
-[OpenTelemetry Logs - A complete introduction](https://signoz.io/blog/opentelemetry-logs/)
+[SigNoz - an open source ELK alternative](https://signoz.io/blog/elk-alternative-open-source/)
