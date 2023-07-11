@@ -4,11 +4,10 @@ slug: should-you-diy-your-opentelemetry-monitoring-observability
 date: 2023-07-12
 tags: [OpenTelemetry]
 authors: nicamellifera
-description: Welcome to the 26th edition of our monthly product newsletter - SigNal 26! Our team shipped important updates to improve user experience. We were also pleasantly surprised by the number of community-led tutorials featuring SigNoz...
-image: /img/blog/2023/07/diy-otel-cover.png
+description: Should you send your OpenTelemetry data to a generic database or use a specific tool. In this post, I discuss about pros and cons of building your own OpenTelemetry stack...
+image: /img/blog/2023/07/diy_otel_cover-min.jpg
 hide_table_of_contents: true
 keywords:
- - ClickHouse Observability
  - OpenTelemetry
 ---
 
@@ -18,14 +17,15 @@ keywords:
 <meta property="twitter:card" content="summary_large_image"/>
   <meta property="twitter:url" content="https://signoz.io/blog/should-you-diy-your-opentelemetry-monitoring-observability/"/>
   <meta property="twitter:description" content=""/>
-  <meta name ="twitter:image" content="https://signoz.io/img/blog/2023/07/diy-otel-cover.png"/>
+  <meta name ="twitter:image" content="https://signoz.io/img/blog/2023/07/diy_otel_cover-min.jpg"/>
 
 I recently read this <a href="https://cloud-native.slack.com/archives/CJFCJHG4Q/p1688032004306969" rel="noopener noreferrer nofollow" target="_blank" >thread in the CNCF slack</a> from someone wanting to send metrics and traces directly to Postgres. Reasonable enough right? After all once your data is in postgres you can query it to your heart’s content. And isn’t the general culture of OpenTelemetry that you should be able to do all of Observability without resorting to SaaS tools?
 
 The thread, however, is pretty universally opposed to this approach; and I have to say that I agree. While several replies recommend SaaS tools as endpoints to receive OpenTelemetry data, and the tools mentioned are great, there are also fully open-source and self-hosted tools that will make your life much much easier than trying to import directly to Postgres.
+
 <!--truncate-->
 
-![Cover Image](/img/blog/2023/07/diy-otel-cover.webp)
+![Cover Image](/img/blog/2023/07/diy_otel_cover.webp)
 
 This is not the first time I’ve seen conversations about using Postgres, MariaDB, or another ‘all-purpose’ DB for storing OpenTelemetry data.
 
@@ -57,7 +57,9 @@ I don’t really need to hammer on the reasons to use a purpose-built tool, but 
 
 > Ongoing Annual Costs: £230,000
 
-Quite the cost for a free tool! Notably: if you’re a very large team of developers, this actually might make sense. If observability problems are causing major crises for Operations, and you have reason to beleive that your problems are unique, maybe it’s worth a quarter million pounds per annum to fix. For most of us though: we should either buy a tool or find the right FOSS product.
+Quite the cost for a free tool! 
+
+Notably: if you’re a very large team of developers, this actually might make sense. If observability problems are causing major crises for Operations, and you have reason to beleive that your problems are unique, maybe it’s worth a quarter million pounds per annum to fix. For most of us though: we should either buy a tool or find the right FOSS product.
 
 ## On the other hand: Why not both? Advanced analysis
 
