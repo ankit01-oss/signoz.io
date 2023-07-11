@@ -4,8 +4,8 @@ slug: using-signoz-to-monitor-your-kubernetes-cluster
 date: 2023-07-10
 tags: [opentelemetry, observability, kubernetes]
 authors: [nicamellifera]
-description: an end-to-end tutorial on using SigNoz to monitor your k8s cluster with OpenTelemetry
-image: /img/blog/2023/06/high_cardinality_cover-min.jpg
+description: An end-to-end tutorial on using SigNoz to monitor your Kubernetes cluster with OpenTelemetry
+image: /img/blog/2023/07/signoz_k8s_monitoring_cover-min.jpg
 hide_table_of_contents: false
 keywords:
   - observability
@@ -20,21 +20,23 @@ keywords:
   <meta property="twitter:url" content="https://signoz.io/blog/using-signoz-to-monitor-your-kubernetes-cluster/"/>
   <meta property="twitter:title" content="Using SigNoz to Monitor Your Kubernetes Cluster"/>
   <meta property="twitter:description" content="an end-to-end tutorial on using SigNoz to monitor your k8s cluster with OpenTelemetry"/>
-  <meta name ="twitter:image" content="https://signoz.io/img/blog/2023/07/k8s-cover.webp"/>
+  <meta name ="twitter:image" content="https://signoz.io/img/blog/2023/07/signoz_k8s_monitoring_cover-min.jpg"/>
 
 Kubernetes and OpenTelemetry are both CNCF projects, and both are closely associated with modern microservice architecture. Despite their connection, there isn’t a single cohesive solution to monitoring your Kubernetes cluster with OpenTelemetry.
 
 Large teams that use complex clusters in production have generally ended up building their own tools for monitoring both their infrastructure and application code. See Intuit’s talk from the <a href = "https://www.youtube.com/watch?v=e5TZE9e2KPo" rel="noopener noreferrer nofollow" target="_blank" >recent Open Source Summit</a> on how they built tools to easily summarize  golden signals.
 
-Building a system to collect, tabulate, manage, and display your observability data from scratch doesn’t make much sense for a mid sized team, or one that doesn’t have a dedicated developer experience and operations team. SigNoz is an open source tool to do just that. This piece is a complete guide on using SigNoz on your Kubernetes cluster. This includes: 
 <!--truncate-->
+
+![cover image](/img/blog/2023/07/signoz_k8s_monitoring_cover.webp)
+
+Building a system to collect, tabulate, manage, and display your observability data from scratch doesn’t make much sense for a mid sized team, or one that doesn’t have a dedicated developer experience and operations team. SigNoz is an open source tool to do just that. This piece is a complete guide on using SigNoz on your Kubernetes cluster. This includes: 
+
 - running SigNoz as a service within your own cluster [→](https://signoz.io/docs/operate/kubernetes/)
 - monitoring your applications running on your cluster [→](https://signoz.io/docs/operate/kubernetes/)
 - Monitoring the status of your cluster within a Signoz dashboard [→](https://signoz.io/docs/tutorial/kubernetes-infra-metrics/)
 
 If you only want to do one of the things listed above, there are individual guides (linked above) that will be more useful, this is intended as a start-to-finish guide.
-
-![Cover Image](/img/blog/2023/07/k8s-cover.webp)
 
 ## Step 1 - Running Signoz within your cluster
 
