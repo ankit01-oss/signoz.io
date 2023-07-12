@@ -1,10 +1,10 @@
 ---
 title: What is High Cardinality Data?
-slug: what-is-high-cardinality-data
-date: 2023-06-29
+slug: high-cardinality-data
+date: 2023-07-09
 tags: [opentelemetry, observability]
 authors: [nicamellifera]
-description: Defining what High Cardinality Data is and isn't, with some examples
+description: Defining what High Cardinality Data is and isn't, with some examples.
 image: /img/blog/2023/06/high_cardinality_cover-min.jpg
 hide_table_of_contents: false
 keywords:
@@ -14,7 +14,7 @@ keywords:
 ---
 
 <head>
-  <link rel="canonical" href="https://signoz.io/blog/what-is-high-cardinality-data/"/>
+  <link rel="canonical" href="https://signoz.io/blog/high-cardinality-data/"/>
 </head>
 
 
