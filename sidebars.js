@@ -253,6 +253,11 @@ module.exports = {
     },
     {
       type: 'doc',
+      id: 'userguide/query-builder',
+
+    },
+    {
+      type: 'doc',
       id: 'monitor-http-endpoints',
     },
     {
