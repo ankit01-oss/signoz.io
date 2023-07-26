@@ -95,7 +95,7 @@ The time-series tab helps you visualize your logs data in form of charts. You ca
 
 ### List View
 
-List view shows trace data in a simple tabular format with options for custtomizing columns. 
+List view shows trace data in a simple tabular format with options for customizing columns. 
 
 <figure data-zoomable align='center'>
     <img src="/img/docs/query-builder/list-view-traces.png" alt="Customize columns in list view"/>
@@ -106,7 +106,7 @@ List view shows trace data in a simple tabular format with options for custtomiz
 
 ### Traces
 
-The traces tab shows you a list of root spans and the number of spans it has. A root span is a span which does not have a parent span. You can click on the `Trace ID` to see the detailed flamegraph and gantt chart of the particular root span.
+The traces tab shows you a list of root spans and the number of spans it has. A root span is a span that does not have a parent span. You can click on the `Trace ID` to see the detailed flamegraph and gantt chart of the particular root span.
 
 <figure data-zoomable align='center'>
     <img src="/img/docs/query-builder/trace-view.png" alt="Trace view in Trace explorer"/>
@@ -144,7 +144,7 @@ Step 2. Choose any dashboard from the list of dashboard, or click on `New Dashbo
     <img src="/img/docs/query-builder/export_panel.png" alt="Export Panel"/>
 </figure>
 
-Step 3. Click on `Export`. Once you have cliked on `Export`, you can set things like panel title, description, y-axis units, etc.
+Step 3. Click on `Export`. Once you have clicked on `Export`, you can set things like panel title, description, y-axis units, etc.
 
 <figure data-zoomable align='center'>
     <img src="/img/docs/query-builder/add-panel-to-dashboard.png" alt="Add panel to dashboard"/>
@@ -152,7 +152,7 @@ Step 3. Click on `Export`. Once you have cliked on `Export`, you can set things 
 
 ## Setup Alerts
 
-You can also set up alerts by clicking on `Setup Alerts`. It will take you to the alerts query builder with you selected options in place.
+You can also set up alerts by clicking on `Setup Alerts`. It will take you to the alerts query builder with your selected options in place.
 
 <figure data-zoomable align='center'>
     <img src="/img/docs/query-builder/setup-alerts.png" alt="Set up Alerts"/>
