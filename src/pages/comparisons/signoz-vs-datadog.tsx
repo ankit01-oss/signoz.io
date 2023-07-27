@@ -46,7 +46,7 @@ const COMPARISON_DATA = {
     TITLE: <>SigNoz vs Datadog</>,
     DESC: (
       <>
-        For 20 APM and 50 infra hosts, SigNoz can save up to 86% of your Datadog
+        For 20 APM and 50 infra hosts, SigNoz can save up to 90% of your Datadog
         bill - check{" "}
         <Link
           href="/blog/pricing-comparison-signoz-vs-datadog-vs-newrelic-vs-grafana/"
@@ -131,13 +131,13 @@ const COMPARISON_DATA = {
       ),
     },
     {
-      FIGURE: "/img/reasons/datadog-bill-saving.png",
-      TITLE: <>Save up to 86% on your Datadog bill</>,
+      FIGURE: "/img/reasons/9x-more-value-with-signoz.webp",
+      TITLE: <>Save up to 90% on your Datadog bill</>,
       DESC: (
         <>
           Datadog has a very complex pricing tier which makes Datadog bills
           unpredictable. For 20 APM hosts, 50 infra hosts, and 2500 GB logs
-          data, SigNoz can provide up to 7x more value than Datadog.{" "}
+          data, SigNoz can provide up to 9x more value than Datadog.{" "}
           <Link
             href="/blog/pricing-comparison-signoz-vs-datadog-vs-newrelic-vs-grafana/"
             className="highlight"

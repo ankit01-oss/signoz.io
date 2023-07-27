@@ -143,12 +143,12 @@ const COMPARISON_DATA = {
       ),
     },
     {
-      FIGURE: "/img/reasons/new-relic-bill-saving.png",
-      TITLE: <>Save up to 60% on your New Relic bill</>,
+      FIGURE: "/img/reasons/new-relic-savings.webp",
+      TITLE: <>Save up to 67% on your New Relic bill</>,
       DESC: (
         <>
           For 20 APM hosts, 50 million indexed spans, 50 infra hosts, and 2500
-          GB logs data, SigNoz can save 60% of your New Relic bill.{" "}
+          GB logs data, SigNoz can save 67% of your New Relic bill.{" "}
           <Link
             href="/blog/pricing-comparison-signoz-vs-datadog-vs-newrelic-vs-grafana/#cost-comparison-of-signoz-with-datadog-new-relic-and-grafana"
             className="highlight"

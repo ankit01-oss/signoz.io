@@ -15,7 +15,7 @@ export const CostComparison = () => {
           </div>
           <div className={`col col--5 ${styles.titleContainer}`}>
             <h3 className={styles.title}>
-              SigNoz provides up to 7x more value for money than Datadog.
+              SigNoz provides up to 9x more value for money than Datadog.
               <br />
               <a
                 id="learn-more"
