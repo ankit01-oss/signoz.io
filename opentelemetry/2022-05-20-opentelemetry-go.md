@@ -83,7 +83,7 @@ go get go.opentelemetry.io/otel \
   go.opentelemetry.io/otel/sdk \
   go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin \
   go.opentelemetry.io/otel/exporters/otlp/otlptrace \
-  go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc \
+  go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc
 ```
 
 **Step 3: Declare environment variables for configuring OpenTelemetry**
