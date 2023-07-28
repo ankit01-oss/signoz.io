@@ -1,11 +1,11 @@
 ---
 title: Implementing OpenTelemetry in a Gin application 
 slug: opentelemetry-gin
-date: 2023-02-03
+date: 2023-07-28
 tags: [OpenTelemetry Instrumentation, Go / Golang]
 authors: [nitya, ankit_anand]
 description:  It is essential to monitor your Gin apps in Go(Golang). OpenTelemetry can help instrument Gin apps and provide you with end-to-end tracing. In this guide, we will demonstrate how to instrument your Gin app with OpenTelemetry...
-image: /img/blog/2022/04/opentelemetry_gin_cover.webp
+image: /img/blog/2023/07/opentelemetry_gin_cover-min.jpg
 keywords:
   - opentelemetry
   - gin
@@ -26,7 +26,7 @@ OpenTelemetry can be used to trace Gin applications for performance issues and b
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/04/opentelemetry_gin_cover.webp)
+![Cover Image](/img/blog/2023/07/opentelemetry_gin_cover.webp)
 
 Gin is an HTTP web framework written in Go (Golang). It features a Martini-like API with much better performance -- up to 40 times faster.
 
@@ -34,7 +34,7 @@ If you need smashing performance, get yourself some Gin!
 
 Gin framework has a very small footprint and great speed because it's built on HttpRouter, a lightweight, high-performance HTTP request router. HttpRouter and Gin use a radix tree to parse long and complicated route requests quickly.
 
-<a href = "https://github.com/open-telemetry/opentelemetry-go-contrib/blob/main/instrumentation/github.com/gin-gonic/gin/otelgin/gintrace.go" rel="noopener noreferrer nofollow" target="_blank">OpenTelemetry middleware for Gin</a>
+<a href = "https://github.com/open-telemetry/opentelemetry-go-contrib/blob/main/instrumentation/github.com/gin-gonic/gin/otelgin/gintrace.go" rel="noopener noreferrer nofollow" target="_blank">OpenTelemetry Middleware for Gin</a>
 
 <div>
 <br></br>
@@ -103,7 +103,7 @@ It contains the sample boilerplate code that we will instrument.
 If you want to follow the tutorial, then you should follow the `without-instrumentation` branch.
 
 **Step 3:  Declare few variables for configuring OpenTelemetry**<br></br>
-Declare the following variables in main.go which we will use to configure OpenTelemetry
+Declare the following global variables in main.go which we will use to configure OpenTelemetry
 
 ```go
 var (
@@ -171,7 +171,7 @@ func initTracer() func(context.Context) error {
 ```
 
 **Step 5:  Initialize the tracer in main.go**<br></br>
-Modify the main function to initialise the tracer  in `main.go`
+Modify the main function to initialise the tracer  in `main.go`. Initiate the tracer at the very beginning of our main function.
 
 ```jsx
 func main() {
@@ -201,6 +201,12 @@ func main() {
 
 **Step 7: Set environment variables and run your Gin application**<br></br>
 Now that you have instrumented your Gin application with OpenTelemetry, you need to set some environment variables to send data to the SigNoz backend:
+```
+SERVICE_NAME=goApp INSECURE_MODE=true OTEL_EXPORTER_OTLP_ENDPOINT=<IP of SigNoz backend>:4317 go run main.go
+```
+
+IP os SigNoz backend should be **without http/https scheme.**
+
 `SERVICE_NAME`: goGinApp (you can name it whatever you want)
 
 `OTEL_EXPORTER_OTLP_ENDPOINT`: localhost:4317
@@ -252,7 +258,7 @@ In order to monitor your Gin application with SigNoz, you first need to generate
 **Step 9: Visualize the collected data in SigNoz**<br></br>
 Access the signoz UI  on [http://localhost:3301/application](http://localhost:3301/application) 
 
-Go to `Metrics` → `goGinApp` → you will be able to see the dashboard
+Go to `Services` → `goGinApp` → you will be able to see the dashboard
 
 <figure data-zoomable align='center'>
     <img src="/img/blog/2022/04/goginapp_signoz_dashboard.webp" alt="Gin app being monitored on SigNoz dashboard"/>
@@ -261,7 +267,7 @@ Go to `Metrics` → `goGinApp` → you will be able to see the dashboard
 
 <br></br>
 
-You can monitor application metrics like application latency, requests per second, error percentage, etc. with the `Metrics` tab of SigNoz.
+You can monitor application metrics like application latency, requests per second, error percentage, etc. with the `Services` tab of SigNoz.
 
 <figure data-zoomable align='center'>
     <img src="/img/blog/2022/04/gin_application_metrics.webp" alt="OpenTelemetry Gin application metrics"/>
@@ -289,6 +295,8 @@ You can also visualize your tracing data with the help of flamegraphs and Gantt 
 </figure>
 
 <br></br>
+
+SigNoz also provides log management as a feature. With SigNoz you can can have metrics, traces, and logs under a single pane of glass.
 
 You can also monitor Gorm with OpenTelemetry libraries.
 
@@ -341,14 +349,11 @@ Using OpenTelemetry libraries, you can instrument your Gin applications for end-
 
 OpenTelemetry is the future for setting up observability for cloud-native apps. It is backed by a huge community and covers a wide variety of technology and frameworks. Using OpenTelemetry, engineering teams can instrument polyglot and distributed applications with peace of mind.
 
-SigNoz is an open-source observability tool that comes with a SaaS-like experience. You can try out SigNoz by visiting its GitHub repo 👇
+SigNoz is an open-source observability tool that comes with a SaaS-like experience. You can try out SigNoz by visiting its GitHub repo.
 
 [![SigNoz GitHub repo](/img/blog/common/signoz_github.webp)](https://github.com/SigNoz/signoz)
 
-
-If you face any issues while trying out SigNoz, you can reach out with your questions in the #support channel 👇
-
-[![SigNoz Slack community](/img/blog/common/join_slack_cta.png)](https://signoz.io/slack)
+If you want to get started quickly, try [SigNoz cloud](https://signoz.io/teams/).
 
 ---
 
