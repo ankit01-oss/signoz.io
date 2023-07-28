@@ -25,11 +25,11 @@ This document contains instructions on how to set up OpenTelemetry instrumentati
       go.opentelemetry.io/otel/sdk \
       go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin \
       go.opentelemetry.io/otel/exporters/otlp/otlptrace \
-      go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc \
+      go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc
     ```
     
 2. **Declare environment variables for configuring OpenTelemetry**<br></br>
-   Declare the following variables in `main.go` which we will use to configure OpenTelemetry:
+   Declare the following global variables in `main.go` which we will use to configure OpenTelemetry:
    
    ```bash
     var (
@@ -97,7 +97,7 @@ This document contains instructions on how to set up OpenTelemetry instrumentati
     ```
     
 4. **Initialize the tracer in main.go**<br></br>
-   Modify the main function to initialise the tracer in `main.go`
+   Modify the main function to initialise the tracer in `main.go`. Initiate the tracer at the very beginning of our main function.
     
     ```bash
     func main() {
@@ -139,10 +139,10 @@ This document contains instructions on how to set up OpenTelemetry instrumentati
     `OTEL_EXPORTER_OTLP_ENDPOINT`: localhost:4317
     
     Since, we have installed SigNoz on our local machine, we use the above IP. If you install SigNoz on a different machine, you can update it with the relevant IP. 
+
+    Do not use `http` or `https` in the IP address. For example, if the IP is `http://test.com` then the `OTEL_EXPORTER_OTLP_ENDPOINT` will be `test.com:4317`.
     
-    Do not use `http` or `https` in the IP address. For example, if the IP is `http://test.com` then the `OTEL_EXPORTER_OTLP_ENDPOINT` will be `test.com:4317`
-    
-     Here’s a handy [grid](https://signoz.io/docs/instrumentation/troubleshoot-instrumentation/) to figure out which address to use to send data to SigNoz.
+    Here’s a handy [grid](https://signoz.io/docs/instrumentation/troubleshoot-instrumentation/) to figure out which address to use to send data to SigNoz.
     
     Hence, the final run command looks like this:
     
