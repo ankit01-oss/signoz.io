@@ -1,11 +1,11 @@
 ---
 title: Monitor gRPC calls with OpenTelemetry - explained with a Golang example
 slug: opentelemetry-grpc-golang
-date: 2023-06-04
+date: 2023-08-01
 tags: [OpenTelemetry Instrumentation, Go / Golang]
 authors: vaishnavi
 description: This article demonstrates how to monitor gRPC calls with OpenTelemetry using a sample Golang application using gRPC framework. OpenTelemetry is a vendor-agnostic instrumentation library that can be used to monitor gRPC calls...
-image: /img/blog/2022/04/opentelemetry_grpc_golang_cover.webp
+image: /img/blog/2023/08/opentelemetry_golang_grpc_cover-min.jpg
 keywords:
   - opentelemetry
   - grpc
@@ -29,7 +29,7 @@ gRPC (Google Remote Procedure Call) is a high-performance, open-source universal
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/04/opentelemetry_grpc_golang_cover.webp)
+![Cover Image](/img/blog/2023/08/opentelemetry_golang_grpc_cover.webp)
 
 gRPC can be considered a successor to RPC, which is light in weight. Google developed it to communicate between microservices and other systems that need to interact. There are several benefits of using gRPC.
 
@@ -209,7 +209,7 @@ But when it comes to instrumentation data for MongoDB, we need to use <a href = 
 
 It is already included in the [go.mod](https://github.com/SigNoz/distributed-tracing-go-grpc-sample/blob/main/go.mod) file of the sample repo.
 
-When the MongoDB client is initialized, we need to set the monitor through ***otelmongo.NewMonitor()*** method like below which would get the instrumentation data from MongoDB.
+When the MongoDB client is initialized, we need to set the monitor through ***otelmongo.NewMonitor()*** method like below which would get the instrumentation data from MongoDB. You can find the code in [server.go](https://github.com/SigNoz/distributed-tracing-go-grpc-sample/blob/fc29bd1406f2f2d31972cac339dbd578ac080635/server/server.go#L237) file.
 
 ```jsx
 client, err := mongo.NewClient(options.Client().ApplyURI(mongo_url).SetMonitor(otelmongo.NewMonitor()))
@@ -221,7 +221,11 @@ client, err := mongo.NewClient(options.Client().ApplyURI(mongo_url).SetMonitor(o
 **Step 6: Setting up .env files**<br></br>
 We have the .env files in the client and server directory in order to set up environment variables required for ***grpc-server*** and ***grpc-client*** components.
 
-This is how the ***server/.env*** looks like
+`OTEL_EXPORTER_OTLP_ENDPOINT`: localhost:4317
+
+Since, we have installed SigNoz on our local machine, we use the above IP. If you install SigNoz on a different machine, you can update it with the relevant IP.
+
+This is how the ***server/.env*** looks like.
 
 ```jsx
 MONGO_URL=mongodb://localhost:27017/employeedb
@@ -250,12 +254,12 @@ You can check the client env [file](https://github.com/SigNoz/distributed-traci
 
 <!-- ![.env files loading in both *server/server.go* and *client/client.go.*](Ashu%20-%20Mon%2092dcf/Untitled%203.png) -->
 
-<figure align="center">
+<!-- <figure align="center">
   <img src="/img/blog/2022/04/grpc_env_files.webp" alt="Environment files" width="90%" />
   <figcaption><i>.env files loading in both server/server.go and client/client.go</i></figcaption>
 </figure>
 
-<br></br>
+<br></br> -->
 
 
 **Step 7:**
@@ -294,7 +298,7 @@ Running the client makes a set of CRUD operations in MongoDB such as create Empl
 Now, open the SigNoz dashboard in your browser at [http://localhost:3301/dashboard](http://localhost:3301/dashboard). You should now be able to notice ***Go-Grpc-Otel-Server*** in the list of services being monitored on the dashboard.
 
 <figure align="center">
-  <img src="/img/blog/2022/04/grpc_monitored_on_signoz.webp" alt="Golang gRPC application monitored in SigNoz" width="100%" />
+  <img src="/img/blog/2023/08/grpc_monitored_on_signoz.webp" alt="Golang gRPC application monitored in SigNoz" width="100%" />
   <figcaption><i>Our Service Go-gRPC-Otel-Server being monitored by SigNoz</i></figcaption>
 </figure>
 
