@@ -1,7 +1,7 @@
 ---
 title: Implementing Distributed Tracing in a Golang application
 slug: distributed-tracing-golang
-date: 2023-04-12
+date: 2023-08-01
 tags: [OpenTelemetry Instrumentation, Go / Golang]
 authors: [naman]
 description: Distributed tracing provides insights into how a particular service is performing as part of the whole in a distributed system. In this article, we will implement distributed tracing for a Golang application based on microservices architecture with OpenTelemetry, and visualize the collected data with SigNoz...
@@ -46,9 +46,11 @@ In this article, we will use OpenTelemetry and SigNoz to enable distributed trac
 
 <a href = "https://opentelemetry.io/" rel="noopener noreferrer nofollow" target="_blank">OpenTelemetry</a> is a vendor-agnostic set of tools, APIs, and SDKs used to instrument applications to create and manage telemetry data(logs, metrics, and traces). It aims to make telemetry data a built-in feature of cloud-native software applications.
 
+<br></br>
+
 OpenTelemetry provides the instrumentation layer to generate and export your telemetry data to a backend. Then, you need to choose a backend tool that will provide the data storage and visualization for your telemetry data. That’s where SigNoz comes into the picture.
 
-[SigNoz](https://signoz.io/) is a full-stack open-source APM tool that provides metrics monitoring and distributed tracing.
+[SigNoz](https://signoz.io/) is a full-stack open-source observability tool that provides logs, metrics, and traces under a single pane of glass.
 
 OpenTelemetry is the way forward for cloud-native application owners who want to set up a robust observability framework. It also provides you the freedom to choose any backend analysis tool. SigNoz is built to support OpenTelemetry natively, thus making a great combo.
 
