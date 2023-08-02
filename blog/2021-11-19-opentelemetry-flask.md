@@ -1,11 +1,11 @@
 ---
-title: Monitoring your Flask application using OpenTelemetry
+title: OpenTelemetry Flask Instrumentation Complete Tutorial
 slug: opentelemetry-flask
-date: 2023-01-19
+date: 2023-08-02
 tags: [OpenTelemetry Instrumentation, Python]
 authors: ankit_anand
 description: OpenTelemetry is a vendor-agnostic isntrumentation library. In this article, learn how to set up monitoring for a Flask application using OpenTelemetry.
-image: /img/blog/2021/11/monitor_flask_cover.webp
+image: /img/blog/2023/08/opentelemetry_flask_cover-min.jpg
 hide_table_of_contents: true
 keywords:
   - opentelemetry
@@ -24,11 +24,11 @@ import { LiteYoutubeEmbed } from "react-lite-yt-embed";
   <link rel="canonical" href="https://signoz.io/blog/opentelemetry-flask/"/>
 </head>
 
-In this article, we will use OpenTelemetry to instrument a sample Flask app. Flask is one of the most popular web application frameworks of Python. It consists of Werkzeug WSGI toolkit and Jinja2 template engine.
+In this article, we will use OpenTelemetry to instrument a sample Flask app for traces. Flask is one of the most popular web application frameworks of Python. It consists of Werkzeug WSGI toolkit and Jinja2 template engine.
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2021/11/monitor_flask_cover.webp)
+![Cover Image](/img/blog/2023/08/opentelemetry_flask_cover.webp)
 
 Instrumentation is one of the biggest challenge engineering teams face when starting out with observability. Instrumenting a distributed application architecture is not easy. Applications now have distributed services as well as distributed teams that might be using multiple programming languages and numerous frameworks and libraries.
 
@@ -69,13 +69,12 @@ The application list shown in the dashboard is from a sample app called HOT R.O.
 
 import Screenshot from "@theme/Screenshot"
 
-<Screenshot
-   alt="SigNoz dashboard showing application list"
-   height={500}
-   src="/img/blog/2021/08/signoz_dashboard_hc.webp"
-   title="SigNoz Dashboard"
-   width={700}
-/>
+<figure data-zoomable align='center'>
+    <img src="/img/blog/common/signoz_dashboard_homepage.webp" alt="SigNoz dashboard showing application list"/>
+    <figcaption><i>SigNoz homepage showing list of applications being monitored</i></figcaption>
+</figure>
+
+<br></br>
 
 ### Getting a sample Flask application
 
