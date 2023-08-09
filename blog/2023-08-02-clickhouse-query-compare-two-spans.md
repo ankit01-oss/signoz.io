@@ -11,7 +11,6 @@ keywords:
  - OpenTelemetry
  - Dev community
 ---
-import { LiteYoutubeEmbed } from "react-lite-yt-embed";
 
 <head>
   <link rel="canonical" href="https://signoz.io/blog/clickhouse-query-compare-two-spans/"/>
