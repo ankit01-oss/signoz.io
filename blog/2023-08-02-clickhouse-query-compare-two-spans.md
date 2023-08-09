@@ -1,7 +1,7 @@
 ---
-title: Measuring the time between spans with a Clickhouse query
+title: Measuring the time between spans in an OpenTelemetry trace with a Clickhouse query
 slug: clickhouse-query-compare-two-spans
-date: 2023-08-02
+date: 2023-08-09
 tags: [OpenTelemetry, Product]
 authors: nicamellifera
 description: Sharing a query that lets you compare the time between two spans in different traces, even across two different services.
@@ -23,7 +23,7 @@ The usefulness of this answer is evident if you think about how often the total 
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2023/08/clickhouse_query_cover-min.webp)
+![Cover Image](/img/blog/2023/08/clickhouse_query_cover.webp)
 
 While it would be great to report a span with this critical section of time, that’s not always feasible. We don’t all control our codebase to the degree we can add custom markers to our tracer, and it’s possible the two spans in question are on very different services, requiring a ton work to tie them together at execution time.
 
