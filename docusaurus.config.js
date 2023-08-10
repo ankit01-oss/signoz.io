@@ -186,6 +186,11 @@ const config = {
 
             },
             {
+              label: "SigNoz vs Dynatrace",
+              to: "comparisons/signoz-vs-dynatrace/",
+
+            },
+            {
               label: "Careers",
               href: "https://www.ycombinator.com/companies/signoz/jobs/",
             },
