@@ -110,11 +110,11 @@ Yes, it is possible to remove the sample app. Refer [here](https://signoz.io/doc
 
 We currently do not support Windows because we are a small team. At first, we are focussing on MAC and Linux users.
 
-Try SigNoz on your macOS or Linux system, and use the [install script](https://signoz.io/docs/install/docker/#install-signoz-using-the-install-script) for easy setup.
+Try SigNoz on your macOS or Linux system, and use the [install script](https://signoz.io/docs/install/#install-signoz-using-the-install-script) for easy setup.
 
 Supported Linux Disto - Ubuntu | Debian | OpenSuse | CentOS | SUSE Linux Enterprise Server (SLES)
 
-If you're using a different Linux distribution, see the [Install SigNoz Using Docker Compose](https://signoz.io/docs/install/docker/#install-signoz-using-docker-compose) section.
+If you're using a different Linux distribution, see the [Install SigNoz Using Docker Compose](https://signoz.io/docs/install/#install-signoz-using-docker-compose) section.
 
 
 

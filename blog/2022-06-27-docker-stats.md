@@ -45,7 +45,7 @@ Observability is critical for modern cloud-native applications. It helps enginee
 
 To get started with SigNoz, please visit the documentation.
 
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/docker/)
+[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
 
 In this article, we will deep dive into the `docker stats` command that can be used to monitor Docker metrics right from the terminal.
 
@@ -203,7 +203,7 @@ cd signoz/deploy/
 
 You can visit our documentation for instructions on how to install SigNoz using Docker Swarm and Helm Charts.
 
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/docker/)
+[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
 
 
 You can check out the SigNoz GitHub repo here:

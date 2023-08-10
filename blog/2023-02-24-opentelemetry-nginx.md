@@ -49,7 +49,7 @@ At the end of the tutorial, setup will be able to track the request from nginx t
 
 We will install SigNoz by [deploying it with Helm charts](https://signoz.io/docs/install/kubernetes/others/).
 
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/docker/)
+[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
 
 Pre-requisites:
 

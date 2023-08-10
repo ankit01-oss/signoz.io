@@ -253,7 +253,7 @@ cd signoz/deploy/
 
 For detailed instructions, you can visit our documentation.
 
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/docker/)
+[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
 
 If you have any questions around SigNoz or need any help in setting things up, join our slack community and ping us in `#support` channel.
 
