@@ -23,22 +23,16 @@ With SigNoz, you can do the following:
 You can either self-host SigNoz or try SigNoz Cloud. Once SigNoz is up and running, you can instrument your application to send data to SigNoz.
 
 <div class="row">
+ <article class="col col--6">
+    <a class="card margin-bottom--lg padding--lg cardContainer_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module cardContainerLink_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module" href="/teams/">
+      <h2 class="text--truncate cardTitle_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module" title="SigNoz Cloud">SigNoz Cloud</h2>
+      <div class="text--truncate cardDescription_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module" title="Learn how to instrument your application">Easy way to get started with SigNoz</div>
+    </a>
+  </article>
   <article class="col col--6">
     <a class="card margin-bottom--lg padding--lg cardContainer_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module cardContainerLink_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module" href="/docs/install/">
       <h2 class="text--truncate cardTitle_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module" title="Self-host SigNoz">Self-host SigNoz</h2>
       <div class="text--truncate cardDescription_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module" title="Learn how to install SigNoz ">Learn how to install and self-host SigNoz</div>
-    </a>
-  </article>
-  <article class="col col--6">
-    <a class="card margin-bottom--lg padding--lg cardContainer_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module cardContainerLink_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module" href="/docs/instrumentation/overview/">
-      <h2 class="text--truncate cardTitle_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module" title="Instrument Applications">Instrument Applications</h2>
-      <div class="text--truncate cardDescription_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module" title="Learn how to instrument your application">Learn how to instrument your application</div>
-    </a>
-  </article>
-  <article class="col col--6">
-    <a class="card margin-bottom--lg padding--lg cardContainer_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module cardContainerLink_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module" href="/teams/">
-      <h2 class="text--truncate cardTitle_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module" title="SigNoz Cloud">SigNoz Cloud</h2>
-      <div class="text--truncate cardDescription_node_modules-@docusaurus-theme-classic-lib-next-theme-DocCard-styles-module" title="Learn how to instrument your application">Easy way to get started with SigNoz</div>
     </a>
   </article>
 </div>
