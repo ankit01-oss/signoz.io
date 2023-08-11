@@ -15,6 +15,7 @@ module.exports = {
         slug: '/install',
       },
       items: [
+        'install/cloud',
         "install/docker-standalone",
         'install/docker-swarm',
         {
@@ -36,7 +37,6 @@ module.exports = {
             },
           ]
         },
-        'install/cloud',
         'install/troubleshooting',
       ],
     },
