@@ -1,9 +1,9 @@
 ---
 title: SigNoz Community Call - Using OpenTelemetry Collector Processor
-slug: scc-otel-collector-processor
+slug: using-opentelemetry-collector-processor
 date: 2023-08-15
 tags: [Talks]
-authors: ankit_anand
+authors: priyansh
 description: Tune in to learn more about OpenTelemetry Collector processors and how you can use them effectively in SigNoz...
 image: /img/blog/2023/08/scc_otel_collector_processor_cover.jpeg
 keywords:

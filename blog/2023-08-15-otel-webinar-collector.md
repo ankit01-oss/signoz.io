@@ -1,9 +1,9 @@
 ---
 title: OpenTelemetry Webinars - Gathering data with the OpenTelemetry Collector
-slug: otel-webinar-collector
+slug: gathering-data-with-opentelemetry-collector
 date: 2023-08-15
-tags: [Talks]
-authors: ankit_anand
+tags: [OpenTelemetry]
+authors: priyansh
 description: Join Nica and Pranay as we discuss architecting and collecting data with the OpenTelemetry Collector. We discuss using Apache Kafka queues to handle OTLP data, and why you probably shouldn't push OTel data straight to Postgres...
 image: /img/blog/2023/08/scc_otel_collector_processor_cover.jpeg
 keywords:
