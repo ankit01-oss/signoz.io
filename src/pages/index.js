@@ -256,10 +256,10 @@ function TrySignozModal(props) {
 
 const Statistics = () => {
   const STATS_LIST = [
-    { id: 1, name: "Downloads", value: "3.2M" },
+    { id: 1, name: "Downloads", value: "4M" },
     { id: 2, name: "GitHub Stars", value: "13.8k+" },
     { id: 3, name: "Contributors", value: "100+" },
-    { id: 4, name: "Community Members", value: "2.8k+" },
+    { id: 4, name: "Community Members", value: "3k+" },
   ];
   return (
     <section>
