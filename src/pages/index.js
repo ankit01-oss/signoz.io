@@ -305,16 +305,16 @@ const Statistics = () => {
 const LatestInOpenTelementry = () => {
   const TUTORIALS_LIST = [
     {
-      youtubeId: "oQFMfEc9JNI",
-      desc: "Using an open source standard frees you from vendor lock-in.",
+      youtubeId: "Wzut0kjVeYI",
+      desc: "Getting started with OpenTelemetry.",
     },
     {
-      youtubeId: "u2PiWKEdjCw",
-      desc: "Using an open source standard frees you from vendor lock-in.Using an open source standard frees you from vendor lock-in.Using an open source standard frees you from vendor lock-in.Using an open source standard frees you from vendor lock-in.",
+      youtubeId: "sL6XvOOAEP0",
+      desc: "Gathering data with the OpenTelemetry Collector.",
     },
     {
       youtubeId: "CgByZJeuRZY",
-      desc: "Using an open source standard frees you from vendor lock-in.",
+      desc: "Implementing Distributed Tracing in a NodeJS Application using OpenTelemetry",
     },
   ];
 
@@ -407,8 +407,8 @@ const BuildForDevelopers = () => {
       figure: "/img/landing/property-columnar-database.png",
     },
     {
-      title: "Data Pipelines",
-      desc: "Build data pipelines easily with SigNoz OTel Collector. Integrate any existing pipeline with OTel Collector to send data to SigNoz.",
+      title: "Telemetry Pipelines",
+      desc: "Build telemetry pipelines easily with SigNoz OTel Collector. Integrate any existing pipeline with OTel Collector to send data to SigNoz.",
       figure: "/img/landing/property-telemetry-pipeline.png",
     },
     {
