@@ -14,7 +14,7 @@ export const Header = () => {
         <Hero>
           OpenTelemetry-Native Traces,
           <br className="hidden lg:inline" />
-          Metrics, and Logs in a single pane
+           Metrics, and Logs in a single pane
         </Hero>
         <SubHeading>
           SigNoz is an open source Datadog or New Relic alternative. A single

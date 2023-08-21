@@ -37,7 +37,7 @@ export const WhyOpenTelemetry = () => {
             <SubHeading>
               OpenTelemetry is the second most active project in the CNCF,
               <br className="hidden lg:inline" />
-              with only Kubernetes being more active.
+               with only Kubernetes being more active.
             </SubHeading>
           </div>
 
