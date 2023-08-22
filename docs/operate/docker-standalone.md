@@ -8,6 +8,9 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 import UpgradeWarning from '../shared/upgrade-warning.md'
+import SigNozCloud from '../shared/signoz-cloud.md'
+
+<SigNozCloud />
 
 Once you have successfully installed SigNoz on Docker Standalone, the following sections provide an overview of the activities that are required to successfully operate SigNoz.
 

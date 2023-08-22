@@ -3,6 +3,9 @@ id: feature-flags
 title: Feature Flags
 description: Learn how to use feature flags in SigNoz.
 ---
+import SigNozCloud from '../shared/signoz-cloud.md'
+
+<SigNozCloud />
 
 ## Available Feature Flags
 

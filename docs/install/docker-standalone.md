@@ -9,6 +9,9 @@ import CloneRepo from '../shared/clone-repo.md'
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import RetentionInfo from '../shared/retention-info.md'
+import SigNozCloud from '../shared/signoz-cloud.md'
+
+<SigNozCloud />
 
 SigNoz can be installed on macOS or Linux computers, and there are two ways in which you can install SigNoz:
 

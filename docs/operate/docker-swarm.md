@@ -4,6 +4,10 @@ title: Docker Swarm
 description: Learn how to operate SigNoz on Docker Swarm
 ---
 
+import SigNozCloud from '../shared/signoz-cloud.md'
+
+<SigNozCloud />
+
 Once you have successfully installed SigNoz on Docker Swarm, the following sections provide an overview of the activities that are required to successfully operate SigNoz.
 
 ## Stop/Start SigNoz Cluster

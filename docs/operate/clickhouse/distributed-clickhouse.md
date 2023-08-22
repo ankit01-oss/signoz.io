@@ -6,6 +6,9 @@ sidebar_label: Distributed ClickHouse
 
 import MultiNodePart1 from '../../shared/distributed-ch-multinode-part-1.md'
 import MultiNodePart2 from '../../shared/distributed-ch-multinode-part-2.md'
+import SigNozCloud from '../../shared/signoz-cloud.md'
+
+<SigNozCloud />
 
 :::info
 In v0.12, SigNoz introduces support for distributed clickhouse. Multiple replicas for clickhouse shards are not supported in v0.12.0, please follow upcoming releases to check availability.

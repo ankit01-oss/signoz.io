@@ -6,6 +6,9 @@ description: Learn how to operate SigNoz on Kubernetes.
 
 import UpgradeInfo from '../shared/helm-upgrade-info.md'
 import UpgradeWarning from '../shared/upgrade-warning.md'
+import SigNozCloud from '../shared/signoz-cloud.md'
+
+<SigNozCloud />
 
 Once you have successfully installed SigNoz on Kubernetes, the following sections
 provide an overview of the activities that are required to successfully operate SigNoz.

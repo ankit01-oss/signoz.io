@@ -5,6 +5,9 @@ sidebar_label: Increase ClickHouse PV
 ---
 
 import UpgradeInfo from '../../shared/helm-upgrade-info.md'
+import SigNozCloud from '../../shared/signoz-cloud.md'
+
+<SigNozCloud />
 
 You can use the following `helm upgrade` command to increase the size
 of the persistent volume used by SigNoz.

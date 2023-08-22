@@ -5,6 +5,9 @@ sidebar_label: Connect to ClickHouse
 ---
 
 import CHClientWithOutput from '../../shared/ch-client-with-output.md'
+import SigNozCloud from '../../shared/signoz-cloud.md'
+
+<SigNozCloud />
 
 Follow the instructions below for connecting to your ClickHouse database:
 

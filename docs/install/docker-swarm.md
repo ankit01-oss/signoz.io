@@ -8,6 +8,9 @@ slug: /install/docker-swarm
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import CloneRepo from '../shared/clone-repo.md'
 import RetentionInfo from '../shared/retention-info.md'
+import SigNozCloud from '../shared/signoz-cloud.md'
+
+<SigNozCloud />
 
 This section provides information on installing SigNoz on Docker Swarm.
 

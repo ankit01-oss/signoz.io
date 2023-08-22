@@ -3,6 +3,9 @@ id: external-clickhouse
 title: Using External ClickHouse
 sidebar_label: External ClickHouse
 ---
+import SigNozCloud from '../../shared/signoz-cloud.md'
+
+<SigNozCloud />
 
 It is recommended to use the ClickHouse instance that is deployed along with Signoz.
 However, if you want to use an external ClickHouse instance, you can do so by relevant

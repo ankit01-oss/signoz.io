@@ -3,6 +3,8 @@ title: Logs
 id: logs
 ---
 
+import SigNozCloud from '../shared/signoz-cloud.md'
+
 # Overview
 
 <figure data-zoomable align='center'>

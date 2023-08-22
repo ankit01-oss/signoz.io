@@ -2,6 +2,9 @@
 id: production-readiness
 title: Best Practices for Production
 ---
+import SigNozCloud from './shared/signoz-cloud.md'
+
+<SigNozCloud />
 
 # Best Practices to follow to run SigNoz in production
 

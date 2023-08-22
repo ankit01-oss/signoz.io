@@ -12,6 +12,9 @@ import VerifyInstallation from '../../shared/k8s-verify-installation.md'
 import K8sHotrod from '../../shared/k8s-hotrod.md'
 import NextSteps from '../../shared/next-steps.md'
 import StorageClass from '../../shared/k8s-storageclass.md'
+import SigNozCloud from '../../shared/signoz-cloud.md'
+
+<SigNozCloud />
 
 First, we need to set up a Kubernetes cluster (see the [official GCP documentation][1]
 for more info).
