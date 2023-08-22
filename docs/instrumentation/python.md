@@ -33,7 +33,7 @@ Let’s understand how to download, install, and run OpenTelemetry in Python.
 
 - Python 3.8 or newer
 
-## Send Traces Directly to SigNoz
+## Send Traces to Self-Hosted SigNoz
 
 You can use OpenTelemetry Python to send your traces directly to SigNoz. OpenTelemetry provides a handy distro in Python that can help you get started with automatic instrumentation. We recommend using it to get started quickly.
 
@@ -116,9 +116,71 @@ You can use OpenTelemetry Python to send your traces directly to SigNoz. OpenTel
     :::note
      The port numbers are 4317 and 4318 for the gRPC and HTTP exporters respectively. Remember to allow incoming requests to port **4317**/**4318** of machine where SigNoz backend is hosted.
     :::
-     
 
-### Validating instrumentation by checking for traces
+
+## Send traces to SigNoz Cloud
+
+1. **Install the OpenTelemetry dependencies** <br></br>
+
+   ```bash
+   pip install opentelemetry-distro==0.38b0
+   pip install opentelemetry-exporter-otlp==1.17.0
+   ```
+
+2. **Add automatic instrumentation** <br></br>
+
+   ```bash
+   opentelemetry-bootstrap --action=install
+   ```
+
+3. **Run your application**<br></br>
+   
+   ```bash
+   OTEL_RESOURCE_ATTRIBUTES=service.name=<service_name> \
+   OTEL_EXPORTER_OTLP_ENDPOINT="https://ingest-in.signoz.io:4317" \
+   OTEL_EXPORTER_OTLP_HEADERS="signoz-access-token=SIGNOZ_ACCESS_TOKEN" \
+   opentelemetry-instrument <your_run_command>
+   ```
+
+   **Notes**
+
+   - *`<service_name>`* is the name of the service you want
+   - *`<your_run_command>`* can be `python3 app.py` or `flask run`
+   - Replace `SIGNOZ_ACCESS_TOKEN` with the api token provided by SigNoz
+
+
+### Application running locally or VM
+
+Instructions in previous section can be used for sending data from application running locally or VM to SigNoz Cloud. 
+
+### Sending data to OTel Collector from Application
+For this, you will need to set up OtelCollector in a machine and send any incoming data to SigNoz Cloud using OTLP Exporter. For installing OpenTelemetry binary in a VM, you can find the instructions [here](/docs/tutorial/opentelemetry-binary-usage-in-virtual-machine/)
+
+From [config-saas.yaml](https://github.com/SigNoz/benchmark/blob/main/docker/standalone/config-saas.yaml#L43-L49), update the following section:
+
+```YAML
+exporters:
+  otlp:
+    endpoint: "ingest-in.signoz.io:4317"
+    tls:
+      insecure: false
+    headers:
+      signoz-access-token: "SIGNOZ_ACCESS_TOKEN"
+```
+
+Replace `SIGNOZ_ACCESS_TOKEN` with the api token provided by SigNoz. 
+
+To run your application and send data to collector in same VM:
+
+```bash
+OTEL_RESOURCE_ATTRIBUTES=service.name=<service_name> \
+OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317" \
+opentelemetry-instrument <your_run_command>
+```
+
+In case you have OtelCollector Agent in different VM, replace localhost:4317 with `<IP Address of the VM>:4317`
+
+## Validating instrumentation by checking for traces
 
 With your application running, you can verify that you’ve instrumented your application with OpenTelemetry correctly by confirming that tracing data is being reported to SigNoz.
 
