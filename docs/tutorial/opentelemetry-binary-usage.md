@@ -170,7 +170,7 @@ For dockerized applications, we can use the same otel binary agent running in th
  ```
 
 
-2. Instrument applications and update Dockerfile(s). Refer to [instrumentation docs](/instrumentation/overview/)
+2. Instrument applications and update Dockerfile(s). Refer to [instrumentation docs](/docs/instrumentation/overview/).
 
 3. Use `OTEL_EXPORTER_OTLP_ENDPOINT` envvar to point to `otel-binary` agent:
  
