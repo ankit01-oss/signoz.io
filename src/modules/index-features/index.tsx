@@ -20,7 +20,7 @@ export const SigNozFeatures = () => {
     {
       label: "APM",
       value: "apm",
-      figure: "/img/landing/feature-apm.png",
+      figure: "/img/landing/feature-apm-min.png",
       icon: "/img/landing/icon-placeholder.png",
       content: (
         <>
@@ -45,7 +45,7 @@ export const SigNozFeatures = () => {
     {
       label: "Distributed Tracing",
       value: "traces",
-      figure: "/img/landing/feature-distributed-tracing.png",
+      figure: "/img/landing/feature-distributed-tracing-min.png",
       icon: "/img/landing/icon-placeholder.png",
       content: (
         <>
@@ -72,7 +72,7 @@ export const SigNozFeatures = () => {
     {
       label: "Metrics & Dashboards ",
       value: "metrics",
-      figure: "/img/landing/feature-metrics-dashboards.png",
+      figure: "/img/landing/feature-metrics-dashboards-min.png",
       icon: "/img/landing/icon-placeholder.png",
       content: (
         <>
@@ -119,36 +119,9 @@ export const SigNozFeatures = () => {
     //   ),
     // },
     {
-      label: "Exceptions Monitoring",
-      value: "exceptions",
-      figure: "/img/landing/feature-exceptions-monitoring.png",
-      icon: "/img/landing/icon-placeholder.png",
-      content: (
-        <>
-          <ul>
-            <li className="mb-2 text-lg">
-              Record exceptions automatically in Python, Java, Ruby, and
-              Javascript
-            </li>
-            <li className="mb-2 text-lg">
-              Rich contextual data with stack trace, exceptions attributes and
-              linked span data
-            </li>
-            <li className="mb-2 text-lg">
-              Exceptions grouping and custom exceptions
-            </li>
-            <li className="mb-2 text-lg">
-              Navigate from Exceptions to related traces to see the error in
-              trace graph
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
       label: "Logs Management ",
       value: "logs",
-      figure: "/img/landing/feature-log-management.png",
+      figure: "/img/landing/feature-log-management-min.png",
       icon: "/img/landing/icon-placeholder.png",
       content: (
         <>
@@ -180,9 +153,36 @@ export const SigNozFeatures = () => {
       ),
     },
     {
+      label: "Exceptions Monitoring",
+      value: "exceptions",
+      figure: "/img/landing/feature-exceptions-monitoring-min.png",
+      icon: "/img/landing/icon-placeholder.png",
+      content: (
+        <>
+          <ul>
+            <li className="mb-2 text-lg">
+              Record exceptions automatically in Python, Java, Ruby, and
+              Javascript
+            </li>
+            <li className="mb-2 text-lg">
+              Rich contextual data with stack trace, exceptions attributes and
+              linked span data
+            </li>
+            <li className="mb-2 text-lg">
+              Exceptions grouping and custom exceptions
+            </li>
+            <li className="mb-2 text-lg">
+              Navigate from Exceptions to related traces to see the error in
+              trace graph
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       label: "Alerts ",
       value: "alerts",
-      figure: "/img/landing/feature-alerts.png",
+      figure: "/img/landing/feature-alerts-min.png",
       icon: "/img/landing/icon-placeholder.png",
       content: (
         <>
