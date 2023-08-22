@@ -4,7 +4,7 @@ title: Introduction
 slug: /
 ---
 
-SigNoz is an open-source observability tool that helps you monitor your applications and troubleshoot problems. It provides traces, metrics, and logs under a single pane of glass. It is available both as an <a href = "open-source software" rel="noopener noreferrer nofollow" target="_blank" >open-source software</a> and a [cloud offering](https://github.com/signoz/signoz).
+SigNoz is an open-source observability tool that helps you monitor your applications and troubleshoot problems. It provides traces, metrics, and logs under a single pane of glass. It is available both as an <a href = "https://github.com/SigNoz/signoz" rel="noopener noreferrer nofollow" target="_blank" >open-source software</a> and a [cloud offering](https://signoz.io/teams/).
 
 With SigNoz, you can do the following:
 
