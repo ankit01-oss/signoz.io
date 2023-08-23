@@ -79,7 +79,7 @@ env:
   
 ### Note
   - Replace `APPLICATION_NAME` with your application name that you wish to see in SigNoz.
-  - In cases of some SDKs, you would have to include `http://` or `https://` prefix for `OTEL_EXPORTER_OTLP_ENDPOINT`
+  - In cases of some SDKs, you would have to include `https://` prefix for `OTEL_EXPORTER_OTLP_ENDPOINT`
 
 ## DataFlow
   
