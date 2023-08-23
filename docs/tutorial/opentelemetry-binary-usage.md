@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 ### Overview
 
-This tutorial shows how you can deploy OpenTelemetry binary an agent, which
+This tutorial shows how you can deploy OpenTelemetry binary as an agent, which
 collects telemetry data. Data such as traces, metrics and logs generated
 by applications most likely running in the same virtual machine (VM).
 
@@ -23,9 +23,20 @@ In this guide, you will also learn to set up hostmetrics receiver to collect
 metrics from the VM and view in SigNoz.
 
 <Tabs>
-<TabItem value="clous" label="SigNoz Cloud" default>
+<TabItem value="cloud" label="SigNoz Cloud" default>
 
 ## Setup Otel Collector as agent
+
+OpenTelemetry-instrumented applications in a VM can send data to the `otel-binary`` agent running in the same VM. The OTel agent can then be configured to send data to the SigNoz cloud.
+
+<figure data-zoomable align='center'>
+    <img src="/img/docs/saas-docs/vm-setup-2x.webp" alt="Collecting data from applications deployed in VM"/>
+    <figcaption><i>OpenTelemetry-instrumented applications in a VM can send data to otel-binary which then sends data to SigNoz cloud.</i></figcaption>
+</figure>
+
+<br></br>
+
+Here are the steps to set up OpenTelemetry binary as an agent.
 
 1. Download otel-collector tar.gz
 
@@ -88,12 +99,15 @@ extensions:
   health_check: {}
   zpages: {}
 exporters:
+// highlight-start
   otlp:
     endpoint: "ingest.{region}.signoz.io:443"
+
     tls:
       insecure: false
     headers:
       "signoz-access-token": "<SIGNOZ_API_KEY>"
+// highlight-end
   logging:
     verbosity: normal
 service:
@@ -144,12 +158,6 @@ tail -f -n 50 otelcol-output.log
  ```bash
 kill "$(< otel-pid)"
  ```
-
-## Application Level
-
-Applications in a VM can be instrumented to send telemetry data to the `otel-binary` agent running in same VM.
-
-## DataFlow
 
 Application Instrumentation → Otel-Binary Agent in Same VM → SigNoz Saas
 
@@ -362,6 +370,9 @@ To stop `otelcol`:
 kill "$(< otel-pid)"
 ```
 
+</TabItem>
+</Tabs>
+
 ## Test Sending Traces
 
 OpenTelemetry collector binary should be able to forward all types of telemetry data recevied:
@@ -378,7 +389,7 @@ go install github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemet
 To send trace data using `telemetrygen`, execute the command below:
 
 ```bash
-telemetrygen traces --traces 1 --otlp-endpoint localhost:4317 --otlp-insecure
+telemetrygen traces --traces 1 --otlp-endpoint localhost:4317
 ```
 
 Output should look like this:
@@ -442,6 +453,3 @@ After importing the dashboard JSON, we should see the following dashboard in Sig
 [2]: /img/docs/telemetrygen-output.png
 [3]: /img/docs/hostmetrics-dashboard.png
 [4]: https://github.com/SigNoz/dashboards/raw/main/hostmetrics/hostmetrics-with-variable.json
-
-</TabItem>
-</Tabs>

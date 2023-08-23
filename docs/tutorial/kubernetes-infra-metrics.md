@@ -23,7 +23,7 @@ Based on how you are running SigNoz (e.g. SigNoz Cloud, in an independent VM or 
 you have to provide the address to send data from the above receivers.
 
 <Tabs>
-  <TabItem value="clous" label="SigNoz Cloud" default>
+  <TabItem value="cloud" label="SigNoz Cloud" default>
 
 
 ## Install otel-collectors in your k8s infra
