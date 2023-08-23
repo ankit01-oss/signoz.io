@@ -38,7 +38,7 @@ you have to provide the address to send data from the above receivers.
 
    ```bash
    helm install my-release signoz/k8s-infra  \
-  --set otelCollectorEndpoint=ingest.signoz.io:4317 \
+  --set otelCollectorEndpoint=ingest.{region}.signoz.cloud:443 \
   --set otelInsecure=false \
   --set signozApiKey=<SIGNOZ_API_KEY> \
   --set global.clusterName=<CLUSTER_NAME>
