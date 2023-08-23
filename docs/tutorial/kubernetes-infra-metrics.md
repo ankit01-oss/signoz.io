@@ -38,7 +38,7 @@ you have to provide the address to send data from the above receivers.
 
    ```bash
    helm install my-release signoz/k8s-infra  \
-  --set otelCollectorEndpoint=ingest.signoz.io:4317 \
+  --set otelCollectorEndpoint=ingest.{region}.signoz.cloud:443 \
   --set otelInsecure=false \
   --set signozApiKey=<SIGNOZ_API_KEY> \
   --set global.clusterName=<CLUSTER_NAME>
@@ -89,7 +89,7 @@ env:
   
 ### Note
   - Replace `APPLICATION_NAME` with your application name that you wish to see in SigNoz.
-  - In cases of some SDKs, you would have to include `http://` or `https://` prefix for `OTEL_EXPORTER_OTLP_ENDPOINT`
+  - In cases of some SDKs, you would have to include `https://` prefix for `OTEL_EXPORTER_OTLP_ENDPOINT`
 
 ## DataFlow
   
