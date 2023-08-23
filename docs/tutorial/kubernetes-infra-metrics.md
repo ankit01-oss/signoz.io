@@ -43,6 +43,13 @@ you have to provide the address to send data from the above receivers.
   --set signozApiKey=<SIGNOZ_API_KEY> \
   --set global.clusterName=<CLUSTER_NAME>
   ```
+  Depending on the choice of your region for SigNoz cloud, the ingest endpoint will vary according to this table:
+
+  | Region	| Endpoint |
+  | --- | --- |
+  | US | ingest.us.signoz.io:443 |
+  | IN | ingest.in.signoz.io:443 |
+  | EU | ingest.eu.signoz.io:443 |
   
 ### Note
 - Replace `SIGNOZ_API_KEY` with the one provided by SigNoz.
@@ -54,16 +61,16 @@ you have to provide the address to send data from the above receivers.
 
 Add below to your application manifest files for applications to start sending data to the otel-collectors running as daemonset. Eg. add the below config to the deployment.yaml of your application.
 
-```bash
+```YAML
 env:
-- name: HOST_IP
+  - name: HOST_IP
     valueFrom:
       fieldRef:
         fieldPath: status.hostIP
-	- name: K8S_POD_IP
-	  valueFrom:
-	    fieldRef:
-	      apiVersion: v1
+  - name: K8S_POD_IP
+    valueFrom:
+      fieldRef:
+        apiVersion: v1
 	      fieldPath: status.podIP
 	- name: K8S_POD_UID
 	  valueFrom:
@@ -74,8 +81,11 @@ env:
   - name: OTEL_EXPORTER_OTLP_ENDPOINT
     value: $(HOST_IP):4317
   - name: OTEL_RESOURCE_ATTRIBUTES
-		value: service.name=APPLICATION_NAME,k8s.pod.ip=$(K8S_POD_IP),k8s.pod.uid=$(K8S_POD_UID)
+    value: service.name=APPLICATION_NAME,k8s.pod.ip=$(K8S_POD_IP),k8s.pod.uid=$(K8S_POD_UID)
+  
   ```
+
+
   
 ### Note
   - Replace `APPLICATION_NAME` with your application name that you wish to see in SigNoz.
