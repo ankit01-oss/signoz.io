@@ -43,6 +43,14 @@ you have to provide the address to send data from the above receivers.
   --set signozApiKey=<SIGNOZ_API_KEY> \
   --set global.clusterName=<CLUSTER_NAME>
   ```
+
+  Depending on the choice of your region for SigNoz cloud, the ingest endpoint will vary according to this table.
+
+  | Region	| Endpoint |
+  | --- | --- |
+  | US | ingest.us.signoz.io:443 |
+  | IN | ingest.in.signoz.io:443 |
+  | EU | ingest.eu.signoz.io:443 |
   
 ### Note
 - Replace `SIGNOZ_API_KEY` with the one provided by SigNoz.

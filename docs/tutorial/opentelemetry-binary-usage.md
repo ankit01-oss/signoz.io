@@ -61,6 +61,9 @@ receivers:
       paging: {}
       process:
         mute_process_name_error: true
+        mute_process_name_error: true
+        mute_process_exe_error: true
+        mute_process_io_error: true
       processes: {}
   prometheus:
     config:
@@ -117,6 +120,14 @@ service:
       exporters: [otlp]
   ```
 
+  Depending on the choice of your region for SigNoz cloud, the otlp endpoint will vary according to this table.
+
+  | Region	| Endpoint |
+  | --- | --- |
+  | US | ingest.us.signoz.io:443 |
+  | IN | ingest.in.signoz.io:443 |
+  | EU | ingest.eu.signoz.io:443 |
+
 
 4. Run otel-collector agent
  ```bash
@@ -142,7 +153,7 @@ Applications in a VM can be instrumented to send telemetry data to the `otel-bin
 
 Application Instrumentation → Otel-Binary Agent in Same VM → SigNoz Saas
 
-## Example Java Instrumentation
+<!-- ## Example Java Instrumentation
 
 1. Download otel java binary
 
@@ -156,7 +167,7 @@ wget https://github.com/open-telemetry/opentelemetry-java-instrumentation/releas
 OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317" \
 OTEL_RESOURCE_ATTRIBUTES=service.name=javaApp \
 java -javaagent:/path/to/opentelemetry-javaagent.jar -jar target/spring-petclinic-2.4.5.jar
- ```
+ ``` -->
 
 ## Dockerized Application Instrumentation
 
