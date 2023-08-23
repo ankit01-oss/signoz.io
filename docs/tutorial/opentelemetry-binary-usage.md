@@ -172,7 +172,7 @@ java -javaagent:/path/to/opentelemetry-javaagent.jar -jar target/spring-petclini
 
 ## Dockerized Application Instrumentation
 
-For dockerized applications, we can use the same otel binary agent running in the same VM.
+For dockerized applications, we can use the same otel binary agent running in the same VM
 
 1. Use `extra_hosts` in `docker-compose.yaml` to add `otel-binary` agent as a host:
 
