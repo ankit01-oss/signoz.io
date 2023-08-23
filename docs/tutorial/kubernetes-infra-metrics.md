@@ -60,42 +60,46 @@ you have to provide the address to send data from the above receivers.
 
 ## Send data from applications to OtelCollectors in your infra
 
+<figure data-zoomable align='center'>
+    <img src="/img/docs/data-flow-2x.webp" alt="Data flow from your application to SigNoz Cloud"/>
+    <figcaption><i>OpenTelemetry instrumented application sends data to OTelAgent Daemon deployed in your k8s infra. The OTelAgent daemon sends the collected data to SigNoz Cloud.</i></figcaption>
+</figure>
+
+<br></br>
+
 To send data from your applications, you must first instrument it with OpenTelemetry. You can find instrumentation instructions for your specific language [here](https://signoz.io/docs/instrumentation/). 
+
 
 Once you're done instrumenting your application, add below to your application manifest files for applications to start sending data to the otel-collectors running as daemonset. Eg. add the below config to the `deployment.yaml` of your application.
 
 ```YAML
 env:
-- name: HOST_IP
+  - name: HOST_IP
     valueFrom:
       fieldRef:
         fieldPath: status.hostIP
-- name: K8S_POD_IP
-  valueFrom:
-	  fieldRef:
-	    apiVersion: v1
-	    fieldPath: status.podIP
-- name: K8S_POD_UID
-	valueFrom:
-	  fieldRef:
-	    fieldPath: metadata.uid
-- name: OTEL_EXPORTER_OTLP_INSECURE
-  value: "true"
-- name: OTEL_EXPORTER_OTLP_ENDPOINT
-  value: $(HOST_IP):4317
-- name: OTEL_RESOURCE_ATTRIBUTES
-  value: service.name=APPLICATION_NAME,k8s.pod.ip=$(K8S_POD_IP),k8s.pod.uid=$(K8S_POD_UID)
+  - name: K8S_POD_IP
+    valueFrom:
+      fieldRef:
+        apiVersion: v1
+        fieldPath: status.podIP
+  - name: K8S_POD_UID
+    valueFrom:
+      fieldRef:
+        fieldPath: metadata.uid
+  - name: OTEL_EXPORTER_OTLP_INSECURE
+    value: "true"
+  - name: OTEL_EXPORTER_OTLP_ENDPOINT
+    value: $(HOST_IP):4317
+  - name: OTEL_RESOURCE_ATTRIBUTES
+    value: service.name=APPLICATION_NAME,k8s.pod.ip=$(K8S_POD_IP),k8s.pod.uid=$(K8S_POD_UID)
   ```
   
 ### Note
   - Replace `APPLICATION_NAME` with your application name that you wish to see in SigNoz.
   - In cases of some SDKs, you would have to include `https://` prefix for `OTEL_EXPORTER_OTLP_ENDPOINT`
 
-## DataFlow
-  
-  applications ⇒ otel-collectors in your infra ⇒ SigNoz cloud
-
-## Plot Metrics in SigNoz UI
+<!-- ## Plot Metrics in SigNoz UI
 
 To plot metrics generated from `k8s-infra` chart, follow the instructions given in the docs [here][4].
 
@@ -125,16 +129,16 @@ need using metrics from the [list below][3].
 
 <K8sMetrics />
 
-<HostMetrics name="Node Hostmetrics"/>
+<HostMetrics name="Node Hostmetrics"/> -->
 
----
+<!-- ---
 [1]: https://github.com/SigNoz/otel-collector-k8s/blob/main/agent/infra-metrics.yaml#L47
 [2]: https://github.com/SigNoz/otel-collector-k8s/blob/main/deployment/all-in-one.yaml#L19
 [3]: #list-of-metrics
 [4]: https://signoz.io/docs/userguide/dashboards/
 [5]: https://github.com/SigNoz/dashboards/raw/main/k8s-infra-metrics/cpu-memory-metrics.json
 [6]: https://github.com/SigNoz/dashboards/raw/main/k8s-infra-metrics/kubernetes-metrics.json
-[7]: https://github.com/SigNoz/dashboards/raw/main/hostmetrics/hostmetrics-k8s.json
+[7]: https://github.com/SigNoz/dashboards/raw/main/hostmetrics/hostmetrics-k8s.json -->
 
 </TabItem>
 
@@ -155,38 +159,43 @@ Skip **Step 1** if you have single Kubernetes cluster for SigNoz and your applic
 as `k8s-infra` chart is included in default SigNoz chart installation.
 :::
 
-1. **Install K8s-Infra chart**
+### Install K8s-Infra chart**
 
-   ```bash
-   helm install my-release signoz/k8s-infra  \
-     --set otelCollectorEndpoint=<IP-or-Endpoint-of-SigNoz-OtelCollector>:4317
-   ```
+```bash
+helm install my-release signoz/k8s-infra  \
+--set otelCollectorEndpoint=<IP-or-Endpoint-of-SigNoz-OtelCollector>:4317
+```
 
-   :::info
-   If the OtelCollector endpoint is secured, you would have to enable `otelInsecure`
-   configuration and often make other changes such as including either config
-   or path to the TLS certificate and private key.
+:::info
+If the OtelCollector endpoint is secured, you would have to enable `otelInsecure`
+configuration and often make other changes such as including either config
+or path to the TLS certificate and private key.
 
-   In case of SigNoz Cloud, you would have to set `signozApiKey` configuration.
-   :::
+In case of SigNoz Cloud, you would have to set `signozApiKey` configuration.
+:::
 
-2. **Plot Metrics in SigNoz UI**
 
-   To plot metrics generated from `k8s-infra` chart, follow the instructions given
-   in the docs [here][4].
+</TabItem>
+</Tabs>
 
-   Check out the [List of metrics from Kubernetes receiver][3].
+## Plot Metrics in SigNoz UI
 
-3. **Import Dashboard with CPU and Memory Metrics**
+To plot metrics generated from `k8s-infra` chart, follow the instructions given in the docs [here][4].
+
+Check out the [List of metrics from Kubernetes receiver][3].
+
+Here are some examples of metrics dashboard.
+
+1. **Import Dashboard with CPU and Memory Metrics**
 
    You can import dashboard with CPU and Memory metrics of Kubernetes cluster
    containers from [here][5].
 
-4. **Import Dashboard with K8s Metrics**
+2. **Import Dashboard with K8s Metrics**
 
    You can import dashboard with Kubernetes metrics of K8s cluster from [here][6].
 
-5. **Generate and Import Dashboard with Node Hostmetrics**
+3. **Generate and Import Dashboard with Node Hostmetrics**
 
    You can import dashboard with Node Hostmetrics of your Kubernetes cluster from
    [here][7].
@@ -211,7 +220,3 @@ need using metrics from the [list below][3].
 [5]: https://github.com/SigNoz/dashboards/raw/main/k8s-infra-metrics/cpu-memory-metrics.json
 [6]: https://github.com/SigNoz/dashboards/raw/main/k8s-infra-metrics/kubernetes-metrics.json
 [7]: https://github.com/SigNoz/dashboards/raw/main/hostmetrics/hostmetrics-k8s.json
-
-
-</TabItem>
-</Tabs>
