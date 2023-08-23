@@ -86,7 +86,7 @@ extensions:
   zpages: {}
 exporters:
   otlp:
-    endpoint: "ingest.signoz.io:4317"
+    endpoint: "ingest.{region}.signoz.io:443"
     tls:
       insecure: false
     headers:
