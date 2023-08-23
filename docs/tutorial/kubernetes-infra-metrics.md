@@ -60,29 +60,31 @@ you have to provide the address to send data from the above receivers.
 
 ## Send data from applications to OtelCollectors in your infra
 
-Add below to your application manifest files for applications to start sending data to the otel-collectors running as daemonset. Eg. add the below config to the deployment.yaml of your application.
+To send data from your applications, you must first instrument it with OpenTelemetry. You can find instrumentation instructions for your specific language [here](https://signoz.io/docs/instrumentation/). 
 
-```bash
+Once you're done instrumenting your application, add below to your application manifest files for applications to start sending data to the otel-collectors running as daemonset. Eg. add the below config to the `deployment.yaml` of your application.
+
+```YAML
 env:
 - name: HOST_IP
     valueFrom:
       fieldRef:
         fieldPath: status.hostIP
-	- name: K8S_POD_IP
-	  valueFrom:
-	    fieldRef:
-	      apiVersion: v1
-	      fieldPath: status.podIP
-	- name: K8S_POD_UID
-	  valueFrom:
-	    fieldRef:
-	      fieldPath: metadata.uid
-  - name: OTEL_EXPORTER_OTLP_INSECURE
-    value: "true"
-  - name: OTEL_EXPORTER_OTLP_ENDPOINT
-    value: $(HOST_IP):4317
-  - name: OTEL_RESOURCE_ATTRIBUTES
-		value: service.name=APPLICATION_NAME,k8s.pod.ip=$(K8S_POD_IP),k8s.pod.uid=$(K8S_POD_UID)
+- name: K8S_POD_IP
+  valueFrom:
+	  fieldRef:
+	    apiVersion: v1
+	    fieldPath: status.podIP
+- name: K8S_POD_UID
+	valueFrom:
+	  fieldRef:
+	    fieldPath: metadata.uid
+- name: OTEL_EXPORTER_OTLP_INSECURE
+  value: "true"
+- name: OTEL_EXPORTER_OTLP_ENDPOINT
+  value: $(HOST_IP):4317
+- name: OTEL_RESOURCE_ATTRIBUTES
+  value: service.name=APPLICATION_NAME,k8s.pod.ip=$(K8S_POD_IP),k8s.pod.uid=$(K8S_POD_UID)
   ```
   
 ### Note
