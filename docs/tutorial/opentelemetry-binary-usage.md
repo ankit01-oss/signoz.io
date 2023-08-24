@@ -72,7 +72,6 @@ receivers:
       paging: {}
       process:
         mute_process_name_error: true
-        mute_process_name_error: true
         mute_process_exe_error: true
         mute_process_io_error: true
       processes: {}
