@@ -100,7 +100,7 @@ extensions:
 exporters:
 // highlight-start
   otlp:
-    endpoint: "ingest.{region}.signoz.io:443"
+    endpoint: "ingest.{region}.signoz.cloud:443"
     tls:
       insecure: false
     headers:
@@ -136,9 +136,9 @@ service:
 
   | Region	| Endpoint |
   | --- | --- |
-  | US | ingest.us.signoz.io:443 |
-  | IN | ingest.in.signoz.io:443 |
-  | EU | ingest.eu.signoz.io:443 |
+  | US | ingest.us.signoz.cloud:443 |
+  | IN | ingest.in.signoz.cloud:443 |
+  | EU | ingest.eu.signoz.cloud:443 |
 
 
 4. Run otel-collector agent

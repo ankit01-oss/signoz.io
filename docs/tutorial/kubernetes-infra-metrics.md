@@ -48,9 +48,9 @@ you have to provide the address to send data from the above receivers.
 
   | Region	| Endpoint |
   | --- | --- |
-  | US | ingest.us.signoz.io:443 |
-  | IN | ingest.in.signoz.io:443 |
-  | EU | ingest.eu.signoz.io:443 |
+  | US | ingest.us.signoz.cloud:443 |
+  | IN | ingest.in.signoz.cloud:443 |
+  | EU | ingest.eu.signoz.cloud:443 |
   
 ### Note
 - Replace `SIGNOZ_API_KEY` with the one provided by SigNoz.
