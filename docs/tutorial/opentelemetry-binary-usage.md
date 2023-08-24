@@ -214,7 +214,7 @@ go install github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemet
 To send trace data using `telemetrygen`, execute the command below:
 
 ```bash
-telemetrygen traces --traces 1 --otlp-endpoint ingest.{region}.signoz.cloud:443
+telemetrygen traces --traces 1 --otlp-endpoint localhost:4317 --otlp-insecure
 ```
 
 Output should look like this:
