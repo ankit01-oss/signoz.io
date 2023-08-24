@@ -170,8 +170,6 @@ helm install my-release signoz/k8s-infra  \
 If the OtelCollector endpoint is secured, you would have to enable `otelInsecure`
 configuration and often make other changes such as including either config
 or path to the TLS certificate and private key.
-
-In case of SigNoz Cloud, you would have to set `signozApiKey` configuration.
 :::
 
 
