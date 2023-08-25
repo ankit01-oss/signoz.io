@@ -50,6 +50,8 @@ Java 8 or higher
 
 ## Send Traces to SigNoz Cloud
 
+OpenTelemetry provides a handy Java JAR agent that can be attached to any Java 8+ application and dynamically injects bytecode to capture telemetry from a number of popular libraries and frameworks.
+
 Based on your application environment, you can choose the setup below to send traces to SigNoz Cloud.
 
 <Tabs>
@@ -57,13 +59,13 @@ Based on your application environment, you can choose the setup below to send tr
 
 From VMs, there are two ways to send data to SigNoz Cloud.
 
-- [Send traces directly to SigNoz Cloud](#1-send-traces-directly-to-signoz-cloud)
-- [Send traces via OTel Collector binary](#2-send-traces-via-otel-collector-binary) (recommended)
+- [Send traces directly to SigNoz Cloud](#send-traces-directly-to-signoz-cloud)
+- [Send traces via OTel Collector binary](#send-traces-via-otel-collector-binary) (recommended)
 
-#### **1. Send traces directly to SigNoz Cloud**
+#### **Send traces directly to SigNoz Cloud**
 OpenTelemetry Java agent can send traces directly to SigNoz Cloud.
   
-**Step 1. Download otel java binary agent**<br></br>
+Step 1. Download otel java binary agent
 
 ```bash
 wget https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
@@ -88,18 +90,20 @@ Depending on the choice of your region for SigNoz cloud, the ingest endpoint wil
 | IN |	ingest.in.signoz.cloud:443 |
 | EU | ingest.eu.signoz.cloud:443 |
 
-#### **2. Send traces via OTel Collector binary**
+---
+
+#### **Send traces via OTel Collector binary**
 
 OTel Collector binary helps to collect logs, hostmetrics, resource and infra attributes. It is recommended to install Otel Collector binary to collect and send traces to SigNoz cloud. You can correlate signals and have rich contextual data through this way.
 
-When you use OTel collector to send traces, you need to configure the endpoints for SigNoz cloud in its `config.yaml` file. You can find instructions to install OTel Collector binary [here](https://signoz.io/docs/tutorial/opentelemetry-binary-usage-in-virtual-machine/).
+You can find instructions to install OTel Collector binary [here](https://signoz.io/docs/tutorial/opentelemetry-binary-usage-in-virtual-machine/) in your VM. Once you are done setting up your OTel Collector binary, you can follow the below steps for instrumenting your Java application.
 
-**Step 1. Download otel java binary**<br></br>
+Step 1. Download OTel java binary agent<br></br>
 ```bash
 wget https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
 ```
 
-**Step 2. Run your application**<br></br>
+Step 2. Run your application<br></br>
 
 ```bash
 java -javaagent:$PWD/opentelemetry-javaagent.jar -jar <myapp>.jar
@@ -113,19 +117,17 @@ java -javaagent:$PWD/opentelemetry-javaagent.jar -jar <myapp>.jar
 </TabItem>
 <TabItem value="k8s" label="Kubernetes">
 
-If your Java application is deployed on Kubernetes, you need to deploy OTel Collector agent in your k8s infra to collect and send traces to SigNoz Cloud. You can find the instructions for deploying OTel Collector agent [here](/docs/tutorial/kubernetes-infra-metrics/). Make sure to set configure your OTel Collector agent correctly to send data to SigNoz Cloud.
+For Java application deployed on Kubernetes, you need to install OTel Collector agent in your k8s infra to collect and send traces to SigNoz Cloud. You can find the instructions to install OTel Collector agent [here](/docs/tutorial/kubernetes-infra-metrics/).
 
-Once you have set up OTel Collector agent, you can proceed with OpenTelemetry java instrumentation. Make sure to dockerise your application along with OpenTelemetry instrumentation. 
+Once you have set up OTel Collector agent, you can proceed with OpenTelemetry java instrumentation by following the below steps:
 
-Steps to instrument java applicatiion with OpenTelemetry:
-
-1. **Download otel java binary**<br></br>
+1. Download otel java binary<br></br>
 
    ```bash
    wget https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
    ```
 
-2. **Run your application**<br></br>
+2. Run your application<br></br>
    
    ```bash
    java -javaagent:$PWD/opentelemetry-javaagent.jar -jar <myapp>.jar
@@ -133,6 +135,10 @@ Steps to instrument java applicatiion with OpenTelemetry:
 
    - `<myapp>` is the name of your application jar file
    - In case you download `opentelemetry-javaagent.jar` file in different directory than that of the project, replace `$PWD` with the path of the otel jar file.
+
+3. Make sure to dockerise your application along with OpenTelemetry instrumentation.
+
+You can validate if your application is sending traces to SigNoz cloud by following the instructions [here](#validating-instrumentation-by-checking-for-traces).
   
 </TabItem>
 </Tabs>
@@ -203,10 +209,10 @@ To do this, you need to ensure that your application generates some data. Applic
 Validate your traces in SigNoz:
 
 1. Trigger an action in your app that generates a web request. Hit the endpoint a number of times to generate some data. Then, wait for some time.
-2. In SigNoz, open the `Services` tab. Hit the `Refresh` button on the top right corner, and your application should appear in the list of `Applications`. Ensure that you're checking data for the time range filter applied in the top right corner.
+2. In SigNoz, open the `Services` tab. Hit the `Refresh` button on the top right corner, and your application should appear in the list of `Applications`. Ensure that you're checking data for the `time range filter` applied in the top right corner.
 3. Go to the `Traces` tab, and apply relevant filters to see your application’s traces.
 
-You might see other dummy applications if you’re using SigNoz for the first time. You can remove it by following the docs [here](https://signoz.io/docs/operate/docker-standalone/#remove-the-sample-application).
+You might see other dummy applications if you’re using self-hosted SigNoz for the first time. You can remove it by following the docs [here](https://signoz.io/docs/operate/docker-standalone/#remove-the-sample-application).
 
 <figure data-zoomable align='center'>
     <img src="/img/docs/java_app_services_list.webp" alt="Java Application in the list of services being monitored in SigNoz"/>
