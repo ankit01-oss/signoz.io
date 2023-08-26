@@ -17,10 +17,10 @@ SigNoz supports tracing for major programming languages. With tracing you can ge
 
 You can also visualize user requests in their entirety as it travels across components of your application. Here are instructions for sending traces to SigNoz cloud in different languages:
 
-- [Java](https://signoz.io/docs/instrumentation/java/)
-- [Python](https://signoz.io/docs/instrumentation/python/)
+- [Java](https://signoz.io/docs/instrumentation/java/#send-traces-to-signoz-cloud)
+- [Python](https://signoz.io/docs/instrumentation/python/#send-traces-to-signoz-cloud)
 - [Nodejs](https://signoz.io/docs/instrumentation/javascript/)
-- [Golang](https://signoz.io/docs/instrumentation/golang/)
+- [Golang](https://signoz.io/docs/instrumentation/golang/#send-traces-to-signoz-cloud)
 
 ## Collect Hostmetrics from VM
 
