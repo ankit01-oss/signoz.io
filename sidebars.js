@@ -41,72 +41,6 @@ module.exports = {
       ],
     },
     {
-      type: 'category',
-      label: 'Operate SigNoz',
-      link: {
-        type: 'generated-index',
-        title: 'Operate',
-        description: 'The following sections provide an overview of the activities that are required to successfully operate SigNoz. Based on your environment, proceed to one of the sections below.',
-        slug: '/operate',
-      },
-      items: [
-        'operate/configuration',
-        'operate/docker-standalone',
-        'operate/docker-swarm',
-        'operate/kubernetes',
-        {
-          type: 'category',
-          label: 'Migration Guides',
-          link: {
-            type: 'generated-index',
-            title: 'Migration Guides',
-            description: 'The following sections provide instructions to migrate SigNoz components across newer versions. You need to run these migration scripts step by step. For example if you are currently on `0.8.2` and want to migrate to `0.10.0` - you need to run migration script for `0.9` first and then `0.10`',
-            slug: '/operate/migration',
-          },
-          items: [
-            'operate/migration/upgrade-0.8.0',
-            'operate/migration/upgrade-0.8.1',
-            'operate/migration/upgrade-0.9',
-            'operate/migration/upgrade-0.10',
-            'operate/migration/upgrade-0.12',
-            'operate/migration/upgrade-0.19',
-            'operate/migration/upgrade-0.23',
-            'operate/migration/upgrade-0.27',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'ClickHouse',
-          link: {
-            type: 'generated-index',
-            title: 'ClickHouse',
-            description: 'The following sections provide instructions to operate ClickHouse. Based on your environment, proceed to one of the sections below.',
-            slug: '/operate/clickhouse',
-          },
-          items: [
-            'operate/clickhouse/increase-clickhouse-pv',
-            'operate/clickhouse/connect-to-clickhouse',
-            'operate/clickhouse/distributed-clickhouse',
-            'operate/clickhouse/external-clickhouse',
-          ]
-        },
-        {
-          type: 'category',
-          label: 'SQLite',
-          link: {
-            type: 'generated-index',
-            title: 'SQLite',
-            description: 'The following sections provide instructions to operate SQLite. You can proceed to one of the sections below.',
-            slug: '/operate/sqlite',
-          },
-          items: [
-            'operate/sqlite/reset-admin-password',
-          ]
-        },
-        'operate/feature-flags',
-      ],
-    },
-    {
       label: "APM & Distributed Tracing",
       type: "category",
       items: [
@@ -256,6 +190,7 @@ module.exports = {
         'userguide/create-a-custom-query',
       ]
     },
+    
     {
       type: 'doc',
       id: 'userguide/alerts-management',
@@ -316,6 +251,72 @@ module.exports = {
     {
       id: "architecture",
       type: "doc",
+    },
+    {
+      type: 'category',
+      label: 'Operate Self-Hosted SigNoz',
+      link: {
+        type: 'generated-index',
+        title: 'Operate',
+        description: 'The following sections provide an overview of the activities that are required to successfully operate SigNoz. Based on your environment, proceed to one of the sections below.',
+        slug: '/operate',
+      },
+      items: [
+        'operate/configuration',
+        'operate/docker-standalone',
+        'operate/docker-swarm',
+        'operate/kubernetes',
+        {
+          type: 'category',
+          label: 'Migration Guides',
+          link: {
+            type: 'generated-index',
+            title: 'Migration Guides',
+            description: 'The following sections provide instructions to migrate SigNoz components across newer versions. You need to run these migration scripts step by step. For example if you are currently on `0.8.2` and want to migrate to `0.10.0` - you need to run migration script for `0.9` first and then `0.10`',
+            slug: '/operate/migration',
+          },
+          items: [
+            'operate/migration/upgrade-0.8.0',
+            'operate/migration/upgrade-0.8.1',
+            'operate/migration/upgrade-0.9',
+            'operate/migration/upgrade-0.10',
+            'operate/migration/upgrade-0.12',
+            'operate/migration/upgrade-0.19',
+            'operate/migration/upgrade-0.23',
+            'operate/migration/upgrade-0.27',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'ClickHouse',
+          link: {
+            type: 'generated-index',
+            title: 'ClickHouse',
+            description: 'The following sections provide instructions to operate ClickHouse. Based on your environment, proceed to one of the sections below.',
+            slug: '/operate/clickhouse',
+          },
+          items: [
+            'operate/clickhouse/increase-clickhouse-pv',
+            'operate/clickhouse/connect-to-clickhouse',
+            'operate/clickhouse/distributed-clickhouse',
+            'operate/clickhouse/external-clickhouse',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'SQLite',
+          link: {
+            type: 'generated-index',
+            title: 'SQLite',
+            description: 'The following sections provide instructions to operate SQLite. You can proceed to one of the sections below.',
+            slug: '/operate/sqlite',
+          },
+          items: [
+            'operate/sqlite/reset-admin-password',
+          ]
+        },
+        'operate/feature-flags',
+      ],
     },
     {
       id: "production-readiness",
