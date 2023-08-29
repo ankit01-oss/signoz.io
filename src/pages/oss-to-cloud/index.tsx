@@ -9,7 +9,7 @@ const OSS_TO_CLOUD_DATA = {
   TITLE: "SigNoz Cloud is the easiest way of running SigNoz",
   DESC: "Experience SigNoz effortlessly. No installation, maintenance, or scaling needed. Sign up for a free account and enjoy 30 days of uncapped usage.",
   PORTAL_ID: "22308423",
-  FORM_ID: "d6a11324-07d5-4dd3-8ce2-a53279b6c1db",
+  FORM_ID: "56f370ae-d84e-49b6-8629-134dbb74d90a",
   FEATURE_POINTS: [
     {
       title: <>Avoid maintaining and scaling your own instance</>,
