@@ -40,7 +40,7 @@ Below are the steps to collect docker container logs.
         tls:
           insecure: false
         headers:
-          "signoz-access-token": "<SIGNOZ_API_KEY>"
+          "signoz-access-token": "<SIGNOZ_INGESTION_KEY>"
     service:
       pipelines:
         logs:

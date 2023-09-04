@@ -40,7 +40,7 @@ you have to provide the address to send data from the above receivers.
    helm install my-release signoz/k8s-infra  \
   --set otelCollectorEndpoint=ingest.{region}.signoz.cloud:443 \
   --set otelInsecure=false \
-  --set signozApiKey=<SIGNOZ_API_KEY> \
+  --set signozApiKey=<SIGNOZ_INGESTION_KEY> \
   --set global.clusterName=<CLUSTER_NAME>
   ```
 
@@ -53,7 +53,7 @@ you have to provide the address to send data from the above receivers.
   | EU | ingest.eu.signoz.cloud:443 |
   
 ### Note
-- Replace `SIGNOZ_API_KEY` with the one provided by SigNoz.
+- Replace `SIGNOZ_INGESTION_KEY` with the one provided by SigNoz.
 - Replace `<CLUSTER_NAME>` with the name of the Kubernetes cluster or a unique identifier of the
   cluster.
 

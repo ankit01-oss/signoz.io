@@ -50,7 +50,7 @@ Here are the steps to set up OpenTelemetry binary as an agent.
    mkdir otelcol-contrib && tar xvzf otelcol-contrib_0.79.0_linux_amd64.tar.gz -C otelcol-contrib/
    ```
 
-3. Create `config.yaml` in folder `otelcol-contrib` with the below content in it. Replace `SIGNOZ_API_KEY` with what is provided by SigNoz:
+3. Create `config.yaml` in folder `otelcol-contrib` with the below content in it. Replace `SIGNOZ_INGESTION_KEY` with what is provided by SigNoz:
 
  ```YAML
 receivers:
@@ -104,7 +104,7 @@ exporters:
     tls:
       insecure: false
     headers:
-      "signoz-access-token": "<SIGNOZ_API_KEY>"
+      "signoz-access-token": "<SIGNOZ_INGESTION_KEY>"
 // highlight-end
   logging:
     verbosity: normal
