@@ -45,7 +45,7 @@ And to do that, you need insights into how your infrastructure handles user requ
 SigNoz is a full-stack open-source application monitoring and observability platform which can be installed within your infra. You can track metrics like p99 latency, error rates for your services, external API calls, and individual endpoints. With service maps, you can quickly assess the health of your services.
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2021/05/ezgif.com-gif-maker-1.gif" alt=""/>
+    <img src="/img/blog/common/signoz_service_maps.webp" alt=""/>
     <figcaption><i>Service maps on SigNoz dashboard</i></figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ And once you know the affected service, trace data can help you identify the exa
 
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2021/05/screenzy-1622399034895.webp" alt=""/>
+    <img src="/img/blog/common/signoz_flamegraphs.webp" alt=""/>
     <figcaption><i>Distributed tracing visualized with flamegraphs on SigNoz dashboard</i></figcaption>
 </figure>
 
@@ -174,21 +174,22 @@ On MacOS the installation is done using Homebrew's brew package manager. Once th
 
 ### Steps
 
-1. Clone sample Flask app repository<br></br>
-   From your terminal use the following command to clone sample Flask app GitHub repository.
+Step 1. Clone sample Flask app repository<br></br>
 
-   ```
-   git clone https://github.com/SigNoz/sample-flask-app.git
-   ```
+From your terminal use the following command to clone sample Flask app GitHub repository.
 
-2. Update path to sample-flask-app<br></br>
+```
+git clone https://github.com/SigNoz/sample-flask-app.git
+```
 
-   Check if the app is working or not using the following command:
+Step 2. Update path to sample-flask-app<br></br>
 
-   ```
-   cd sample-flask-app
-   python3 app.py
-   ```
+Check if the app is working or not using the following command:
+
+```
+cd sample-flask-app
+python3 app.py
+```
 
 
 <figure data-zoomable align='center'>
@@ -200,7 +201,7 @@ On MacOS the installation is done using Homebrew's brew package manager. Once th
 
 <!--- On my mac terminal --->
 
-   You can now access the UI of the app on your local host: [http://localhost:5002/](http://localhost:5002/)
+You can now access the UI of the app on your local host: [http://localhost:5002/](http://localhost:5002/)
 
 
 
@@ -213,58 +214,70 @@ On MacOS the installation is done using Homebrew's brew package manager. Once th
 
 
 
-   Press 'Ctrl + C' to exit the app once you have made sure it is running properly.
+Press 'Ctrl + C' to exit the app once you have made sure it is running properly.
 
-3. **Set up OpenTelemetry Python instrumentation library**<br></br>
-   Your app folder contains a file called `requirements.txt`. This file contains all the necessary commands to set up OpenTelemetry python instrumentation library. All the mandatory packages required to start the instrumentation are installed with the help of this file. Make sure your path is updated to the root directory of your sample app and run the following command:
+Step 3. **Set up OpenTelemetry Python instrumentation library**<br></br>
 
-   ```
-   pip3 install -r requirements.txt
-   ```
+Your app folder contains a file called `requirements.txt`. This file contains all the necessary commands to set up OpenTelemetry python instrumentation library. All the mandatory packages required to start the instrumentation are installed with the help of this file. Make sure your path is updated to the root directory of your sample app and run the following command:
 
-   If it hangs while installing `grpcio` during **pip3 install opentelemetry-exporter-otlp** then follow below steps as suggested in **<a href = "https://stackoverflow.com/a/62500932/3243212" rel="noopener noreferrer nofollow" target="_blank" >this stackoverflow link</a>**
+```
+pip3 install -r requirements.txt
+```
 
-   - pip3 install --upgrade pip
-   - python3 -m pip install --upgrade setuptools
-   - pip3 install --no-cache-dir --force-reinstall -Iv grpcio
+:::note
+The opentelemetry-exporter-otlp is a convenience wrapper package to install all OTLP exporters. Currently, it installs:
 
-4. **Install application specific packages**<br></br>
-   This step is required to install packages specific to the application. Make sure to run this command in the root directory of your installed application. This command figures out which instrumentation packages the user might want to install and installs it for them:
+- opentelemetry-exporter-otlp-proto-http
 
-   ```
-   opentelemetry-bootstrap --action=install
-   ```
+- opentelemetry-exporter-otlp-proto-grpc
+
+- (soon) opentelemetry-exporter-otlp-json-http
+
+The `opentelemetry-exporter-otlp-proto-grpc` package installs the gRPC exporter which depends on the `grpcio` package. The installation of `grpcio` may fail on some platforms for various reasons. If you run into such issues, or you don't want to use gRPC, you can install the HTTP exporter instead by installing the `opentelemetry-exporter-otlp-proto-http` package. You need to set the `OTEL_EXPORTER_OTLP_PROTOCOL` environment variable to `http/protobuf` to use the HTTP exporter.
+:::
+
+If it hangs while installing `grpcio` during **pip3 install opentelemetry-exporter-otlp** then follow below steps as suggested in **<a href = "https://stackoverflow.com/a/62500932/3243212" rel="noopener noreferrer nofollow" target="_blank" >this stackoverflow link</a>**
+
+- pip3 install --upgrade pip
+- python3 -m pip install --upgrade setuptools
+- pip3 install --no-cache-dir --force-reinstall -Iv grpcio
+
+Step 4. **Install application specific packages**<br></br>
+
+This step is required to install packages specific to the application. Make sure to run this command in the root directory of your installed application. This command figures out which instrumentation packages the user might want to install and installs it for them:
+
+```
+opentelemetry-bootstrap --action=install
+```
 :::note
 Please make sure that you have installed all the dependencies of your application before running the above command. The command will not install instrumentation for the dependencies which are not installed.
 :::
 
-5. **Configure environment variables to run app and send data to SigNoz**<br></br>
-   You're almost done. In the last step, you just need to configure a few environment variables for your OTLP exporters. Environment variables that need to be configured:
+Step 5. **Configure environment variables to run app and send data to SigNoz**<br></br>
+You're almost done. In the last step, you just need to configure a few environment variables for your OTLP exporters. Environment variables that need to be configured:
 
-   - `service.name`- application service name (you can name it as you like)
-   - `OTEL_EXPORTER_OTLP_ENDPOINT` - In this case, IP of the machine where SigNoz is installed
+- `service.name`- application service name (you can name it as you like)
+- `OTEL_EXPORTER_OTLP_ENDPOINT` - In this case, IP of the machine where SigNoz is installed
 
-   `IP of SigNoz backend` is the IP of the machine where you installed SigNoz. If you have installed SigNoz on `localhost`, the endpoint will be `http://localhost:4317` for gRPC exporter and `http://localhost:4318` for HTTP exporter.
+`IP of SigNoz backend` is the IP of the machine where you installed SigNoz. If you have installed SigNoz on `localhost`, the endpoint will be `http://localhost:4317` for gRPC exporter and `http://localhost:4318` for HTTP exporter.
 
-   You need to put these environment variables in the below command.
+You need to put these environment variables in the below command.
 
-   :::note
-   Don’t run app in reloader/hot-reload mode as it breaks instrumentation. For example, if you use `export FLASK_ENV=development`, it enables the reloader mode which breaks OpenTelemetry instrumentation.
+```bash
+OTEL_RESOURCE_ATTRIBUTES=service.name=<service_name> OTEL_EXPORTER_OTLP_ENDPOINT="http://<IP of SigNoz>:4317" opentelemetry-instrument python3 app.py
+```
 
-   The `opentelemetry-exporter-otlp-proto-grpc` package installs the gRPC exporter which depends on the `grpcio` package. The installation of `grpcio` may fail on some platforms for various reasons. If you run into such issues, or you don't want to use gRPC, you can install the HTTP exporter instead by installing the `opentelemetry-exporter-otlp-proto-http` package. You need to set the `OTEL_EXPORTER_OTLP_PROTOCOL` environment variable to `http/protobuf` to use the HTTP exporter.
-   :::
-   
-   ```jsx
-   OTEL_RESOURCE_ATTRIBUTES=service.name=<service_name> OTEL_EXPORTER_OTLP_ENDPOINT="http://<IP of SigNoz>:4317" opentelemetry-instrument python3 app.py
-   ```
+:::note
+Don’t run app in reloader/hot-reload mode as it breaks instrumentation. For example, if you use `export FLASK_ENV=development`, it enables the reloader mode which breaks OpenTelemetry instrumentation.
+:::
 
-   As we are running SigNoz on local host, `IP of SigNoz` can be replaced with `localhost` in this case. And, for `service_name` let's use `pythonApp`. Hence, the final command becomes:
+As we are running SigNoz on local host, `IP of SigNoz` can be replaced with `localhost` in this case. And, for `service_name` let's use `pythonApp`. Hence, the final command becomes:
 
-   **Final Command**
+**Final Command**
 
-   ```
-   OTEL_RESOURCE_ATTRIBUTES=service.name=pythonApp OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317" opentelemetry-instrument python3 app.py
-   ```
+```
+OTEL_RESOURCE_ATTRIBUTES=service.name=pythonApp OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317" opentelemetry-instrument python3 app.py
+```
 
 And, congratulations! You have instrumented your sample Python app. You can now access the SigNoz dashboard at [http://localhost:3301](http://localhost:3301/) to monitor your app for performance metrics.
 
@@ -285,7 +298,7 @@ In just 5 easy steps, our dashboard lets you drill down to events causing a dela
 1. **Choose the service you want to inspect**
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2021/06/dashboard_applications_list-2.webp" alt=""/>
+    <img src="/img/blog/common/signoz_dashboard_homepage.webp" alt=""/>
     <figcaption><i>List of services monitored</i></figcaption>
 </figure>
 
@@ -294,7 +307,7 @@ In just 5 easy steps, our dashboard lets you drill down to events causing a dela
 2. **Choose the timestamp where latency is high and click on view traces**
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2021/06/dashboard_view_traces-1.webp" alt=""/>
+    <img src="/img/blog/common/signoz_metrics_to_traces.webp" alt=""/>
     <figcaption><i>Dashboard showing RED metrics</i></figcaption>
 </figure>
 
@@ -303,7 +316,7 @@ In just 5 easy steps, our dashboard lets you drill down to events causing a dela
 3. **Choose the trace ID with the highest latency**
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2021/06/dashboard_highest_traceid.webp" alt=""/>
+    <img src="/img/blog/common/signoz_list_of_traces_hc.webp" alt=""/>
     <figcaption><i>See list of traces</i></figcaption>
 </figure>
 
@@ -312,17 +325,8 @@ In just 5 easy steps, our dashboard lets you drill down to events causing a dela
 4. **Inspect distributed traces with flamegraph**
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2021/06/dashboard_flamegraph.webp" alt=""/>
+    <img src="/img/blog/common/signoz_flamegraphs.webp" alt=""/>
     <figcaption><i>Flamegraphs for distributed tracing</i></figcaption>
-</figure>
-
-<br></br>
-
-5. **Zero in on the highest latency event and take action**
-
-<figure data-zoomable align='center'>
-    <img src="/img/blog/2021/06/dashboard_highest_latency.webp" alt=""/>
-    <figcaption><i>Zoom in to specific spans</i></figcaption>
 </figure>
 
 <br></br>
