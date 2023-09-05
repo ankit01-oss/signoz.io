@@ -113,57 +113,73 @@ You can now access the UI of the app on your local host: http://localhost:5002/
 To capture data with OpenTelemetry, you need to configure some environment variables and run the app with OpenTelemetry packages. Once you ensure your app is running, stop the app with `ctrl + c` on a mac. So let us see how to run the app with OpenTelemetry packages.
 
 ### Instrumenting the Flask application with OpenTelemetry
-1. **Opentelemetry Python instrumentation installation**<br></br>
-   The app folder contains a file called `requirements.txt`, which contains all the necessary requirements to set up OpenTelemetry Python instrumentation. Make sure your path is updated to the root directory of your sample app and run the following command:
-   ```jsx
-   pip3 install -r requirements.txt
-   ```
+**Step 1. Opentelemetry Python instrumentation installation**<br></br>
+
+The app folder contains a file called `requirements.txt`, which contains all the necessary requirements to set up OpenTelemetry Python instrumentation. Make sure your path is updated to the root directory of your sample app and run the following command:
+
+```bash
+pip3 install -r requirements.txt
+```
 
 :::info
-  The `opentelemetry-exporter-otlp-proto-grpc` package installs the gRPC exporter which depends on the `grpcio` package. The installation of `grpcio` may fail on some platforms for various reasons. If you run into such issues, or you don't want to use gRPC, you can install the HTTP exporter instead by installing the `opentelemetry-exporter-otlp-proto-http` package. You need to set the `OTEL_EXPORTER_OTLP_PROTOCOL` environment variable to `http/protobuf` to use the HTTP exporter.
+The opentelemetry-exporter-otlp is a convenience wrapper package to install all OTLP exporters. Currently, it installs:
+
+- opentelemetry-exporter-otlp-proto-http
+
+- opentelemetry-exporter-otlp-proto-grpc
+
+- (soon) opentelemetry-exporter-otlp-json-http
+
+The `opentelemetry-exporter-otlp-proto-grpc` package installs the gRPC exporter which depends on the `grpcio` package. The installation of `grpcio` may fail on some platforms for various reasons. If you run into such issues, or you don't want to use gRPC, you can install the HTTP exporter instead by installing the `opentelemetry-exporter-otlp-proto-http` package. You need to set the `OTEL_EXPORTER_OTLP_PROTOCOL` environment variable to `http/protobuf` to use the HTTP exporter.
 :::
 
-2. **Install application-specific packages**<br></br>
-   This step is required to install packages specific to the application. Make sure to run this command in the root directory of your installed application. This command figures out which instrumentation packages the user might want to install and installs it for them:
-   ```jsx
-   opentelemetry-bootstrap --action=install
-   ```
+**Step 2. Install application-specific packages**<br></br>
+
+This step is required to install packages specific to the application. Make sure to run this command in the root directory of your installed application. This command figures out which instrumentation packages the user might want to install and installs it for them:
+
+```bash
+opentelemetry-bootstrap --action=install
+```
 
 :::note
 Please make sure that you have installed all the dependencies of your application before running the above command. The command will not install instrumentation for the dependencies which are not installed.
 :::
 
-3. **Passing the necessary environment variables**<br></br>
-   You're almost done. In the last step, you just need to configure a few environment variables for your OTLP exporters. Environment variables that need to be configured:
+**Step 3. Passing the necessary environment variables**<br></br>
 
-   - `service.name`- application service name (you can name it as you like)
-   - `OTEL_EXPORTER_OTLP_ENDPOINT` - In this case, IP of the machine where SigNoz is installed
+You're almost done. In the last step, you just need to configure a few environment variables for your OTLP exporters. Environment variables that need to be configured:
 
-   `IP of SigNoz backend` is the IP of the machine where you installed SigNoz. If you have installed SigNoz on `localhost`, the endpoint will be `http://localhost:4317` for gRPC exporter and `http://localhost:4318` for HTTP exporter.
+- `service.name`- application service name (you can name it as you like)
+- `OTEL_EXPORTER_OTLP_ENDPOINT` - In this case, IP of the machine where SigNoz is installed
 
-   You need to put these environment variables in the below command.
+`IP of SigNoz backend` is the IP of the machine where you installed SigNoz. If you have installed SigNoz on `localhost`, the endpoint will be `http://localhost:4317` for gRPC exporter and `http://localhost:4318` for HTTP exporter.
 
-   :::note
-   Don’t run app in reloader/hot-reload mode as it breaks instrumentation. For example, if you use `export FLASK_ENV=development`, it enables the reloader mode which breaks OpenTelemetry instrumentation.
-   :::
+You need to put these environment variables in the below command.
 
-   ```jsx
-   OTEL_RESOURCE_ATTRIBUTES=service.name=<service_name> OTEL_EXPORTER_OTLP_ENDPOINT="http://<IP of SigNoz>:4317" opentelemetry-instrument python3 app.py
-   ```
+```bash
+OTEL_RESOURCE_ATTRIBUTES=service.name=<service_name> OTEL_EXPORTER_OTLP_ENDPOINT="http://<IP of SigNoz>:4317" opentelemetry-instrument python3 app.py
+```
 
-   As we are running SigNoz on local host, `IP of SigNoz` can be replaced with `localhost` in this case. And, for `service_name` let's use `Flask_App`. Hence, the final command becomes:<br></br>
-   **Final Command**
-   ```jsx
-   OTEL_RESOURCE_ATTRIBUTES=service.name=Flask_App OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317" opentelemetry-instrument python3 app.py
-   ```
+:::note
+Don’t run app in reloader/hot-reload mode as it breaks instrumentation. For example, if you use `export FLASK_ENV=development`, it enables the reloader mode which breaks OpenTelemetry instrumentation.
+:::
+
+
+As we are running SigNoz on local host, `IP of SigNoz` can be replaced with `localhost` in this case. And, for `service_name` let's use `Flask_App`. Hence, the final command becomes:<br></br>
+**Final Command**
+
+
+```bash
+OTEL_RESOURCE_ATTRIBUTES=service.name=Flask_App OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317" opentelemetry-instrument python3 app.py
+```
 
 :::note
 The port numbers are 4317 and 4318 for the gRPC and HTTP exporters respectively. Remember to allow incoming requests to port **4317**/**4318** of machine where SigNoz backend is hosted.
 :::
 
-   And congratulations! You have now instrumented your flask application with OpenTelemetry.
+And congratulations! You have now instrumented your flask application with OpenTelemetry.
 
-   Below you can find your `Flask_app` in the list of applications being monitored on SigNoz dashboard.
+Below you can find your `Flask_app` in the list of applications being monitored on SigNoz dashboard.
 
 
 <figure data-zoomable align='center'>
@@ -174,8 +190,9 @@ The port numbers are 4317 and 4318 for the gRPC and HTTP exporters respectively.
 <br></br>
 
 ### Troubleshooting
+
 The debug mode can break instrumentation from happening because it enables a reloader. To run instrumentation while the debug mode is enabled, set the use_reloader option to False:
-```jsx
+```bash
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5002, debug=True, use_reloader=False)
 ```
