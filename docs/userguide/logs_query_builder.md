@@ -100,52 +100,52 @@ Here are a few examples of valid and invalid queries:
     | OPERATION in ('bcd') AND 'abcd' FULLTEXT contains 'search string' | AND missing between 'abcd' and FULLTEXT | 
     | OPERATION in ('bcd') AND 'search string'                          | Operator missing before 'search string' | 
 
-## The visual query builder
+## Logs query builder in new Logs Explorer
+
 We recently released an updated logs explorer page and query builder in SigNoz to make experience of our logs product much more intuitive and seamless.
 
 ![Logs Query Builder Interface](../../static/img/docs/query-builder/01.png)
 
 
 Some of the key features:
-1. Advanced filtering based on attributes and auto suggestions for filters
+1. Advanced filtering based on attributes and auto suggestions for filters<br></br>
 
-You can now create more complex queries for how you match attributes, and the query field will automatically suggest both attributes and values for your query.
+    You can now create more complex queries for how you match attributes, and the query field will automatically suggest both attributes and values for your query.
 
-![Logs Query Builder Interface](../../static/img/docs/query-builder/02.png)
+    ![Logs Query Builder Interface](../../static/img/docs/query-builder/02.png)
 
-After entering your query hit 'run query' to see a default bar chart and results down below:
+    After entering your query hit 'run query' to see a default bar chart and results down below:
 
-![Logs Query Builder Interface](../../static/img/docs/query-builder/03.png)
+    ![Logs Query Builder Interface](../../static/img/docs/query-builder/03.png)
 
+    To explore additional ways to filter your query, click 'view details' on any log line to get a list of parameters on the log, and click any value to automatically add a `{attribute} IN {value}` to your query.
 
-To explore additional ways to filter your query, click 'view details' on any log line to get a list of parameters on the log, and click any value to automatically add a `{attribute} IN {value}` to your query.
+    ![Logs Query Builder Interface](../../static/img/docs/query-builder/04.png)
 
-![Logs Query Builder Interface](../../static/img/docs/query-builder/04.png)
+2. Aggregation options like Group By, ability to specificy aggregation intervals, etc.<br></br>
 
-2. Aggregation options like Group By, ability to specificy aggregation intervals, etc.
+    The Group By drop down is automatically populated with common attributes, and selecting one, like log level in this example, gets us a few things right away
 
-The Group By drop down is automatically populated with common attributes, and selecting one, like log level in this example, gets us a few things right away
+    * A comparitive bar chart, with a legend (you can enter a format for the legend including explanatory text eg in this case you might enter `The log level is {{level}}` to make the chart more readable by others)
 
-* A comparitive bar chart, with a legend (you can enter a format for the legend including explanatory text eg in this case you might enter `The log level is {{level}}` to make the chart more readable by others)
+    * A timeseries comparing the relative volume of results by time
 
-* A timeseries comparing the relative volume of results by time
+    ![Logs Query Builder Interface](../../static/img/docs/query-builder/05.png)
 
-![Logs Query Builder Interface](../../static/img/docs/query-builder/05.png)
+3. Plot multiple queries and formulae based on them in the same charts<br></br>
 
-3. Plot multiple queries and formulae based on them in the same charts
+    For comparing two timeseries or values, you can now add multiple queries or formulae on the same chart, which is especially useful if you are comparing similar data across two different services.
 
-For comparing two timeseries or values, you can now add multiple queries or formulae on the same chart, which is especially useful if you are comparing similar data across two different services.
+4. Modify your query with a click<br></br>
 
-4. Modify your query with a click
+    By clicking into the details of any log line, you can see the attributes for that item. Click any value, and your query will be modified to require that attribute and value.
 
-By clicking into the details of any log line, you can see the attributes for that item. Click any value, and your query will be modified to require that attribute and value.
+    ![Logs Query Builder Interface](../../static/img/docs/query-builder/06.png)
 
-![Logs Query Builder Interface](../../static/img/docs/query-builder/06.png)
+5. Create Dashboards and Alerts in a single click from logs query builder<br></br>
 
-5. Create Dashboards and Alerts in a single click from logs query builder
+    Directly from results you can add the query to a dashboard and set up an alert. This makes the timeseries view especially useful, as you can now create an alert when a certain event is logged beyond a certain rate.
 
-Directly from results you can add the query to a dashboard and set up an alert. This makes the timeseries view especially useful, as you can now create an alert when a certain event is logged beyond a certain rate.
-
-![Logs Query Builder Interface](../../static/img/docs/query-builder/07.png)
+    ![Logs Query Builder Interface](../../static/img/docs/query-builder/07.png)
 
 With the alert query you can perform sophisticated comparisons or other math on your measurement from your logs.
