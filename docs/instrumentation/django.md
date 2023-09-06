@@ -35,7 +35,7 @@ Let’s understand how to download, install, and run OpenTelemetry in Django.
 
 - for Django, you must define `DJANGO_SETTINGS_MODULE`correctly. If your project is called `mysite`, something like following should work:
 
-```jsx
+```bash
 export DJANGO_SETTINGS_MODULE=mysite.settings
 ```
 
