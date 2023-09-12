@@ -1,7 +1,7 @@
 ---
 title: DataDog vs Prometheus - Key features & differences
 slug: datadog-vs-prometheus
-date: 2023-03-05
+date: 2023-09-05
 tags: [Tools Comparison, Prometheus]
 authors: ankit_anand
 description: In this article, we will compare DataDog with Prometheus. Both are monitoring tools but differ significantly in their offerings. DataDog is a paid SaaS monitoring tool, while Prometheus is an open-source metrics...
@@ -22,6 +22,8 @@ Both DataDog and Prometheus are application monitoring tools aimed to improve ap
 <!--truncate-->
 
 ![Cover Image](/img/blog/2023/03/datadog_vs_prometheus_cover-min.jpg)
+
+The biggest difference between Datadog and Prometheus is that while Prometheus is open-source, Datadog is proprietary. To use Prometheus, you will have to install it in your own infrastructure. Datadog provides a SaaS service to which you can send your monitoring data to.
 
 In this article, we will explore the differences between DataDog and Prometheus based on these categories:
 
@@ -140,15 +142,15 @@ The visualization layer of Prometheus is basic, but it can be combined with Graf
 
 ## A better alternative to DataDog and Prometheus - SigNoz
 
-[SigNoz](https://signoz.io/) is a full-stack open-source application performance monitoring and observability tool which can be used in place of DataDog and Prometheus. SigNoz is built to give SaaS like user experience combined with the perks of open-source software. Developer tools should be developer first, and SigNoz was built by developers to address the gap between SaaS vendors and open-source software.
+[SigNoz](https://signoz.io/) is a full-stack open-source application performance monitoring and observability tool which can be used in place of DataDog and Prometheus. SigNoz is built to give SaaS like user experience combined with the perks of open-source software. It provides metrics, logs, and traces under a single pane of glass.
 
 Key architecture features:
 
 - **Native OpenTelemetry support**<br></br>
   SigNoz is built to support <a href = "https://opentelemetry.io/" rel="noopener noreferrer nofollow" target="_blank" ><b>OpenTelemetry</b></a> natively, which is quietly becoming the world standard to generate and manage telemetry data.
 
-- **Flexible and scalable Database storage**<br></br>
-  SigNoz provides users flexibility in terms of storage. You can choose between ClickHouse or Kafka + Druid as your backend storage while installing SigNoz.
+- **Uses Columnar database**<br></br>
+  SigNoz uses Clickhouse as its datastore. Many big companies like <a href = "https://www.uber.com/en-IN/blog/logging/" rel="noopener noreferrer nofollow" target="_blank" ><b>Uber</b></a> and <a href = "https://blog.cloudflare.com/log-analytics-using-clickhouse/" rel="noopener noreferrer nofollow" target="_blank" ><b>Cloudflare</b></a> have been shifting to ClickHouse as their choice of observability datastore.
 
 
 <Screenshot
@@ -184,7 +186,7 @@ You can also build custom metrics dashboard for your infrastructure.
 <Screenshot
     alt="SigNoz custom metrics dashboard"
     height={500}
-    src="/img/blog/2021/10/signoz_custom_dashboard-min.webp"
+    src="/img/blog/common/signoz-infra-metrics.webp"
     title="You can also build a custom metrics dashboard for your infrastructure"
     width={700}
 />
@@ -192,26 +194,29 @@ You can also build custom metrics dashboard for your infrastructure.
 
 Some of the things SigNoz can help you track:
 
-- Out-of-the-box charts for application metrics like p90, p99, latency, error rates, request rates, etc.
-- Distributed tracing to get end-to-end visibility of your services
-- Monitor any metrics important to you, build dashboards for specific use-cases
-- Logs Management equipped with a powerful search and filter query builder
-- Exceptions monitoring to track exceptions in your application
+- Visualise Traces, Metrics, and Logs in a single pane of glass
+- Monitor application metrics like p99 latency, error rates for your services, external API calls, and individual endpoints.
+- Find the root cause of the problem by going to the exact traces which are causing the problem and see detailed flamegraphs of individual request traces.
+- Run aggregates on trace data to get business-relevant metrics
+- Filter and query logs, build dashboards and alerts based on attributes in logs
+- Monitor infrastructure metrics such as CPU utilization or memory usage
+- Record exceptions automatically in Python, Java, Ruby, and Javascript
 - Easy to set alerts with DIY query builder
-- Native support for OpenTelemetry native
 
 ## Getting started with SigNoz
 
-You can get started with SigNoz using just three commands at your terminal.
+SigNoz cloud is the easiest way to get started with SigNoz. You can sign up for a free account [here](https://signoz.io/teams/). 
 
-```jsx
+You can also self-host SigNoz. Get started with self-hosted SigNoz using just three commands at your terminal.
+
+```bash
 git clone -b main https://github.com/SigNoz/signoz.git
 cd signoz/deploy/
 ./install.sh
 ```
 <br></br>
 
-For detailed instructions, you can visit our documentation.
+For more installation options, please visit our documentation.
 
 [![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
 
