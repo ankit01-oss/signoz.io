@@ -29,11 +29,11 @@ From VMs, there are two ways to send data to SigNoz Cloud.
 
 Step 1. Install OpenTelemetry packages
 
-```js
-npm install --save @opentelemetry/api@^1.4.1
+```bash
+npm install --save @opentelemetry/api@^1.4.1                                                                       
 npm install --save @opentelemetry/sdk-node@^0.39.1
 npm install --save @opentelemetry/auto-instrumentations-node@^0.37.0
-npm install --save @opentelemetry/exporter-trace-otlp-grpc@^0.39.1
+npm install --save @opentelemetry/exporter-trace-otlp-http@^0.39.1
 ```
 
 Step 2. Create tracing.js file<br></br>
@@ -45,7 +45,7 @@ You need to configure the endpoint for SigNoz cloud in this file. You can find y
 const process = require('process');
 const opentelemetry = require('@opentelemetry/sdk-node');
 const { getNodeAutoInstrumentations } = require('@opentelemetry/auto-instrumentations-node');
-const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-grpc');
+const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-http');
 const { Resource } = require('@opentelemetry/resources');
 const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions');
 
@@ -54,7 +54,7 @@ const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventi
 
 // highlight-start
 const exporterOptions = {
-  url: 'https://ingest.{region}.signoz.cloud:443'
+  url: 'https://ingest.{region}.signoz.cloud:443/v1/traces'
 }
 // highlight-end
 
@@ -113,7 +113,7 @@ Step 1. Install OpenTelemetry packages
 npm install --save @opentelemetry/api@^1.4.1
 npm install --save @opentelemetry/sdk-node@^0.39.1
 npm install --save @opentelemetry/auto-instrumentations-node@^0.37.0
-npm install --save @opentelemetry/exporter-trace-otlp-grpc@^0.39.1
+npm install --save @opentelemetry/exporter-trace-otlp-http@^0.39.1
 ```
 
 Step 2. Create tracing.js file<br></br>
@@ -124,12 +124,12 @@ Step 2. Create tracing.js file<br></br>
 const process = require('process');
 const opentelemetry = require('@opentelemetry/sdk-node');
 const { getNodeAutoInstrumentations } = require('@opentelemetry/auto-instrumentations-node');
-const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-grpc');
+const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-http');
 const { Resource } = require('@opentelemetry/resources');
 const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions');
 
 const exporterOptions = {
-  url: process.env.OTEL_EXPORTER_OTLP_ENDPOINT || 'http://localhost:4317',
+  url: process.env.OTEL_EXPORTER_OTLP_ENDPOINT || 'http://localhost:4318/v1/traces',
 }
 
 const traceExporter = new OTLPTraceExporter(exporterOptions);
@@ -175,7 +175,7 @@ Step 1. Install OpenTelemetry packages
 npm install --save @opentelemetry/api@^1.4.1
 npm install --save @opentelemetry/sdk-node@^0.39.1
 npm install --save @opentelemetry/auto-instrumentations-node@^0.37.0
-npm install --save @opentelemetry/exporter-trace-otlp-grpc@^0.39.1
+npm install --save @opentelemetry/exporter-trace-otlp-http@^0.39.1
 ```
 
 Step 2. Create tracing.js file<br></br>
@@ -186,12 +186,12 @@ Step 2. Create tracing.js file<br></br>
 const process = require('process');
 const opentelemetry = require('@opentelemetry/sdk-node');
 const { getNodeAutoInstrumentations } = require('@opentelemetry/auto-instrumentations-node');
-const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-grpc');
+const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-http');
 const { Resource } = require('@opentelemetry/resources');
 const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions');
 
 const exporterOptions = {
-  url: process.env.OTEL_EXPORTER_OTLP_ENDPOINT || 'http://localhost:4317',
+  url: process.env.OTEL_EXPORTER_OTLP_ENDPOINT || 'http://localhost:4318/v1/traces',
 }
 
 const traceExporter = new OTLPTraceExporter(exporterOptions);
