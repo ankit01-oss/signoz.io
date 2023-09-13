@@ -70,11 +70,32 @@ pip install opentelemetry-distro==0.38b0
 pip install opentelemetry-exporter-otlp==1.17.0
 ```
 
+The dependencies included are briefly explained below:
+
+`opentelemetry-distro` - The distro provides a mechanism to automatically configure some of the more common options for users. It helps to get started with OpenTelemetry auto-instrumentation quickly. 
+
+`opentelemetry-exporter-otlp` - This library provides a way to install all OTLP exporters. You will need an exporter to send the data to SigNoz.
+
+:::note
+💡 The `opentelemetry-exporter-otlp` is a convenience wrapper package to install all OTLP exporters. Currently, it installs:
+
+- opentelemetry-exporter-otlp-proto-http
+- opentelemetry-exporter-otlp-proto-grpc
+
+- (soon) opentelemetry-exporter-otlp-json-http
+
+The `opentelemetry-exporter-otlp-proto-grpc` package installs the gRPC exporter which depends on the `grpcio` package. The installation of `grpcio` may fail on some platforms for various reasons. If you run into such issues, or you don't want to use gRPC, you can install the HTTP exporter instead by installing the `opentelemetry-exporter-otlp-proto-http` package. You need to set the `OTEL_EXPORTER_OTLP_PROTOCOL` environment variable to `http/protobuf` to use the HTTP exporter.
+:::
+
 Step 3. Add automatic instrumentation
 
 ```bash
 opentelemetry-bootstrap --action=install
 ```
+
+:::note
+Please make sure that you have installed all the dependencies of your application before running the above command. The command will not install instrumentation for the dependencies which are not installed.
+:::
 
 Step 4. Run your application
 
@@ -82,6 +103,7 @@ Step 4. Run your application
 OTEL_RESOURCE_ATTRIBUTES=service.name=<service_name> \
 OTEL_EXPORTER_OTLP_ENDPOINT="https://ingest.{region}.signoz.cloud:443" \
 OTEL_EXPORTER_OTLP_HEADERS="signoz-access-token=SIGNOZ_INGESTION_KEY" \
+OTEL_EXPORTER_OTLP_PROTOCOL=grpc \
 opentelemetry-instrument <your_run_command>
 ```
 

@@ -239,7 +239,7 @@ You can use OpenTelemetry Python to send your traces directly to SigNoz. OpenTel
      Replacing these environment variables, a sample final run command will look like this:
 
      ```bash
-     OTEL_RESOURCE_ATTRIBUTES=service.name=python_app OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317" opentelemetry-instrument python3 app.py
+     OTEL_RESOURCE_ATTRIBUTES=service.name=python_app OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317" OTEL_EXPORTER_OTLP_PROTOCOL=grpc opentelemetry-instrument python3 app.py
      ```
      
     :::note
