@@ -338,7 +338,7 @@ You can use OpenTelemetry to send your traces directly to SigNoz. OpenTelemetry 
     :::
      
 
-### Validating instrumentation by checking for traces
+## Validating instrumentation by checking for traces
 
 With your application running, you can verify that you’ve instrumented your application with OpenTelemetry correctly by confirming that tracing data is being reported to SigNoz.
 
