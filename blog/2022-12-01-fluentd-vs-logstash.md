@@ -1,7 +1,7 @@
 ---
 title: FluentD vs Logstash - Choosing a Log collector for Log Analytics
 slug: fluentd-vs-logstash
-date: 2022-12-01
+date: 2023-09-05
 tags: [Tools Comparison]
 authors: muskan
 description: FluentD and Logstash are log collectors used in logs data pipeline. For the Kubernetes environments or teams working with Docker, Fluentd is the ideal candidate for a logs collector. On the other hand, Logstash works well with Elasticsearch and Kibana. So, if you already have Elasticsearch and Kibana...
@@ -17,11 +17,13 @@ keywords:
   - log analytics
 ---
 
+import getStartedSigNoz from '../docs/shared/get-started-signoz.md'
+
 <head>
   <link rel="canonical" href="https://signoz.io/blog/fluentd-vs-logstash/"/>
 </head>
 
-When we have large-scale, distributed systems, Logging becomes essential for observability, monitoring, and security. No matter what architecture (Monolith/Microservices) our systems have, they are complex due to the number of moving parts they have and the challenges they face around management, deployment, and scaling. 
+When we have large-scale, distributed systems, Logging becomes essential for observability, monitoring, and security. No matter what architecture (Monolith/Microservices) our systems have, they are complex due to the number of moving parts they have and the challenges they face around management, deployment, and scaling.
 
 <!--truncate-->
 
@@ -163,7 +165,11 @@ If you liked what you read, then check out our GitHub repo 👇
 
 [![SigNoz GitHub repo](/img/blog/common/signoz_github.webp)](https://github.com/SigNoz/signoz)
 
+<getStartedSigNoz />
+
 ---
+
+
 
 **Related Posts**
 
