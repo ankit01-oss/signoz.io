@@ -46,7 +46,7 @@ function Pricing() {
                         className={`button button--primary ${styles.pricingCtaBtn}`}
                         href={"/teams/"}
                       >
-                        Get started
+                        Get started - free
                       </Link>
                     </div>
                   </div>
@@ -73,7 +73,7 @@ function Pricing() {
                     <br />
 
                     <div>
-                      <span>Monthly cost would be higher of $199 and cost based on usage</span>
+                      <span>$199 includes usage. Monthly cost would be higher of $199 and cost based on usage</span>
                     </div>
                   </div>
                   <hr />
@@ -152,7 +152,7 @@ function Pricing() {
                     className={`button button--primary ${styles.pricingCtaBtn}`}
                     href={"/teams/"}
                   >
-                    Get started
+                    Get started - free
                   </Link>
                 </div>
               </div>
