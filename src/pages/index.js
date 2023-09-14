@@ -688,10 +688,9 @@ function Home() {
   return (
     <Fragment>
       <Layout
-        title={`Open source APM`}
-        description="SigNoz is an open-source APM to help you find issues in your deployed applications & solve them quickly.
-      It provides an integrated UI for metrics and traces with deep filtering and aggregation to pin down specific issues very quickly.
-      Built with ClickHouse as datastore, it is designed to handle enterprise scale."
+        title={`Open source Observability`}
+        description="SigNoz is an open-source observability tool to help you find issues in your deployed applications & solve them quickly.
+      It provides logs, metrics, and traces under a single pane of glass. Built with ClickHouse as datastore, it is designed to handle enterprise scale."
       >
         <TrySignozModal
           isOpen={showTrySignozModal}
