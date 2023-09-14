@@ -1,7 +1,7 @@
 ---
 title: Getting started with OpenTelemetry visualization
 slug: opentelemetry-visualization
-date: 2022-06-27
+date: 2023-09-14
 tags: [OpenTelemetry, SigNoz]
 authors: [ankit_anand]
 description: OpenTelemetry provides language-specific client libraries to instrument application code for generating telemetry data. You can then use a backend analysis tool to visualize the collected OpenTelemetry data. In this article, we will see what types of OpenTelemetry visualizations are possible and how to use a backend analysis tool for OpenTelemetry visualization...
@@ -25,6 +25,8 @@ keywords:
 </head>
 
 import SignUps from '../docs/shared/sign-ups.md'
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
+
 
 OpenTelemetry is a Cloud Native Computing Foundation(<a href = "https://www.cncf.io/" rel="noopener noreferrer nofollow" target="_blank">CNCF</a>) project aimed at standardizing the way we instrument applications for generating telemetry data(logs, metrics, and traces). However, OpenTelemetry does not provide storage and visualization for the collected telemetry data. For OpenTelemetry visualization, you need to use a backend that can ingest the collected data and provide a web UI to visualize it.
 
@@ -158,9 +160,7 @@ OpenTelemetry has language-specific instrumentation steps. You can explore our b
 - [Elixir](https://signoz.io/blog/opentelemetry-elixir/)
 - [.NET](https://signoz.io/blog/opentelemetry-dotnet/)
 
-You can check out the SigNoz GitHub repo here:
-
-[![SigNoz GitHub repo](/img/blog/common/signoz_github.webp)](https://github.com/SigNoz/signoz)
+<GetStartedSigNoz />
 
 ---
 

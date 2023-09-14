@@ -1,7 +1,7 @@
 ---
 title: Monitor gRPC calls with OpenTelemetry - explained with a Golang example
 slug: opentelemetry-grpc-golang
-date: 2023-08-01
+date: 2023-09-05
 tags: [OpenTelemetry Instrumentation, Go / Golang]
 authors: vaishnavi
 description: This article demonstrates how to monitor gRPC calls with OpenTelemetry using a sample Golang application using gRPC framework. OpenTelemetry is a vendor-agnostic instrumentation library that can be used to monitor gRPC calls...

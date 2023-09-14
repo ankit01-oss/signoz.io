@@ -1,7 +1,7 @@
 ---
 title: Jaeger vs Elastic APM - key differences, features and alternatives
 slug: jaeger-vs-elastic-apm
-date: 2021-09-12
+date: 2023-09-01
 tags: [Tools Comparison, Jaeger]
 authors: ankit_anand
 description: Jaeger is an open-source end-to-end distributed tracing tool for microservices architecture. On the other hand, Elastic APM is an application performance monitoring system which is built on top of the ELK Stack...
@@ -16,6 +16,8 @@ keywords:
 <head>
   <link rel="canonical" href="https://signoz.io/blog/jaeger-vs-elastic-apm/"/>
 </head>
+
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
 
 Jaeger is an open-source end-to-end distributed tracing tool for microservices architecture. On the other hand, Elastic APM is an application performance monitoring system that is built on top of the ELK Stack (Elasticsearch, Logstash, Kibana, Beats). In this article, let's explore their key features, differences, and alternatives.
 
@@ -158,17 +160,7 @@ Some of the things SigNoz can help you track:
 
 ## Getting started with SigNoz
 
-If you have docker installed, getting started with SigNoz just takes three easy steps at the command line:
-```jsx
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-You can read more about deploying SigNoz from its [documentation](https://signoz.io/docs/install/).
-
-You can check out SigNoz's GitHub repo here 👇
-
-[![SigNoz GitHub repo](/img/blog/common/signoz_github.webp)](https://github.com/SigNoz/signoz)
+<GetStartedSigNoz />
 
 ___
 

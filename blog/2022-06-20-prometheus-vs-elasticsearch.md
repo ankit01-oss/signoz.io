@@ -1,7 +1,7 @@
 ---
 title: Prometheus vs Elasticsearch stack - Key concepts, features, and differences
 slug: prometheus-vs-elasticsearch
-date: 2022-06-20
+date: 2023-08-29
 tags: [Tools Comparison, Prometheus]
 authors: ankit_anand
 description: Both Prometheus and Elasticsearch stack provide monitoring solutions for applications in production. But while Prometheus is focused on metrics monitoring, the Elasticsearch stack or the ELK stack specializes in logs...
@@ -20,6 +20,8 @@ keywords:
 <head>
   <link rel="canonical" href="https://signoz.io/blog/prometheus-vs-elasticsearch/"/>
 </head>
+
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
 
 Prometheus and the Elasticsearch stack are both used for monitoring applications. But while Prometheus is primarily meant to monitor metrics, the Elasticsearch stack or the ELK stack is mainly used to collect, store, analyze, and visualize application logs. In this article, we will see what Prometheus and ELK stack is and compare their differences.
 
@@ -147,6 +149,8 @@ SigNoz is a full-stack open-source application performance monitoring and observ
 
 SigNoz is built to support OpenTelemetry natively. [OpenTelemetry](https://opentelemetry.io/) is becoming the world standard for generating and managing telemetry data (Logs, metrics, and traces). It provides a fast OLAP datastore, ClickHouse, as the storage backend.
 
+## Getting started with SigNoz
+
 It comes with out-of-box application metrics charts.
 
 <figure data-zoomable>
@@ -165,9 +169,7 @@ You can analyze tracing data with Flamegraphs and Gantt charts.
 
 <br></br>
 
-Check out SigNoz GitHub repo:
-
-[![SigNoz GitHub repo](/img/blog/common/signoz_github.webp)](https://github.com/SigNoz/signoz)
+<GetStartedSigNoz />
 
 <!-- ## Frequently asked questions -->
 

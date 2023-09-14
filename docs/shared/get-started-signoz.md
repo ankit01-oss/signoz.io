@@ -1,4 +1,3 @@
-## Getting started with SigNoz
 
 SigNoz cloud is the easiest way to run SigNoz. You can sign up [here](https://signoz.io/teams/) for a free account and get 30 days of free uncapped usage.
 

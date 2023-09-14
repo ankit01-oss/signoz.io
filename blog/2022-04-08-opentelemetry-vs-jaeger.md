@@ -1,7 +1,7 @@
 ---
 title: OpenTelemetry and Jaeger | Key concepts, features, and differences
 slug: opentelemetry-vs-jaeger
-date: 2022-04-08
+date: 2023-09-08
 tags: [Tools Comparison, Jaeger]
 authors: ankit_anand
 description: Both OpenTelemetry and Jaeger enable application owners to set up monitoring and observability to measure application performance. But their solutions are meant to address different problems...

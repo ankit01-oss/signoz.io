@@ -1,7 +1,7 @@
 ---
 title: DataDog vs Cloudwatch - Which tool to choose?
 slug: datadog-vs-cloudwatch
-date: 2023-06-02
+date: 2023-09-07
 tags: [Tools Comparison]
 authors: ankit_anand
 description: DataDog is a paid SaaS tool that provides a range of products for monitoring applications and tech infrastructure. While CloudWatch is an Amazon Web Services product that monitors applications running on AWS infrastructure and using AWS services....
@@ -12,6 +12,10 @@ keywords:
   - apm tools
   - application performance monitoring
 ---
+
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
+
+
 <head>
   <title>DataDog vs Cloudwatch | Which tool to choose?</title>
   <link rel="canonical" href="https://signoz.io/blog/datadog-vs-cloudwatch/"/>
@@ -197,23 +201,9 @@ Some of the things SigNoz can help you track:
 - Easy to set alerts with DIY query builder
 - Native support for OpenTelemetry native
 
-
 ## Getting started with SigNoz
 
-You can get started with SigNoz using just three commands at your terminal.
-
-```jsx
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-<br></br>
-
-For detailed instructions, you can visit our documentation.
-
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
-
-If you don't want to self-host, and you can easily get started with [SigNoz cloud](https://signoz.io/teams/).
+<GetStartedSigNoz />
 
 ___
 

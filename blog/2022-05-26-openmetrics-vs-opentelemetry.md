@@ -1,7 +1,7 @@
 ---
 title: OpenMetrics vs OpenTelemetry - A guide on understanding these two specifications
 slug: openmetrics-vs-opentelemetry
-date: 2022-05-26
+date: 2023-08-30
 tags: [Tools Comparison]
 authors: [bhupesh]
 description: OpenMetrics and OpenTelemetry are popular open-source standards for generating telemetry data from application code. While OpenTelemetry can be used for logs, metrics, and traces, OpenMetrics is focused on generating metrics at scale from...
@@ -18,6 +18,8 @@ keywords:
 </head>
 
 import SignUps from '../docs/shared/sign-ups.md'
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
+
 
 OpenMetrics and OpenTelemetry are popular standards for instrumenting cloud-native applications. Both projects are part of the <a href = "https://cncf.io/" rel="noopener noreferrer nofollow" target="_blank">Cloud Native Computing Foundation (CNCF)</a> and aim to simplify how we generate, collect and monitor services in a modern cloud-native distributed application environment.
 
@@ -120,17 +122,7 @@ SigNoz comes with out of box visualization of things like RED metrics. There is 
 
 ## Getting started with SigNoz
 
-SigNoz can be installed on macOS or Linux computers in just three steps by using a simple install script.
-
-```bash
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-
-You can visit our documentation for instructions on how to install SigNoz using Docker Swarm and Helm Charts.
-
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
+<GetStartedSigNoz />
 
 
 ## Further Reading

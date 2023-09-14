@@ -1,7 +1,7 @@
 ---
 title: Top 14 ELK alternatives [open source included] in 2022
 slug: elk-alternatives
-date: 2023-06-04
+date: 2023-09-05
 tags: [Tech Resources]
 authors: ankit_anand
 description: There are many ELK alternatives that you can use for logs analytics. Top 14 ELK alternatives in 2022. 1.SigNoz 2.Logz.io 3.Graylog 4.Logtail 5.Sumologic 6.Grafana Loki...
@@ -16,6 +16,8 @@ keywords:
   - logstash
   - kibana
 ---
+
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
 
 <head>
   <link rel="canonical" href="https://signoz.io/blog/elk-alternatives/"/>
@@ -57,6 +59,12 @@ Below are the top 14 ELK stack alternatives:
 [SigNoz](https://signoz.io/) is a full-stack open source APM that provides log collection and analytics. SigNoz uses a columnar database ClickHouse to store logs, which is very efficient at ingesting and storing logs data. Columnar databases like ClickHouse are very effective in storing log data and making it available for analysis. 
 
 Big companies like Uber have <a href = "https://www.uber.com/en-IN/blog/logging/" rel="noopener noreferrer nofollow" target="_blank" >shifted</a> from the Elastic stack to ClickHouse for their log analytics platform. Cloudflare too was using Elasticsearch for many years but <a href = "https://blog.cloudflare.com/log-analytics-using-clickhouse/" rel="noopener noreferrer nofollow" target="_blank" >shifted to ClickHouse</a> because of limitations in handling large log volumes with Elasticsearch.
+
+In a [logs performance benchmark](https://signoz.io/blog/logs-performance-benchmark/) with SigNoz and ELK, there were two key findings:
+
+- For ingestion SigNoz is **2.5x faster than ELK** and uses **50% less resources.**
+- SigNoz is about **13 times faster than ELK** for aggregation queries.
+- Storage used by SigNoz for the same amount of logs is **about half of what ELK uses**.
 
 SigNoz uses <a href = "https://opentelemetry.io/" rel="noopener noreferrer nofollow" target="_blank" >OpenTelemetry</a> for instrumenting applications. OpenTelemetry, backed by <a href = "https://www.cncf.io/" rel="noopener noreferrer nofollow" target="_blank" >CNCF</a>, is quietly becoming the world standard for instrumenting cloud-native applications.
 
@@ -293,21 +301,7 @@ SigNoz supports efficient log storage, provides an intuitive UI, and lets you co
 
 ## Getting started with SigNoz
 
-SigNoz can be installed on macOS or Linux computers in just three steps by using a simple install script.
-
-The install script automatically installs Docker Engine on Linux. However, on macOS, you must manually install <a href = "https://docs.docker.com/engine/install/" rel="noopener noreferrer nofollow" target="_blank" >Docker Engine</a> before running the install script.
-
-```bash
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-
-You can visit our documentation for instructions on how to install SigNoz using Docker Swarm and Helm Charts.
-
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
-
-You can also check out the documentation for logs [here](https://signoz.io/docs/userguide/logs/).
+<GetStartedSigNoz />
 
 ---
 
