@@ -1,7 +1,7 @@
 ---
 title: Why is Distributed Tracing in Microservices needed?
 slug: distributed-tracing-in-microservices
-date: 2022-03-18
+date: 2023-09-08
 tags: [Distributed Tracing]
 authors: ankit_anand
 description: Microservices architecture allows technology companies to build application services around business capabilities. It enables rapid development and also boosts developer productivity. But it also introduces complexity. Distributed tracing is the...
@@ -18,6 +18,8 @@ keywords:
 <head>
   <link rel="canonical" href="https://signoz.io/blog/distributed-tracing-in-microservices/"/>
 </head>
+
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
 
 Microservices architecture allows technology companies to build application services around business capabilities. It enables rapid development and also boosts developer productivity. But it also introduces complexity. Troubleshooting and operating an internet-scale application based on microservices is hard. And that’s where distributed tracing comes into the picture.
 
@@ -123,19 +125,7 @@ You can also view a selected span(a single logical unit of work that is a part o
     width={700}
 />
 
-SigNoz can be installed on macOS or Linux computers in just three steps by using a simple install script.
-
-The install script automatically installs Docker Engine on Linux. However, on macOS, you must manually install <a href = "https://docs.docker.com/engine/install/" rel="noopener noreferrer nofollow" target="_blank" >Docker Engine</a> before running the install script.
-
-```jsx
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-
-You can visit our documentation for instructions on how to install SigNoz using Docker Swarm and Helm Charts.
-
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
+<GetStartedSigNoz />
 
 ## Further Reading
 

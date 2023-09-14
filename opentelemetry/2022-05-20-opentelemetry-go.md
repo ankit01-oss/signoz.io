@@ -1,7 +1,7 @@
 ---
 title: Complete guide to implementing OpenTelemetry in Go applications
 slug: go
-date: 2023-07-28
+date: 2023-09-08
 tags: [opentelemetry-tutorials]
 authors: [vishal, ankit_anand]
 description: Learn how to use the language-specific implementation of OpenTelemetry in Go. OpenTelemetry Go libraries can be used to generate telemetry data from your Go applications which can then be sent to an observability tool for storage and…

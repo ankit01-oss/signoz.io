@@ -1,7 +1,7 @@
 ---
 title: Prometheus vs InfluxDB - Key Differences, concepts, and similarities
 slug: prometheus-vs-influxdb
-date: 2022-07-05
+date: 2023-08-05
 tags: [Tools Comparison, Prometheus]
 authors: [tau]
 description: Prometheus and InfluxDB are both open-source projects that can be used for monitoring time-series data. While Prometheus is a metrics monitoring tool graduated under CNCF, InfluDB is a time-series database. In this article, let’s have a side-to-side review of Prometheus vs InfluxDB to...

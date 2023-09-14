@@ -1,7 +1,7 @@
 ---
 title: OpenTelemetry vs Prometheus - differences, use-cases and alternatives
 slug: opentelemetry-vs-prometheus
-date: 2023-01-15
+date: 2023-09-10
 tags: [Tools Comparison, Prometheus]
 authors: ankit_anand
 description: OpenTelemetry and Prometheus are both open-source projects under Cloud Native Computing Foundation. One is used for managing telemetry data and the other is a metrics monitoring tool..
@@ -23,6 +23,7 @@ keywords:
 </head>
 
 import SignUps from '../docs/shared/sign-ups.md'
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
 
 OpenTelemetry and Prometheus are both open-source projects under Cloud Native Computing Foundation. In this article, let us understand the key differences between the two projects and explore their advantages and shortcomings.
 
@@ -194,22 +195,7 @@ SigNoz also provides log management. Using logs, you can dive deeper into your a
 
 ## Getting started with SigNoz
 
-You can get started with SigNoz using just three commands at your terminal.
-
-```jsx
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-<br></br>
-
-For detailed instructions, you can visit our documentation.
-
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
-
-You can check out SigNoz's GitHub repo here 👇
-
-[![SigNoz GitHub repo](/img/blog/common/signoz_github.webp)](https://github.com/SigNoz/signoz)
+<GetStartedSigNoz />
 
 ___
 

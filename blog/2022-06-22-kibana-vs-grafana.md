@@ -1,7 +1,7 @@
 ---
 title: Kibana vs Grafana - Which tool to choose?
 slug: kibana-vs-grafana
-date: 2023-07-01
+date: 2023-08-30
 tags: [Tools Comparison]
 authors: [daniel, ankit_anand]
 description: The difference between Kibana and Grafana lies in their genesis. While Kibana was built on top of the Elasticsearch stack, famous for log analysis and management, Grafana was created mainly for metrics monitoring, supporting visualization for time-series databases...
@@ -15,6 +15,9 @@ keywords:
   - apm tools
   - application performance monitoring
 ---
+
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
+
 <head>
   <link rel="canonical" href="https://signoz.io/blog/kibana-vs-grafana/"/>
 </head>
@@ -237,23 +240,7 @@ Using Flamegraphs and Gantt charts, you can see a complete breakdown of user req
 
 ## Getting started with SigNoz
 
-SigNoz can be installed on macOS or Linux computers in just three steps by using a simple install script.
-
-The install script automatically installs Docker Engine on Linux. However, on macOS, you must manually install <a href = "https://docs.docker.com/engine/install/" rel="noopener noreferrer nofollow" target="_blank" >Docker Engine</a> before running the install script.
-
-```bash
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-
-You can visit our documentation for instructions on how to install SigNoz using Docker Swarm and Helm Charts.
-
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
-
-Check out SigNoz GitHub repo:
-
-[![SigNoz GitHub repo](/img/blog/common/signoz_github.webp)](https://github.com/SigNoz/signoz)
+<GetStartedSigNoz />
 
 ## FAQs
 

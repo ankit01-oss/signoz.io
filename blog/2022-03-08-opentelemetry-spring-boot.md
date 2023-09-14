@@ -1,7 +1,7 @@
 ---
 title: OpenTelemetry Spring Boot Tutorial - complete implementation guide
 slug: opentelemetry-spring-boot
-date: 2023-06-05
+date: 2023-09-14
 tags: [OpenTelemetry Instrumentation, Java]
 authors: ankit_anand
 description: End-to-end performance monitoring of Spring Boot application with OpenTelemetry. Set up distributed tracing, collect JVM metrics and logs from Spring Boot applications and visualize the collected data with open source APM - SigNoz.
@@ -21,7 +21,6 @@ import { LiteYoutubeEmbed } from "react-lite-yt-embed";
 <head>
   <link rel="canonical" href="https://signoz.io/blog/opentelemetry-spring-boot/"/>
 </head>
-
 
 
 OpenTelemetry can auto-instrument your Java Spring Boot application to capture telemetry data from a number of popular libraries and frameworks that your application might be using. It can be used to collect logs, metrics, and traces from your Spring Boot application. Let's learn how it works.

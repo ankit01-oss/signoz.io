@@ -1,7 +1,7 @@
 ---
 title: OpenTelemetry Collector - architecture and configuration guide
 slug: opentelemetry-collector-complete-guide
-date: 2023-06-05
+date: 2023-09-14
 tags: [OpenTelemetry]
 authors: ankit_anand
 description: OpenTelemetry collector provides a vendor-neutral way to collect, process, and export your telemetry data to an analysis backend of your choice. Learn how to configure..
@@ -13,6 +13,8 @@ keywords:
   - application monitoring
   - signoz
 ---
+
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
 
 <head>
   <title>OpenTelemetry Collector | Complete Guide</title>
@@ -368,18 +370,6 @@ service:
 
 OpenTelemetry provides a vendor-agnostic way of collecting and managing telemetry data. The next step is to choose a backend analysis tool that can help you make sense of the collected data. [SigNoz](https://signoz.io/) is a full-stack open-source application performance monitoring and observability platform built natively for OpenTelemetry.
 
-You can get started with SigNoz using just three commands at your terminal.
-
-```bash
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-
-For detailed instructions, you can visit our documentation.
-
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
-
 SigNoz can be used to visualize metrics and traces with charts that can enable quick insights for your teams.
 
 <figure data-zoomable align='center'>
@@ -389,9 +379,7 @@ SigNoz can be used to visualize metrics and traces with charts that can enable q
 
 <br></br>
 
-You can try out SigNoz by visiting its GitHub repo 👇
-
-[![SigNoz repo](/img/blog/common/signoz_github.webp)](https://github.com/signoz/signoz)
+<GetStartedSigNoz />
 
 ___
 

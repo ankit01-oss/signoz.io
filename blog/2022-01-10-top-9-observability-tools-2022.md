@@ -1,11 +1,11 @@
 ---
-title: Top 9 observability tools in 2023 perfect for microservices
+title: Top 11 Observability Tools in 2023 [includes open-source]
 slug: observability-tools
-date: 2023-01-23
+date: 2023-09-10
 tags: [Tech Resources]
 authors: ankit_anand
-description: Top observability tools list 2023 - 1.SigNoz 2.Instana 3.Dynatrace 4.Grafana Labs 5.Honeycomb 6.Lightstep 7.New Relic 8.DataDog...
-image: /img/blog/2023/01/observability_tools_cover-min.jpg
+description: Top observability tools list 2023 - 1.SigNoz 2.Instana 3.Dynatrace 4.Grafana Labs 5.Honeycomb 6.Lightstep 7.New Relic 8.DataDog 9.AppDynamics...
+image: /img/blog/2023/09/observability-tools-cover-min.jpg
 keywords:
   - observability
   - observability tools
@@ -18,17 +18,29 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/observability-tools/"/>
 </head>
 
+import Screenshot from "@theme/Screenshot"
+
 In microservices architecture, observability tools enable you to create central dashboards to gauge the health of your distributed systems. Let's explore some top observability tools which can help you in meeting the increasing demands of today's users.
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2023/01/observability_tools_cover.webp)
+![Cover Image](/img/blog/2023/09/observability-tools-cover.webp)
 
 In today's digital economy, distributed architectures have become the norm. Organizations are also opting for polyglot microservices to boost developer productivity. But how do you manage the operational challenges of such systems?
+
 Customer experience is the key to the success of tech companies of any size, be it startups, mid or large-level enterprises. You need to proactively solve for things like availability and performance of your applications in production.
 And that's where observability comes into the picture. A robust observability framework is now critical for maintaining your systems in fine health. Observability is powered by telemetry data - a combination of logs, metrics, and traces.
 
-A good observability tool has many components:
+## What is an Observability Tool?
+
+The aim of observability is to solve customer issues quickly. Creating monitoring dashboards is useless if it can’t help engineering teams quickly identify the root causes of performance issues.
+
+A modern distributed software system has a lot of moving components. So while setting up monitoring, you might not know what answers you would need to solve an issue. And that’s where observability comes into the picture.
+
+An observability tool enables application owners to get answers to any question that might arise while debugging application issues. Usually, an observability tool helps you to monitor three signals - metrics, traces, and logs.
+
+
+<!-- A good observability tool has many components:
 
 1. It should enable you to generate, sample, process, and emit telemetry data.
 
@@ -36,21 +48,24 @@ A good observability tool has many components:
 
 3. It should have a good visualization layer for your teams to consume and take action.
 
-In this article, let's explore the top 9 observability tools in 2023 which can be perfect for your microservice application.
+In this article, let's explore the top 9 observability tools in 2023 which can be perfect for your microservice application. -->
 
-List of Top 9 observability tools in 2023
+List of Top 11 observability tools in 2023
 
-- SigNoz
-- Dynatrace
-- Grafana Labs
-- Honeycomb
-- Lightstep
-- New Relic
-- Datadog
-- Splunk
-- Instana
+- [SigNoz (open-source)](#signoz)
+- [Dynatrace](#dynatrace)
+- [Grafana Labs](#grafana-labs)
+- [Honeycomb](#honeycomb)
+- [Lightstep](#lightstep)
+- [New Relic](#new-relic)
+- [Datadog](#datadog)
+- [Splunk](#splunk)
+- [Instana](#instana)
+- [Appdynamics](#appdynamics)
+- [Zipkin (open-source)](#zipkin)
+- [Sumo Logic](#sumo-logic)
 
-## Top observability tools in 2023
+## Top 11 Observability Tools in 2023
 
 Now let's explore the top observability tools in 2023.
 
@@ -246,6 +261,59 @@ Instana charges $75 per host/per month if billed annually. It also supports open
 </figure>
 
 <br></br>
+
+### Appdynamics
+
+<a href = "https://www.appdynamics.com/" rel="noopener noreferrer nofollow" target="_blank" >AppDynamics</a> is an observability tool for performance monitoring and analytics. It provides a comprehensive view of performance and applications health, cloud services, and IT infrastructure. AppDynamics provides features such as:
+
+- Application Performance Management
+- Business Transaction monitoring,
+- Infrastructure monitoring
+- Real-time alerting
+- Root cause analysis
+
+It uses customizable dashboards with a deeper understanding of user and application behavior.
+
+It also provides multi-cloud support. AppDynamics Cloud provides visibility with context via AIOps-driven alerts that assist organizations in identifying, prioritizing, and resolving the most business-critical matters first.
+
+<figure data-zoomable align='center'>
+    <img src="/img/blog/2023/01/appdynamics_splunk_alternative.webp" alt="Appdynamics observability platform for full visibility of application performance"/>
+    <figcaption><i>Appdynamics observability platform for full visibility of application performance</i></figcaption>
+</figure>
+
+<br></br>
+
+### Zipkin
+
+Zipkin is an open source APM tool used for distributed tracing. Zipkin captures timing data need to troubleshoot latency problems in service architectures. In distributed systems, it's a challenge to trace user requests across different services. If a request fails or takes too long, distributed tracing helps to identify the events that caused it.
+
+Zipikin was initially developed at Twitter and drew inspiration from Google's Dapper. Unique identifiers called Trace ID are attached to each request which then identifies that request across services.
+
+Zipkin's architecture includes:
+
+- Reporters to send data to Zipkin
+- Collectors which persist trace data to storage
+- API to query data
+- UI
+
+Zipkin's in-built UI is limited, and you can use Grafana or Kibana from the ELK stack for better analytics and visualizations.
+
+<figure data-zoomable align='center'>
+    <img src="/img/blog/2023/09/zipkin-distributed-tracing.webp" alt="Zipkin dashboard showing traces"/>
+    <figcaption><i>Zipkin dashboard</i></figcaption>
+</figure>
+
+<br></br>
+
+It also includes a dependency diagram that shows how many user requests went through each service. It can help you to identify error paths and calls to deprecated services.
+
+<Screenshot
+   alt="Zipkin dependency diagram to show user requests across services"
+   height={500}
+   src="/img/blog/2023/09/zipkin-dependency-graph.webp"
+   title="Zipkin dependency diagram (Source: GitHub repo)"
+   width={700}
+/>
 
 ## How to choose the right observability tool?
 

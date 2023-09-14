@@ -1,7 +1,7 @@
 ---
 title: SigNoz - Open-source alternative to AppDynamics
 slug: appdynamics-alternative
-date: 2023-02-15
+date: 2023-08-25
 tags: [SigNoz, Open Source]
 authors: ankit_anand
 description: If you're looking for an open-source alternative to AppDynamics, then you're at the right place. SigNoz is a perfect open-source alternative to AppDynamics. SigNoz provides a unified UI for metrics, traces and logs with advanced tagging and filtering capabilities...
@@ -19,6 +19,7 @@ keywords:
 </head>
 
 import SignUps from '../docs/shared/sign-ups.md'
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
 
 If you're looking for an open-source alternative to AppDynamics, then you're at the right place. SigNoz is a perfect open-source alternative to AppDynamics. SigNoz provides a unified UI for metrics, traces and logs with advanced tagging and filtering capabilities.
 
@@ -179,26 +180,7 @@ Some of the key advantages of using OpenTelemetry are:
 
 ## Getting started with SigNoz
 
-You can get started with SigNoz using just three commands at your terminal.
-
-```jsx
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-<br></br>
-
-For detailed instructions, you can visit our documentation.
-
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
-
-If you liked what you read, then check out our GitHub repo 👇
-
-[![SigNoz GitHub repo](/img/blog/common/signoz_github.webp)](https://github.com/SigNoz/signoz)
-
-Our slack community is a great place to get your queries solved instantly and get community support for SigNoz. Link to join 👇
-
-[SigNoz slack community](https://signoz.io/slack)
+<GetStartedSigNoz />
 
 ---
 

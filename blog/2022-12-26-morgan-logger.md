@@ -1,7 +1,7 @@
 ---
 title: Morgan Logger | Tutorial on how to use in an Express application
 slug: morgan-logger
-date: 2022-12-26
+date: 2023-09-01
 tags: [Tech Tutorial, Log Management]
 authors: [sai_deepesh]
 description: Morgan is a popular HTTP logging library for express applications. It is designed to be a simple and flexible tool for logging HTTP requests and responses in Node.js applications. Morgan provides easy-to-use log formats and …....

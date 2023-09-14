@@ -1,11 +1,11 @@
 ---
 title: Latest top 13 distributed tracing tools [perfect for microservices]
 slug: distributed-tracing-tools
-date: 2022-08-18
+date: 2023-09-10
 tags: [Tech Resources]
 authors: ankit_anand
-description: Latest top distributed tracing tools list in 2022 - 1.SigNoz 2.Dynatrace 3.New Relic 4.Honeycomb 5.Lightstep 6.Elastic APM 7.Jaeger 8.DataDog 9.Zipkin..
-image: /img/blog/2022/06/distributed_tracing_tools_cover.jpeg
+description: Latest top distributed tracing tools list in 2023 - 1.SigNoz 2.Dynatrace 3.New Relic 4.Honeycomb 5.Lightstep 6.Elastic APM 7.Jaeger 8.DataDog 9.Zipkin..
+image: /img/blog/2023/09/distributed-tracing-cover-min.jpg
 keywords:
   - signoz
   - jaeger
@@ -20,11 +20,13 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/distributed-tracing-tools/"/>
 </head>
 
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
+
 Modern digital organizations have rapidly adopted microservices-based architecture for their applications. Distributed tracing tools help monitor microservices-based applications. Choosing the right distributed tracing tool is critical. How do you know which is the right one for you? Here are the top 13 distributed tracing tools in 2022 that can solve your monitoring and observability needs.
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/06/distributed_tracing_tools_cover.webp)
+![Cover Image](/img/blog/2023/09/distributed-tracing-cover.webp)
 
 > What is a distributed tracing tool?<br></br>
 > A distributed tracing tool enables you to track user requests across multiple servers and services in a microservice architecture. It gives you a central overview of how user requests are performing in different services.
@@ -458,28 +460,13 @@ SigNoz is a full-stack open-source application performance monitoring and observ
 
 ## Getting started with SigNoz
 
-You can get started with SigNoz using just three commands at your terminal.
-
-```jsx
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-<br></br>
-
-For detailed instructions, you can visit our documentation.
-
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
-
-You can check out SigNoz's GitHub repo here 👇
-
-[![SigNoz GitHub repo](/img/blog/common/signoz_github.webp)](https://github.com/SigNoz/signoz)
+<GetStartedSigNoz />
 
 ___
 
 #### **Related Content**
 
-**[Top 9 observability tools](https://signoz.io/blog/observability-tools/)**<br></br>
+**[Top 11 observability tools](https://signoz.io/blog/observability-tools/)**<br></br>
 **[Top 21 APM tools](https://signoz.io/blog/apm-tools/)**<br></br>
 
 

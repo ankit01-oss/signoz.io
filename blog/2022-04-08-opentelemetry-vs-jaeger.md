@@ -19,6 +19,8 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/opentelemetry-vs-jaeger/"/>
 </head>
 
+
+
 OpenTelemetry and Jaeger are both open-source projects under Cloud Native Computing Foundation. In this article, let us understand the key concepts involved in both projects, their features, and their differences.
 
 <!--truncate-->
