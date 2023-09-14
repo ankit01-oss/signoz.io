@@ -68,12 +68,15 @@ function Pricing() {
                     <div>
                       <span>Metrics</span>
                       <span>$0.1 per mn samples</span>
+<<<<<<< HEAD:src/pages/pricing/index.tsx
                     </div>
 
                     <br />
 
                     <div>
                       <span>$199 includes usage. Monthly cost would be higher of $199 and cost based on usage</span>
+=======
+>>>>>>> 4cfa7a8befca7def84f9576ed83211def2874de8:src/pages/pricing.js
                     </div>
                   </div>
                   <hr />
