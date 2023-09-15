@@ -39,7 +39,7 @@ export const Header = () => {
           to={"/docs/install/"}
           id="btn-self-host-homepage-hero"
         >
-          Self-Host
+          Documentation
         </Button>
       </div>
       <div className="container">

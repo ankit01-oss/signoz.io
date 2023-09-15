@@ -535,7 +535,7 @@ const CTA = () => {
               onClick={requestDemoClicked}
               id="btn-self-hosted-homepage-bottom"
             >
-              Self-Host
+              Documentation
             </Button>
           </div>
         </div>
