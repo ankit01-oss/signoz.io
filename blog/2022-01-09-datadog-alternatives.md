@@ -21,7 +21,7 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/datadog-alternatives/"/>
 </head>
 
-Are you looking for a DataDog alternative? Then you have come to the right place. In this article, we will go through top 5 DataDog alternatives. One of the biggest challenge users face with DataDog is its pricing policies.
+Are you looking for a DataDog alternative? Then you have come to the right place. In this article, we will go through top 6 DataDog alternatives. One of the biggest challenge users face with DataDog is its pricing policies.
 
 <!--truncate-->
 
@@ -29,7 +29,7 @@ import Screenshot from "@theme/Screenshot"
 
 ![Cover Image](/img/blog/2022/12/datadog_alternatives_cover.png)
 
-DataDog is a cloud monitoring software that provides an array of tools for monitoring different aspects of For bigger enterprises it might make sense to shell out huge monitoring bills, but it's often out of question for small and medium size enterprises.
+DataDog is a cloud monitoring software that provides an array of tools for monitoring different aspects of your application and infrastructure. For bigger enterprises it might make sense to shell out huge monitoring bills, but it's often out of question for small and medium size enterprises.
 
 [![Pricing concerns for DataDog](/img/blog/2021/08/datadog_alternative_reddit.webp)](https://www.reddit.com/r/devops/comments/fp7xl7/warning_avoid_datadog_at_all_costs/)
 
