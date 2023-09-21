@@ -34,15 +34,15 @@ CloudWatch provides insights into the operational status, health, and performanc
 
 Below are some of the top CloudWatch alternatives:
 
-1. SigNoz 
-2. Prometheus
-3. Grafana
-4. Datadog
-5. New Relic
-6. Dynatrace
-7. AppDynamics
-8. Sematext
-9. LogicMonitor
+1. [SigNoz](#signoz-open-source)
+2. [Prometheus](#prometheus)
+3. [Grafana](#grafana)
+4. [Datadog](#datadog)
+5. [New Relic](#new-relic)
+6. [Dynatrace](#dynatrace)
+7. [AppDynamics](#appdynamics)
+8. [Sematext](#sematext)
+9. [LogicMonitor](#logicmonitor)
 
 ## SigNoz (Open Source)
 
@@ -83,6 +83,31 @@ Additionally, Prometheus offers robust built-in alerting capabilities, service d
     <img src="/img/blog/2023/09/grafana_prometheus.webp" alt="A Prometheus dashboard created with Grafana"/>
     <figcaption><i>A Prometheus dashboard created with Grafana</i></figcaption>
 </figure>
+
+## Grafana
+
+Grafana is an open-source dashboard tool. The biggest feature of Grafana is that you can use it to combine different data sources and then visualize data in a central dashboard. It also comes with admin features for effective collaboration with the team.
+
+Some of the key features of Grafana are:
+
+- Flexible dashboards<br></br>
+  Grafana provides a lot of panels that can be used for building dashboards. To build dashboards that suit your needs, you can choose from multiple chart types like heatmaps, histograms, pie charts, etc.
+
+- Plugins<br></br>
+  Grafana provides an extensive set of plugins to extend Grafana capabilities. Some of the plugins that Grafana offers are:
+  - Data Source plugins
+  - App plugins
+  - Panel Plugins
+
+- Alerting system<br></br>
+  Grafana provides a central UI to set and manage alerts with a central UI.
+
+<figure data-zoomable align='center'>
+    <img src="/img/blog/2021/10/datadog_vs_grafana_grafana_visualizations-min.webp" alt="Grafana visualization options"/>
+    <figcaption><i>Grafana visualization widgets for creating dashboards</i></figcaption>
+</figure>
+
+<br></br>
 
 ## Datadog
 <a href = "https://www.datadoghq.com" rel="noopener noreferrer nofollow" target="_blank" >Datadog</a> is a cloud-based monitoring and analytics platform known for its capabilities in collecting and analyzing metrics, traces, and logs from a diverse range of services, applications, and cloud providers. 
@@ -169,13 +194,16 @@ The platform offers a wide range of pre-configured integrations, making it easy 
 
 CloudWatch is a good monitoring solution while starting out in AWS. But as your application grows, you need a robust monitoring tool that gives more visibility into your application performance. A few things you should consider while selecting a monitoring tool to move out of CloudWatch:
 
-- **Multi-cloud capabilities**
+- **Multi-cloud capabilities**<br></br>
 The CloudWatch alternative you choose should be able to monitor services in multi-cloud architecture. It should be a centralized monitoring system that can handle monitoring all components in your tech stack whether it’s a part of AWS or not.
-- **Metrics, logs, and traces**
+
+- **Metrics, logs, and traces**<br></br>
 Using a single tool for all your monitoring needs helps consolidate the engineering bandwidth you spend on monitoring. Using a single tool for logs, metrics, and traces also helps to correlate different signals for better insights.
-- **Ease of shifting out**
+
+- **Ease of shifting out**<br></br>
 You should use a tool that is easy to get started with. A tool that helps in getting CloudWatch metrics easily will make the process of shifting out easier.
-- **Pricing**
+
+- **Pricing**<br></br>
 Monitoring data is huge, and different vendors bill differently. A tool like [Datadog](https://signoz.io/blog/pricing-comparison-signoz-vs-datadog-vs-newrelic-vs-grafana/#no-limits-on-custom-metrics-with-signoz) can get costly very soon. You should choose a tool that provides good value for your money.
 
 SigNoz is a great CloudWatch alternative that provides logs, metrics and traces under a single pane of glass. It comes with great out-of-the-box charts for application metrics, database calls, apdex, and much more. The log management in SigNoz is also highly scalable, with an advanced query builder to search and filter logs quickly.
@@ -188,6 +216,6 @@ SigNoz is a great CloudWatch alternative that provides logs, metrics and traces 
 
 **Related Posts**
 
-[DataDog vs Cloudwatch | Which tool to choose? (signoz.io)](https://signoz.io/blog/datadog-vs-cloudwatch/#getting-started-with-signoz)
+[DataDog vs Cloudwatch | Which tool to choose?](https://signoz.io/blog/datadog-vs-cloudwatch/)
 
-[Latest top 17 API monitoring tools [open-source included] | SigNoz](https://signoz.io/blog/api-monitoring-tools/#aws-cloudwatch)
+[Latest top 17 API monitoring tools [open-source included]](https://signoz.io/blog/api-monitoring-tools/)

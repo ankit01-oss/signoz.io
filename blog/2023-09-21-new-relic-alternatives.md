@@ -35,13 +35,13 @@ In this article, we'll explore the top 7 alternatives to New Relic.
 
 ## Top New Relic Alternatives
 
-1. SigNoz (Open-Source)
-2. AppDynamics
-3. Dynatrace
-4. Datadog
-5. Instana
-6. AppOptics (Solarwinds)
-7. Sematext
+1. [SigNoz (Open-Source)](#signoz-open-source)
+2. [AppDynamics](#appdynamics)
+3. [Dynatrace](#dynatrace)
+4. [Datadog](#datadog)
+5. [Instana](#instana)
+6. [AppOptics (Solarwinds)](#appoptics-solarwinds)
+7. [Sematext](#sematext)
 
 ## SigNoz (Open-Source)
 

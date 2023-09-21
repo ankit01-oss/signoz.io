@@ -305,6 +305,6 @@ These visualizations provide valuable insights into the performance and behavior
 
 **Related Posts**
 
-[Spans - a key concept of distributed tracing | SigNoz](https://signoz.io/blog/distributed-tracing-span/#:~:text=SigNoz%20Team%20Spans%20are%20fundamental%20building%20blocks%20of,work%20in%20completing%20a%20user%20request%20or%20transaction.)
+[Spans - a key concept of distributed tracing](https://signoz.io/blog/distributed-tracing-span/)
 
-[An Open Source Observability Platform | SigNoz | SigNoz](https://signoz.io/blog/open-source-observability/)
+[An Open Source Observability Platform](https://signoz.io/blog/open-source-observability/)
