@@ -1,7 +1,7 @@
 ---
 title: Ten reasons not to add observability
 slug: ten-reasons-not-to-add-observability
-date: 2023-09-21
+date: 2023-09-22
 tags: [OpenTelemetry, observability, jokes]
 authors: nicamellifera
 description: With your help, we can destroy observability in our lifetime.

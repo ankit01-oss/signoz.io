@@ -1,7 +1,7 @@
 ---
 title: Comparing Datadog and New Relic's support for OpenTelemetry data
 slug: is-opentelemetry-a-first-class-citizen-in-your-dashboard-a-datadog-and-newrelic-comparison
-date: 2023-09-18
+date: 2023-09-21
 tags: [OpenTelemetry, Python]
 authors: nicamellifera
 description: we will explore how, in both New Relic and Datadog, OpenTelemetry data is a ‘second class citizen.’
