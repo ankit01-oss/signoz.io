@@ -88,16 +88,16 @@ That’s where SigNoz comes in. We plan to use the funds to mature the product a
 It’s also now easier than ever to get started with SigNoz, as today we’re announcing the public launch of [SigNoz Cloud](https://signoz.io/teams), our fully-managed offering of our open-source product. This is an exciting milestone for the team as we know a lot of our community has wanted to use SigNoz without worrying about hosting and managing their own infrastructure. It’s available right now to [get started](https://signoz.io/teams)!
 
 
+## We didn't do it alone; it takes a village.
+
+We are still in early stages of democratizing great observability, but we are grateful for the love and support we have received from the developer community, investors who backed us in our early days and team members who shared our vision and joined us to make it come true.
+
 <figure data-zoomable align='center'>
     <img src="/img/blog/2023/09/Team-Photo.webp" alt="Team SigNoz"/>
     <figcaption><i>Team SigNoz</i></figcaption>
 </figure>
 
 <br />
-
-## We didn't do it alone; it takes a village.
-
-We are still in early stages of democratizing great observability, but we are grateful for the love and support we have received from the developer community, investors who backed us in our early days and team members who shared our vision and joined us to make it come true.
 
 We would like to thank Y Combinator for their early belief in us, early community members who gave feedback on the product. We have been fortunate to have been backed by a great set of investors and experts in the domain, including Salil (Uncorrelated Ventures), Jiten Viadya(PlanetScale), Paul Coppleman (Supabase) and Tom-Preston Warner (ex-Github).
 
