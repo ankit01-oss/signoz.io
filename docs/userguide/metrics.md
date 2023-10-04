@@ -131,7 +131,7 @@ Inside the Metric's graph, you can use the "Filter Series" search bar to locate 
 <br></br>
 
 
-### Graph Specific Global Time 
+<!-- ### Graph Specific Global Time 
 
 In the graph for any metric, you'll find the "Global Time" dropdown at the top right corner. This dropdown provides you with the flexibility to choose your preferred time interval for data, ranging from the last 5 minutes to the last 1 week. Once you select any value from this drop-down and click **Save**, these changes will be saved **for that particular graph**.
 
@@ -140,7 +140,7 @@ In the graph for any metric, you'll find the "Global Time" dropdown at the top r
     <figcaption><i> Graph Specific Global Time </i></figcaption>
 </figure>
 
-<br></br>
+<br></br> -->
 
 
 ## View Details About an Application
