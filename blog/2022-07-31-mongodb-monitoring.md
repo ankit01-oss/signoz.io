@@ -1,7 +1,7 @@
 ---
 title: MongoDB Monitoring | Beginner’s Guide to MongoDB performance monitoring
 slug: mongodb-monitoring
-date: 2022-07-31
+date: 2023-10-03
 tags: [Database Monitoring]
 authors: [ankit_anand]
 description: Top metrics to monitor for MongoDB performance 1.Database operations 2.Operation Execution Time 3.Clients or connections 4.Resource Utilization 5.Queues...
@@ -270,4 +270,4 @@ You can set up MongoDB monitoring using open source APM - [SigNoz](https://sign
 
 In the following post, we guide you on how to setup MongoDB monitoring using OpenTelemetry and Signoz:
 
-[MongoDB Monitoring with OpenTelemetry and SigNoz](https://signoz.io/blog/redis-opentelemetry/)
+[MongoDB Monitoring with OpenTelemetry and SigNoz](https://signoz.io/blog/opentelemetry-mongodb/)
