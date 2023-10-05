@@ -91,7 +91,7 @@ Most SaaS APMs now claim to be 100% compatible with OpenTelemetry. But it’s di
 
 SigNoz is a full-stack open source APM built natively to support OpenTelemetry. At SigNoz, we believe that OpenTelemetry is going to be the world standard for instrumenting cloud-native applications. 
 
-SigNoz supports OpenTelemetry semantic conventions and provides visualization for all three distinct types of signals(log management is under active development) supported by OpenTelemetry.
+SigNoz supports OpenTelemetry semantic conventions and provides visualization for all three distinct types of signals supported by OpenTelemetry.
 
 The steps to send telemetry data to SigNoz involves:
 
