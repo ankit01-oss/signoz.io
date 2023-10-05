@@ -1,5 +1,5 @@
 ---
-title: Understanding OpenTelemetry Spans in Detail
+title: OpenTelemetry Exporters - Types and Configuration Steps
 slug: opentelemetry-exporters
 date: 2023-10-04
 tags: [OpenTelemetry]
@@ -134,7 +134,7 @@ resource = Resource(attributes={
 })
 
 provider = TracerProvider(resource=resource)
-processor = BatchSpanProcessor(OTLPSpanExporter(endpoint="your-endpoint-here"))
+processor = BatchSpanProcessor(OTLPSpanExporter(endpoint="http://<IP of your Backend>:4317"))
 provider.add_span_processor(processor)
 trace.set_tracer_provider(provider)
 
