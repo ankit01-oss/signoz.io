@@ -37,7 +37,7 @@ function Pricing() {
                     <div className={styles.priceCtaDesc}>
                       <span>starts at just</span>
                       <span className={`${styles.price} highlight`}>
-                        $199/month
+                        $199/month*
                       </span>
                     </div>
                     <div>
@@ -73,7 +73,7 @@ function Pricing() {
                     <br />
 
                     <div>
-                      <span>$199 includes usage. Monthly cost would be higher of $199 and cost based on usage</span>
+                      <span>*$199 includes data usage. Monthly bill will be $199 till you ingest data higher than what's covered in $199.</span>
                     </div>
                   </div>
                   <hr />
