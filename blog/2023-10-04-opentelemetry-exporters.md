@@ -45,7 +45,6 @@ The specification is designed into distinct types of telemetry known as signals.
 Together, these three signals form the three pillars of observability. OpenTelemetry is the bedrock for setting up an observability framework. The application code is instrumented using OpenTelemetry client libraries, which enables the generation of telemetry data. Once the telemetry data is generated and collected, you need to configure the OpenTelemetry exporter to send data to a backed analysis tool like [SigNoz](https://signoz.io/).
 
 ## Why do we need OpenTelemetry Exporters?
-
 OpenTelemetry plays a crucial role in the data collection process, offering invaluable insights into the behavior and performance of applications. However, once this data is acquired, it's important to note that it remains within the application environment and isn't readily available for immediate analysis or further processing.
 
 OpenTelemetry provides exporters, which serve as the conduits for transferring collected data to an OpenTelemetry Collector or a specified backend. This ensures that the data can be effectively utilized for comprehensive analysis, monitoring, and optimization of the application's performance and behavior.
@@ -92,8 +91,7 @@ Additionally, the <a href = "https://opentelemetry-python.readthedocs.io/en/late
 
 OpenTelemetry integrates with Jaeger, providing two exporters for sending telemetry data to collected by OpenTelemetry into Jaeger: OpenTelemetry Jaeger Thrift Exporter and OpenTelemetry Jaeger Protobuf Exporter.
 
-The 
-<a href = "https://opentelemetry-python.readthedocs.io/en/latest/exporter/jaeger/jaeger.html#opentelemetry-jaeger-thrift-exporter/" rel="noopener noreferrer nofollow" target="_blank" >OpenTelemetry Jaeger Thrift Exporter</a> efficiently transmits traces to the designated agent via the Thrift compact protocol over UDP. In cases where deploying the Jaeger Agent alongside an application proves challenging, as in the case of Lambda functions, a collector can be set up to relay spans using Thrift over HTTP. If both the agent and collector are in use, the exporter will exclusively route traces to the collector, avoiding any redundant entries.
+The <a href = "https://opentelemetry-python.readthedocs.io/en/latest/exporter/jaeger/jaeger.html#opentelemetry-jaeger-thrift-exporter/" rel="noopener noreferrer nofollow" target="_blank" >OpenTelemetry Jaeger Thrift Exporter</a> efficiently transmits traces to the designated agent via the Thrift compact protocol over UDP. In cases where deploying the Jaeger Agent alongside an application proves challenging, as in the case of Lambda functions, a collector can be set up to relay spans using Thrift over HTTP. If both the agent and collector are in use, the exporter will exclusively route traces to the collector, avoiding any redundant entries.
 
 The <a href = "https://opentelemetry-python.readthedocs.io/en/latest/exporter/jaeger/jaeger.html#opentelemetry-jaeger-protobuf-exporter/" rel="noopener noreferrer nofollow" target="_blank" >OpenTelemetry Jaeger Protobuf Exporter</a> operates by sending traces to the designated agent through the efficient Protobuf serialization format facilitated by the high-performance gRPC communication protocol. For instance, in a microservices-based application, if one service makes an API call to another, the Jaeger Protobuf Exporter captures this interaction, converts it into Protobuf format, and sends it via gRPC to the configured agent for further processing and analysis. This ensures rapid and reliable transmission of trace data. 
 
@@ -217,8 +215,6 @@ The tracing signal from OpenTelemetry instrumentation helps you correlate events
 ### Getting started with SigNoz
 
 <GetStartedSigNoz />
-
-SigNoz also has a growing [community](https://signoz.io/docs/community/) to provide support for organizations.
 
 ---
 
