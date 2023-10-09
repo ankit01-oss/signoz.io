@@ -1,5 +1,5 @@
 ---
-title: Is a $1 million Splunk bill worth it?
+title: Is a $1 million Datadog bill worth it?
 slug: justifying-a-million-dollar-observability-bill
 date: 2023-09-25
 tags: [operations, observability]
