@@ -1,5 +1,5 @@
 ---
-title: Choosing an OpenTelemetry backend - 7 things to keep in mind
+title: Choosing an OpenTelemetry backend - Things To Keep In Mind
 slug: opentelemetry-backend
 date: 2023-10-10
 tags: [OpenTelemetry]
