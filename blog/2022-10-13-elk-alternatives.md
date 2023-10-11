@@ -1,11 +1,11 @@
 ---
-title: Top 14 ELK alternatives [open source included] in 2022
+title: Top 14 ELK alternatives [open source included] in 2023
 slug: elk-alternatives
-date: 2023-09-05
+date: 2023-10-10
 tags: [Tech Resources]
 authors: ankit_anand
-description: There are many ELK alternatives that you can use for logs analytics. Top 14 ELK alternatives in 2022. 1.SigNoz 2.Logz.io 3.Graylog 4.Logtail 5.Sumologic 6.Grafana Loki...
-image: /img/blog/2022/10/elk_alternatives_cover.webp
+description: There are many ELK alternatives that you can use for logs analytics. Top 14 ELK alternatives in 2023. 1.SigNoz 2.Logz.io 3.Graylog 4.Logtail 5.Sumologic 6.Grafana Loki...
+image: /img/blog/2023/10/elk-alternatives-cover-min.jpg
 keywords:
   - elk
   - elk stack
@@ -27,7 +27,7 @@ ELK is the acronym Elasticsearch, Logstash, and Kibana, and combined together, i
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/10/elk_alternatives_cover.webp)
+![Cover Image](/img/blog/2023/10/elk-alternatives-cover.webp)
 
 The ELK stack started with Elasticsearch which is a search and analytics engine. Logstash is the data processing engine, and Kibana lets users visualize data in Elasticsearch with charts and graphs. The ELK stack can either be self-hosted, or users can opt for a cloud version provided by Elastic. The Elk stack is a very popular solution for log analytics. But scaling an ELK stack can be costly, and there are many alternatives available that you should explore.
 
