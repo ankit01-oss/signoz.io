@@ -46,7 +46,7 @@ function Home() {
   return (
     <Fragment>
       <Layout
-        title={`Open source Observability`}
+        title={`Open-Source Observability`}
         description="SigNoz is an open-source observability tool to help you find issues in your deployed applications & solve them quickly.
       It provides logs, metrics, and traces under a single pane of glass. Built with ClickHouse as datastore, it is designed to handle enterprise scale."
       >
