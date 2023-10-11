@@ -155,4 +155,4 @@ This piece helps explain why observability SaaS offerings have often received a 
 
 OpenTelemetry can solve this problem. By implementing open standards for how observability data is gathered and transmitted, OpenTelemetry makes it very easy to switch service providers. If you're using the OpenTelemetry Collector (and you should be), all you have to do is reconfigure your collection endpoint in a single place.
 
-Along with OpenTelemetry, you'll need a backend to report and chart data. The OpenTelemetry project is neutral about your data backend, but a tool like <a href = "https://github.com/signoz/signoz.io" rel="noopener noreferrer nofollow" target="_blank" >SigNoz</a> uses the power of Clickhouse to store data efficiently, and it even has a self-hosted option.
+Along with OpenTelemetry, you'll need a backend to report and chart data. The OpenTelemetry project is neutral about your data backend, but a tool like <a href = "https://github.com/SigNoz/signoz" rel="noopener noreferrer nofollow" target="_blank" >SigNoz</a> uses the power of Clickhouse to store data efficiently, and it even has a self-hosted option.
