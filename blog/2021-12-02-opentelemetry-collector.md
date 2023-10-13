@@ -95,7 +95,7 @@ Exporters are used to export data to an observability backend like [SigNoz](htt
 
 With the combination of these three components, OpenTelemetry Collector can be used to build data pipelines. Pipelines are configured via a YAML configuration file easily. This provides flexibility to teams managing their telemetry data.
 
-## **How to configure a OpenTelemetry collector?**
+## How to configure a OpenTelemetry collector?
 
 You need to configure the three components of the OpenTelemetry collector described above. Once configured, these components must be enabled via pipelines within the service section. SigNoz comes with an OpenTelemetry collector installed. You can find the configuration file of SigNoz OpenTelemetry collector <a href = "https://github.com/SigNoz/signoz/blob/develop/deploy/docker/clickhouse-setup/otel-collector-config.yaml" rel="noopener noreferrer nofollow" target="_blank" >here</a>.
 
@@ -386,5 +386,7 @@ ___
 #### **Related Content**
 
 **[OpenTelemetry Tracing - things you need to know](https://signoz.io/blog/opentelemetry-tracing/)**<br></br>
+
 **[OpenTelemetry Logs - A Complete Introduction & Implementation](https://signoz.io/blog/opentelemetry-logs/)<br></br>
+
 **[Monitor Nodejs Application with OpenTelemetry and SigNoz](https://signoz.io/opentelemetry/nodejs/)**<br></br>
