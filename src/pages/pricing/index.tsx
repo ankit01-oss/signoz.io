@@ -23,7 +23,7 @@ function Pricing() {
             <span className="highlight">Logs</span>, and{" "}
             <span className="highlight">Traces</span> in{" "}
             <span className="highlight">single</span> pane of glass */}
-            Tired of unpredictable pricing and complex billing structure? Save up to <Link href="/blog/pricing-comparison-signoz-vs-datadog-vs-newrelic-vs-grafana/"><u>90% on your Datadog bill</u></Link> with SigNoz.
+            Tired of unpredictable pricing and complex billing structure? Save up to <Link href="/blog/pricing-comparison-signoz-vs-datadog-vs-newrelic-vs-grafana/"><u>90% on your Datadog bill</u></Link> with SigNoz. No user-based and host-based pricing.
           </p>
           <div className={`row ${styles.pricingRow}`}>
             <div className={"col col--6 margin-vert--md"}>
@@ -69,8 +69,13 @@ function Pricing() {
                       <span>Metrics</span>
                       <span>$0.1 per mn samples</span>
                     </div>
-
-                    <br />
+                    <div>
+                      <span>Unlimited User Seats</span>
+                    </div>
+                    <div>
+                      <span>No Host-based Pricing</span>
+                    </div>
+                    <br/>
 
                     <div>
                       <span>*$199 includes data usage. Monthly bill will be $199 till you ingest data higher than what's covered in $199.</span>
