@@ -1,11 +1,11 @@
 ---
 title: Is a $1 million Datadog bill worth it?
 slug: justifying-a-million-dollar-observability-bill
-date: 2023-09-25
+date: 2023-10-12
 tags: [operations, observability]
 authors: nicamellifera
 description: I’d like to write a bit about how Observability costs are significant, how these costs tend to be justified, and how precise amount a company spends on *anything* tends to be more subjective than you’d think. This article is not about how to reduce or control these costs, but rather how the costs are justified.
-image: /img/blog/2023/09/million-dollar-cover.jpeg
+image: /img/blog/2023/10/million-dollar-bill-cover-min.jpg
 hide_table_of_contents: false
 keywords:
   - operations
@@ -22,7 +22,7 @@ In a recent reddit thread, I got into a conversation about <a href = "https://de
 I’d like to write a bit about how Observability costs are significant, how these costs tend to be justified, and how precise amount a company spends on *anything* tends to be more subjective than you’d think. This article is not about how to reduce or control these costs, but rather how the costs are justified.
 
 <!--truncate-->
-![Cover Image](/img/blog/2023/09/million-dollar-cover.webp)
+![Cover Image](/img/blog/2023/10/million-dollar-bill-cover.webp)
 
 ### Observability is expensive
 
