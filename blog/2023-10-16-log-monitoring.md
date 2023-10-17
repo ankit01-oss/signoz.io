@@ -110,15 +110,25 @@ When it comes to monitoring logs in cloud-native applications, having the right 
 
 
 1. **[SigNoz](https://signoz.io/)**: SigNoz offers a real-time log monitoring solution designed specifically for cloud-native environments. It enables quick log analysis and visualization, empowering you to stay on top of log data.
+
 2. **<a href = "https://graylog.org" rel="noopener noreferrer nofollow" target="_blank">Graylog</a>**: Graylog simplifies log management and analysis by providing a centralized platform to collect, index, and search logs from various sources. It's a go-to choice for organizations seeking efficient log management.
+
 3. **<a href = "https://www.mezmo.com" rel="noopener noreferrer nofollow" target="_blank">Mezmo</a>**: Mezmo offers an intuitive log management and analysis solution with user-friendly features that make log exploration and analysis a breeze.
+
 4. **<a href = "https://www.loggly.com" rel="noopener noreferrer nofollow" target="_blank">Loggly</a>**: Loggly, a cloud-based log management solution, helps identify and resolve issues faster with its log analysis capabilities. It's an excellent choice for organizations looking for hassle-free log management.
+
 5. **<a href = "https://www.datadoghq.com" rel="noopener noreferrer nofollow" target="_blank">Datadog</a>**: Datadog's comprehensive monitoring platform includes robust log management and analysis features, providing insights into both application and infrastructure performance.
+
 6. **<a href = "https://newrelic.com" rel="noopener noreferrer nofollow" target="_blank">New Relic</a>**: New Relic's log management and monitoring solutions are designed to enhance application observability and streamline troubleshooting, making it an invaluable tool for modern applications.
+
 7. **<a href = "https://www.splunk.com" rel="noopener noreferrer nofollow" target="_blank">Splunk</a>**: Splunk is a widely recognized log monitoring and analysis platform known for its advanced log search and visualization capabilities. It's a top choice for enterprises seeking powerful log analysis.
+
 8. **<a href = "https://logz.io" rel="noopener noreferrer nofollow" target="_blank">Logz.io</a>**: Logz.io is a cloud-native log analysis platform that simplifies log management, making log data accessible and providing valuable insights for your operations.
+
 9. **<a href = "https://grafana.com/oss/loki" rel="noopener noreferrer nofollow" target="_blank">Loki by Grafana</a>**: Loki is an open-source log aggregation and querying system designed to work seamlessly with Grafana. It's ideal for organizations looking for open-source log monitoring.
+
 10. **<a href = "https://www.elastic.co/logstash" rel="noopener noreferrer nofollow" target="_blank">Logstash</a>**: Logstash is an open-source data processing pipeline that excels at collecting, filtering, and forwarding logs. It's a flexible solution for log management.
+
 11. **<a href = "https://www.fluentd.org" rel="noopener noreferrer nofollow" target="_blank">Fluentd</a>**: Fluentd, another open-source data collector, is adept at collecting, filtering, and forwarding logs and events. It's a versatile choice for log management in cloud-native setups.
 
 Selecting the right log monitoring tool is essential to effectively manage and analyze logs in cloud-native applications. These tools offer a range of features and capabilities to suit different organizational needs, making log monitoring a breeze in today's dynamic environments.
@@ -127,19 +137,19 @@ Selecting the right log monitoring tool is essential to effectively manage and a
 
 When it comes to keeping an eye on your logs in the world of cloud-native apps, SigNoz being an open source APM platform is like having a trusty sidekick. Here's why you'd want SigNoz on your team for log monitoring:
 
-- **Real-Time Log Analysis and Visualization**
+- **Real-Time Log Analysis and Visualization**<br></br>
     
     SigNoz offers instant log analysis and visualizations, making it easy to spot issues and trends as they happen.
     
-- **Tailored for Cloud-Native Environments**
+- **Tailored for Cloud-Native Environments**<br></br>
     
     SigNoz seamlessly captures logs from containerized applications and integrates with dynamic service discovery mechanisms, making it a perfect fit for cloud-native setups.
     
-- **User-Friendly Interface**
+- **User-Friendly Interface**<br></br>
     
     SigNoz's user-friendly interface simplifies log exploration and troubleshooting, making it accessible to both developers and DevOps teams.
     
-- **Gain a Competitive Edge**
+- **Gain a Competitive Edge**<br></br>
     
     SigNoz empowers organizations to maintain application health and performance in dynamic, containerized environments, giving them a competitive edge in the cloud-native landscape.
     
