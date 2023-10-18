@@ -1,7 +1,7 @@
 ---
 title: Monitoring your Express application using OpenTelemetry
 slug: opentelemetry-express
-date: 2023-04-14
+date: 2023-10-18
 tags: [OpenTelemetry Instrumentation, JavaScript]
 authors: ankit_anand
 description: OpenTelemetry is a vendor-agnostic isntrumentation library. In this article, learn how to set up monitoring for an Express application using OpenTelemetry.
