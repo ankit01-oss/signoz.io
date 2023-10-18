@@ -159,3 +159,8 @@ In this article, we have discussed 8 steps with which you can develop a cloud st
 
 The purpose of a cloud strategy is to form a proper plan or mechanism that helps an organization have a smooth migration to the cloud. This plan includes gaining knowledge on cloud models to make optimization strategies and security best practices to reduce costs and ensure data and infrastructural safety, respectively.
 
+---
+## Further Reading
+
+- [SigNoz - An Open Source Observability Platform](https://signoz.io/blog/open-source-observability/)
+
