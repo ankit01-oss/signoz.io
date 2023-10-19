@@ -1,7 +1,7 @@
 ---
 title: Using Kubectl Logs | How to view Kubernetes Pod Logs?
 slug: kubectl-logs
-date: 2022-12-01
+date: 2023-10-09
 tags: [Tech Tutorial]
 authors: [daniel]
 description: Kubectl logs command can be used to get information about the containers and pods on your Kubernetes cluster. Debugging your Kubernetes resources heavily depends on...

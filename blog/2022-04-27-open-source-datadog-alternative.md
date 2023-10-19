@@ -1,7 +1,7 @@
 ---
 title: SigNoz - Open-source alternative to DataDog
 slug: open-source-datadog-alternative
-date: 2023-09-10
+date: 2023-10-19
 tags: [SigNoz, Open Source]
 authors: pranay
 description: DataDog is a popular APM tool. But it is very expensive and opaque about its billing practices. What if you could get a SaaS like experience from an open-source APM tool....
@@ -75,8 +75,6 @@ Some of our key features which makes SigNoz vastly superior to current open-sour
 - Exceptions monitoring
 - Transparent usage Data
 
-<SignUps />
-
 ### Application metrics
 
 Get out of the box p90, p99 latencies, RPS, Error rates and top endpoints for a service out of the box.
@@ -91,7 +89,7 @@ Get out of the box p90, p99 latencies, RPS, Error rates and top endpoints for a 
 Found something suspicious in a metric, just click that point in the graph & get details of traces which may be causing the issues. Seamless, Intuitive.
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2022/04/metrics_to_traces.webp" alt="Seamless flow between metrics and traces"/>
+    <img src="/img/blog/common/application_metrics_to_traces.webp" alt="Seamless flow between metrics and traces"/>
     <figcaption><i>Move from metrics to traces at any point of time which needs more analysis</i></figcaption>
 </figure>
 
@@ -102,7 +100,7 @@ Under our traces tab, you can analyze the traces data using filters based on tag
 Using tags, you can find latency experienced by customers who have customer_type set as `premium`.
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2022/04/powerful_filters_on_traces_data.webp" alt="Filters on trace data"/>
+    <img src="/img/blog/common/filters_trace_data.webp" alt="Filters on trace data"/>
     <figcaption><i>Use advanced filters to analyze your trace data</i></figcaption>
 </figure>
 
@@ -111,7 +109,7 @@ Using tags, you can find latency experienced by customers who have customer_type
 Create custom metrics from filtered traces to find metrics of any type of request. Want to find p99 latency of `customer_type: premium` who are seeing `status_code:400`. Just set the filters, and you have the graph. Boom!
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2022/04/custom_aggregates_filtered_data.webp" alt="Custom aggregates on filtered traces"/>
+    <img src="/img/blog/common/traces_custom_aggregates.webp" alt="Custom aggregates on filtered traces"/>
     <figcaption><i>Find custom aggregates on filtered traces</i></figcaption>
 </figure>
 
@@ -141,7 +139,7 @@ SigNoz provides Logs management with advanced log query builder. You can also mo
 You can drill down details of how many events is each application sending or at what granularity, so that you can adjust your sampling rate as needed and not get a shock at the end of the month ( case with SaaS vendors many a times)
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2022/04/transparent_usage_data.webp" alt="Transparent usage data"/>
+    <img src="/img/blog/common/signoz_usage_explorer.webp" alt="Transparent usage data"/>
     <figcaption><i>SigNoz provides usage explorer so that you are always informed about your usage</i></figcaption>
 </figure>
 
@@ -156,3 +154,4 @@ You can drill down details of how many events is each application sending or at 
 #### **Related Content**
 
 **[SigNoz vs Datadog](https://signoz.io/comparisons/signoz-vs-datadog/)**<br></br>
+**[Beware these surprises in Datadog pricing](https://signoz.io/blog/datadog-pricing/)**<br></br>
