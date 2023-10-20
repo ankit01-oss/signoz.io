@@ -41,7 +41,7 @@ This is a complete guide on OpenTelemetry logs. We are covering the following se
   - [Key Components Of OpenTelemetry's log data model](#key-components-of-opentelemetrys-log-data-model)
 - [Limitations of existing logging solutions](#limitations-of-existing-logging-solutions)
 - [Why Correlation of telemetry signals is Important?](#why-correlation-is-important)
-- [Correlation in OpenTelemetry](#correlation-in-opentelemetry)
+<!-- - [Correlation in OpenTelemetry](#correlation-in-opentelemetry) -->
 - [Collecting log data with OpenTelemetry](#collecting-log-data-with-opentelemetry)
   - [Collecting legacy first-party application logs](#collecting-legacy-first-party-application-logs)
   - [Collecting third-party application log data](#collecting-third-party-application-log-data)
@@ -175,7 +175,7 @@ Existing logging solutions also don’t have any standardized way to propagate a
 
 **Holistic View:** Correlation provides a complete picture of the system, allowing developers and operators to understand how different components interact and affect each other.
 
-## Correlation in OpenTelemetry
+<!-- ## Correlation in OpenTelemetry
 
 Let's see through a code example how correlation works in OpenTelemetry. Consider a hypothetical scenario where a web service processes user requests. We'll showcase how to correlate logs, metrics, and traces using OpenTelemetry:
 
@@ -227,7 +227,7 @@ If there's an exception during processing, we log an error message, set error at
 
 With OpenTelemetry's correlation capabilities, when analyzing the data, you can link the log entries, metrics, and trace spans together. This allows you to see, for instance, the specific log messages associated with a particular trace or the metrics associated with a specific operation.
 
-Now let's talk about how to collect log data with OpenTelmetry.
+Now let's talk about how to collect log data with OpenTelmetry. -->
 
 
 ## Collecting log data with OpenTelemetry
