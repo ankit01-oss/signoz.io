@@ -1,11 +1,11 @@
 ---
-title: Beware these Surprises in Datadog Pricing
+title: Datadog Pricing - Beware These Surprises in 2023
 slug: datadog-pricing
-date: 2023-10-16
+date: 2023-10-20
 tags: [Observability]
 authors: nicamellifera
 description: This piece explores two ways that Datadog’s pricing is often much larger than expected for small and mid-size engineering teams. The first is the per-host pricing that affects microservice architectures, and the second is custom metrics that can quickly get out of control and inflate your Datadog bill.
-image: /img/blog/2023/10/dd-pricing-cover.jpg
+image: /img/blog/2023/10/datadog-pricing-cover-min.jpg
 hide_table_of_contents: false
 keywords:
   - observability
@@ -16,9 +16,10 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/datadog-pricing/"/>
 </head>
 
-Datadog has a huge product footprint with a sophisticated user experience, but any discussion of its usefulness must include a consideration of its significant costs.
+Datadog has a huge product footprint with a sophisticated user experience, but any discussion of its usefulness must include a consideration of its significant costs. Datadog pricing is complex and has a lot of SKUs that a customer needs to understand. If you're not careful, you might end up blowing your Datadog bill.
+
 <!--truncate-->
-![Cover Image](/img/blog/2023/10/dd-pricing-cover.webp)
+![Cover Image](/img/blog/2023/10/datadog-pricing-cover.webp)
 It’s likely that your business isn’t at the scale that it will generate a <a href = "https://twitter.com/TurnerNovak/status/1654577231937544192" rel="noopener noreferrer nofollow" target="_blank">$65 million bill</a>, but it is possible to generate bills that <a href = "https://twitter.com/kellabyte/status/1704949192957874190" rel="noopener noreferrer nofollow" target="_blank">rival your operations bills</a>.
 
 <figure data-zoomable align='center'>
@@ -29,7 +30,7 @@ DataDog should have faster queries+ drastically lower storage costs yet for many
 
 This piece explores two ways that Datadog’s pricing is often much larger than expected for small and mid-size engineering teams. The first is the per-host pricing that affects microservice architectures, and the second is custom metrics that can quickly get out of control and inflate your Datadog bill.
 
-## Per host pricing and its discontents
+## Datadog's Per host Pricing and its discontents
 
 Datadog's pricing is  tied directly to the number of hosts monitored. In dynamic environments, especially those with microservices, the amount of data can fluctuate significantly. This makes it challenging to predict costs. Datadog's per-host pricing model can be particularly challenging for architectures that rely heavily on microservices. Here's why:
 
@@ -54,7 +55,7 @@ Microservices are designed to do one thing well, meaning you might have many sma
 
 The development and testing environments often mirror the production setup to some extent. This adds additional hosts that also count toward the pricing. When we’re monitoring development, test, and staging environments, often a self-hosted solution makes sense for these private, internal, low volume hosts. That option doesn’t exist with Datadog, so if you want to monitor these pre-production environments you’ll have to pay the full rate per host and send your data to the Datadog servers.
 
-## Custom Metrics Pricing can get out-of-control quickly
+## Datadog's Custom Metrics Pricing can get out-of-control quickly
 
 A number of comments all over Reddit and Hacker News, mention that Datadog’s billing on <a href = "https://twitter.com/TurnerNovak/status/1654577231937544192" rel="noopener noreferrer nofollow" target="_blank">custom metrics is surprisingly high</a>. At first, the ten cents per hundred ingested custom metrics seems more than fair: after all, when I’m manually adding calls in my code to send custom metrics, it would take me hours and hours to even add a few dozen new metric names, so surely I’m just paying a few bucks for custom metrics, right?
 
