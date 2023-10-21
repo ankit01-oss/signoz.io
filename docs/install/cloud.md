@@ -24,7 +24,7 @@ You can also visualize user requests in their entirety as it travels across comp
 
 ## Collect Hostmetrics from VM
 
-Find [instructions](https://signoz.io/docs/tutorial/opentelemetry-binary-usage-in-virtual-machine/) to send hostmetrics to SigNoz Cloud using OpenTelemetry Collector.
+Find [instructions](https://signoz.io/docs/userguide/hostmetrics/) to send hostmetrics to SigNoz Cloud using OpenTelemetry Collector.
 
 ## Collect Kubernetes Infra Metrics
 
