@@ -172,6 +172,10 @@ const config = {
               to: "learn/",
             },
             {
+              label: "Technical Writer Program",
+              to: "technical-writer-program/",
+            },
+            {
               label: "Community Archive",
               href: "https://community-chat.signoz.io/",
             },
