@@ -73,7 +73,7 @@ You can visit our [blog section](https://signoz.io/blog/) or <a href = "https://
 - **In-depth guide and how-to tutorials.**<br></br>
   For example, you can create a guide on how to send custom metrics with OpenTelemetry in a specific language.
 
-- **Using SigNoz to monitor a technology.**<br></br>
+- **Using SigNoz to monitor a technology/application.**<br></br>
   As SigNoz supports logs, metrics, and traces, the list here can be endless. For example, you can create a guide on sending Nginx logs to SigNoz and create charts and alerts based on those logs.
 
 - **Guides on best practices of monitoring a technology.**<br></br>
@@ -91,14 +91,13 @@ We're open to your creative ideas. You can come up with your proposal on what to
 You might not be a good fit for us if:
 
 - You don't have any samples to share on backend-related content
-- You want to write on frontend technologies
+- You have not written any technical blogs earlier
 
 We're also not looking for:
 
 - Beginner-level articles like Introduction to a particular technology
 - Generic articles with no code samples and specific instructions
 - Rehashed content from somewhere else
-- Frontend topics
 
 ## How to apply
 
