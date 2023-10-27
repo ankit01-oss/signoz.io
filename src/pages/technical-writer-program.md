@@ -22,7 +22,7 @@ keywords:
 
 # SigNoz Technical Writer Program - Write for us
 
-Are you a developer who loves creating content and getting it across to a global audience? We'd love to have you contribute to our community writer program.
+Are you a developer who loves creating content and getting it across to a global audience? We're looking for developer-authors and experienced technical writers who can contribute to our community writer program.
 
 <div align="center">
   <img src="/img/signoz-twp-cover.webp"
@@ -132,6 +132,8 @@ You just need to reach out to writing@signoz.io with an interesting idea and a s
 - We use Notion for writing articles. Once you're accepted into our writer's program, we will give you access to a notion workspace.
 
 - You can create the first draft there. Our team will be in touch with you throughout the writing process. You can get clarification on any question you have.
+
+- If the first draft deviates significantly from our expectations, we may choose not to publish it on our blog.
 
 - We use the commenting feature in Notion to provide feedback and to collaborate. You can tag our team members if you need their input anywhere.
 
