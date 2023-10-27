@@ -168,7 +168,6 @@ You just need to reach out to writing@signoz.io with an interesting idea and a s
 
 [![SigNoz Slack community](/img/blog/common/join_slack_cta.png)](https://signoz.io/slack) -->
 
-You can find more guidelines on writing technical articles for us <a href = "https://signoz.notion.site/FAQs-and-Guidelines-for-SigNoz-Technical-Writing-Program-fc311c108ea942aeb2ccc429fe10e637" rel="noopener noreferrer nofollow" target="_blank">here</a>.
 
 <!-- ## Who can apply?
 
