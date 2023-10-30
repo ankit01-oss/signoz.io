@@ -1,5 +1,5 @@
 ---
-title: Top 11 Grafana Alternatives in 2023
+title: Comparing Top 11 Grafana Alternatives [Open-Source Included]
 slug: grafana-alternatives
 date: 2023-09-23
 tags: [OpenTelemetry, Tools Comparison]

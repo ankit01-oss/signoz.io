@@ -1,5 +1,5 @@
 ---
-title: OpenTelemetry Webinars - Gathering data with the OpenTelemetry Collector
+title: Gathering data with the OpenTelemetry Collector
 slug: gathering-data-with-opentelemetry-collector
 date: 2023-08-15
 tags: [OpenTelemetry]

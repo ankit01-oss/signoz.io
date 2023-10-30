@@ -1,5 +1,5 @@
 ---
-title: OpenTelemetry Webinars - Getting Started with OpenTelemetry
+title: Getting Started with OpenTelemetry [Frequently Asked Questions]
 slug: getting-started-with-opentelemetry
 date: 2023-09-20
 tags: [Talks, OpenTelemetry]
