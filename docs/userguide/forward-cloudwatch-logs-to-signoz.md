@@ -1,7 +1,7 @@
 ---
 id: send-cloudwatch-logs-to-signoz
 title: Send Cloudwatch Logs to SigNoz
-description: Forward your AWS Cloudwatch logs to SigNoz Cloud/Self-Host
+description: Send your AWS Cloudwatch logs to SigNoz Cloud/Self-Host
 
 ---
 
