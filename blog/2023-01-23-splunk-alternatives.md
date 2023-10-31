@@ -1,7 +1,7 @@
 ---
-title: Top 11 Splunk Alternatives that you may consider in 2023
+title: Top 11 Splunk Alternatives in 2023 [Includes Free & Open-Source Tools]
 slug: splunk-alternatives
-date: 2023-01-23
+date: 2023-10-31
 tags: [Tech Resources]
 authors: [joseph]
 description: Are you looking for a Splunk alternative? Here are the top 11 Splunk alternatives that you can consider. 1.SigNoz 2.Graylog 3.Loggly 4.Dynatrace 5.New Relic 6.DataDog...
@@ -17,7 +17,7 @@ keywords:
 </head>
 
 
-<a href = "https://www.splunk.com" rel="noopener noreferrer nofollow" target="_blank" >Splunk</a> is a powerful unified security and observability tool that analyzes data and logs. Splunk allows you to monitor and visualize data in real-time. It analyzes machine-generated data and logs through a web interface. While Splunk is a powerful platform, it might not suit your needs. In this post, we discuss 11 top Splunk alternatives that you can consider.
+<a href = "https://www.splunk.com" rel="noopener noreferrer nofollow" target="_blank" >Splunk</a> is a powerful unified security and observability tool that analyzes data and logs. Splunk allows you to monitor and visualize data in real-time. It analyzes machine-generated data and logs through a web interface. It was recently acquired by Cisco in a $28 billion deal. While Splunk is a powerful platform, it might not suit your needs. In this post, we discuss 11 top Splunk alternatives that you can consider.
 
 <!--truncate-->
 
