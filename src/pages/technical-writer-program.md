@@ -83,7 +83,7 @@ You can visit our [blog section](https://signoz.io/blog/) or <a href = "https://
   OpenTelemetry is an open-source standard for generating logs, metrics, and traces. You can create in-depth guides of different aspects on OpenTelemetry use cases in production. You can even share your experience of using OpenTelemetry.
 
 
-We're open to your creative ideas. You can come up with your proposal on what topics you want to write on.
+We're open to your creative ideas. You can come up with your proposal on what topics you want to write on. You can find guidelines on writing proposals [here](http://signoz.io/technical-writing-guidelines/#guidelines-for-submitting-proposals).
 
 
 ## What we're not looking for
