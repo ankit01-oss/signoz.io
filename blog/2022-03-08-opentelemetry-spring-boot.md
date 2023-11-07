@@ -1,7 +1,7 @@
 ---
-title: OpenTelemetry Spring Boot Tutorial - complete implementation guide
+title: 5 Steps to Integrate OpenTelemetry with Spring Boot Application
 slug: opentelemetry-spring-boot
-date: 2023-09-14
+date: 2023-11-07
 tags: [OpenTelemetry Instrumentation, Java]
 authors: ankit_anand
 description: End-to-end performance monitoring of Spring Boot application with OpenTelemetry. Set up distributed tracing, collect JVM metrics and logs from Spring Boot applications and visualize the collected data with open source APM - SigNoz.
@@ -31,9 +31,7 @@ OpenTelemetry can auto-instrument your Java Spring Boot application to capture t
 
 OpenTelemetry is a vendor-agnostic instrumentation library that is used to generate telemetry data like logs, metrics, and traces. Using OpenTelemetry and SigNoz, you can collect logs, metrics, and traces and visualize everything under a single pane of glass. 
 
-In this article, let's explore how you can auto-instrument your Java Spring Boot application with OpenTelemetry and get the data reported through SigNoz. We will also learn how to collect JVM metrics and logs.
-
-But before that, let's have a brief overview of OpenTelemetry.
+In this tutorial, you will auto-instrument a sample spring boot application for traces with OpenTelemetry Java Jar agent. You will also configure Micrometer and Spring Boot actuator to expose JVM metrics in Prometheus format. Lastly, we will also talk briefly about collecting logs from Spring Boot application using OpenTelemetry.
 
 ## What is OpenTelemetry?
 
@@ -86,7 +84,7 @@ Steps to get started with OpenTelemetry for Spring Boot application:
 - Installing sample Spring Boot app
 - Auto instrumentation with OpenTelemetry and sending data to SigNoz
 
-## Installing SigNoz
+## Step 1 - Installing SigNoz
 
 SigNoz can be installed on macOS or Linux computers in just three steps by using a simple install script.
 
@@ -111,47 +109,28 @@ When you are done installing SigNoz, you can access the UI at [http://localhost
 
 <br></br>
 
-<!-- You can get started with SigNoz using just three commands at your terminal.
-
-```jsx
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-<br></br>
-
-For detailed instructions, you can visit our documentation.
-
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
-
-When you are done installing SigNoz, you can access the UI at: [http://localhost:3301](http://localhost:3301/application)
-
-The application list shown in the dashboard is from a sample app called HOT R.O.D that comes bundled with the SigNoz installation package. -->
-
-## Installing sample Spring Boot app
+## Step 2 - Installing Sample Spring Boot application
 
 If you don't have Java installed, first install it from the <a href = "https://www.java.com/en/" rel="noopener noreferrer nofollow" target="_blank" >official website</a>.
 
 For this tutorial, we will use a sample Spring Boot application built using Maven. You can find the code for the application at its <a href = "https://github.com/SigNoz/spring-petclinic" rel="noopener noreferrer nofollow" target="_blank" >GitHub repo</a>.
 
-Steps to get the app set up and running:
+**Git clone the repository and go to the root folder**
 
-1. **Git clone the repository and go to the root folder**
-
-   ```jsx
-   git clone https://github.com/SigNoz/spring-petclinic.git
-   cd spring-petclinic
-   ```
+```bash
+git clone https://github.com/SigNoz/spring-petclinic.git
+cd spring-petclinic
+```
 
 
-2. **Run the application using the following commands.**
+**Run the application using the following commands.**
 
-   ```
-   ./mvnw package
-   java -jar target/*.jar
-   ```
+```
+./mvnw package
+java -jar target/*.jar
+```
 
-   You can now access the application UI here: [http://localhost:8090/](http://localhost:8090/)
+You can now access the application UI here: [http://localhost:8090/](http://localhost:8090/)
 
 <figure data-zoomable>
     <img src="/img/blog/2022/03/spring_boot_app.webp" alt="Spring PetClinic app accessed at port:8090"/>
@@ -162,45 +141,50 @@ Steps to get the app set up and running:
 
 Once you ensure that your application runs fine, stop it with `ctrl + c` on mac, as we will be launching the application with the Java agent downloaded from OpenTelemetry.
 
-## Auto instrumentation with OpenTelemetry and sending data to SigNoz
+## Step 3 - Downloading OpenTelemetry Java Jar agent
 
-For instrumenting Java applications, OpenTelemetry has a very handy Java JAR agent that can be attached to any Java 8+ application. The JAR agent can detect a number of <a href = "https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md" rel="noopener noreferrer nofollow" target="_blank" >popular libraries and frameworks</a> and instrument it right out of the box. You don't need to add any code for that.
+Download the [latest Java JAR agent](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar). You will need the path of this file, so note it down somewhere. You can also use the terminal to get this file using the following command:
+
+```
+wget https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
+```
+
+OpenTelemetry Java JAR agent can be attached to any Java 8+ application. The JAR agent can detect a number of <a href = "https://github.com/open-telemetry/opentelemetry-java-instrumentation/blob/main/docs/supported-libraries.md" rel="noopener noreferrer nofollow" target="_blank" >popular libraries and frameworks</a> and instrument it right out of the box. You don't need to add any code for that.
 
 The auto-instrumentation takes care of generating traces from the application. SigNoz uses the trace data to report key application metrics like p99 latency, request rates, and error rates with out-of-box charts and visualization. Let's learn how to enable auto-instrumentation.
 
+## Step 4 - Running the application with relevant environment variables
 
-1. Download the [latest Java JAR agent](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar). You will need the path of this file, so note it down somewhere. You can also use the terminal to get this file using the following command:
-   ```
-   wget https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
-   ```
+Now you need to enable the instrumentation agent as well as run your sample application. You can do so by the following command:
 
-2. Now you need to enable the instrumentation agent as well as run your sample application. You can do so by the following command:
-   ```
-   OTEL_EXPORTER_OTLP_ENDPOINT="http://<IP of SigNoz>:4317" OTEL_RESOURCE_ATTRIBUTES=service.name=javaApp java -javaagent:/path/opentelemetry-javaagent.jar -jar target/*.jar
-   ```
+```bash
+OTEL_EXPORTER_OTLP_ENDPOINT="http://<IP of SigNoz>:4317" OTEL_RESOURCE_ATTRIBUTES=service.name=javaApp java -javaagent:/path/opentelemetry-javaagent.jar -jar target/*.jar
+```
 
-   <br></br>As you are running this on your local host, you need to replace `IP of SigNoz` with `localhost`. You will also need to update the path for your downloaded Java JAR agent. You will replace following two things:
+<br></br>As you are running this on your local host, you need to replace `IP of SigNoz` with `localhost`. You will also need to update the path for your downloaded Java JAR agent. You will replace following two things:
 
-   - `IP of SigNoz` : `localhost`
-   - `/path/to` :  `Users/cruxaki/Downloads` (For my local)
-   
-   Your final command will look like this:
-   ```
-   OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317" OTEL_RESOURCE_ATTRIBUTES=service.name=javaApp java -javaagent:/Users/cruxaki/Downloads/opentelemetry-javaagent.jar -jar target/*.jar
-   ```
+- `IP of SigNoz` : `localhost`
+- `/path/to` :  `Users/cruxaki/Downloads` (For my local)
 
-   <br></br>Note the path is updated for my local environment. If you are using a virtual machine, you need to update the IP accordingly. You also need to have the Java JAR agent on the same machine.
+Your final command will look like this:
+```bash
+OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317" OTEL_RESOURCE_ATTRIBUTES=service.name=javaApp java -javaagent:/Users/cruxaki/Downloads/opentelemetry-javaagent.jar -jar target/*.jar
+```
 
-   You can also use `-D` option to install the java agent.
+<br></br>Note the path is updated for my local environment. If you are using a virtual machine, you need to update the IP accordingly. You also need to have the Java JAR agent on the same machine.
 
-   ```bash
-   java -javaagent:/path/opentelemetry-javaagent.jar \
-    -Dotel.exporter.otlp.endpoint=http://<IP of SigNoz>:4317 \
-    -Dotel.resource.attributes=service.name=<service_name> \
-    -jar target/*.jar
-   ```
+You can also use `-D` option to install the java agent.
 
-Check out the Spring Pet Clinic app at: [http://localhost:8090/](http://localhost:8090/) and play around with it to generate some load. You can try refreshing the endpoint multiple times to generate load. It might take 1-2 minutes before it starts showing up in the SigNoz dashboard.
+```bash
+java -javaagent:/path/opentelemetry-javaagent.jar \
+-Dotel.exporter.otlp.endpoint=http://<IP of SigNoz>:4317 \
+-Dotel.resource.attributes=service.name=<service_name> \
+-jar target/*.jar
+```
+
+## Step 5 - Monitoing your Spring Boot Application in SigNoz
+
+Check out the Spring Pet Clinic app at: [http://localhost:8090/](http://localhost:8090/) and play around with it to generate some load. You can try refreshing the endpoint multiple times to generate load. Now you open the `Services` tab of SigNoz dashboard to see your Spring Boot Application being monitored.
 
 Below you can find your javaApp in the list of applications being monitored.
 
