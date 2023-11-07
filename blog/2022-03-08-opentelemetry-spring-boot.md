@@ -27,7 +27,7 @@ OpenTelemetry can auto-instrument your Java Spring Boot application to capture t
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/03/opentelemetry_spring_boot.webp)
+![Cover Image](/img/blog/2023/11/opentelemetry-spring-boot-cover.webp)
 
 OpenTelemetry is a vendor-agnostic instrumentation library that is used to generate telemetry data like logs, metrics, and traces. Using OpenTelemetry and SigNoz, you can collect logs, metrics, and traces and visualize everything under a single pane of glass. 
 
