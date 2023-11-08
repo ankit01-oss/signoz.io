@@ -43,6 +43,8 @@ As a developer-focused tool, we are loved in the developer community. With about
 
 SigNoz helps developers build more reliable and performant applications. As a part of that mission, we are also working on creating technical content that helps developers build better applications. Our blog is read by 100,000+ developers each month, and we're looking to expand our library of helpful content.
 
+[![Apply for SigNoz Technical Writing Program](/img/blog/2023/11/apply-signoz-twp.webp)](https://forms.gle/2zxwVgajMWU5L1fHA)
+
 ## Why write technical content for us?
 
 - **We compensate well**<br></br>
@@ -65,10 +67,13 @@ Writing is a critical skill as you grow in your career, and our team will help y
 - Authors who have written on OpenTelemetry.
 - Authors who can come up with their proposals on topics they have experience with and they follow closely.
 
+[![Apply for SigNoz Technical Writing Program](/img/blog/2023/11/apply-signoz-twp.webp)](https://forms.gle/2zxwVgajMWU5L1fHA)
 
 ## Topics and content we're looking for
 
-You can visit our [blog section](https://signoz.io/blog/) or <a href = "https://signoz.notion.site/SigNoz-Technical-Writing-Program-Topic-Wishlist-82ac9afcbe314208a453798d379b54e3?pvs=4" rel="noopener noreferrer nofollow" target="_blank">topic wishlist</a> to get an idea of what type of content we're looking for. Some ideas on the kind of content that we like:
+You can visit our [blog section](https://signoz.io/blog/) or <a href = "https://signoz.notion.site/SigNoz-Technical-Writing-Program-Topic-Wishlist-82ac9afcbe314208a453798d379b54e3?pvs=4" rel="noopener noreferrer nofollow" target="_blank">topic wishlist</a> to get an idea of what type of content we're looking for. 
+
+Some ideas on the kind of content that we like:
 
 - **In-depth guide and how-to tutorials.**<br></br>
   For example, you can create a guide on how to send custom metrics with OpenTelemetry in a specific language.
@@ -83,8 +88,9 @@ You can visit our [blog section](https://signoz.io/blog/) or <a href = "https://
   OpenTelemetry is an open-source standard for generating logs, metrics, and traces. You can create in-depth guides of different aspects on OpenTelemetry use cases in production. You can even share your experience of using OpenTelemetry.
 
 
-We're open to your creative ideas. You can come up with your proposal on what topics you want to write on. You can find guidelines on writing proposals [here](http://signoz.io/technical-writing-guidelines/#guidelines-for-submitting-proposals).
+We're open to your creative ideas. You can come up with your proposal on what topics you want to write on.
 
+You can also checkout our [guidelines](https://signoz.io/technical-writing-guidelines/) on technical writing.
 
 ## What we're not looking for
 
@@ -154,6 +160,8 @@ You just need to reach out to writing@signoz.io with an interesting idea and a s
 - Where will I write the article? How is the review process?
     - We will give you access to a Notion page for writing the article. We will get back with comments within 4-5 business days on the article and will try to keep the back and forth to the minimum.
 - Payment is processed after the article is published. It can take 3-7 working days to reflect in your account.
+
+[![Apply for SigNoz Technical Writing Program](/img/blog/2023/11/apply-signoz-twp.webp)](https://forms.gle/2zxwVgajMWU5L1fHA)
 
 
 <!-- ## FAQs on Payment

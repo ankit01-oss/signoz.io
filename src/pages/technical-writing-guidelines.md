@@ -20,6 +20,8 @@ keywords:
 
 <div className='announcementContainer'>
 
+# SigNoz's Technical Writing Guidelines
+
 At SigNoz, we are building an observability tool to help developers improve their application performance. As a part of that mission, we want to build a great library of content that helps developers build better applications.
 
 <div align="center">
