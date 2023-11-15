@@ -36,7 +36,7 @@ In this tutorial, we cover:
 - [Setting up SigNoz](#setting-up-signoz)
 - [Setting Up OpenTelemetry Collector](#setting-up-opentelemetry-collector)
 - [Monitoring with SigNoz Dashboard](#monitoring-with-signoz-dashboard)
-
+- [Conclusion](#conclusion)
 
 ## A Brief Overview of RabbitMQ
 
