@@ -19,13 +19,24 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/opentelemetry-rabbitmq-metrics-monitoring/"/>
 </head>
 
-import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
 
-RabbitMQ metrics monitoring is important to ensure that RabbitMQ is performing as expected and to identify and resolve problems quickly. In this tutorial, you will install OpenTelemetry Collector to collect RabbitMQ metrics and then send the collected data to SigNoz for monitoring and visualization
+RabbitMQ metrics monitoring is important to ensure that RabbitMQ is performing as expected and to identify and resolve problems quickly. In this tutorial, you will install OpenTelemetry Collector to collect RabbitMQ metrics and then send the collected data to SigNoz for monitoring and visualization.
 
 <!--truncate-->
 
 ![Cover Image](/img/blog/2023/11/rabbitmq-metrics-monitoring-cover.webp)
+
+In this tutorial, we cover:
+- [A Brief Overview of RabbitMQ](#a-brief-overview-of-rabbitmq)
+- [A Brief Overview of OpenTelemetry](#a-brief-overview-of-opentelemetry)
+- [What is OpenTelemetry Collector?](#what-is-opentelemetry-collector)
+- [How does OpenTelemetry Collector collect data?](#how-does-opentelemetry-collector-collect-data)
+- [RabbitMQ Metrics and attributes that you can collect with OpenTelemetry](#rabbitmq-metrics-and-attributes-that-you-can-collect-with-opentelemetry)
+- [Prerequisites](#prerequisites)
+- [Setting up SigNoz](#setting-up-signoz)
+- [Setting Up OpenTelemetry Collector](#setting-up-opentelemetry-collector)
+- [Monitoring with SigNoz Dashboard](#monitoring-with-signoz-dashboard)
+
 
 ## A Brief Overview of RabbitMQ
 
@@ -41,7 +52,7 @@ The data you collect with OpenTelemetry is vendor-agnostic and can be exported i
 
 In this tutorial, you will use OpenTelemetry Collector to collect RabbitMQ metrics.
 
-### What is OpenTelemetry Collector?
+## What is OpenTelemetry Collector?
 
 OpenTelemetry Collector is a stand-alone service provided by OpenTelemetry. It can be used as a telemetry-processing system with a lot of flexible configurations to collect and manage telemetry data.
 
@@ -378,7 +389,7 @@ You can also create alerts on any metric. Learn how to create alerts [here](http
 </figure>
 
 
-If you want to get started quickly with RabbitMQ monitoring, you can load this json in SigNoz dashboard and get started.
+If you want to get started quickly with RabbitMQ monitoring, you can load this <a href = "https://github.com/SigNoz/dashboards/blob/main/rabbitmq/rabbitmq.json" rel="noopener noreferrer nofollow" target="_blank" >Rabbitmq JSON</a> in SigNoz dashboard and get started.
 
 ## Conclusion
 
@@ -386,12 +397,7 @@ In this tutorial, you installed an OpenTelemetry Collector to collect RabbitMQ m
 
 Visit our complete guide on OpenTelemetry Collector to learn more about it. OpenTelemetry is quietly becoming the world standard for open-source observability, and by using it, you can have advantages like a single standard for all telemetry signals, no vendor lock-in, etc.
 
-SigNoz is an open-source [OpenTelemetry-native APM](https://signoz.io/blog/opentelemetry-apm/) that can be used as a single backend for all your observability needs. 
-
-
-## Getting started with SigNoz
-
-<GetStartedSigNoz />
+SigNoz is an open-source [OpenTelemetry-native APM](https://signoz.io/blog/opentelemetry-apm/) that can be used as a single backend for all your observability needs.
 
 ---
 ## Further Reading
