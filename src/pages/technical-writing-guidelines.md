@@ -77,11 +77,14 @@ Below are the guidelines for code blocks in SigNoz articles:
 - Before every command, mention what the command does and why the user is required to run the command. This introduction should be brief.
 
 - If the code block is lengthy and requires more explanation, then share more details about the code block.
-    - If most of a file can be left with the default settings, then you can show just the section that needs to be changed.
+    
+- If most of a code file can be left with the default settings, then you can show just the section that needs to be changed.
 
 - Every command should have a detailed explanation, including options and flags as necessary.
 
 - If you’re asking the reader to make some changes in a configuration file, first explain what it does and why you’re asking the reader to make those changes.
+
+This article is a [good reference](https://signoz.io/blog/opentelemetry-rabbitmq-metrics-monitoring/) for what a code tutorial should look like.
 
 ### Steps in code instructions
 
