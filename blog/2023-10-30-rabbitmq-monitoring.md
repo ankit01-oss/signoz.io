@@ -58,6 +58,9 @@ Imagine a fleet of delivery trucks crisscrossing a bustling city, carrying vital
 
 RabbitMQ is designed to be highly scalable, which means it can handle a large volume of messages. With the increase in messages, nearly 100% availability becomes necessary for the system. To ensure that, we need to monitor and analyze the behavior of our RabbitMQ instance.
 
+
+[Tutorial on how to monitor RabbitMQ with OpenTelemetry](https://signoz.io/blog/opentelemetry-rabbitmq-metrics-monitoring/)
+
 ### In-Built Monitoring Tools
 
 RabbitMQ comes with an in-built management monitoring tool that comes with a Web UI as well as an HTTP API to collect the metrics. To enable the management tool in your cluster, you just need to execute the following command.
@@ -242,5 +245,6 @@ SigNoz is a full-stack application performance monitoring tool that can be used 
 ---
 ## Further Reading
 
+- [How To Monitor RabbitMQ Metrics With OpenTelemetry](https://signoz.io/blog/opentelemetry-rabbitmq-metrics-monitoring/)
 - [SigNoz - An Open Source Observability Platform](https://signoz.io/blog/open-source-observability/)
 - [Log Monitoring in the Age of Cloud-Native Applications](https://signoz.io/blog/log-monitoring/)
