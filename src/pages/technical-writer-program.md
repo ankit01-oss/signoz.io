@@ -152,14 +152,19 @@ You just need to reach out to writing@signoz.io with an interesting idea and a s
 
 ## General FAQs
 
-- We pay $150 - $300 USD per published article. We pay via PayPal for international transfers, and via bank accounts for Indian transfers.
-- How long should the article be?
-    - We expect the articles to be somewhere between 1000-1500 words. But depending on the requirements of the article, it can be shorter or longer.
-- How long should each article take?
-    - Technical articles can take time. There are no hard deadlines but it's good to have the first draft to be sent for review in around 7-10 days. Our team will be in touch with you during the writing process. If you stop responding, then we may assign the article to someone else.
-- Where will I write the article? How is the review process?
-    - We will give you access to a Notion page for writing the article. We will get back with comments within 4-5 business days on the article and will try to keep the back and forth to the minimum.
-- Payment is processed after the article is published. It can take 3-7 working days to reflect in your account.
+- We pay $150 - $300 USD per published article. Clarify the exact amount with us before starting to work on the article. We pay via PayPal for international transfers, and via bank accounts for Indian transfers.
+
+- **When do I get paid?**<br></br>
+  Payment is processed after the article is published. You will need to submit a receipt. You can use this [free tool](https://www.zoho.com/in/invoice/free-invoice-generator.html) to generate a receipt. We will share a sample receipt when we collaborate. It can take 3-7 working days to reflect in your account.
+  
+- **How long should the article be?**<br></br>
+  We expect the articles to be somewhere between 1000-1500 words. But depending on the requirements of the article, it can be shorter or longer.
+
+- **How long should each article take?**<br></br>
+  Technical articles can take time. There are no hard deadlines but it's good to have the first draft to be sent for review in around 7-10 days. Our team will be in touch with you during the writing process. If you stop responding, then we may assign the article to someone else.
+
+- **Where will I write the article? How is the review process?**<br></br>
+  We will give you access to a Notion page for writing the article. We will get back with comments within 4-5 business days on the article and will try to keep the back and forth to the minimum.
 
 [![Apply for SigNoz Technical Writing Program](/img/blog/2023/11/apply-signoz-twp.webp)](https://forms.gle/2zxwVgajMWU5L1fHA)
 
