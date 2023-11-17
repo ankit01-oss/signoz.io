@@ -106,9 +106,9 @@ The final file, when using `json-file` driver looks like this:
 {
   "log-driver": "json-file",
   "log-opts": {
-    "max-size": "15m",
-    "max-file": "5",
-    }
+    "max-size": "10m",
+    "max-file": "5"
+  }
 }
 ```
 
@@ -118,7 +118,7 @@ You can also update the parameters for `local` logging driver using the same for
 {
   "log-driver": "local",
   "log-opts": {
-    "max-size": "15m"
+    "max-size": "10m",
     "max-file": "5"
   }
 }
