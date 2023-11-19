@@ -18,8 +18,6 @@ keywords:
   <link rel="canonical" href="https://signoz.io/blog/opentelemetry-java/"/>
 </head>
 
-import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
-
 OpenTelemetry stands at the forefront of modern observability practices, revolutionizing how developers gain insights into their applications' performance and behavior. As a powerful distributed tracing framework, it empowers engineers to effortlessly instrument their applications, providing comprehensive visibility into the intricacies of microservices architectures.
 
 <!--truncate-->
@@ -228,11 +226,6 @@ Some of the things SigNoz can help you track:
 - Filter traces by service name, operation, latency, error, tags/annotations.
 - Run aggregates on trace data
 - Unified UI for both metrics and traces
-
-
-## Getting started with SigNoz
-
-<GetStartedSigNoz />
 
 ---
 ## Further Reading
