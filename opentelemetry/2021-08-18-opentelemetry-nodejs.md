@@ -1,7 +1,7 @@
 ---
 title: OpenTelemetry Setup in a Nodejs Application
 slug: nodejs
-date: 2022-12-12
+date: 2023-11-20
 tags: [javascript-monitoring]
 author: Ankit Anand
 author_title: SigNoz Team
