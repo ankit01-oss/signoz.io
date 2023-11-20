@@ -1,5 +1,5 @@
 ---
-title: OpenTelemetry Nodejs | Tutorial with a sample Nodejs app instrumentation
+title: OpenTelemetry Setup in a Nodejs Application
 slug: nodejs
 date: 2022-12-12
 tags: [javascript-monitoring]
@@ -8,7 +8,7 @@ author_title: SigNoz Team
 author_url: https://github.com/ankit01-oss
 author_image_url: https://avatars.githubusercontent.com/u/83692067?v=4
 description: In this article, learn how to setup application monitoring for Node.js apps with OpenTelemetry and SigNoz.
-image: /img/blog/2021/08/opentelemetry_nodejs.jpeg
+image: /img/blog/2023/11/opentelemetry-nodejs-cover-min.jpg
 keywords:
   - opentelemetry
   - opentelemetry javascript
@@ -29,7 +29,7 @@ OpenTelemetry can auto-instrument many common modules for a Javascript applicati
 <!--truncate-->
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/common/signoz_charts_application_metrics.png" alt="Monitor your Nodejs applications with SigNoz"/>
+    <img src="/img/blog/2023/11/opentelemetry-nodejs-cover.webp" alt="Monitor your Nodejs applications with SigNoz"/>
 </figure>
 
 <br></br>
