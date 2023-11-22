@@ -179,12 +179,11 @@ You will need to add this user in the configuration file of the OpenTelemetry co
 
 If RabbitMQ is not on the same server as OpenTelemetry Collector, then you should do an extra step to open port 15672.
 
-<aside>
-💡  It is strongly advised not to open this port to the public. You can open it for specific IPs or private cloud only.
+:::warning
 
-</aside>
+It is strongly advised not to open this port to the public. You can open it for specific IPs or private cloud only.
 
-<br/>
+:::
 
 **Open TCP port 15672** 
 

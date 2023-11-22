@@ -135,10 +135,11 @@ GRANT SELECT ON pg_stat_database TO your_username;
 
 ### If PostgreSQL is not on the same server as OpenTelemetry Collector
 
-<aside>
-💡  It is strongly advised not to open this port to the public. You can open it for specific IPs or private cloud only.
+:::warning
 
-</aside>
+It is strongly advised not to open this port to the public. You can open it for specific IPs or private cloud only.
+
+:::
 
 In this article, our assumption is your PostgreSQL server, and your OpenTelemetry collector will be on the same server. If this is not the case, then you should do an extra step to open your PostgreSQL service port (assuming 5432).
 
