@@ -30,16 +30,16 @@ In this tutorial, we cover:
 - [A Brief Overview of PostgreSQL](#a-brief-overview-of-postgresql)
 - [A Brief Overview of OpenTelemetry](#a-brief-overview-of-opentelemetry)
 - [How does OpenTelemetry Collector collect data?](#how-does-opentelemetry-collector-collect-data)
-- [Metrics \& Attributes supported by OpenTelemetry](#metrics--attributes-supported-by-opentelemetry)
 - [Prerequisites](#prerequisites)
 - [Setting up SigNoz](#setting-up-signoz)
 - [Setting Up OpenTelemetry Collector](#setting-up-opentelemetry-collector)
 - [Monitoring with SigNoz Dashboard](#monitoring-with-signoz-dashboard)
 - [Conclusion](#conclusion)
+- [Reference: Metrics & Attributes of PostgreSQL supported by OpenTelemetry](#metrics--attributes-for-postgresql-supported-by-opentelemetry)
 - [Further Reading](#further-reading)
 
 
-[If you want to jump straight into implementation, start with this section.](#prerequisites)
+If you want to jump straight into implementation, start with this [prerequisites](#prerequisites) section.
 
 ## A Brief Overview of PostgreSQL
 
@@ -117,104 +117,7 @@ service:
       exporters: [otlp, zipkin]
 ```
 
-Now that you understand how OpenTelemetry collector collects data, let’s see what PostgreSQL metrics can be collected.
-
-## Metrics & Attributes supported by OpenTelemetry
-
-The following metrics and resource attributes for PostgreSQL can be collected by the Opentelemetry Collector.
-
-### Metrics 
-
-These metrics are enabled by default. Collectors provide many metrics that you can use to monitor how your PostgreSQL server is performing or if something is not right.
-
-**Key Terms for Metrics & Attributes**
-
-**Name:** The name of the metric is a unique identifier that distinguishes it from other metrics. It helps in referencing and organizing various metrics on SigNoz as well.
-
-**Type:** The type of metric defines the kind of data it represents. Common metric types include INT, DOUBLE, STRING, etc.
-
-**Unit:** The unit specifies the measurement unit associated with the metric. It helps in interpreting and comparing metric values, including Bytes, NONE, etc.
-
-**Temporality:** It involves understanding the temporal patterns and fluctuations within the data, providing insights into how the metric evolves over time. Temporality is crucial for analyzing trends, identifying patterns, and making informed decisions based on the temporal behavior of the observed metric.
-
-**Monotonicity:** It refers to the cumulative nature of a metric, indicating that its values continuously increase or remain non-decreasing over time. This property is crucial for tracking cumulative values, such as the total count of events or occurrences.
-
-| Metric | Description | Name | Type | Value Type | Unit | Temporality | Monotonic |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Backends | The number of backends | postgresql.backends | SUM | INT | NONE | Cumulative | false |
-| Maximum Connections | Configured maximum number of client connections allowed | postgresql.connection.max | GAUGE | INT | NONE | N/A | N/A |
-| Database Counts | Number of user databases | postgresql.database.count | SUM | INT | NONE | Cumulative | false |
-| Database Size | The database disk usage | postgresql.db_size | SUM | INT | Bytes | Cumulative | false |
-| Index Scans | The number of index scans on a table | postgresql.index.scans | SUM | INT | NONE | Cumulative | true |
-| Index Scans | The number of index scans on a table | postgresql.index.scans | SUM | INT | NONE | Cumulative | true |
-| Index Size | The size of the index on disk | postgresql.index.size | GAUGE | INT | Bytes | N/A | N/A |
-| Database Operations | The number of db row operations | postgresql.operations | SUM | INT | NONE | Cumulative | true |
-| Delay in Replication | The amount of data delayed in replication | postgresql.replication.data_delay | GAUGE | INT | Bytes | N/A | N/A |
-| Rollbacks | The number of rollbacks | postgresql.rollbacks | SUM | INT | NONE | Cumulative | true |
-| Total Rows | The number of rows in the database | postgresql.rows | SUM | INT | NONE | Cumulative | false |
-| Total Tables | Number of user tables in a database | postgresql.table.count | SUM | INT | NONE | Cumulative | false |
-| Table Sizes | Disk space used by a table | postgresql.table.size | SUM | INT | Bytes | Cumulative | false |
-| Table Vacuum | Number of times a table has manually been vacuumed | postgresql.table.vacuum.count | SUM | INT | NONE | Cumulative | true |
-| WAL File Age | Age of the oldest WAL file. This metric requires WAL to be enabled with at least one replica. | postgresql.wal.age | GAUGE | INT | seconds | N/A | N/A |
-| WAL File Lag | Time between flushing recent WAL locally and receiving notification that the standby server has completed an operation with it.
-This metric requires WAL to be enabled with at least one replica. | postgresql.wal.lag | GAUGE | INT | seconds | N/A | N/A |
-| Background Writer Buffer Allocated | Number of buffers allocated | postgresql.bgwriter.buffers.allocated | SUM | INT | NONE | Cumulative | true |
-| Background Writer Buffer Writes | Number of buffers written | postgresql.bgwriter.buffers.writes | SUM | INT | NONE | Cumulative | true |
-| Background Writer Checkpoint Count | The number of checkpoints performed | postgresql.bgwriter.checkpoint.count | SUM | INT | NONE | Cumulative | true |
-| Background Writer Duration | Total time spent writing and syncing files to disk by checkpoints | postgresql.bgwriter.duration | SUM | DOUBLE | Milliseconds | Cumulative | true |
-| Background Writer Maximum Written | Number of times the background writer stopped a cleaning scan because it had written too many buffers | postgresql.bgwriter.maxwritten | SUM | INT | NONE | Cumulative | true |
-| Blocks Read | The number of blocks read | postgresql.blocks_read | SUM | INT | NONE | Cumulative | true |
-| Commits | The number of commits | postgresql.commits | SUM | INT | NONE | Cumulative | true |
-|  |  |  |  |  |  |  |  |
-
-### Optional Metrics
-
-These metrics are not emitted by default. Each of them can be enabled by applying the following configuration:
-
-```yaml
-metrics:
-  <metric_name>:
-    enabled: true
-```
-
-| Metric | Description | Name | Type | Value Type | Unit | Temporality | Monotonic |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Database Locks | The number of database locks | postgresql.database.locks | GAUGE | INT | NONE | N/A | N/A |
-| Deadlocks | The number of deadlocks | postgresql.deadlocks | SUM | INT | NONE | Cumulative | true |
-| Sequential Scans | The number of sequential scans | postgresql.sequential_scans | SUM | INT | NONE | Cumulative | true |
-| Temp Files | The number of temp files | postgresql.temp_files | SUM | INT | NONE | Cumulative | true |
-| WAL Delay | The time between flushing recent WAL locally and receiving notification that the standby server has completed an operation with it. This metric requires WAL to be enabled with at least one replica | postgresql.wal.delay | GAUGE | DOUBLE | seconds | N/A | N/A |
-
-### Attributes
-
-| Metric | Attribute | Description | Value Type | Values |
-| --- | --- | --- | --- | --- |
-| Background Buffer Writes | source | The source of a buffer write | STRING | backend, backend_fsync, checkpoints, bgwriter |
-| Background Checkpoint Count | type | The type of checkpoint state | STRING | requested, scheduled |
-| Background Writer Duration | type | The type of time spent during the checkpoint | STRING | sync, write |
-| Blocks Read | source | The block read source type | STRING | heap_read, heap_hit, idx_read, idx_hit, toast_read, toast_hit, tidx_read, tidx_hit |
-| Database Operations | operation | The database operation | STRING | ins, upd, del, hot_upd |
-| Delay in Replication | replication_client | The IP address of the client connected to this backend. If this field is "unix", it indicates either that the client is connected via a Unix socket | STRING | ANY |
-| Total Rows | state | The tuple (row) state | STRING | dead, live  |
-| WAL File Lag | operation | The operation which is responsible for the lag | STRING | flush, replay, write |
-| WAL File Lag | replication_client | The IP address of the client connected to this backend. If this field is "unix", it indicates either that the client is connected via a Unix socket | STRING | ANY |
-| Database Locks | relation | OID of the relation targeted by the lock, or null if the target is not a relation or part of a relation | STRING | ANY |
-| Database Locks | mode | Name of the lock mode held or desired by the process | STRING | ANY |
-| Database Locks | lock_type | Type of the lockable object | STRING | ANY |
-| WAL Delay | operation | The operation which is responsible for the lag | STRING | flush, replay, write |
-| WAL Delay | replication_client | The IP address of the client connected to this backend. If this field is "unix", it indicates either that the client is connected via a Unix socket | STRING | ANY |
-
-### Resource Attributes
-
-These attributes will be enabled by default:
-
-| Attribute | Description | Value Type |
-| --- | --- | --- |
-| postgresql.database.name | The name of the database | STRING |
-| postgresql.index.name | The name of the index on a table | STRING |
-| postgresql.table.name | The schema name followed by the table name | STRING |
-
-These are the currently supported metrics at the time the article is written. Check the <a href = "https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/postgresqlreceiver/documentation.md" rel="noopener noreferrer nofollow" target="_blank">OpenTelemetry Collector Contrib</a> repo for any updates.
+Now that you understand how OpenTelemetry collector collects data, let’s see how you can collect PostgreSQL metrics with OpenTelemetry. You can find the list of metrics supported by OpenTelemetry [here](#metrics--attributes-supported-by-opentelemetry).
 
 ## Prerequisites
 
@@ -465,6 +368,103 @@ You can also create alerts on any metric. Learn how to create alerts [here](http
     <img src="/img/blog/2023/11/create-alerts-signoz.webp" alt=""/>
     <figcaption><i></i></figcaption>
 </figure>
+
+## Metrics & Attributes for PostgreSQL supported by OpenTelemetry
+
+The following metrics and resource attributes for PostgreSQL can be collected by the Opentelemetry Collector.
+
+### Metrics 
+
+These metrics are enabled by default. Collectors provide many metrics that you can use to monitor how your PostgreSQL server is performing or if something is not right.
+
+**Key Terms for Metrics & Attributes**
+
+**Name:** The name of the metric is a unique identifier that distinguishes it from other metrics. It helps in referencing and organizing various metrics on SigNoz as well.
+
+**Type:** The type of metric defines the kind of data it represents. Common metric types include INT, DOUBLE, STRING, etc.
+
+**Unit:** The unit specifies the measurement unit associated with the metric. It helps in interpreting and comparing metric values, including Bytes, NONE, etc.
+
+**Temporality:** It involves understanding the temporal patterns and fluctuations within the data, providing insights into how the metric evolves over time. Temporality is crucial for analyzing trends, identifying patterns, and making informed decisions based on the temporal behavior of the observed metric.
+
+**Monotonicity:** It refers to the cumulative nature of a metric, indicating that its values continuously increase or remain non-decreasing over time. This property is crucial for tracking cumulative values, such as the total count of events or occurrences.
+
+| Metric | Description | Name | Type | Value Type | Unit | Temporality | Monotonic |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Backends | The number of backends | postgresql.backends | SUM | INT | NONE | Cumulative | false |
+| Maximum Connections | Configured maximum number of client connections allowed | postgresql.connection.max | GAUGE | INT | NONE | N/A | N/A |
+| Database Counts | Number of user databases | postgresql.database.count | SUM | INT | NONE | Cumulative | false |
+| Database Size | The database disk usage | postgresql.db_size | SUM | INT | Bytes | Cumulative | false |
+| Index Scans | The number of index scans on a table | postgresql.index.scans | SUM | INT | NONE | Cumulative | true |
+| Index Scans | The number of index scans on a table | postgresql.index.scans | SUM | INT | NONE | Cumulative | true |
+| Index Size | The size of the index on disk | postgresql.index.size | GAUGE | INT | Bytes | N/A | N/A |
+| Database Operations | The number of db row operations | postgresql.operations | SUM | INT | NONE | Cumulative | true |
+| Delay in Replication | The amount of data delayed in replication | postgresql.replication.data_delay | GAUGE | INT | Bytes | N/A | N/A |
+| Rollbacks | The number of rollbacks | postgresql.rollbacks | SUM | INT | NONE | Cumulative | true |
+| Total Rows | The number of rows in the database | postgresql.rows | SUM | INT | NONE | Cumulative | false |
+| Total Tables | Number of user tables in a database | postgresql.table.count | SUM | INT | NONE | Cumulative | false |
+| Table Sizes | Disk space used by a table | postgresql.table.size | SUM | INT | Bytes | Cumulative | false |
+| Table Vacuum | Number of times a table has manually been vacuumed | postgresql.table.vacuum.count | SUM | INT | NONE | Cumulative | true |
+| WAL File Age | Age of the oldest WAL file. This metric requires WAL to be enabled with at least one replica. | postgresql.wal.age | GAUGE | INT | seconds | N/A | N/A |
+| WAL File Lag | Time between flushing recent WAL locally and receiving notification that the standby server has completed an operation with it.
+This metric requires WAL to be enabled with at least one replica. | postgresql.wal.lag | GAUGE | INT | seconds | N/A | N/A |
+| Background Writer Buffer Allocated | Number of buffers allocated | postgresql.bgwriter.buffers.allocated | SUM | INT | NONE | Cumulative | true |
+| Background Writer Buffer Writes | Number of buffers written | postgresql.bgwriter.buffers.writes | SUM | INT | NONE | Cumulative | true |
+| Background Writer Checkpoint Count | The number of checkpoints performed | postgresql.bgwriter.checkpoint.count | SUM | INT | NONE | Cumulative | true |
+| Background Writer Duration | Total time spent writing and syncing files to disk by checkpoints | postgresql.bgwriter.duration | SUM | DOUBLE | Milliseconds | Cumulative | true |
+| Background Writer Maximum Written | Number of times the background writer stopped a cleaning scan because it had written too many buffers | postgresql.bgwriter.maxwritten | SUM | INT | NONE | Cumulative | true |
+| Blocks Read | The number of blocks read | postgresql.blocks_read | SUM | INT | NONE | Cumulative | true |
+| Commits | The number of commits | postgresql.commits | SUM | INT | NONE | Cumulative | true |
+|  |  |  |  |  |  |  |  |
+
+### Optional Metrics
+
+These metrics are not emitted by default. Each of them can be enabled by applying the following configuration:
+
+```yaml
+metrics:
+  <metric_name>:
+    enabled: true
+```
+
+| Metric | Description | Name | Type | Value Type | Unit | Temporality | Monotonic |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Database Locks | The number of database locks | postgresql.database.locks | GAUGE | INT | NONE | N/A | N/A |
+| Deadlocks | The number of deadlocks | postgresql.deadlocks | SUM | INT | NONE | Cumulative | true |
+| Sequential Scans | The number of sequential scans | postgresql.sequential_scans | SUM | INT | NONE | Cumulative | true |
+| Temp Files | The number of temp files | postgresql.temp_files | SUM | INT | NONE | Cumulative | true |
+| WAL Delay | The time between flushing recent WAL locally and receiving notification that the standby server has completed an operation with it. This metric requires WAL to be enabled with at least one replica | postgresql.wal.delay | GAUGE | DOUBLE | seconds | N/A | N/A |
+
+### Attributes
+
+| Metric | Attribute | Description | Value Type | Values |
+| --- | --- | --- | --- | --- |
+| Background Buffer Writes | source | The source of a buffer write | STRING | backend, backend_fsync, checkpoints, bgwriter |
+| Background Checkpoint Count | type | The type of checkpoint state | STRING | requested, scheduled |
+| Background Writer Duration | type | The type of time spent during the checkpoint | STRING | sync, write |
+| Blocks Read | source | The block read source type | STRING | heap_read, heap_hit, idx_read, idx_hit, toast_read, toast_hit, tidx_read, tidx_hit |
+| Database Operations | operation | The database operation | STRING | ins, upd, del, hot_upd |
+| Delay in Replication | replication_client | The IP address of the client connected to this backend. If this field is "unix", it indicates either that the client is connected via a Unix socket | STRING | ANY |
+| Total Rows | state | The tuple (row) state | STRING | dead, live  |
+| WAL File Lag | operation | The operation which is responsible for the lag | STRING | flush, replay, write |
+| WAL File Lag | replication_client | The IP address of the client connected to this backend. If this field is "unix", it indicates either that the client is connected via a Unix socket | STRING | ANY |
+| Database Locks | relation | OID of the relation targeted by the lock, or null if the target is not a relation or part of a relation | STRING | ANY |
+| Database Locks | mode | Name of the lock mode held or desired by the process | STRING | ANY |
+| Database Locks | lock_type | Type of the lockable object | STRING | ANY |
+| WAL Delay | operation | The operation which is responsible for the lag | STRING | flush, replay, write |
+| WAL Delay | replication_client | The IP address of the client connected to this backend. If this field is "unix", it indicates either that the client is connected via a Unix socket | STRING | ANY |
+
+### Resource Attributes
+
+These attributes will be enabled by default:
+
+| Attribute | Description | Value Type |
+| --- | --- | --- |
+| postgresql.database.name | The name of the database | STRING |
+| postgresql.index.name | The name of the index on a table | STRING |
+| postgresql.table.name | The schema name followed by the table name | STRING |
+
+These are the currently supported metrics at the time the article is written. Check the <a href = "https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/postgresqlreceiver/documentation.md" rel="noopener noreferrer nofollow" target="_blank">OpenTelemetry Collector Contrib</a> repo for any updates.
 
 
 ## Conclusion
