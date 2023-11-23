@@ -657,6 +657,11 @@ a.no-underline {
   margin: 0 auto;
 }
 
+.box-shadowed-image {
+  border-radius: 6px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 
 @media screen and (max-width: 767px) {
   .self-hosted-data-protection::before {
