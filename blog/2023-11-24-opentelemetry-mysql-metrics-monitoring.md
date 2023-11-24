@@ -228,7 +228,6 @@ processors:
   batch:
     send_batch_size: 1000
     timeout: 10s
-  # Ref: https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/processor/resourcedetectionprocessor/README.md
 exporters:
   otlp:
     endpoint: "ingest.{region}.signoz.cloud:443" # replace {region} with your region
