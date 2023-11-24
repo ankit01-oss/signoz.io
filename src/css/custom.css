@@ -659,7 +659,7 @@ a.no-underline {
 
 .box-shadowed-image {
   border-radius: 6px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(34, 34, 34, 0.2) 2px 10px 24px;
 }
 
 

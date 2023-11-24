@@ -45,7 +45,7 @@ Let’s explore
 
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2023/11/memory.webp" alt="Memory usage"/>
+    <img className="box-shadowed-image" src="/img/blog/2023/11/memory.webp" alt="Memory usage"/>
     <figcaption><i>Typical metrics chart with memory usage in a VM</i></figcaption>
 </figure>
 <br></br>
@@ -75,7 +75,7 @@ For example, you can monitor p95 latencies of set of APIs and prioritise improvi
 
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2023/11/key-operations.webp" alt="Key Operations List"/>
+    <img className="box-shadowed-image" src="/img/blog/2023/11/key-operations.webp" alt="Key Operations List"/>
     <figcaption><i>Key Operations based on Latency and number of calls</i></figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ Having an observability tool also helps you understand which part of your reques
 
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/2023/11/trace-detail.webp" alt="Trace Detail graph"/>
+    <img className="box-shadowed-image" src="/img/blog/2023/11/trace-detail.webp" alt="Trace Detail graph"/>
     <figcaption><i>Trace detail graph which shows which part of the request is taking most time</i></figcaption>
 </figure>
 
