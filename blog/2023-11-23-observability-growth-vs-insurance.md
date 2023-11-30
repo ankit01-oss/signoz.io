@@ -98,7 +98,7 @@ The second set is much smaller today, but lot more powerful. Users and customers
 
 So, next time your business leader asks you - why are we paying so much for this tool? What is the business value for it? *( I know, those are always the tough ones)*
 
-Don’t hide behind your desks. May be make a list of use cases like above and send him an email. Her eyes may well light up 🙂
+Don’t hide behind your desks. May be make a list of use cases like above and send an email. Their eyes may well light up 🙂
 
 I think this is where the future of Observability tools lie: driving business growth.
 
