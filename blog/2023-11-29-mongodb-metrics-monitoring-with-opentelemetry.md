@@ -345,7 +345,7 @@ You can stop the collector service with the following command:
 kill "$(< otel-pid)"
 ```
 
-You should start seeing the metrics on your Signoz Cloud UI in about 30 seconds. You can import this (link to be added) dashboard JSON into your Signoz environment quite easily to monitor your MongoDB database. 
+You should start seeing the metrics on your Signoz Cloud UI in about 30 seconds. 
 
 ## Monitoring with Signoz Dashboard
 
