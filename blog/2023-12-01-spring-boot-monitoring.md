@@ -53,7 +53,7 @@ OpenTelemetry is a set of APIs, SDKs, libraries, and integrations aiming to stan
 
 The data you collect with OpenTelemetry is vendor-agnostic and can be exported in many formats. Telemetry data has become critical in observing the state of distributed systems. With microservices and polyglot architectures, there was a need to have a global standard. OpenTelemetry aims to fill that space and is doing a great job at it thus far.
 
-Once the data is collected, it needs to be sent to a backend. That’s where SigNoz comes into the picture. SigNoz is an open-source OpenTelemetry-native APM that provides logs, metrics and traces under a single pane of glass.
+Once the data is collected, it needs to be sent to a backend. That’s where [SigNoz](https://signoz.io/) comes into the picture. SigNoz is an open-source OpenTelemetry-native APM that provides logs, metrics and traces under a single pane of glass.
 
 ## 5 things you must know about monitoring Spring Boot with SigNoz
 
@@ -92,7 +92,7 @@ Traces provide a contextual stream of events that have a defined beginning and e
 
 ### Logs
 
-Logs provide a stream of text, typically in an unstructured format, that contains events at a point in time. The logs below have added SPAN and Trace attributes to allow us to associate traces and logs together. See the Logback configuration file in this article on how to achieve this.
+Logs provide a stream of text, typically in an unstructured format, that contains events at a point in time. The logs below have added SPAN and Trace attributes to allow us to associate traces and logs together. See the [Logback configuration file](#configuring-for-traces-and-logs) in this article on how to achieve this.
 
 
 <figure data-zoomable align='center'>
