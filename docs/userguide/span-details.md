@@ -16,7 +16,7 @@ For each span, SigNoz shows the following details:
 - Start time
 - Duration
 - The list of tags associated with the currently selected span.
-- The list of events associated with the currently selected span. If your application emits events to complement traces, SigNoz will display them on this page. For details about raising events in your code, see the [Events](https://opentelemetry.io/docs/concepts/instrumenting-library/#events) section of the OpenTelemetry website and the [Semantic Code for Exceptions](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/exceptions.md) page of the `open-telemetry/opentelemetry-specification` specification repo.
+- The list of events associated with the currently selected span. If your application emits events to complement traces, SigNoz will display them on this page. For details about raising events in your code, see the [Events](https://opentelemetry.io/docs/concepts/instrumenting-library/#events) section of the OpenTelemetry website
 
 The following illustration shows the **Span Details** page:
 

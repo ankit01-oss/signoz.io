@@ -339,12 +339,12 @@ You will see the flamegraph of the selected event, which shows how the request t
 
 <div><br></br></div>
 
-SigNoz also provides a detailed view of common [semantic conventions](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/rpc.md#grpc) like rpc service, method, net, status_code etc. The end-to-end tracing of user requests can help you to identify latency issues quickly.
+SigNoz also provides a detailed view of common [semantic conventions](https://opentelemetry.io/docs/specs/semconv/rpc/grpc/) like rpc service, method, net, status_code etc. The end-to-end tracing of user requests can help you to identify latency issues quickly.
 
 **MongoDB Traces and its semantic conventions**<br></br>
 Establishing a sequential flow of the query and info on the time taken by each part of the request can help quickly identify latency issues. For example, you can see details like how much time the find query took. You can also see the related MongoDB query.
 
-It also provides the [semantic_conventions](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/database.md#mongodb) of MongoDB in the below window.
+It also provides the [semantic_conventions](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/database/README.md) of MongoDB in the below window.
 
 <!-- ![Untitled](Ashu%20-%20Mon%2092dcf/Untitled%2010.webp) -->
 

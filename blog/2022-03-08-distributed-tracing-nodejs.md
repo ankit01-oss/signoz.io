@@ -419,7 +419,7 @@ The traces tab of SigNoz dashboard provides powerful filters to analyze the trac
    width={700}
    />
    
-   SigNoz also provides a detailed view of common <a href = "https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md" rel="noopener noreferrer nofollow" target="_blank" >semantic conventions</a> like HTTP, network, and other attributes.
+   SigNoz also provides a detailed view of common <a href = "https://github.com/open-telemetry/semantic-conventions" rel="noopener noreferrer nofollow" target="_blank" >semantic conventions</a> like HTTP, network, and other attributes.
    
    The end-to-end tracing of user requests can help you to identify latency issues quickly.
 
