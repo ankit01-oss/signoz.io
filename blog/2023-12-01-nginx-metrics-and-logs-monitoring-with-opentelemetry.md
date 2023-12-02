@@ -327,7 +327,6 @@ From the `otelcol-contrib`, run the following command:
 
 ```bash
 ./otelcol-contrib --config ./config.yaml
-
 ```
 
 If you want to run it in the background -
@@ -352,7 +351,7 @@ You can stop the collector service with the following command:
 kill "$(< otel-pid)"
 ```
 
-You should start seeing the metrics on your Signoz Cloud UI in about 30 seconds.
+You should start seeing the metrics on your Signoz Cloud UI in about 30 seconds. You can import this [dashboard JSON](https://github.com/SigNoz/dashboards/tree/main/nginx) into your SigNoz environment to start monitoring your Nginx instance quickly.
 
 ## Monitoring with Signoz Dashboard
 
