@@ -26,7 +26,7 @@ Effective EKS monitoring is crucial for maintaining the health and performance o
 ![Cover Image](/img/blog/2023/12/aws-eks-monitoring-cover.webp)
 
 In this tutorial, we cover:
-- [Why is it important to monitor KS Clusters](#why-is-it-important-to-monitor-ks-clusters)
+- [Why is it important to monitor EKS Clusters](#why-is-it-important-to-monitor-eks-clusters)
 - [Understanding EKS Metrics](#understanding-eks-metrics)
 - [A Brief Overview of OpenTelemetry](#a-brief-overview-of-opentelemetry)
 - [What is OpenTelemetry Collector?](#what-is-opentelemetry-collector)
