@@ -27,10 +27,10 @@ OpenTelemetry is an open-source observability project that provides a set of API
 ![Cover Image](/img/blog/2023/12/otel-python-manual-auto-cover.webp)
 
 In this tutorial, we cover:
-- [A Brief Overview of Auto-instrumentation](#a-brief-overview-of-auto-instrumentation)
-- [A Brief Overview of Manual Instrumentation](#a-brief-overview-of-manual-instrumentation)
+- [A Brief Overview of OpenTelemetry Auto-instrumentation](#a-brief-overview-of-opentelemetry-auto-instrumentation)
+- [A Brief Overview of OpenTelemetry Manual Instrumentation](#a-brief-overview-of-opentelemetry-manual-instrumentation)
 - [Auto vs Manual Instrumentation - What to choose?](#auto-vs-manual-instrumentation---what-to-choose)
-- [Demo - Auto \& Manual Instrumentation in a Python App](#demo---auto--manual-instrumentation-in-a-python-app)
+- [Demo - Auto & Manual Instrumentation in a Python App](#demo---auto--manual-instrumentation-in-a-python-app)
 - [Setting up SigNoz](#setting-up-signoz)
 - [Add Auto-instrumentation](#add-auto-instrumentation)
 - [Add Manual Instrumentation](#add-manual-instrumentation)
@@ -47,33 +47,33 @@ Opentelemetry supports two types of instrumentation.
 - Auto-instrumentation, and
 - Manual Instrumentation
 
-## A Brief Overview of Auto-instrumentation
+## A Brief Overview of OpenTelemetry Auto-instrumentation
 
 **Auto-instrumentation** is a method for instrumenting an application without manual coding. It eliminates the need for developers to manually add tracing or monitoring code to their application, allowing them to add instrumentation to their codebase dynamically.
 
-**Pros:**
+**Pros of auto-instrumentation:**
 
 - **Ease of use:** Auto-instrumentation eliminates the need for manual coding, saving developers time and effort.
 - **Dynamic instrumentation:** Instrumentation can be added or removed dynamically without modifying the application code.
 - **Broad coverage:** Auto-instrumentation can instrument a wide range of libraries and frameworks, providing comprehensive observability.
 
-**Cons:**
+**Cons of auto-instrumentation:**
 
 - **Limited granularity:** Auto-instrumentation may not capture all relevant data, and it may be difficult to control the level of detail.
 - **Potential for performance overhead:** Auto-instrumentation can introduce some overhead, especially in performance-critical applications.
 - **Compatibility issues:** Auto-instrumentation may not be compatible with all frameworks or libraries.
 
-## A Brief Overview of Manual Instrumentation
+## A Brief Overview of OpenTelemetry Manual Instrumentation
 
 **Manual instrumentation**, on the other hand, involves embedding telemetry collection code directly into an application to send valuable data to an observability backend or collector. This necessitates that developers explicitly add tracing or monitoring code to their applications.
 
-**Pros:**
+**Pros of manual instrumentation:**
 
 - **Granular control:** Developers have fine-grained control over the data being collected, ensuring that only relevant information is captured.
 - **No performance overhead:** Manual instrumentation can be optimized to minimize performance impact.
 - **Flexibility:** Manual instrumentation can be used to instrument any part of the application code.
 
-**Cons:**
+**Cons of manual instrumentation:**
 
 - **Increased development effort:** Manual instrumentation requires developers to write additional code, which can increase development time and effort.
 - **Maintenance overhead:** Manual instrumentation requires ongoing maintenance to ensure that it is up-to-date and compatible with changes in the application code.
