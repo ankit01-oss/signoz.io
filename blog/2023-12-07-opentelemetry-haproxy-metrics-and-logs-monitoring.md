@@ -308,8 +308,7 @@ receivers:
     metrics:
   filelog:
     include:
-      - /var/log/haproxy-info.log 
-      - /var/log/haproxy-notice.log
+      - /var/log/haproxy.log
   
 processors:
   batch:

@@ -43,7 +43,7 @@ export default SigNozVSGrafana;
 
 const COMPARISON_DATA = {
   HERO: {
-    TITLE: <>SigNoz vs Grafana</>,
+    TITLE: <>In-Depth: SigNoz vs Grafana</>,
     DESC: (
       <>
         Under the hood, Grafana is powered by multiple tools like Loki, Tempo,
