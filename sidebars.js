@@ -261,7 +261,7 @@ module.exports = {
         {
           type: 'doc',
           id: 'userguide/collecting-ecs-logs-and-metrics',
-          label: 'ECS Infra Mertics & Logs',
+          label: 'ECS Infra Metrics & Logs',
         },
 
       ],
