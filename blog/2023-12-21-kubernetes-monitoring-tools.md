@@ -75,7 +75,7 @@ Here are the top benefits of Kubernetes monitoring:
 | Datadog | Cloud-based APM solution. | Datadog agent to run in Kubernetes cluster. | Starts at $15 per-month per-host (billed annually) |
 | Sematext | Provides integration for Kubernetes monitoring | Sematext agent collects important logs & metrics | Infra monitoring starts at $3.6 per host per month for 5 containers per host. |
 
-## Top Tools
+## Top Kubernetes Monitoring Tools
 
 ### Signoz
 
