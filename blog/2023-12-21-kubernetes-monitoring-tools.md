@@ -6,7 +6,7 @@ tags: [OpenTelemetry]
 authors: debanjan
 description: The top 11 Kubernetes Monitoring tools in 2024, including free ones - 1.SigNoz 2.Prometheus 3.Grafana 4.Kubernetes Dashboard 5.EFK 6.Datadog 7.New Relic & more. Learn how to choose a Kubernetes monitoring tool...
 image: /img/blog/2023/12/k8s-monitoring-tools-cover.jpeg
-hide_table_of_contents: true
+hide_table_of_contents: false
 keywords:
   - opentelemetry
   - signoz
@@ -27,14 +27,6 @@ Are you looking for Kubernetes monitoring tools? Then you have come to the right
 <!--truncate-->
 
 ![Cover Image](/img/blog/2023/12/k8s-monitoring-tools-cover.webp)
-
-In this tutorial, we cover:
-- [Why is Kubernetes Monitoring Important?](#why-is-kubernetes-monitoring-important)
-- [Top Kubernetes Monitoring Tools at a glance](#top-kubernetes-monitoring-tools-at-a-glance)
-- [Top Tools](#top-tools)
-- [Factors To Consider When Choosing a Kubernetes Monitoring Tool](#factors-to-consider-when-choosing-a-kubernetes-monitoring-tool)
-- [Conclusion](#conclusion)
-
 
 Kubernetes monitoring tools provide insights into resource usage, container health, and application performance. This enables you to optimize your workload and proactively prevent problems. 
 
@@ -115,8 +107,8 @@ The [community edition](https://signoz.io/docs/install/) is free for use if youâ
 ### Prometheus
 
 <figure data-zoomable align='center'>
-    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-prometheus.webp" alt="Prometheus Website"/>
-    <figcaption><i>Prometheus Website</i></figcaption>
+    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-prometheus.webp" alt="Kubernetes monitoring tool - Prometheus"/>
+    <figcaption><i>Prometheus Dashboard (Source: Metricfire website)</i></figcaption>
 </figure>
 <br/>
 
@@ -141,7 +133,7 @@ For monitoring via Prometheus, your applications running on Kubernetes need to e
 ### Grafana
 
 <figure data-zoomable align='center'>
-    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-grafana.webp" alt="Grafana dashboard *(source: Grafana Website)*"/>
+    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-grafana.webp" alt="Kubernetes monitoring tool - Grafana dashboard"/>
     <figcaption><i>Grafana dashboard (source: Grafana Website)</i></figcaption>
 </figure>
 <br/>
@@ -167,7 +159,7 @@ While Prometheus is a popular choice for monitoring Kubernetes, the Grafana dash
 
 
 <figure data-zoomable align='center'>
-    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-k8s-dashboard.webp" alt="Kubernetes Dashboard *(source: Kubernetes Dashboard Github)*"/>
+    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-k8s-dashboard.webp" alt="Kubernetes monitoring tool - Kubernetes Dashboard"/>
     <figcaption><i>Kubernetes Dashboard (source: Kubernetes Dashboard Github)</i></figcaption>
 </figure>
 <br/>
@@ -210,8 +202,8 @@ With native support for Docker containers, you can run cAdvisor as a <a href = "
 ### Sentry.io
 
 <figure data-zoomable align='center'>
-    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-sentry.webp" alt="Sentry dashboard"/>
-    <figcaption><i>Sentry dashboard (source: <a href = "http://Sentry.io" rel="noopener noreferrer nofollow" target="_blank" >Sentry.io</a> Demo Dashboard)</i></figcaption>
+    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-sentry.webp" alt="Kubernetes monitoring tool - Sentry dashboard"/>
+    <figcaption><i>Sentry dashboard (source: Sentry website)</i></figcaption>
 </figure>
 <br/>
 
@@ -237,7 +229,7 @@ It comes with <a href = "https://github.com/getsentry/sentry-kubernetes" rel="no
 ### EFK Stack
 
 <figure data-zoomable align='center'>
-    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-kibana.webp" alt="Kibana dashboard *(source: elastic website)*"/>
+    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-kibana.webp" alt="Kubernetes monitoring tool - Kibana dashboard"/>
     <figcaption><i>Kibana dashboard (source: elastic website)</i></figcaption>
 </figure>
 <br/>
@@ -262,7 +254,7 @@ ElasticSearch is deployed as statefulset as it holds the log data, while Fluentd
 ### New Relic + Pixie
 
 <figure data-zoomable align='center'>
-    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-new-reelic.webp" alt="New Relic dashboard*(source: New Relic docs)*"/>
+    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-new-reelic.webp" alt="Kubernetes monitoring tool - New Relic dashboard"/>
     <figcaption><i>New Relic dashboard (source: New Relic docs)</i></figcaption>
 </figure>
 <br/>
@@ -288,7 +280,7 @@ You also get integration with Pixie to step up your monitoring needs. With this,
 ### Dynatrace
 
 <figure data-zoomable align='center'>
-    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-dynatrace.webp" alt="Dynatrace dashboard*(source: Dynatrace website)*"/>
+    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-dynatrace.webp" alt="Kubernetes monitoring tool - Dynatrace dashboard"/>
     <figcaption><i>Dynatrace dashboard (source: Dynatrace website)</i></figcaption>
 </figure>
 <br/>
@@ -314,7 +306,7 @@ For your Kubernetes monitoring needs, it offers a Dynatrace Operator that allows
 ### Datadog
 
 <figure data-zoomable align='center'>
-    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-datadog.webp" alt="Datadog dashboard *(source: Datadog website)*"/>
+    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-datadog.webp" alt="Kubernetes monitoring tool - Datadog dashboard"/>
     <figcaption><i>Datadog dashboard *(source: Datadog website)*</i></figcaption>
 </figure>
 <br/>
@@ -337,7 +329,7 @@ For your Kubernetes monitoring needs, it offers a Dynatrace Operator that allows
 ### Sematext
 
 <figure data-zoomable align='center'>
-    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-sematext.webp" alt="Sematext Kubernetes Monitoring Dashboard (Source: Sematext website)"/>
+    <img className="box-shadowed-image" src="/img/blog/2023/12/kubernetes-monitoring-tools-sematext.webp" alt="Kubernetes monitoring tool - Sematext Kubernetes Monitoring Dashboard"/>
     <figcaption><i>Sematext Kubernetes Monitoring Dashboard (Source: Sematext website)</i></figcaption>
 </figure>
 <br/>
@@ -371,7 +363,7 @@ Letâ€™s take a look at the top factors you should consider before choosing a Kub
 
 Effective Kubernetes monitoring is vital for optimizing containerized workloads. Among the top Kubernetes monitoring tools are Signoz, Prometheus, Dynatrace, and Datadog, each offering unique benefits. Key factors for selecting a Kubernetes monitoring tool include functionality, integration ease, user-friendliness, support, and adaptability to future needs. Each tool serves specific demands, aiding in tailored decision-making based on individual monitoring requirements.
 
-For a straightforward, comprehensive solution, [SigNoz](https://signoz.io/) excels with its open-source, OpenTelemetry-native platform. It's a full-stack APM ideal for metrics monitoring, distributed tracing, and log management, catering to diverse monitoring needs efficiently.
+For a straightforward and comprehensive solution, [SigNoz](https://signoz.io/) excels with its open-source, OpenTelemetry-native platform. It's a full-stack APM ideal for metrics monitoring, distributed tracing, and log management, catering to diverse monitoring needs efficiently.
 
 ---
 
