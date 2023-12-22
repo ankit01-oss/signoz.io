@@ -1,5 +1,5 @@
 ---
-title: The Top 11 Kubernetes Monitoring Tools in 2024 [Includes Free & Open-Source]
+title: Top 11 Kubernetes Monitoring Tools[Includes Free & Open-Source] in 2024
 slug: kubernetes-monitoring-tools
 date: 2023-12-21
 tags: [OpenTelemetry]
