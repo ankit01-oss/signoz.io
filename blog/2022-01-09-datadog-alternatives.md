@@ -311,4 +311,4 @@ Read more about SigNoz:<br></br>
 
 **[SigNoz vs Datadog](https://signoz.io/comparisons/signoz-vs-datadog/)**<br></br>
 
-**[Monitor your Spring Boot application with OpenTelemetry and SigNoz](https://signoz.io/blog/opentelemetry-spring-boot/)**<br></br>
+**[New Relic Alternatives](https://signoz.io/blog/new-relic-alternatives/)**<br></br>
