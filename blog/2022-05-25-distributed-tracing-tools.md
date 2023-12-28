@@ -467,6 +467,6 @@ ___
 #### **Related Content**
 
 **[Top 11 observability tools](https://signoz.io/blog/observability-tools/)**<br></br>
-**[Top 21 APM tools](https://signoz.io/blog/apm-tools/)**<br></br>
+**[New Relic Alternatives](https://signoz.io/blog/new-relic-alternatives/)**<br></br>
 
 
