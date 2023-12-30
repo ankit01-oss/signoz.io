@@ -1,5 +1,5 @@
 ---
-title: Top 11 New Relic Alternatives & Competitors [2024]
+title: Top 11 New Relic Alternatives & Competitors [Updated for 2024]
 slug: new-relic-alternatives
 date: 2023-12-28
 tags: [OpenTelemetry, Tools Comparison]
