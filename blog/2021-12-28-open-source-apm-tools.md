@@ -1,7 +1,7 @@
 ---
 title: Top 13 open source APM tools in 2024
 slug: open-source-apm-tools
-date: 2023-06-05
+date: 2023-12-22
 tags: [Tech Resources]
 authors: ankit_anand
 description: Looking for an open source APM tool? Latest top open source APM tool list - 1.SigNoz 2.Graphite 3.Pinpoint 4.Prometheus 5.JavaMelody 6.StageMonitor 7.Scouter 8.Zipkin 9.Jaeger 10.Skywalking...
@@ -16,6 +16,8 @@ keywords:
 <head>
   <link rel="canonical" href="https://signoz.io/blog/open-source-apm-tools/"/>
 </head>
+
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
 
 Choosing the right APM tool is critical. How do you know which is the right one for you? Here are the top 13 open source application performance monitoring(APM) tools which can solve your monitoring needs.
 
@@ -94,7 +96,7 @@ Now let's explore the top 13 open source APM tools in 2024.
 
 <br></br>
 
-- **Github stars:** 13k
+- **Github stars:** 15.7k
 - **Alternative to:** Datadog, New Relic, Dynatrace
 - [SigNoz on GitHub](https://github.com/SigNoz/signoz)
 
@@ -506,25 +508,11 @@ Logs, metrics, and traces form the three cornerstones of full-stack APM tools. I
 
 ## Getting started with SigNoz
 
-You can get started with SigNoz using just three commands at your terminal.
+<GetStartedSigNoz />
 
-```jsx
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-<br></br>
+---
 
-For detailed instructions, you can visit our documentation.
+**Further Reading**
 
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
-
-You can check out SigNoz's GitHub repo here 👇
-
-[![SigNoz GitHub repo](/img/blog/common/signoz_github.webp)](https://github.com/SigNoz/signoz)
-
-If you want to read more about SigNoz 👇
-
-[Golang Application Performance Monitoring with SigNoz](/blog/monitoring-your-go-application-with-signoz/)
-
-[Nodejs Application Performance Monitoring with SigNoz](/blog/nodejs-opensource-application-monitoring/)
+[Kubernetes Monitoring Tools](https://signoz.io/blog/kubernetes-monitoring-tools/)
+[New Relic Alternatives](https://signoz.io/blog/new-relic-alternatives/)
