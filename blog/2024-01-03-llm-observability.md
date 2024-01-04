@@ -1,7 +1,7 @@
 ---
 title: LLM Observability with OpenTelemetry and SigNoz
 slug: llm-observability
-date: 2024-01-03
+date: 2024-01-04
 tags: [OpenTelemetry, LLM]
 authors: jaikanth
 description: Unlock the secrets of LLM observability - Follow this guide to seamlessly integrate OpenTelemetry with your LLM application and elevate observability with SigNoz....
@@ -26,10 +26,17 @@ Large Language Models (LLMs) represent a transformative advancement in artificia
 
 ![Cover Image](/img/blog/2024/01/llm-observability-cover.webp)
 
-In this tutorial, we cover:
+
+Langchain is one of the popular frameworks for building LLM Apps, which has integrations with popular LLM Model APIs like OpenAI’s GPT-4, Google’s Gemini, Meta’s Llama2 or Anthropic’s Claude, etc. It also integrates with Vector Databases and provides a nice chain abstraction to make agent-like implementations.
+
+Speaking of cost-effective monitoring solutions, embedding high cardinality custom metrics such as accuracy, latency, or detailed model attributes is invaluable. High cardinality metrics refer to data with a vast and unique range of values, which can significantly enhance trace analysis. However, the costs associated with traditional observability platforms can be prohibitive, often akin to an implicit "data tax."
+
+OpenTelemetry, paired with solutions like SigNoz, offers an attractive and economical alternative for incorporating these granular insights. Costs for [high cardinality custom metrics can go out of control](https://signoz.io/blog/datadog-pricing/#datadogs-custom-metrics-pricing-can-get-out-of-control-quickly) in tools like Datadog. OpenTelemetry and SigNoz makes a perfect combo for setting up robust LLM observability.
+
+In this post, we cover:
 - [Why do we need LLM Observability?](#why-do-we-need-llm-observability)
 - [OpenTelemetry For LLM Observability](#opentelemetry-for-llm-observability)
-- [OpenTelemetry \& SigNoz - The Perfect Combo for LLM Observability](#opentelemetry--signoz---the-perfect-combo-for-llm-observability)
+- [OpenTelemetry & SigNoz - The Perfect Combo for LLM Observability](#opentelemetry--signoz---the-perfect-combo-for-llm-observability)
 - [Prerequisites](#prerequisites)
 - [Setting up SigNoz](#setting-up-signoz)
 - [Approaches to Instrumenting a LangChain LLM App](#approaches-to-instrumenting-a-langchain-llm-app)
@@ -37,15 +44,6 @@ In this tutorial, we cover:
 - [Automatic Instrumentation using OpenLLMetry](#automatic-instrumentation-using-openllmetry)
 - [Monitoring with SigNoz Dashboard](#monitoring-with-signoz-dashboard)
 - [Conclusion](#conclusion)
-
-
-If you want to jump straight into implementation, start with this [Prerequisites](#prerequisites) section.
-
-Langchain is one of the popular frameworks for building LLM Apps, which has integrations with popular LLM Model APIs like OpenAI’s GPT-4, Google’s Gemini, Meta’s Llama2 or Anthropic’s Claude, etc. It also integrates with Vector Databases and provides a nice chain abstraction to make agent-like implementations.
-
-Speaking of cost-effective monitoring solutions, embedding high cardinality custom metrics such as accuracy, latency, or detailed model attributes is invaluable. High cardinality metrics refer to data with a vast and unique range of values, which can significantly enhance trace analysis. However, the costs associated with traditional observability platforms can be prohibitive, often akin to an implicit "data tax."
-
-OpenTelemetry, paired with solutions like SigNoz, offers an attractive and economical alternative for incorporating these granular insights. Costs for [high cardinality custom metrics can go out of control](https://signoz.io/blog/datadog-pricing/#datadogs-custom-metrics-pricing-can-get-out-of-control-quickly) in tools like Datadog. OpenTelemetry and SigNoz makes a perfect combo for setting up robust LLM observability.
 
 ## Why do we need LLM Observability?
 
@@ -84,7 +82,7 @@ SigNoz supports OpenTelemetry semantic conventions and provides visualization fo
 
 SigNoz is also open-source, and if you’re using OpenTelemetry and SigNoz, your entire observability stack will be open-source.
 
-Now that you understand why LLM observability is important, let’s get started with the demo.
+Enough context, now let’s get started with the demo.
 
 ## Prerequisites
 
