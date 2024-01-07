@@ -6,7 +6,7 @@ id: collect_logs_from_file
 
 With SigNoz you can collect your application logs from a log file and push it to SigNoz and perform different actions on your data.
 
-In this tutorail configure OpenTelemetry Collector to read logs from a file and push them to SigNoz.
+In this tutorial configure OpenTelemetry Collector to read logs from a file and push them to SigNoz.
 
 
 We will create a sample log file named `app.log` and paste the following lines.

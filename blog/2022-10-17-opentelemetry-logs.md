@@ -421,4 +421,4 @@ To get started with OpenTelemetry logs, install SigNoz and start experimenting b
 
 [OpenTelemetry Collector - complete guide](https://signoz.io/blog/opentelemetry-collector-complete-guide/)
 
-[SigNoz - an open source alternative to DataDog](https://signoz.io/blog/open-source-datadog-alternative/)
+[Log Monitoring 101 Detailed Guide](https://signoz.io/blog/log-monitoring/)

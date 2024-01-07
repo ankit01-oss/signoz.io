@@ -256,6 +256,6 @@ If you liked what you read, then check out our GitHub repo 👇
 
 **Related posts**
 
-[Logging as a service | Log Management with Open Source Tool](https://signoz.io/blog/logging-as-a-service/)
+[Log Monitoring 101 Detailed Guide](https://signoz.io/blog/log-monitoring/)
 
 [OpenTelemetry Logs - A Complete Introduction & Implementation | SigNoz](https://signoz.io/blog/opentelemetry-logs/)
