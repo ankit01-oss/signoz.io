@@ -1,7 +1,7 @@
 ---
 title: Log Monitoring 101 Detailed Guide [Included 10 Tips]
 slug: log-monitoring
-date: 2024-01-04
+date: 2024-01-07
 tags: [Log Management]
 authors: [muskan, ankit_anand]
 description: What is Log monitoring? How are logs monitored in cloud-native applications? Read this guide to understand log monitoring in detail. Also, find top 11 log monitoring tools...
