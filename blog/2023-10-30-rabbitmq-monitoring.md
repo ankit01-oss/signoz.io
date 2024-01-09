@@ -1,7 +1,7 @@
 ---
-title: RabbitMQ Monitoring | Key Metrics & In-Built RabbitMQ Monitoring Tools
+title: 101 Guide to RabbitMQ Metrics Monitoring
 slug: rabbitmq-monitoring
-date: 2023-10-30
+date: 2024-01-09
 tags: [Monitoring Tools]
 authors: deepam
 description: Learn about key metrics that you need to monitor for your RabbitMQ cluster. Key RabbitMQ metrics can be divided into four sections - 1.Operational 2.Latency and Reliability 3.System Health 4.Custom Metrics...
