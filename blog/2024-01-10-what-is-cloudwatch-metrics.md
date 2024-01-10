@@ -215,6 +215,8 @@ The above uses the AWS SDK for Java to publish custom metric data to Amazon Clou
 
 **Note:** You cannot specify a namespace that begins with " `AWS` ". Namespaces that begin with " `AWS` " are reserved for use by Amazon Web Services products.
 
+Use the Java 2.x AWS SDK, a revised version of the Java 1.x codebase, built on Java 8+ for features like non-blocking I/O and dynamic HTTP implementation switching.
+
 ### Custom Metrics with CloudWatch Agent
 
 If you're running an application on an EC2 instance, you can use the CloudWatch agent to collect and publish custom metrics. The agent can be configured to collect specific metrics from your application and publish them to CloudWatch. This is particularly useful for monitoring the performance of your EC2 instances and on-premises servers.

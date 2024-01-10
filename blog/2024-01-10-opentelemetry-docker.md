@@ -134,10 +134,10 @@ The below links can help you with the Docker installation:
 
 Once the Docker container is installed, start a few containers using the below commands: 
 
-```yaml
+```shell
 docker run nginx:latest -p 8080:80 -d
 docker run httpd:latest -p 8081:80 -d
-docker run -e MYSQL_ROOT_PASSWORD=mysecretpassword -p 3306:3306 -d
+docker run mysql:latest -e MYSQL_ROOT_PASSWORD=mysecretpassword -p 3306:3306 -d
 ```
 
 The above commands will start 3 containers on your system to allow us to gather some metrics when we start the OpenTelemetry collector. Next, let us start with the setup of OpenTelemetry Collector. It is assumed that you are setting up the OpenTelemetry collector on the same machine where you are running the Docker containers. 
@@ -154,7 +154,7 @@ Download the appropriate binary package for your Linux or macOS distribution fro
 
 For MACOS (arm64):
 
-```java
+```bash
 curl --proto '=https' --tlsv1.2 -fOL https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.88.0/otelcol-contrib_0.88.0_darwin_arm64.tar.gz
 ```
 
@@ -306,7 +306,7 @@ You can also create alerts on any metric. Learn how to create alerts [here](htt
 
 
 <figure data-zoomable align='center'>
-    <img className="box-shadowed-image" src="/img/blog/2024/01/opentelemetry-docker-alerts.webp" alt="Create alerts on any metrics and get notified in a notification channel of your choice"/>
+    <img className="box-shadowed-image" src="/img/blog/2024/01/opentelemetry-docker-alerts.webp" alt="Create alerts on any Docker container metrics"/>
     <figcaption><i>Create alerts on any metrics and get notified in a notification channel of your choice</i></figcaption>
 </figure>
 <br/>
