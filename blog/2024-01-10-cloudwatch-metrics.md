@@ -1,11 +1,11 @@
 ---
-title: What is Cloudwatch Metrics? Detailed 101 Guide
-slug: what-is-cloudwatch-metrics
-date: 2024-01-10
+title: What are Cloudwatch Metrics? How to implement Custom Metrics in Cloudwatch?
+slug: cloudwatch-metrics
+date: 2024-01-13
 tags: [OpenTelemetry, AWS]
 authors: daniel
 description: CloudWatch metrics play a critical role in monitoring AWS resources and facilitating effective troubleshooting during system failures. In this guide, learn everything about Cloudwatch metrics, its types, custom metrics and...
-image: /img/blog/2024/01/cloudwatch-metrics-cover.jpeg
+image: /img/blog/2024/01/cloudwatch-metrics-cover-min.jpg
 hide_table_of_contents: false
 toc_min_heading_level: 2
 toc_max_heading_level: 2
