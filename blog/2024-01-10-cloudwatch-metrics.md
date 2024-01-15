@@ -17,7 +17,7 @@ keywords:
 ---
 
 <head>
-  <link rel="canonical" href="https://signoz.io/blog/what-is-cloudwatch-metrics/"/>
+  <link rel="canonical" href="https://signoz.io/blog/cloudwatch-metrics/"/>
 </head>
 
 import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
