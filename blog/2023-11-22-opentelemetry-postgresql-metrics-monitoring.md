@@ -1,7 +1,7 @@
 ---
 title: How to Monitor PostgreSQL metrics with OpenTelemetry
 slug: opentelemetry-postgresql-metrics-monitoring
-date: 2023-11-22
+date: 2024-01-17
 tags: [OpenTelemetry]
 authors: deepam
 description: Steps to monitor PostgreSQL metrics with OpenTelemetry 1. Setting up OpenTelemetry Collector 2. Configuring OpenTelemetry Collector to collect PostgreSQL metrics 3. Send collected metrics to SigNoz...
@@ -225,18 +225,18 @@ receivers:
   postgresql/all:
     endpoint: <POSTGRESQL_URL>:<POSTGRESQL_PORT>
     transport: tcp
-		username: <POSTGRESQL_USERNAME>
+    username: <POSTGRESQL_USERNAME>
     password: <POSTGRESQL_PASSWORD>
     databases:
       - <YOUR DATABASE 1>
       - <YOUR DATABASE 2>
-			# ... All databases you want to monitor
+            # ... All databases you want to monitor
     collection_interval: 10s
     tls:
       insecure: true
       insecure_skip_verify: true
-		# If your postgresql is connected by ssl you can use following settings
-		# insecure: false
+        # If your postgresql is connected by ssl you can use following settings
+        # insecure: false
     # insecure_skip_verify: false
     # ca_file: /home/otel/authorities.crt
     # cert_file: /home/otel/mypostgrescert.crt
@@ -259,7 +259,7 @@ exporters:
     tls:
       insecure: false
     headers:
-			"signoz-access-token": <SIGNOZ_ACCESS_TOKEN>
+            "signoz-access-token": <SIGNOZ_ACCESS_TOKEN>
   logging:
     verbosity: detailed
 service:
