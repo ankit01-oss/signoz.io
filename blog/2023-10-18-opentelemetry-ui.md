@@ -196,7 +196,7 @@ Logs provide a detailed record of events and activities within an application or
 
 An OpenTelemetry UI should include a logs visualization for the following benefits:
 
-- **Proactive System Health Monitoring:** Through continuous log monitoring, potential system vulnerabilities and impending issues can be identified and addressed before they escalate into full-blown outages. This preemptive approach is crucial for maintaining uninterrupted service.
+- **Proactive System Health Monitoring:** Through continuous [log monitoring](https://signoz.io/blog/log-monitoring/), potential system vulnerabilities and impending issues can be identified and addressed before they escalate into full-blown outages. This preemptive approach is crucial for maintaining uninterrupted service.
 - **Centralized Log View:** A centralized view of logs from all components of a distributed system streamlines the process of issue identification and troubleshooting. This consolidated perspective offers a comprehensive overview of system activities.
 - **Dynamic Filtering and Rapid Search Capabilities:** These capabilities allow developers to efficiently sift through logs, to precisely locate specific information even within large and extensive log datasets.
 - **Visual Data Representation:** Visual representation aids in the identification of trends, patterns, and anomalies within the log data, enabling more detailed analysis.

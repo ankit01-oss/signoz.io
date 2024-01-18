@@ -514,5 +514,6 @@ Logs, metrics, and traces form the three cornerstones of full-stack APM tools. I
 
 **Further Reading**
 
-[Kubernetes Monitoring Tools](https://signoz.io/blog/kubernetes-monitoring-tools/)
-[New Relic Alternatives](https://signoz.io/blog/new-relic-alternatives/)
+[Kubernetes Monitoring Tools](https://signoz.io/blog/kubernetes-monitoring-tools/)<br></br>
+[New Relic Alternatives](https://signoz.io/blog/new-relic-alternatives/)<br></br>
+[Log Monitoring](https://signoz.io/blog/log-monitoring/)<br></br>
