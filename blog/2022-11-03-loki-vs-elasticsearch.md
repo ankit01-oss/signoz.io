@@ -76,7 +76,7 @@ Now that we have an overview of both tools let’s discuss the key differences b
 |  | Loki | Elasticsearch |
 | --- | --- | --- |
 | [Storage](#storage) | Requires less space | Is resource intensive |
-| [Indexing](indexing) | Designed to keep indexing low | Indexes all log lines |
+| [Indexing](#indexing) | Designed to keep indexing low | Indexes all log lines |
 | [Query Language](#query-language) | LogQL | Kibana Query Language or Lucene Query Syntax |
 | [Log Collectors](#promtail-vs-logstash) | Uses Promtail | Uses Logstash |
 | [User Interface](#user-interface---grafana-vs-kibana) | Grafana | Kibana |
