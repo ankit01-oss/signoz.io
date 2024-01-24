@@ -1,12 +1,14 @@
 ---
-title: Flame Graphs - The Ultimate Tool for Visualizing Distributed Tracing
+title: Understanding Flame Graphs for Visualizing Distributed Tracing
 slug: flamegraphs
-date: 2023-10-31
+date: 2024-01-24
 tags: [Distributed Tracing]
 authors: priyansh
 description: Imagine you want to debug a slow web service. What would you need? Well, you might want to use a tool (called flamegraphs) to see which functions in your code, or even in other services, are causing this slowdown. This way, you can focus your optimization efforts where they'll have the most...
 image: /img/blog/2023/10/flamegraphs-cover.jpeg
 hide_table_of_contents: false
+toc_min_heading_level: 2
+toc_max_heading_level: 2
 keywords:
   - distributed tracing
   - signoz

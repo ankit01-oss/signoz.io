@@ -30,7 +30,7 @@ OpenTelemetry Collector is a stand-alone service provided by OpenTelemetry. It c
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2023/01/opentelemetry_collector_guide_cover.webp)
+![Cover Image](/img/blog/2024/01/opentelemetry-collector-cover.webp)
 
 The first step in setting up observability with OpenTelemetry is instrumentation. The application code is instrumented with OpenTelemetry client libraries that help generate telemetry data like logs, metrics, and traces.
 

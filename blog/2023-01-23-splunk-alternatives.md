@@ -72,6 +72,22 @@ Let's discuss scenarios that you would like to explore the Splunk alternatives:
 
 Let's discuss the Splunk alternatives you may consider based on your specific needs, resources, and goals.
 
+Here are the best 11 Splunk alternatives that you can use:
+
+- [SigNoz](#signoz)
+- [Logstash](#logstash)
+- [Fluentd](#fluentd)
+- [Datadog](#datadog)
+- [Logz.io](#logzio)
+- [Graylog](#graylog)
+- [New Relic](#new-relic)
+- [Dynatrace](#dynatrace)
+- [Appdynamics](#appdynamics)
+- [Mezmo](#mezmo)
+- [Loggly](#loggly)
+
+
+
 ## Top Splunk Alternatives
 
 ### SigNoz
