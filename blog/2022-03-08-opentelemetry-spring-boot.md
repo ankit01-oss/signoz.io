@@ -91,7 +91,7 @@ Steps to integrate OpenTelemetry with your Spring Boot application.
 1. [Setting up Sample Spring Boot Application](#step-2---set-up-sample-spring-boot-application)
 3. [Downloading OpenTelemetry Java Agent Jar](#step-3---downloading-opentelemetry-java-agent-jar)
 4. [Running the application with Java Agent Jar](#step-4---running-the-application-with-relevant-environment-variables)
-5. [Monitor application with SigNoz](#step-5---monitoing-your-spring-boot-application-in-signoz)
+5. [Monitoring application with SigNoz](#step-5---monitoring-your-spring-boot-application-in-signoz)
 
 ## Prerequisites
 
@@ -186,7 +186,7 @@ java -javaagent:java-agent/opentelemetry-javaagent.jar -jar target/*.jar
 
 Note that you would need to use the environment variables from your SigNoz cloud account.
 
-## Step 5 - Monitoing your Spring Boot Application in SigNoz
+## Step 5 - Monitoring your Spring Boot Application in SigNoz
 
 Check out the Spring Pet Clinic app at: [http://localhost:8090/](http://localhost:8090/) and play around with it to generate some load. You can try refreshing the endpoint multiple times to generate load. Now you open the `Services` tab of SigNoz dashboard to see your Spring Boot Application being monitored.
 
