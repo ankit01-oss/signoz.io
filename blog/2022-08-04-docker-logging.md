@@ -30,7 +30,7 @@ Log analysis is a very powerful feature for an application when it comes to debu
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/08/docker_logging_cover.webp)
+![Cover Image](/img/blog/2024/01/docker-logging.webp)
 
 In this article, we will discuss log analysis in Docker and how logging in Docker containers is different than in other applications. These logs are specific to Docker and are stored on the Docker host. We’ll thoroughly discuss the `docker logs` command and how we can configure a logging driver for containers.
 
