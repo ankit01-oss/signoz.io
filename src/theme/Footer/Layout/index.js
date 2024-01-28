@@ -21,6 +21,7 @@ export default function FooterLayout({ style, links, logo, copyright }) {
                 <img
                   src="/img/landing/logo.webp"
                   className="w-28 object-contain"
+                  alt="SigNoz logo"
                 />
                 <SignUpForm className={"hidden lg:block"} />
                 <p className="text-gray-400 text-sm leading-loose m-0">
