@@ -80,6 +80,8 @@ OpenTelemetry provides instrumentation libraries for your application. The devel
 
 OpenTelemetry libraries can be used to generate logs, metrics, and traces. You can then collect these signals with OpenTelemetry Collector or send them to an observability backend of your choice. In this article, we will focus on OpenTelemetry logs. OpenTelemetry can be used to collect log data and process it. Let's explore OpenTelemetry logs further.
 
+[![Try SigNoz Cloud CTA](/img/blog/2024/01/opentelemetry-collector-try-signoz-cloud-cta.webp)](https://signoz.io/teams/)
+
 ## What are OpenTelemetry Logs?
 
 You can generate logs using OpenTelemetry SDK's in different languages. Unlike traces and metrics, OpenTelemetry logs take a different approach. In order to be successful, OpenTelemetry needs to support the existing legacy of logs and logging libraries. And this is the main design philosophy of OpenTelemetry logs. But it is not limited to this. With time, OpenTelemetry aims to integrate logs better with other signals.

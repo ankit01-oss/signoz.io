@@ -238,6 +238,8 @@ But as mentioned earlier, in-built RabbitMQ monitoring tools have shortcomings. 
 
 SigNoz is a full-stack application performance monitoring tool that can be used to monitor your RabbitMQ clusters. It is open-source and built to support OpenTelemetry natively. It provides metrics, logs, and traces under a single pane of glass. For RabbitMQ monitoring, you can build a customized dashboard and set up alerts on critical metrics.
 
+[![Monitor RabbitMQ with SigNoz](/img/blog/2024/01/rabbitmq-monitoring-signoz-cta.webp)](https://signoz.io/blog/opentelemetry-rabbitmq-metrics-monitoring/)
+
 ## Getting started with SigNoz
 
 <GetStartedSigNoz />
