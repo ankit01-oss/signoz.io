@@ -34,9 +34,12 @@ Both OpenTelemetry and Prometheus are open-source projects under the Cloud Nativ
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/12/opentelemetry_vs_prometheus_cover.webp)
-
-
+In this post, we will cover:
+- [What is OpenTelemetry?](#what-is-opentelemetry)
+- [What is Prometheus?](#what-is-prometheus)
+- [Key Differences between OpenTelemetry and Prometheus](#key-differences-between-opentelemetry-and-prometheus)
+- [Interoperability between OpenTelemetry and Prometheus](#interoperability-between-opentelemetry-and-prometheus)
+- [Future-proofing your Observability with OpenTelemetry](#future-proofing-your-observability-with-opentelemetry)
 
 <!-- OpenTelemetry is a vendor-agnostic instrumentation library. It provides a set of tools, APIs, and SDKs to create and manage telemetry data(logs, metrics, and traces). OpenTelemetry follows a specification driven development and has implementations in all major programming languages.
 
