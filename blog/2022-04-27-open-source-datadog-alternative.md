@@ -1,11 +1,11 @@
 ---
-title: SigNoz - Open-source alternative to DataDog
+title: SigNoz - Open-Source Alternative to DataDog
 slug: open-source-datadog-alternative
-date: 2023-10-19
+date: 2024-01-29
 tags: [SigNoz, Open Source]
 authors: pranay
 description: DataDog is a popular APM tool. But it is very expensive and opaque about its billing practices. What if you could get a SaaS like experience from an open-source APM tool....
-image: /img/blog/2023/03/open_source_dd_alternative-min.jpg
+image: /img/blog/2024/01/open-source-datadog-alternative-cover.webp
 keywords:
   - datadog
   - open source
@@ -25,7 +25,7 @@ More and more companies are now shifting to a cloud-native & microservices-based
 
 <!--truncate-->
 
-![cover image](/img/blog/2023/03/open_source_dd_alternative.webp)
+![cover image](/img/blog/2024/01/open-source-datadog-alternative-cover.webp)
 
 We have spent years learning about application monitoring & observability. What are the key features an observability tool should have to enable fast resolution of issues.
 
@@ -67,21 +67,22 @@ Some of our key features which makes SigNoz vastly superior to current open-sour
 - Metrics, traces, and logs under a single pane of glass
 - Correlation of telemetry signals
 - Out of the box application metrics
-- Seamless flow between metrics & traces
+- Seamless flow between metrics, traces & logs
 - Filtering based on tags
 - Custom aggregates on filtered traces
 - Detailed Flamegraphs & Gantt charts
 - Infrastructure dashboards
 - Exceptions monitoring
-- Transparent usage Data
+- Transparent usage data & pricing
+- OpenTelemetry-native
 
 ### Application metrics
 
 Get out of the box p90, p99 latencies, RPS, Error rates and top endpoints for a service out of the box.
 
 <figure data-zoomable>
-    <img src="/img/blog/common/signoz_charts_application_metrics.webp" alt="SigNoz dashboard showing popular RED metrics"/>
-    <figcaption><i>SigNoz UI showing application overview metrics like RPS, 50th/90th/99th Percentile latencies, and Error Rate</i></figcaption>
+    <img className="box-shadowed-image" src="/img/blog/common/signoz_charts_application_metrics.webp" alt="SigNoz dashboard showing popular RED metrics"/>
+    <figcaption><i>SigNoz UI showing application overview metrics like 50th/90th/99th Percentile latencies, request rate and Apdex</i></figcaption>
 </figure>
 
 ### Seamless flow between metrics & traces
@@ -89,7 +90,7 @@ Get out of the box p90, p99 latencies, RPS, Error rates and top endpoints for a 
 Found something suspicious in a metric, just click that point in the graph & get details of traces which may be causing the issues. Seamless, Intuitive.
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/common/application_metrics_to_traces.webp" alt="Seamless flow between metrics and traces"/>
+    <img className="box-shadowed-image" src="/img/blog/common/application_metrics_to_traces.webp" alt="Seamless flow between metrics and traces"/>
     <figcaption><i>Move from metrics to traces at any point of time which needs more analysis</i></figcaption>
 </figure>
 
@@ -100,7 +101,7 @@ Under our traces tab, you can analyze the traces data using filters based on tag
 Using tags, you can find latency experienced by customers who have customer_type set as `premium`.
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/common/filters_trace_data.webp" alt="Filters on trace data"/>
+    <img  className="box-shadowed-image" src="/img/blog/common/filters_trace_data.webp" alt="Filters on trace data"/>
     <figcaption><i>Use advanced filters to analyze your trace data</i></figcaption>
 </figure>
 
@@ -120,13 +121,13 @@ Create custom metrics from filtered traces to find metrics of any type of reques
 Detailed flamegraph & Gantt charts to find the exact cause of the issue and which underlying requests are causing the problem. Is it a SQL query gone rogue or a Redis operation is causing an issue? Get more context on your spans with tags and events.
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/common/signoz_flamegraphs.webp" alt="Detailed Flamegraphs & Gantt charts"/>
+    <img className="box-shadowed-image" src="/img/blog/common/signoz_flamegraphs.webp" alt="Detailed Flamegraphs & Gantt charts"/>
     <figcaption><i>Spans of a trace visualized with the help of flamegraphs and gantt charts in SigNoz dashboard</i></figcaption>
 </figure>
 
 ### Logs Management
 
-SigNoz provides Logs management with advanced log query builder. You can also monitor your logs in real-time using live tailing. SigNoz uses a columnar database ClickHouse to store logs, which is very efficient at ingesting and storing logs data. Columnar databases like ClickHouse are very effective in storing log data and making it available for analysis.
+SigNoz provides Logs management with advanced log query builder. You can also monitor your logs in real-time using live tailing. SigNoz uses a columnar database ClickHouse to store logs, which is [very efficient at ingesting and storing logs data](https://signoz.io/blog/logs-performance-benchmark/). Columnar databases like ClickHouse are very effective in storing log data and making it available for analysis.
 
 <figure data-zoomable align='center'>
     <img src="/img/blog/common/signoz_logs.webp" alt="Logs tab in SigNoz"/>
@@ -139,7 +140,7 @@ SigNoz provides Logs management with advanced log query builder. You can also mo
 You can drill down details of how many events is each application sending or at what granularity, so that you can adjust your sampling rate as needed and not get a shock at the end of the month ( case with SaaS vendors many a times)
 
 <figure data-zoomable align='center'>
-    <img src="/img/blog/common/signoz_usage_explorer.webp" alt="Transparent usage data"/>
+    <img className="box-shadowed-image" src="/img/blog/common/signoz_usage_explorer.webp" alt="Transparent usage data"/>
     <figcaption><i>SigNoz provides usage explorer so that you are always informed about your usage</i></figcaption>
 </figure>
 
