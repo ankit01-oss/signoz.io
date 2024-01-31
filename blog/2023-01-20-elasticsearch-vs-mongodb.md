@@ -6,7 +6,7 @@ tags: [Tech Tutorial, Databases]
 authors: [judy, ankit_anand]
 description: Elasticsearch is primarily a search engine optimized for fast, complex search queries, especially text searches, and is often used for log and event data analysis. MongoDB, on the other hand, is a general-purpose, document-oriented database that excels in storing and retrieving structured and semi-structured data....
 image: /img/blog/2024/01/elasticsearch-vs-mongodb-cover.webp
-hide_table_of_contents: true
+hide_table_of_contents: false
 keywords:
   - elasticsearch vs mongodb
   - mongodb
