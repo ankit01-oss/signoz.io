@@ -1,7 +1,7 @@
 ---
-title: Jaeger vs Zipkin - Key architecture components, differences and alternatives
+title: Jaeger vs Zipkin - Which tool to choose for tracing?
 slug: jaeger-vs-zipkin
-date: 2023-03-02
+date: 2024-01-25
 tags: [Tools Comparison, Jaeger]
 authors: ankit_anand
 description: Jaeger and Zipkin are two popular open-source projects used for end-to-end distributed tracing. While Zipkin is an older project and has a wider community, Jaeger has a modern, scalable architecture and supports open standards of instrumentation libraries..
@@ -87,9 +87,13 @@ Instrumentation is the process of generating telemetry data(logs, metrics, and t
 
 Key points to note about instrumentation libraries of Jaeger and Zipkin:
 
-- Jaeger's instrumentation libraries are based on <a href = "https://opentracing.io/" rel="noopener noreferrer nofollow" target="_blank" ><b>OpenTracing APIs</b></a>. OpenTracing was also started at Uber with an aim to create vendor-neutral instrumentation APIs for distributed tracing. Zipkin has its own instrumentation libraries.
+- Jaeger recommends using OpenTelemetry APIs and SDKs for generating traces. Using OpenTelemetry users have the advantage of using a single open source standard for all types of telemetry signals as OpenTelemetry aslo supports logs and metrics.
 
-- Jaeger has <a href = "https://www.jaegertracing.io/docs/1.26/client-libraries/" rel="noopener noreferrer nofollow" target="_blank" ><b>official client libraries</b></a> in Go, Java, Node.js, Python, C++, C#. Zipkin team maintains <a href = "https://zipkin.io/pages/tracers_instrumentation.html" rel="noopener noreferrer nofollow" target="_blank" ><b>instrumentation libraries</b></a> for frameworks in C#, Go, Java, Javascript, Ruby, Scala, and PHP.
+- Zipkin provides client libraries in popular languages like C#, Go, Java, Javascript, Ruby, Scala, PHP, etc. There are also a lot of community supported libraries that you can use for instrumenting specific frameworks.
+
+<!-- - Jaeger's instrumentation libraries are based on <a href = "https://opentracing.io/" rel="noopener noreferrer nofollow" target="_blank" ><b>OpenTracing APIs</b></a>. OpenTracing was also started at Uber with an aim to create vendor-neutral instrumentation APIs for distributed tracing. Zipkin has its own instrumentation libraries.
+
+- Jaeger has <a href = "https://www.jaegertracing.io/docs/1.26/client-libraries/" rel="noopener noreferrer nofollow" target="_blank" ><b>official client libraries</b></a> in Go, Java, Node.js, Python, C++, C#. Zipkin team maintains <a href = "https://zipkin.io/pages/tracers_instrumentation.html" rel="noopener noreferrer nofollow" target="_blank" ><b>instrumentation libraries</b></a> for frameworks in C#, Go, Java, Javascript, Ruby, Scala, and PHP. -->
 
 - Both Jaeger and Zipkin support out-of-box instrumentation for a lot of popular frameworks. Jaeger is also compatible with Zipkin's API. That means you can use instrumentation libraries of Zipkin with Jaeger.
 
@@ -127,17 +131,25 @@ Both Jaeger and Zipkin provide pluggable storage backends for trace data. Cassan
 Zipkin was originally built to store data in Cassandra, but it later started supporting Elasticsearch and MySQL too.
 
 ## Comparing Jaeger and Zipkin
+
 Jaeger and Zipkin have a lot of similarities in their architecture. Though Zipkin is an older project, Jaeger has a more modern and scalable design. 
 
 Summarizing the key differences between Jaeger and Zipkin:
 
-- Jaeger's has wider support of instrumentation libraries as it supports OpenTracing APIs and is also compatible with Zipkin's API. Jaeger also provides an option to <a href = "https://www.jaegertracing.io/docs/1.26/getting-started/#migrating-from-zipkin" rel="noopener noreferrer nofollow" target="_blank" ><b>migrate from Zipkin</b></a>. On the other hand, Zipkin supports popular frameworks in the official clients, while leaving the community to instrument smaller libraries like database drivers.
+- **Instrumentation libraries**<br></br>
+    Jaeger has shifted from its client libraries based on Opentracing APIs to recommended OpenTelemetry APIs and SDKs for application instrumentation. OpenTelemetry is a broader framework for observability that can help you generate different kinds of telemetry signals and correlate them for better contextual insights. Zipkin cal also receive traces from OpenTelemetry instrumented applications. Zipkin's instrumentation libraries are focused on simplicity and ease of integration. 
 
-- Jaeger can be deployed as a single binary where all Jaeger backend components run as a single process or as a scalable distributed system. Zipkin, on the other hand, can only be run as a single binary that includes the collector, storage, query service, and web UI.
+- **Deployment**<br></br>
+    Jaeger can be deployed as a single binary where all Jaeger backend components run as a single process or as a scalable distributed system. Zipkin, on the other hand, can only be run as a single binary that includes the collector, storage, query service, and web UI.
 
-- As Jaeger comes under CNCF along with other projects such as Kubernetes, there are official orchestration templates for running Jaeger with [Kubernetes](https://github.com/jaegertracing/jaeger-kubernetes) and [OpenShift](https://github.com/jaegertracing/jaeger-openshift). Zipkin provides three options to build and start an instance of Zipkin: using Java, Docker, or running from the source.
+- **Integrations**<br></br>
+    As Jaeger comes under CNCF along with other projects such as Kubernetes, there are official orchestration templates for running Jaeger with [Kubernetes](https://github.com/jaegertracing/jaeger-kubernetes) and [OpenShift](https://github.com/jaegertracing/jaeger-openshift). Zipkin provides three options to build and start an instance of Zipkin: using Java, Docker, or running from the source.
 
-- Despite being older, Jaeger has caught up to Zipkin in terms of community support. Zipkin is a standalone project which came into existence before containerization went mainstream. Jaeger, as part of CNCF, is a recognized project in cloud-native architectures.
+- **Sampling strategis**<br></br>
+    Jaeger offers adaptive sampling, which adjusts the sampling rate based on the traffic and error rates, enabling more efficient trace data collection without overwhelming storage with too much data. Zipkin relies on simpler, less flexible sampling strategies, such as per-service sampling, which may not be as efficient in environments with highly variable traffic patterns.
+
+- **Community Support**<br></br>
+    Despite being newer, Jaeger has caught up to Zipkin in terms of community support. Zipkin is a standalone project which came into existence before containerization went mainstream. Jaeger, as part of CNCF, is a recognized project in cloud-native architectures.
 
 Both Jaeger and Zipkin are strong contenders when it comes to a distributed tracing tool. But are traces enough to solve all performance issues of a modern distributed application? The answer is no. You also need metrics and a way to correlate metrics with traces with a single dashboard. Most SaaS vendors provide both metrics and traces under a single pane of glass. But the beauty of Jaeger and Zipkin is that they are open-source. What if an open-source solution does both and comes with a great web UI with actionable insights for your engineering teams?
 

@@ -7,6 +7,8 @@ authors: leigh-finch
 description: Spring Boot is one of the most popular frameworks for building micro-services in Java. In this tutorial, we will learn how to monitor a Spring Boot application with SigNoz and OpenTelemetry...
 image: /img/blog/2023/12/spring-boot-monitoring-cover.jpeg
 hide_table_of_contents: false
+toc_min_heading_level: 2
+toc_max_heading_level: 2
 keywords:
   - opentelemetry
   - signoz

@@ -1,7 +1,7 @@
 ---
-title: Microservices Logging | A Practical Guide to Logging in Microservices
+title: A Practical Guide to Logging in Microservices []
 slug: microservices-logging
-date: 2023-01-04
+date: 2024-02-01
 tags: [Tech Tutorial, Log Management]
 authors: [vaishnavi]
 description: Microservices logging is the practice of tracking and recording the activities of specific services in a distributed microservices architecture. Logging is an important aspect of any software system, and it is more critical for a microservices architecture as there are many small, independent services interacting with each other....
@@ -34,30 +34,31 @@ Logging is an important aspect of any software system. It is especially importan
 
 In a microservices system, it is important to log events and errors at the service level so that it is possible to track and debug issues that may arise within a specific service. It is also important to have a centralized logging system that can collect and store log messages from all of the different services so that it is possible to get a holistic view of the system and identify patterns or trends that may not be apparent from looking at the logs of a single service.
 
-## The need for a Centralized Logging Service
-
-A single centralized logging service that aggregates logs from all the services should be a preferred solution in a microservices architecture. In the software world, unique/unseen problems are not seldom, and we certainly do not want to be juggling through multiple log files or developed dashboards to get insights about what caused the same.
-
-When one or more services fail, we need to know which service experienced an issue and why. It's also difficult to decipher the complete request flow in microservices. For instance, which services have been called? And in what sequence and frequency are that service called?
 
 ## Here are a few microservices logging best practices:
 
-1. **Use an unique correlation ID per request**<br></br>
-   Imagine a situation where a large number of microservices produce millions of log entries every hour. If something odd happened, it would be challenging to identify the underlying cause. An invaluable tool in this kind of circumstance is a correlation ID. For each request sent to a server, a correlation request ID would be inserted. The identifier is passed back and forth between each service needed to fulfill the request. If you're trying to debug a problem, the first thing you should do is locate the special identification that was given along with the request. Even better would be to use the special ID when handling errors in the error log.
+1. **What to Log**<br></br>
+   Events and Transactions: Capture actions, occurrences, and business or system transactions to provide insights into the system's behavior.
+   Errors: Log errors, exceptions, and stack traces to aid in troubleshooting and understanding failure points within the system.
 
-2. **Use Structured logging**<br></br>
+2. **Use Log Levels**<br></br>
+   Utilize various levels of logging (DEBUG, INFO, WARN, ERROR, FATAL) to categorize logs by severity and importance, helping in filtering and focusing on the most critical issues first.
+
+3. **Use Structured logging**<br></br>
    Instead of logging unstructured messages, consider using a structured logging format such as JSON. This will make it easier to search and analyze your logs and will also make it easier to send your logs to a centralized logging solution. In the centralized location, you can make searches, such as those that seek logs with an "HTTP code" of 500 or higher. To provide your microservices logs with a consistent yet adaptable format, use structured logging.
 
-3. **Add contextual data in your logs**<br></br>
+
+4. **Use an unique correlation ID per request**<br></br>
+   Imagine a situation where a large number of microservices produce millions of log entries every hour. If something odd happened, it would be challenging to identify the underlying cause. An invaluable tool in this kind of circumstance is a correlation ID. For each request sent to a server, a correlation request ID would be inserted. The identifier is passed back and forth between each service needed to fulfill the request. If you're trying to debug a problem, the first thing you should do is locate the special identification that was given along with the request. Even better would be to use the special ID when handling errors in the error log.
+
+
+5. **Add contextual data in your logs**<br></br>
    Make sure to include enough context in your logs to be able to understand the events that lead up to an error or debugging issue. This might include information such as the request URL, request parameters, and user ID.
 
-4. **Use Log Levels**<br></br>
-   Use different log levels (such as error, warning, and info) to indicate the severity of a log message. This will make it easier to filter your logs and understand the most important issues.
-
-5. **Do not log sensitive data**<br></br>
+6. **Do not log sensitive data**<br></br>
    Avoid logging personally identifiable information (PII). PII includes things like passwords, account numbers, and social security numbers. There is a privacy concern because it is possible that individual developers may need to examine logs for debugging needs. If your company wants to evaluate user behavior, take into account how certain types of sensitive data may be aggregated through logging to maintain user anonymity.
 
-6. **Provide informative application logs**<br></br>
+7. **Provide informative application logs**<br></br>
    The log should have all the information required to understand the error when it occurs. We can troubleshoot more effectively and more quickly the more information that is accessible from the microservices logs.
    
    At the very least, logs need to contain the following details:
@@ -74,11 +75,18 @@ When one or more services fail, we need to know which service experienced an iss
    - Request Method
    - Request URI
 
-7. **Centralized logging solution**<br></br>
+8. **Centralized logging solution**<br></br>
    In a microservices architecture, it can be difficult to keep track of logs if they are scattered across multiple services. Using a centralized logging solution such as SigNoz or Elastic can help you to collect, query, and view logs from all your services in one place. Logs analytics tool like SigNoz provide dashboards to visually present logs data in an easily digestible format.
 
-8. **Logging performance metrics**<br></br>
+9. **Logging performance metrics**<br></br>
    In addition to logging events and errors, consider also logging performance metrics such as response times and resource utilization. This will allow you to monitor the performance of your services and identify any potential issues.
+
+
+## The need for a Centralized Logging Service
+
+A single centralized logging service that aggregates logs from all the services should be a preferred solution in a microservices architecture. In the software world, unique/unseen problems are not seldom, and we certainly do not want to be juggling through multiple log files or developed dashboards to get insights about what caused the same.
+
+When one or more services fail, we need to know which service experienced an issue and why. It's also difficult to decipher the complete request flow in microservices. For instance, which services have been called? And in what sequence and frequency are that service called?
 
 ## Integrating Observability in logs
 
