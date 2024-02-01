@@ -71,7 +71,7 @@ export default function NavbarContent() {
             href={"/teams/"}
             id="btn-get-started-website-navbar"
           >
-            Try SigNoz Cloud
+            Sign Up
           </Link>
           <NavbarItems items={rightItems} />
           <NavbarColorModeToggle className={styles.colorModeToggle} />

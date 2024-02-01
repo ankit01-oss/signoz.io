@@ -29,7 +29,7 @@ export const Header = () => {
           to={"/teams/"}
           id="btn-get-started-homepage-hero"
         >
-          Try SigNoz Cloud
+          Sign Up
         </Button>
         <Button
           isButton
