@@ -1,5 +1,5 @@
 ---
-title: Docker Logging One-Stop Beginner's Guide
+title: Docker Logging - Types, Configuring Drivers, Logging Strategies [Complete Guide]
 slug: docker-logging
 date: 2024-01-24
 tags: [Tech Tutorial]
