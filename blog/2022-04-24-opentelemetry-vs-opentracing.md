@@ -97,7 +97,7 @@ The steps to send telemetry data to SigNoz involves:
 - Configure OpenTelemetry Exporters to send data to SigNoz
 - Visualize and analyze telemetry data using SigNoz dashboards
 
-It's very easy to get started with SigNoz. SigNoz cloud is the easiest way to run SigNoz. You can [sign up](https://signoz.io/teams/) for a free account and get 30 days of free uncapped usage.
+It's very easy to get started with SigNoz. SigNoz cloud is the easiest way to run SigNoz. You can [sign up](https://signoz.io/teams/) for a free account and get 30 days of unlimited access to all features.
 
 You can also install and self-host SigNoz yourself. It can be installed on macOS or Linux computers in just three steps by using a simple install script.
 

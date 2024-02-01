@@ -109,7 +109,7 @@ SigNoz provides Logs management with advanced log query builder. You can also mo
 
 <br></br>
 
-SigNoz is also very cost-efficient and provides a great value for your money. SigNoz cloud is the easiest way to run SigNoz. [Sign up](https://signoz.io/teams/) for a free account and get 30 days of free uncapped usage.
+SigNoz is also very cost-efficient and provides a great value for your money. SigNoz cloud is the easiest way to run SigNoz. [Sign up](https://signoz.io/teams/) for a free account and get 30 days of unlimited access to all features.
 
 ### Dynatrace
 

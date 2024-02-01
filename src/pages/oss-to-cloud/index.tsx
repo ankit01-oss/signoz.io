@@ -7,7 +7,7 @@ import { HubspotProvider } from "@aaronhayes/react-use-hubspot-form";
 
 const OSS_TO_CLOUD_DATA = {
   TITLE: "SigNoz Cloud is the easiest way of running SigNoz",
-  DESC: "Experience SigNoz effortlessly. No installation, maintenance, or scaling needed. Sign up for a free account and enjoy 30 days of uncapped usage.",
+  DESC: "Experience SigNoz effortlessly. No installation, maintenance, or scaling needed. Get started now with a free trial account for 30 days.",
   PORTAL_ID: "22308423",
   FORM_ID: "56f370ae-d84e-49b6-8629-134dbb74d90a ",
   FEATURE_POINTS: [

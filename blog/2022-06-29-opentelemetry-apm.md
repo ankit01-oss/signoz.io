@@ -108,7 +108,7 @@ Here’s a picture depicting how OpenTelemetry fits within an application and Si
 
 <br></br>
 
-SigNoz cloud is the easiest way to run SigNoz. You can sign up [here](https://signoz.io/teams/) for a free account and get 30 days of free uncapped usage.
+SigNoz cloud is the easiest way to run SigNoz. You can sign up [here](https://signoz.io/teams/) for a free account and get 30 days of unlimited access to all features.
 
 You can also install and self-host SigNoz yourself. It can be installed on macOS or Linux computers in just three steps by using a simple install script.
 
