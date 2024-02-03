@@ -16,7 +16,7 @@ const config = {
     announcementBar: {
       id: "funding",
       content:
-        '🚀 We\'ve raised $6.5mn to build the future of open source observability. <a target="_blank" rel="noopener noreferrer" href="/newsroom/signoz-funding/">Read more</a>',
+        '🚀 Five Days of SigNoz & OpenTelemetry - SigNoz Launch Week 1.0. <a target="_blank" rel="noopener noreferrer" href="/newsroom/launch-week-1/">Read more</a>',
       backgroundColor: "#FAF9F6",
       textColor: "#091E42",
       isCloseable: false,
