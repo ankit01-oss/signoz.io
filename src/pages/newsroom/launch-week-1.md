@@ -4,7 +4,7 @@ slug: launch-week-1
 date: 2024-02-02
 tags: [OpenTelemetry, SigNoz]
 authors: [ankit_anand]
-description: SigNoz Launch Week 1
+description: We’re excited to announce our very first Launch Week starting on 26th February, 2024. Brace yourself for five days of SigNoz & OpenTelemetry - lots of new features, insights, and behind the scenes...
 image: /img/blog/2024/02/signoz-launch-week-1.webp
 hide_table_of_contents: true
 keywords:
