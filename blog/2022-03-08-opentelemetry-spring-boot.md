@@ -4,7 +4,7 @@ slug: opentelemetry-spring-boot
 date: 2024-01-24
 tags: [OpenTelemetry Instrumentation, Java]
 authors: ankit_anand
-description: Using OpenTelemetry libraries, you can instrument your Java applications for end-to-end tracing. You can then send the traces to an OpenTelemetry-native APM like SigNoz for monitoring visualization...
+description: Using OpenTelemetry libraries, you can instrument your Spring Boot applications for end-to-end tracing. You can then send the traces to an OpenTelemetry-native APM like SigNoz for monitoring visualization...
 image: /img/blog/2024/01/opentelemetry-spring-boot-cover-min.jpg
 hide_table_of_contents: false
 toc_min_heading_level: 2
