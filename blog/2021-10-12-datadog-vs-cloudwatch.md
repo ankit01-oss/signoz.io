@@ -1,7 +1,7 @@
 ---
 title: DataDog vs Cloudwatch - Which tool to choose?
 slug: datadog-vs-cloudwatch
-date: 2023-09-07
+date: 2024-02-05
 tags: [Tools Comparison]
 authors: ankit_anand
 description: DataDog is a paid SaaS tool that provides a range of products for monitoring applications and tech infrastructure. While CloudWatch is an Amazon Web Services product that monitors applications running on AWS infrastructure and using AWS services....
@@ -28,6 +28,22 @@ DataDog is a paid SaaS tool that provides a range of products for monitoring app
 ![Cover Image](/img/blog/2023/03/datadog_vs_cloudwatch_cover-min.jpg)
 
 import Screenshot from "@theme/Screenshot"
+
+
+## Datadog vs Cloudwatch: Use-Case Based Decision Guide
+
+Which tool to use for the following use-cases:
+
+- **Cloudwatch** for Basic cloud monitoring and management in AWS
+- **Datadog** for Advanced analytics and log management
+- **Datadog** for Multi-cloud and hybrid cloud environments
+- **Datadog** for Real-time application performance monitoring (APM)
+- **Cloudwatch** for Cost management for AWS services
+- **Datadog** for Third-party integrations
+
+
+Before we take a deep dive into key differences between each tool, let's have a brief overview of each tool.
+
 
 ## What is CloudWatch?
 
@@ -58,13 +74,11 @@ Differences between DataDog and CloudWatch can be summarized below:
 - **Feature set**<br></br>
   DataDog is an enterprise-level monitoring tool that offers a gamut of products to take care of monitoring use-cases. As such, it has some features that are not available in CloudWatch. For example, continuous code profiler. DataDog provides Continuous Code Profiling to identify code snippets and methods inefficient under production load.
 
-<Screenshot
-    alt="DataDog continuous code profiler"
-    height={500}
-    src="/img/blog/2021/10/datadog_vs_cloudwatch_datadog_continuous_profiler-min.webp"
-    title="DataDog's continuous code profiler (Source: DataDog website)"
-    width={700}
-/>
+<figure data-zoomable align='center'>
+    <img className="box-shadowed-image" src="/img/blog/2023/12/new-relic-alternatives-datadog.webp" alt="Datadog vs Cloudwatch - Datadog dashboard"/>
+    <figcaption><i>Datadog APM (source: Datadog website)</i></figcaption>
+</figure>
+<br/>
 
 - **Pricing**<br></br>
   Both DataDog and CloudWatch are paid tools.
@@ -117,13 +131,11 @@ Some of the key features of CloudWatch includes:
     - Graph metrics and log data side by side
     - Graphs for cloud resources and applications in a unified view
 
-<Screenshot
-    alt="CloudWatch dashboard"
-    height={500}
-    src="/img/blog/2021/10/datadog_vs_cloudwatch_cloudwatch_dashboard-min.webp"
-    title="Home page view of CloudWatch dashboard (Source: CloudWatch dashboard)"
-    width={700}
-/>
+<figure data-zoomable align='center'>
+    <img className="box-shadowed-image" src="/img/blog/2024/02/cloudwatch-dashboard.webp" alt="Datadog vs Cloudwatch - CloudWatch dashboard"/>
+    <figcaption><i>CloudWatch dashboard (source: AWS Docs)</i></figcaption>
+</figure>
+<br/>
 
 - **Logs and metrics correlation**<br></br>
   Using CloudWatch, you can correlate log patterns to a specific metric and set alarms on it.
@@ -141,24 +153,27 @@ If you are only using AWS services, then you can go with CloudWatch, but if you 
 
 ## An alternative to DataDog and CloudWatch - SigNoz
 
-**[SigNoz](https://signoz.io/)** is a full-stack open-source application performance monitoring and observability tool which can be used in place of DataDog and Grafana. SigNoz is built to give SaaS like user experience combined with the perks of open-source software. Developer tools should be developer first, and SigNoz was built by developers to address the gap between SaaS vendors and open-source software.
+**[SigNoz](https://signoz.io/)** is a full-stack open-source application performance monitoring and observability tool which can be used in place of DataDog and Grafana. It can act as your one-stop observability solution. You can monitor logs, metrics, and traces and correlate signals for better insights into application performance.
 
-Key architecture features:
+<!-- Key architecture features:
 
 - **Native OpenTelemetry support**<br></br>
   SigNoz is built to support <a href = "https://opentelemetry.io/" rel="noopener noreferrer nofollow" target="_blank" ><b>OpenTelemetry</b></a> natively, which is quietly becoming the world standard to generate and manage telemetry data.
 
 - **Flexible and scalable Database storage**<br></br>
-  SigNoz provides users flexibility in terms of storage. You can choose between ClickHouse or Kafka + Druid as your backend storage while installing SigNoz.
+  SigNoz provides users flexibility in terms of storage. You can choose between ClickHouse or Kafka + Druid as your backend storage while installing SigNoz. -->
 
+With SigNoz, you can do the following:
 
-<Screenshot
-    alt="Architecture of SigNoz with OpenTelemetry and ClickHouse"
-    height={500}
-    src="/img/blog/2021/09/SigNoz_architecture_clickhouse.webp"
-    title="Architecture of SigNoz with ClickHouse as storage backend and OpenTelemetry for code instrumentatiion"
-    width={700}
-/>
+- Visualise Traces, Metrics, and Logs in a single pane of glass
+- Monitor application metrics like p99 latency, error rates for your services, external API calls, and individual endpoints.
+- Find the root cause of the problem by going to the exact traces which are causing the problem and see detailed flamegraphs of individual request traces.
+- Run aggregates on trace data to get business-relevant metrics
+- Filter and query logs, build dashboards and alerts based on attributes in logs
+- Monitor infrastructure metrics such as CPU utilization or memory usage
+- Record exceptions automatically in Python, Java, Ruby, and Javascript
+- Easy to set alerts with DIY query builder
+
 
 SigNoz comes with out of box visualization of things like RED metrics.
 
@@ -185,21 +200,10 @@ You can also build custom metrics dashboard for your infrastructure.
 <Screenshot
     alt="SigNoz custom metrics dashboard"
     height={500}
-    src="/img/blog/2021/10/signoz_custom_dashboard-min.webp"
+    src="/img/blog/common/signoz_custom_dashboard-min.webp"
     title="You can also build a custom metrics dashboard for your infrastructure"
     width={700}
 />
-
-
-Some of the things SigNoz can help you track:
-
-- Out-of-the-box charts for application metrics like p90, p99, latency, error rates, request rates, etc.
-- Distributed tracing to get end-to-end visibility of your services
-- Monitor any metrics important to you, build dashboards for specific use-cases
-- Logs Management equipped with a powerful search and filter query builder
-- Exceptions monitoring to track exceptions in your application
-- Easy to set alerts with DIY query builder
-- Native support for OpenTelemetry native
 
 ## Getting started with SigNoz
 

@@ -1,11 +1,11 @@
 ---
 title: A Lightweight Open Source ELK alternative
 slug: elk-alternative-open-source
-date: 2023-06-05
+date: 2024-02-06
 tags: [SigNoz]
 authors: ankit_anand
 description: Are you looking for a lightweight ELK alternative? ELK stack is hard to manage at scale and is not resource efficient. Here's an alternative that is easy to deploy and manage...
-image: /img/blog/2022/10/elk_alternative_open_source_cover.webp
+image: /img/blog/2024/02/open-source-elk-alternative.webp
 keywords:
   - elk alternative
   - elk alternative open source
@@ -18,6 +18,8 @@ keywords:
   - signoz
 ---
 
+import GetStartedSigNoz from '../docs/shared/get-started-signoz.md';
+
 <head>
   <link rel="canonical" href="https://signoz.io/blog/elk-alternative-open-source/"/>
 </head>
@@ -26,7 +28,7 @@ ELK is the acronym Elasticsearch, Logstash, and Kibana, and combined, it is one 
 
 <!--truncate-->
 
-![Cover Image](/img/blog/2022/10/elk_alternative_open_source_cover.webp)
+![Cover Image](/img/blog/2024/02/open-source-elk-alternative.webp)
 
 
 ## Log complexity has increased in modern applications
@@ -35,7 +37,7 @@ Because of cloud computing and containerization, modern applications have become
 
 Microservices, containers, serverless, open source frameworks and components have changed the way software is developed today. While solving the need for on-demand scaling to meet growing customer demands, these technologies have also increased the operation complexity manifolds. It has also made logging pipelines very complex, with the need for a robust log management solution.
 
-## Running an ELK stack
+## Running an ELK stack is not easy
 
 ELK stack comprises of following four independent components:
 
@@ -125,25 +127,7 @@ Shifting your logs pipeline to SigNoz is easy and simple. If you are using Fluen
 
 ## Getting started with SigNoz
 
-You can get started with SigNoz using just three commands at your terminal.
-
-```jsx
-git clone -b main https://github.com/SigNoz/signoz.git
-cd signoz/deploy/
-./install.sh
-```
-<br></br>
-
-For detailed instructions, you can visit our documentation.
-
-[![Deployment Docs](/img/blog/common/deploy_docker_documentation.webp)](https://signoz.io/docs/install/)
-
-If you liked what you read, then check out our GitHub repo 👇
-
-[![SigNoz GitHub repo](/img/blog/common/signoz_github.webp)](https://github.com/SigNoz/signoz)
-
-Our slack community is a great place to get your queries solved instantly and get community support for SigNoz. Link to join 👇<br></br>
-[SigNoz slack community](https://signoz.io/slack)
+<GetStartedSigNoz />
 
 ---
 
