@@ -37,7 +37,7 @@ export default function BlogPostItem({ children, className }) {
               className="cta-image-container"
               id="try-signoz-cloud-blogpage-cta"
             >
-              <img className="cta-image" src={trySignozImg} />
+              <img id="cta-image" className="cta-image" src={trySignozImg} />
             </Link>
           </div>
         )}
