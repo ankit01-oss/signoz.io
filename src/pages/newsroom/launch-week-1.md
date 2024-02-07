@@ -13,6 +13,8 @@ keywords:
   - observability
 ---
 
+import { LiteYoutubeEmbed } from "react-lite-yt-embed";
+
 <head>
   <link rel="canonical" href="https://signoz.io/newsroom/launch-week-1/"/>
    <meta property="og:image" content="https://signoz.io/img/blog/2024/02/signoz-launch-week-1.webp"/>
@@ -73,6 +75,18 @@ Features that will take observability experience in SigNoz to the next level! �
 And, of course, where there is SigNoz, there is OpenTelemetry. We will share lots of insights, best practices, and tidbits about OpenTelemetry.
 
 We don’t want to spoil the fun, so stay tuned for more info. And expect a fun week of hacking! 👩🏻‍💻
+
+Subscribe to our Youtube live event:
+
+<p>&nbsp;</p>
+
+<LiteYoutubeEmbed id="r6KJSEKrZqQ" mute={false} />
+
+<p>&nbsp;</p>
+
+Subscribe to our Linkedin launch event:
+
+[![SigNoz Launch Week Linkedin Event](/img/blog/2024/02/signoz-launch-week-linkedin-cta.webp)](https://www.linkedin.com/events/signozlaunchweek1-07159457438146985984/)
 
 For those interested, check out our Github repo:
 
