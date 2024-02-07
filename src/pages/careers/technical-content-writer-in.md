@@ -11,7 +11,7 @@ slug: technical-content-writer-in
 
 </head>
 
-## Technical Content Writer (Remote) 
+## Technical Content Writer (Remote) (India) 
 
 
 SigNoz is a global open source project with users in 30+ countries. We are building an open-source application monitoring which helps developers monitor their applications and troubleshoot problems, quickly.
@@ -38,12 +38,14 @@ We believe creating content which people care about is fundamentally about telli
 
 - Create blog articles/tutorials about different features of the product, how users can use them
 - Create video tutorials or docs on common issues faced by users
--  Identify gaps in our current content and create content to address them. Possible content types
+- Create blogs & tutorials relevant to developers
+- Identify gaps in our current content and create content to address them. Possible content types:
     - Blog posts
     - YouTube videos
     - Improving our current docs
     - Case studies
     - Tutorials 
+    - Social Media Posts
 -  Distribute content in relevant forums and communities 
 
 
@@ -51,6 +53,7 @@ We believe creating content which people care about is fundamentally about telli
 
 - Some one who has 1+ yrs working as a Software developer and has interest in explaining deep technical concepts in simple language
 - Knowledge of Cloud Native ecosystem, devops, is a plus
+- Technical content writer with 2+ years of experience in the DevOps ecosystem
 - Interested in developing career in technical marketing, dev advocacy or product management 
 - A flair for writing and growth mindset
 
@@ -59,5 +62,5 @@ We believe creating content which people care about is fundamentally about telli
 
 Seems like something right up your alley? 
 
-Just apply on this site or email your CV and an optional intro note to me at [hiring at signoz  dot io]. Feel free to include links to your LinkedIn, Twitter, or blog posts.
+Just apply on this [site](https://www.ycombinator.com/companies/signoz/jobs/d1V3da9-technical-content-writer-marketer-remote-india) or email your CV and an optional intro note  at ankit.anand@signoz.io on why you're interested in this role at SigNoz. Please include links to your writing samples and social profiles like Linkedin, Twitter, etc.
 
